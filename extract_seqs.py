@@ -100,11 +100,9 @@ def read_combined_seqs(path_to_file):
     return f
 
 
-handle=open("species_sequences.txt","r")
-species_file=handle.readlines()
-#print(species_file)
-
-def create_species_folders():
+def create_species_folders(path_to_input_file):
+    handle=open(path_to_input_file,"r")
+    species_file=handle.readlines()
     mouse_path = os.getcwd()
     for folder in os.listdir(mouse_path):
         if os.path.isdir(folder):
@@ -162,7 +160,42 @@ def index_bams(path_to_folders):
                     except Exception as e:
                         print(e)
 
+# fetch called on bamfile without index
 
+# rb is for bam
+# r is for sam
+
+# samtools reheader
+# use sed
+
+def prefix_bam_reads2(path_to_bam):
+    # get file name to prefix read with
+    # prefix read name using sed
+    pass
+
+def prefix_bam_reads(path_to_bam, species_name):
+    input_bam=pysam.AlignmentFile(path_to_bam,'rb')
+    for read in input_bam.fetch(reference=species_name):
+        print(read.reference_id)
+        print(read.query_name)
+
+    # print('\n')
+    # for read in input_bam:
+    #     
+    #     print(read.reference_id)
+    #     print(read.flag)
+
+    # for read in input_bam.fetch(species_name):
+    #     print(read.query_name)
+
+def add_file_prefix_to_chrom(path_to_files):
+    # for file in folder ending in bam extention
+    # file.split('_')[0] = prefix
+    # for species/chromosome in txt file:
+    # sed -e 's/species/s/folder_{species}' 
+         
+    
+# Need to retain folder name / prefix folder name onto read name in bam file
 def extract_species_bam(path_to_folders, file_with_species):
     '''Filters or extracts lines pertaining to a given species input txt file and outputs them to a new bam file. 
     Future work is to add parameters to specifiy path_to_output files to'''
@@ -201,52 +234,64 @@ def extract_species_bam(path_to_folders, file_with_species):
                             input_bam.close()
                             output_bam.close()
 
-def call_snp(path_to_folder):
+def call_snp(path_to_parent_folder,file_extension):
     '''Finds files with specified name/extension and commences samtools snp calling pipeline on them'''
-
+    files=access_subfolder_contents(path_to_parent_folder,file_extension)
     # SNP pipeline steps:
     # 1. Samtools sort
+    samtools_sort(files)
     # 2. Samtools index
     # 3. Samtools mpileup
     # 4. bcftools call
     # 5. Generating vcf file bcftools view my-var.bcf | vcfutils.pl varFilter - > my.var-final.vcf
     
 # Need to make samtools helper functions
+                   
+def samtools_sort(list_of_bam_files):
+    for fle in list_of_bam_files:
+        #output_directory=os.path.dirname(os.path.abspath(fle))
+        output_file=''.join(fle.split('.')[0]+'_sorted.bam')
+        print("Sorting:",fle)
+        pysam.sort("-o", output_file, fle)
+
+def samtools_idx(list_of_bam_files):
+    for fle in list_of_bam_files:
+        #output_directory=os.path.dirname(os.path.abspath(fle))
+        # Need to find files ending in 'sorted'
+        output_file=''.join(fle.split('.')[0]+'_idx.bam')
+        print("Sorting:",fle)  
+        pysam.index("-o", output_file, fle)
 
 def access_subfolder_contents(path_to_parent_folder,file_extension):
+    files=[]
     for folder in os.listdir(path_to_parent_folder):
-        if os.path.isdir(folder):
-            contents=os.listdir(folder)
-            # Need to specify full path to subfolder!
-            path=os.path.join(path_to_parent_folder,folder)
-            for subfolder in contents:
-                full_path=os.path.join(path,subfolder)
-                if os.path.isdir(full_path):
-                    subcontents=os.listdir(full_path)
-                    contents=[]
-                    for f in subcontents:
-                        if re.search(r'\.{}$'.format(file_extension),f):
-                            full_path_to_content=os.path.join(full_path,f)
-                            contents.append(full_path_to_content)
-    return contents
-                                                    
-                      
-def samtools_sort(path_to_parent_folder,file_extension):
-    access_subfolder_contents(path_to_parent_folder,file_extension)
-    #print(contents)
-
-
-
+        # Need to specify full path to subfolder!
+        path_to_subfolders=os.path.join(path_to_parent_folder,folder)
+        if os.path.isdir(path_to_subfolders):
+            contents=os.listdir(path_to_subfolders)
+            for fle in contents:
+                if re.search(r'{}$'.format(file_extension),fle):
+                    match=os.path.join(path_to_subfolders,fle)
+                    files.append(match)
+    return files                                                      
 
 def main():
+    prefix_bam_reads('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam','Allobacillus_halotolerans_length_2700297')
+
+
+    # samtools view /external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam | sed -e 's/Enterococcus_phage_Sw5_length_143759/Test_Enterococcus_phage_Sw5_length_143759/g'
+
+    #call_snp('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
+
     #clean_species=read_combined_seqs('species_sequences.txt')
     #print(clean_species)
     #index_bam_files('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/mouse_1')
     #index_bams('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/')
-    
     #extract_species_bam('/external_HDD4/linda/unc_mouse_trial/genomes/','species_sequences.txt')
     #samtools_sort('/external_HDD4/linda/unc_mouse_trial/genomes/','.bam')
-    access_subfolder_contents('/external_HDD4/linda/unc_mouse_trial/genomes/','bam')
+    # files=access_subfolder_contents('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
+    # print(files)
+    
 
 if __name__ == '__main__':
     main()

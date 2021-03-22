@@ -40,6 +40,24 @@ def create_sample_folders(path_to_csv, path_to_output_folder=os.getcwd()):
         print(e)    
     return sample_dict 
 
+
+def access_subfolder_contents(path_to_parent_folder,file_extension):
+    '''Specify path to parent folder containing sub directories and the file extension to extract. Returns path to all files
+    with desired extension. '''
+    files=[]
+    for folder in os.listdir(path_to_parent_folder):
+        # Need to specify full path to subfolder!
+        path_to_subfolders=os.path.join(path_to_parent_folder,folder)
+        if os.path.isdir(path_to_subfolders):
+            contents=os.listdir(path_to_subfolders)
+            for fle in contents:
+                if re.search(r'{}$'.format(file_extension),fle):
+                    match=os.path.join(path_to_subfolders,fle)
+                    files.append(match)
+    return files  
+
+
+
 def gather_bam_files(path_to_csv, path_to_bam_files, output_dir=os.getcwd()):
     '''Uses column names/headers from csv file and searches inside specified folder for bam files ending
      with a given extension and moves them to their output directory '''
