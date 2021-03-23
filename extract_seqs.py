@@ -159,7 +159,6 @@ def index_bams(path_to_folders):
                         pysam.index(full_file_path)
                     except Exception as e:
                         print(e)
-
 # fetch called on bamfile without index
 
 # rb is for bam
@@ -167,11 +166,6 @@ def index_bams(path_to_folders):
 
 # samtools reheader
 # use sed
-
-def prefix_bam_reads2(path_to_bam):
-    # get file name to prefix read with
-    # prefix read name using sed
-    pass
 
 def prefix_bam_reads(path_to_bam, species_name):
     input_bam=pysam.AlignmentFile(path_to_bam,'rb')
@@ -188,12 +182,6 @@ def prefix_bam_reads(path_to_bam, species_name):
     # for read in input_bam.fetch(species_name):
     #     print(read.query_name)
 
-def add_file_prefix_to_chrom(path_to_files):
-    # for file in folder ending in bam extention
-    # file.split('_')[0] = prefix
-    # for species/chromosome in txt file:
-    # sed -e 's/species/s/folder_{species}' 
-         
     
 # Need to retain folder name / prefix folder name onto read name in bam file
 def extract_species_bam(path_to_folders, file_with_species):
@@ -275,13 +263,28 @@ def access_subfolder_contents(path_to_parent_folder,file_extension):
                     files.append(match)
     return files                                                      
 
+
+def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file):
+    files=access_subfolder_contents(path_to_parent_folder,file_extension)
+    print(files)
+    # access subfolder contents
+    # for file in folder ending in bam extention
+    # file.split('_')[0] = prefix
+    # for species/chromosome in txt file:
+    # sed -e 's/species/s/folder_{species}' 
+
+
 def main():
-    prefix_bam_reads('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam','Allobacillus_halotolerans_length_2700297')
+    add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/','bam','../species_sequences.txt')
+
+    #call_snp('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
+    #prefix_bam_reads('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam','Allobacillus_halotolerans_length_2700297')
 
 
     # samtools view /external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam | sed -e 's/Enterococcus_phage_Sw5_length_143759/Test_Enterococcus_phage_Sw5_length_143759/g'
 
     #call_snp('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
+
 
     #clean_species=read_combined_seqs('species_sequences.txt')
     #print(clean_species)
@@ -298,3 +301,5 @@ if __name__ == '__main__':
 
 
 # Check size of Imtechella_halotolerans_length_3113269 files as run time was longer to extract sequences
+
+
