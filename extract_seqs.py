@@ -261,21 +261,69 @@ def access_subfolder_contents(path_to_parent_folder,file_extension):
                 if re.search(r'{}$'.format(file_extension),fle):
                     match=os.path.join(path_to_subfolders,fle)
                     files.append(match)
+    return files
+
+def access_folder_contents(path_to_folder,file_extension):
+    '''Returns files with specified extension from inside one folder.'''
+    print(path_to_folder)
+    files=[]
+    for f in os.listdir(path_to_folder):
+        if re.search(r'{}$'.format(file_extension), f):
+            path_to_file=os.path.join(path_to_folder,f)
+            files.append(path_to_file)
     return files                                                      
 
-
 def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file):
-    files=access_subfolder_contents(path_to_parent_folder,file_extension)
-    print(files)
-    # access subfolder contents
+    handle=open(path_to_species_file,'r')
+    species=handle.readlines()
+    files=access_folder_contents(path_to_parent_folder,file_extension)
+    prefixes=[]
+    for f in files:
+        # grab file name from full path
+        fle=f.split('/')[-1]
+        prefix=fle.split('_')[0]
+        print(prefix)
+        input_bam=pysam.AlignmentFile(f,'rb')
+        print(input_bam)
+        for species_read in species:
+            species=species_read.strip()
+            print(type(species))
+            print('Adding prefix to read: ',species_read)
+            command='samtools'
+            for read in input_bam.fetch(contig=species):
+                #print(read)
+                print(read.reference_id)
+                print(input_bam.get_reference_name(read.reference_id))
+
+
+    
+    # output_bam = pysam.AlignmentFile(output_file_path, "wb", template=input_bam)
+    # print('Filtering species ',s, 'from file: ',fle)
+    # print('Outputting reads to ',output_file_path)
+    # print('\n')
+    # for read in input_bam.fetch(s):
+    #     output_bam.write(read)
+    # input_bam.close()
+    # output_bam.close()
+
+
+    # iterate through files to 
+
+
     # for file in folder ending in bam extention
     # file.split('_')[0] = prefix
     # for species/chromosome in txt file:
     # sed -e 's/species/s/folder_{species}' 
 
+def move_files_to_folder(path_to_files, path_to_output_files):
+    pass
 
 def main():
-    add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/','bam','../species_sequences.txt')
+    add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/','.sorted.bam','../species_sequences.txt')
+    
+    
+    
+    #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/','bam','../species_sequences.txt')
 
     #call_snp('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
     #prefix_bam_reads('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam','Allobacillus_halotolerans_length_2700297')
