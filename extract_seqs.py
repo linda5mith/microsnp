@@ -168,19 +168,19 @@ def index_bams(path_to_folders):
 # use sed
 
 def prefix_bam_reads(path_to_bam, species_name):
+                #MODIFYING CHROMOSOME WITH PYSAM
+            # for read in input_bam.fetch(contig=species):
+            #     #print(input_bam.get_index_statistics())
+            #     print(input_bam.get_reference_length(read.reference_id))
+            #     #(read.reference_id)
+            #     #print(read.tostring(input_bam))
+            #     #how to set read with new prefix
+            #     prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
+            #     print(read.tostring(input_bam))
     input_bam=pysam.AlignmentFile(path_to_bam,'rb')
     for read in input_bam.fetch(reference=species_name):
         print(read.reference_id)
         print(read.query_name)
-
-    # print('\n')
-    # for read in input_bam:
-    #     
-    #     print(read.reference_id)
-    #     print(read.flag)
-
-    # for read in input_bam.fetch(species_name):
-    #     print(read.query_name)
 
     
 # Need to retain folder name / prefix folder name onto read name in bam file
@@ -273,53 +273,29 @@ def access_folder_contents(path_to_folder,file_extension):
             files.append(path_to_file)
     return files                                                      
 
-def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file):
+def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
     handle=open(path_to_species_file,'r')
     species=handle.readlines()
     files=access_folder_contents(path_to_parent_folder,file_extension)
     prefixes=[]
     for f in files:
-        # grab file name from full path
         fle=f.split('/')[-1]
         prefix=fle.split('_')[0]
-        print(prefix)
-        input_bam=pysam.AlignmentFile(f,'rb')
-        print(input_bam)
+        # !!!!!! Note for future production 0_0 add regex to extract text after last occurrence of '/'
+        output_f=f.split('.')[2]
+        output_file=output_f.split('/')[-1]
         for species_read in species:
-            species=species_read.strip()
-            print(type(species))
-            print('Adding prefix to read: ',species_read)
-            command='samtools'
-            for read in input_bam.fetch(contig=species):
-                #print(read)
-                print(read.reference_id)
-                print(input_bam.get_reference_name(read.reference_id))
-
-
-    
-    # output_bam = pysam.AlignmentFile(output_file_path, "wb", template=input_bam)
-    # print('Filtering species ',s, 'from file: ',fle)
-    # print('Outputting reads to ',output_file_path)
-    # print('\n')
-    # for read in input_bam.fetch(s):
-    #     output_bam.write(read)
-    # input_bam.close()
-    # output_bam.close()
-
-
-    # iterate through files to 
-
-
-    # for file in folder ending in bam extention
-    # file.split('_')[0] = prefix
-    # for species/chromosome in txt file:
-    # sed -e 's/species/s/folder_{species}' 
+            s=species_read.strip()
+            print('Prefixing file: ',f)
+            print('Adding prefix ',prefix,' to chromosome: ',s)
+            command='samtools view '+ f+' | sed -e '+'s/'+s+'/{}'.format(prefix)+'_'+s+'/g | samtools reheader - '+f+' > '+ path_to_output_files+'/'+output_file+'_pfx.bam'
+            print('\n')
 
 def move_files_to_folder(path_to_files, path_to_output_files):
     pass
 
 def main():
-    add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/','.sorted.bam','../species_sequences.txt')
+    add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/','.sorted.bam','../species_sequences.txt','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     
     
     
@@ -332,7 +308,7 @@ def main():
     # samtools view /external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/UNC2FT29_vs_combined.sam.bam.sorted.bam | sed -e 's/Enterococcus_phage_Sw5_length_143759/Test_Enterococcus_phage_Sw5_length_143759/g'
 
     #call_snp('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
-
+ 
 
     #clean_species=read_combined_seqs('species_sequences.txt')
     #print(clean_species)
