@@ -100,7 +100,7 @@ def gather_bam_files(path_to_csv, path_to_bam_files, output_dir=os.getcwd()):
                 # if f contains the sample ID and end in file extension copy file to folder it belongs to
                 # find its corresponding folder and move it there
 
-def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file):
+def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
     '''Uses pysam module to edit a region of the chromosome column.'''
     handle=open(path_to_species_file,'r')
     species_chr=handle.readlines()
@@ -110,49 +110,18 @@ def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file
     for s in species_chr:
         species=s.strip()
         for f in files:
-            print("Full path to file:::",f)
             fle=re.sub(pattern,'',f)
             prefix=fle.split('_')[0]
-            print('\n')
-            print('FILEEE::: ',fle)
-            print('PREFIX::: ',prefix)
-            print('\n')
             output_file=fle.split('.')[0]
-            full_output_path=path_to_parent_folder+'/'+output_file+'_prf.sorted.bam'
-            print('OUTPUTTING FILE TO::::',full_output_path)
+            full_output_path=path_to_output_files+'/'+output_file+'_prf.sorted.bam'
+            print("Filtering species lines from:",fle,'located at',f)
+            print('Appending prefix: ',prefix,'to chromosome:',species)
+            print('Outputting file to:',full_output_path+'\n')
             input_bam=pysam.AlignmentFile(f)
-            for read in input_bam.fetch(reference=species):
-                print(read.reference_id)
-                print(read.query_sequence)
-                print(input_bam.get_reference_name(read.reference_id)) # Returns chromosome column
-                prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
-                with pysam.AlignmentFile(full_output_path, "w",template=input_bam) as outf:
-                    outf.write(read.query_name,read.query_sequence,prefixed_chrom,read.flag,read.reference_id,
-                    read.reference_start,read.mapping_quality,read.cigar,read.next_reference_id,read.next_reference_start,
-                    read.template_length,read.query_qualities,read.tags)
-
-                    # a = pysam.AlignedSegment()
-                    # a.query_name = read.query_name
-                    # a.query_sequence = read.query_sequence
-                    a.get_reference_name(read.reference_id) = prefixed_chrom
-                    # a.flag = read.flag
-                    # a.reference_id = read.reference_id
-                    # a.reference_start = read.reference_start
-                    # a.mapping_quality = read.mapping_quality
-                    # a.cigar = read.cigar
-                    # a.next_reference_id = read.next_reference_id
-                    # a.next_reference_start= read.next_reference_start
-                    # a.template_length=read.template_length
-                    # a.query_qualities = read.query_qualities
-                    # a.tags = read.tags
-                    outf.write(a)
-
-             # edit the sequence names for your output header
-            prefix = 'prefix'
             new_head = input_bam.header.to_dict()
             for seq in new_head['SQ']:
                 seq['SN'] = prefix + '_' + seq['SN']
-            # create output BAM with newly defined header
+            #create output BAM with newly defined header
             with pysam.AlignmentFile(full_output_path, "w", header=new_head) as outf:
                 for read in input_bam.fetch():
                     prefixed_chrom = prefix + '_' + read.reference_name
@@ -173,7 +142,7 @@ def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file
 
 
 def main():
-    prefix_chr_pysam('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline','.sorted.bam','../species_sequences.txt')
+    prefix_chr_pysam('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','../species_sequences.txt','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     #create_sample_folders('test.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline')
     #gather_bam_files('test.csv','/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2')
 
@@ -182,3 +151,4 @@ if __name__ == '__main__':
     main()
     
 
+# Those bam files which were aligned against the combined sequences file just contain an alignment score and other stuff so if I filter the reads from each 
