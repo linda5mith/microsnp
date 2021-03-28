@@ -22,6 +22,8 @@ for i in $(ls $1 | grep ".sorted.bam"); do
 # This command works for the file body! Woop 
 # samtools view UNC2FT4158_vs_combined.sam.bam | awk -F'\t' -vOFS='\t' '{ $3 = "TEST!!!=" $3 }1' | head -20
 
- 
+# -h option includes header in output
+# command='samtools view '+ f+' | sed -e '+'\'s/'+s+'/{}'.format(prefix)+'_'+s+'/g\''+ ' >> ' + path_to_output_files+'/'+output_file+'_pfx.bam'
+       
 
 

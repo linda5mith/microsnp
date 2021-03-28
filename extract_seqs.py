@@ -186,10 +186,10 @@ def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file
             output_file=fle.split('.')[0]
             input_bam=pysam.AlignmentFile(f,'rb')
             for read in input_bam.fetch(reference=species):
-            print(read.reference_id)
-            print(read.query_name)
-            prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
-            print(prefixed_chrom)
+                print(read.reference_id)
+                print(read.query_name)
+                prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
+                print(prefixed_chrom)
 
     #MODIFYING CHROMOSOME WITH PYSAM
             # for read in input_bam.fetch(contig=species):
@@ -200,7 +200,6 @@ def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file
             #     #how to set read with new prefix
             #     prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
             #     print(read.tostring(input_bam))
-    
 
     
 # Need to retain folder name / prefix folder name onto read name in bam file
@@ -293,12 +292,8 @@ def access_folder_contents(path_to_folder,file_extension):
     return files                                                      
 
 
-
-import fileinput
-
-
 def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
-    '''Adds prefix of file name to chromosome column in bam file and to '''
+    '''Adds prefix of file name to chromosome column in bam file using awk and outputs to sspecified directory. '''
     handle=open(path_to_species_file,'r')
     species_chr=handle.readlines()
     files=access_folder_contents(path_to_parent_folder,file_extension)
@@ -307,35 +302,29 @@ def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_spec
     for f in files:
         fle=re.sub(pattern,'',f)
         prefix=fle.split('_')[0]
-        print('\n')
-        print('FILEEE::: ',fle)
-        print('PREFIX::: ',prefix)
-        print('\n')
+        print('Adding prefix',prefix,'to chromosome column of',fle)
         output_file=fle.split('.')[0]
-
-        # Instead of iterating through all the species names is it possible to just 
-        # add file prefix to chromosome column
-        #samtools view UNC2FT4158_vs_combined.sam.bam | cut -f 3 | sed -e "s/a/
-
-        for species in species_chr:
-            s=species.strip()
-            print('Prefixing file: ',fle)
-            print('Adding prefix ',prefix,' to chromosome: ',s)
-            print('\n')
-            print('OUTPUT FILE::::',output_file)
-            # -h option includes header in output
-            command='samtools view '+ f+' | sed -e '+'\'s/'+s+'/{}'.format(prefix)+'_'+s+'/g\''+ ' >> ' + path_to_output_files+'/'+output_file+'_pfx.bam'
-            print(command)
+        output_file_path=os.path.join(path_to_output_files,output_file+'_pfx.sorted.bam')
+        print('Outputting file to:',output_file_path)
+        if not os.path.exists(output_file_path):
+            command= 'samtools view '+ f+' | awk -F\'\\t\' -vOFS=\'\\t\' \'{ $3 = \"'+prefix+'\" $3 }1\' > '+output_file_path
+            print('Executing command ',command+'\n')
             subprocess.call(command,shell=True)
-            # logic is wrong, command is only running once on original file when I need state of file to be saved and then run the command again on it each round
-
-
+            input_bam=pysam.AlignmentFile(f)
+            # Adding new header to awk modified bam file
+            new_head = input_bam.header.to_dict()
+            for seq in new_head['SQ']:
+                seq['SN'] = prefix + '_' + seq['SN']
+            with pysam.AlignmentFile(output_file_path, "w", header=new_head) as outf:
+                for read in input_bam.fetch():
+                    outf.write(read)
+                
 
 def move_files_to_folder(path_to_files, path_to_output_files):
     pass
 
 def main():
-    prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file):
+    add_file_prefix_to_chrom('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline','sorted.bam','../species_sequences.txt','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/awk_test_prefix')
 
 
 
