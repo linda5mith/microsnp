@@ -25,7 +25,7 @@ def create_sample_folders(path_to_csv, path_to_output_folder=os.getcwd()):
             else:
                 os.mkdir(parent_folder)
                 print('\n')
-                print(f'Creating folder: {parent_folder}')
+                print(f"Creating folder {parent_folder}")
                 subfolders=sample_dict.get(item)
                 for f in subfolders:
                     try:  
@@ -95,10 +95,8 @@ def gather_bam_files(path_to_csv, path_to_bam_files, output_dir=os.getcwd()):
     #     samples=(df[specimen].values)
     #     for s in samples:
 
-def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
+def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_output_files):
     '''Adds prefix of file name to chromosome column in bam file using awk and outputs to sspecified directory. '''
-    handle=open(path_to_species_file,'r')
-    species_chr=handle.readlines()
     files=access_folder_contents(path_to_parent_folder,file_extension)
     # regex to extract file name (matches everything before last occurrence of '/')
     pattern=r'.*\/'
@@ -187,62 +185,54 @@ def gather_files_by_name(path_to_bam_files,file_extension,path_to_csv,path_to_ou
         f=re.sub(pattern,'',fle)
         for key in keys:
             samples=data_dict.get(key)
-            for sample in samples:
-                if sample in fle:
-                    print(f'SAMPLE:::{sample} found in {fle}\n')
-                    output_folder=os.path.join(path_to_output_dir,key)
-                    if not os.path.exists(output_folder):
-                        os.mkdir(output_folder)
-                    else:
-                        full_path_to_file=os.path.join(path_to_bam_files,fle)
-                        full_path_to_output_file=os.path.join(path_to_bam_files,key,fle)
-                        #print(full_path_to_output_file)
-                        if not os.path.exists(full_path_to_output_file):
-                            print(f'Moving file {f} to {full_path_to_output_file}\n')
-                            shutil.move(full_path_to_file, os.path.join(path_to_output_dir,key))
-                        else:
-                            print(f'{full_path_to_output_file} already exists in {os.path.join(path_to_output_dir,key)}\n')
+            full_path_input_file=os.path.join(path_to_bam_files,fle)
+            full_path_output_file=os.path.join(path_to_output_dir,key,fle)
+            # If the file is present in the directory
+            if os.path.exists(full_path_input_file):
+            #print(f'FULL path the input file {full_path_input_file}')
+            #print(f'FULL path the output file {full_path_output_file}')
+                try:
+                    for sample in samples:
+                        if sample in fle:
+                            print(f'SAMPLE:::{sample} found in {fle}\n')
+                            output_folder=os.path.join(path_to_output_dir,key)
+                            if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
+                                os.mkdir(output_folder)
+                                print(f'Moving file {f} to {full_path_output_file}\n')
+                                shutil.move(full_path_input_file, output_folder)
+                            elif not os.path.exists(full_path_output_file):
+                                print(f'Moving file {f} to {full_path_output_file}\n')
+                                shutil.move(full_path_input_file, output_folder)
+                            else:
+                                print(f'File {f} already exists in {full_path_output_file}')
+                                # os.remove(full_path_input_file)
+                except Exception as e:
+                    print(e)
                                                                    
 
 def samtools_merge(path_to_bam_files, file_extension, path_to_csv, output_dir):
     '''Reads csv containing sample names (values) by subject (column). Looks for sam/bam files with the sample name in the file name and 
     merges these bam files into one large bam file.'''
-    files=access_folder_contents(path_to_bam_files,file_extension)
-    # base filename
-    pattern=r'.*\/'
-    df=pd.read_csv(path_to_csv)
-    subjects=df.columns
-    d=df.to_dict('series')
-    for subject in subjects:
-        values=d.get(subject)
-        for v in values:
-            if pd.notna(v):
-                for f in files:
-                    fle=re.sub(pattern,'',f)
-                    print('PRINGINT:::',fle)
-                    # If column value is a substring of the filename
-                    if v in fle:
-                        print(f'{v} IS IN {fle}')
-                        # if subject folder does not exist in output path make one
-                        print(f'OUTPUT DIR: {os.path.join(output_dir,subject)}')
-                        # else move the files there 
-                        #output_file_path=os.path.join(output_dir,subject,fle)
-                        #print(output_file_path)
-                    
-                    # if v in f:
-                    #     print('\n')
-                        #if not os.path.exists(output_file_path):
-                            #print('Moving file '+ fle +' to '+ output_file_path)
-                            #shutil.move(f, os.path.join(output_dir,subject,fle))
-    # Then merge all files with file extension
-    # for folder in output folder
+    for folder in os.listdir(path_to_bam_files):
+        if os.path.isdir(os.path.join(path_to_bam_files,folder)):
+            path=os.path.join()
 
+            full_folder_path=os.path.join(path_to_bam_files,folder)
+            print(f'Accessing files from {full_folder_path}\n')
+            files=access_folder_contents(full_folder_path,file_extension)
+            # Merge all files inside folder with file_extension
 
+            #command = 'samtools merge '+full_folder_path+'_merged.bam' +  *'+file_extension
+            #print('Executing ',command)
+            #subprocess.call([command],shell=True)
+            #print('Finished ', command)
+        
+       
 def main():
+    #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     gather_files_by_name('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
-    #samtools_merge('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
+    #samtools_merge('/external_HDD4/linda/unc_mouse_trial/genomes/','_pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
     
-    #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','../species_sequences.txt','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     #create_sample_folders('test.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline')
     #gather_bam_files('test.csv','/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2')
 
