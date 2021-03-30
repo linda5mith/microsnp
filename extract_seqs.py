@@ -60,7 +60,7 @@ def move_bam_files(dict_keys):
 # samtools merge /external_HDD4/linda/unc_mouse_trial/bacterial_genomes/mouse_11/mouse_1/mouse_1_merged.bam input1.bam input2.bam
 # samtools merge mouse_1_merged.bam *.bam
 
-def samtools_merge(dict_keys):
+def samtools_merge(dict_keys,path_to_bam_files):
     mouse_path = os.getcwd()
     for item in dict_keys:
         path=os.path.join(mouse_path,item)
@@ -79,7 +79,6 @@ def samtools_merge(dict_keys):
     
 
 # Next step extract specific species from merged file to make a new file for it
-# Feed into SNP 
 
 def read_combined_seqs(path_to_file):
     combined_seqs = open(path_to_file,'r')
@@ -159,13 +158,10 @@ def index_bams(path_to_folders):
                         pysam.index(full_file_path)
                     except Exception as e:
                         print(e)
-# fetch called on bamfile without index
 
+# fetch called on bamfile without index
 # rb is for bam
 # r is for sam
-
-# samtools reheader
-# use sed
 
 def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file):
     '''Uses pysam module to edit a region of the chromosome.'''
@@ -190,16 +186,6 @@ def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file
                 print(read.query_name)
                 prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
                 print(prefixed_chrom)
-
-    #MODIFYING CHROMOSOME WITH PYSAM
-            # for read in input_bam.fetch(contig=species):
-            #     #print(input_bam.get_index_statistics())
-            #     print(input_bam.get_reference_length(read.reference_id))
-            #     #(read.reference_id)
-            #     #print(read.tostring(input_bam))
-            #     #how to set read with new prefix
-            #     prefixed_chrom=prefix + '_' +input_bam.get_reference_name(read.reference_id)
-            #     print(read.tostring(input_bam))
 
     
 # Need to retain folder name / prefix folder name onto read name in bam file
@@ -244,6 +230,8 @@ def extract_species_bam(path_to_folders, file_with_species):
 def call_snp(path_to_parent_folder,file_extension):
     '''Finds files with specified name/extension and commences samtools snp calling pipeline on them'''
     files=access_subfolder_contents(path_to_parent_folder,file_extension)
+    # Add prefix to files
+
     # SNP pipeline steps:
     # 1. Samtools sort
     samtools_sort(files)
@@ -318,6 +306,8 @@ def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_spec
             with pysam.AlignmentFile(output_file_path, "w", header=new_head) as outf:
                 for read in input_bam.fetch():
                     outf.write(read)
+            input_bam.close()
+            outf.close()
                 
 
 def move_files_to_folder(path_to_files, path_to_output_files):
