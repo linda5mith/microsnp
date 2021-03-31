@@ -26,6 +26,7 @@ mouse_IDS = {
     'mouse_15':'UNC2FT132,UNC2FT216,UNC2FT4152,UNC2FT55197,UNC2FT7547A,UNC2lu75'
 }
 
+
 # Create folder for individual mouse bam files
 def create_folders(mouse_IDS):
     dict_keys=mouse_IDS.keys()

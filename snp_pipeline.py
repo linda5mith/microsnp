@@ -84,43 +84,6 @@ def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_spec
             print('\n')
 
 
-def gather_bam_files(path_to_csv, path_to_bam_files, output_dir=os.getcwd()):
-    '''Uses column names/headers from csv file and searches inside specified folder for bam files ending
-     with a given extension and moves them to their output directory '''
-
-    df=pd.read_csv(path_to_csv)
-    bam_files=os.listdir(path_to_bam_files)
-    print(type(bam_files))
-    # for specimen in df.columns:
-    #     samples=(df[specimen].values)
-    #     for s in samples:
-
-def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_output_files):
-    '''Adds prefix of file name to chromosome column in bam file using awk and outputs to sspecified directory. '''
-    files=access_folder_contents(path_to_parent_folder,file_extension)
-    # regex to extract file name (matches everything before last occurrence of '/')
-    pattern=r'.*\/'
-    for f in files:
-        fle=re.sub(pattern,'',f)
-        prefix=fle.split('_')[0]
-        print(f'Adding prefix {prefix} to chromosome column of {fle}')
-        output_file=fle.split('.')[0]
-        output_file_path=os.path.join(path_to_output_files,output_file+'_pfx.sorted.bam')
-        print(f'Outputting file to:{output_file_path}')
-        if not os.path.exists(output_file_path):
-            command= 'samtools view '+ f+' | awk -F\'\\t\' -vOFS=\'\\t\' \'{ $3 = \"'+prefix+'\" $3 }1\' > '+output_file_path
-            print(f'Executing command {command}\n')
-            subprocess.call(command,shell=True)
-            input_bam=pysam.AlignmentFile(f)
-            # Adding new header to awk modified bam file
-            new_head = input_bam.header.to_dict()
-            for seq in new_head['SQ']:
-                seq['SN'] = prefix + '_' + seq['SN']
-            with pysam.AlignmentFile(output_file_path, "w", header=new_head) as outf:
-                for read in input_bam.fetch():
-                    outf.write(read)
-
-
 def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
     '''Deprecated for inefficiency: use add_file_prefix_to_chrom
     Uses pysam module to edit a region of the chromosome column. path_to_parent_folder is the path to folder containing the bam/sam files,
@@ -165,6 +128,46 @@ def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file
                     outf.write(a)
 
 
+def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_output_files):
+    '''Adds prefix of file name to chromosome column in bam file using awk and outputs to sspecified directory. '''
+    files=access_folder_contents(path_to_parent_folder,file_extension)
+    # regex to extract file name (matches everything before last occurrence of '/')
+    mouse_11=["UNC2FT128","UNC2FT212","UNC2FT4148","UNC2FT55193","UNC2FT7543A","UNC2lu52","UNC2lu53","UNC2lu54"]
+    pattern=r'.*\/'
+    for f in files:
+        fle=re.sub(pattern,'',f)
+        prefix=fle.split('_')[0]
+        if prefix in mouse_11:
+            print(f'Adding prefix {prefix} to chromosome column of {fle}')
+            output_file=fle.split('.')[0]
+            output_file_path=os.path.join(path_to_output_files,output_file+'_pfx.sorted.bam')
+            print(f'Outputting file to:{output_file_path}')
+            if not os.path.exists(output_file_path):
+                command= 'samtools view '+ f+' | awk -F\'\\t\' -vOFS=\'\\t\' \'{ $3 = \"'+prefix+'\" $3 }1\' > '+output_file_path
+                print(f'Executing command {command}\n')
+                subprocess.call(command,shell=True)
+                input_bam=pysam.AlignmentFile(f)
+                # Adding new header to awk modified bam file
+                new_head = input_bam.header.to_dict()
+                for seq in new_head['SQ']:
+                    seq['SN'] = prefix + '_' + seq['SN']
+                with pysam.AlignmentFile(output_file_path, "w", header=new_head) as outf:
+                    for read in input_bam.fetch():
+                        outf.write(read)
+
+
+def get_file_basename(path_to_file):
+    '''Returns filename from a full path e.g. /external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/mouse_1_merged.bam returns mouse_1_merged.bam'''
+    pattern=r'.*\/'
+    f=re.sub(pattern,'',path_to_file)
+    return f
+
+def get_file_dir(path_to_file):
+    '''Returns directory from a full path e.g. /external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/mouse_1_merged.bam returns /external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/'''
+    f=os.path.dirname(os.path.realpath(path_to_file))
+    return f
+
+
 def gather_files_by_name(path_to_bam_files,file_extension,path_to_csv,path_to_output_dir):
     '''Using a csv file for reference, finds all files corresponding to sample name and moves them to their corresponding parent folder.
     If a folder for the subject does not exist it will be created in specified output directory.'''
@@ -194,7 +197,7 @@ def gather_files_by_name(path_to_bam_files,file_extension,path_to_csv,path_to_ou
                 try:
                     for sample in samples:
                         if sample in fle:
-                            print(f'SAMPLE:::{sample} found in {fle}\n')
+                            print(f'Sample name: {sample} found in {fle}')
                             output_folder=os.path.join(path_to_output_dir,key)
                             if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
                                 os.mkdir(output_folder)
@@ -210,31 +213,85 @@ def gather_files_by_name(path_to_bam_files,file_extension,path_to_csv,path_to_ou
                     print(e)
                                                                    
 
-def samtools_merge(path_to_bam_files, file_extension, path_to_csv, output_dir):
+def samtools_merge(path_to_bam_files, file_extension, output_dir):
     '''Reads csv containing sample names (values) by subject (column). Looks for sam/bam files with the sample name in the file name and 
     merges these bam files into one large bam file.'''
     for folder in os.listdir(path_to_bam_files):
-        if os.path.isdir(os.path.join(path_to_bam_files,folder)):
-            path=os.path.join()
-
+        if os.path.isdir(os.path.join(path_to_bam_files,folder)) and folder =='mouse_11':
             full_folder_path=os.path.join(path_to_bam_files,folder)
             print(f'Accessing files from {full_folder_path}\n')
             files=access_folder_contents(full_folder_path,file_extension)
             # Merge all files inside folder with file_extension
-
-            #command = 'samtools merge '+full_folder_path+'_merged.bam' +  *'+file_extension
-            #print('Executing ',command)
-            #subprocess.call([command],shell=True)
-            #print('Finished ', command)
-        
+            #full_output_path
+            command = 'samtools merge '+full_folder_path+'_merged.bam ' +  full_folder_path +'/*'+file_extension 
+            try:
+                print('Executing ',command)
+                subprocess.call([command],shell=True)
+            except Exception as e:
+                print(e)
        
+def samtools_idx(path_to_parent_folder,file_extension):
+    '''Indexes all files with specified extension within subfolders of parent folder. 
+    To open a file using pysam the file must first be indexed.'''
+    files=access_subfolder_contents(path_to_parent_folder,file_extension)
+    for f in files:
+        output_file=get_file_basename(f)
+        output_f=''.join(output_file.split('.')[0]+'_idx.bam')
+        output_dir=get_file_dir(f)
+        output_path=os.path.join(output_dir,output_f)
+        command = f'samtools index {f}' # how to specify output dir ???
+        print(f'Executing: {command}\n')
+        try:
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+
+def filter_bam_by_species(path_to_parent_folder, file_extension, file_with_species):
+    '''Filters or extracts lines pertaining to a given species input txt file and outputs them to a new bam file. 
+    Future work is to add parameters to specifiy path_to_output files to'''
+    files=access_subfolder_contents(path_to_parent_folder,file_extension)
+    print(files)
+    handle=open(file_with_species,'r')
+    species=handle.readlines()
+    for f in files:
+        try:
+            input_bam=pysam.AlignmentFile(f)
+            path_to_species_folder=get_file_dir(f)
+            if not os.path.exists(path_to_species_folder):
+                os.mkdir(path_to_species_folder)
+            elif os.path.exists(path_to_species_folder):
+                for s in species:
+                    s=s.split('_')
+                    if s:
+                        # Shortening folder name by taking first 3 field identifiers e.g. Enterococcus_phage_A2_length_149431 -> Enterococcus_phage_A2
+                        species_folder = '_'.join([s[0],s[1],s[2]])
+                        # Naming convention of species file will have parent folder prefix e.g. mouse_1_Enterococcus_phage_A2_merged.bam
+                        # get parent folder of prefixed file
+                        parent_folder=get_file_basename(path_to_species_folder)
+                        print(parent_folder)
+        except Exception as e:
+            print(e)
+
+                    # output_file_path = os.path.join(path_to_species_folder,)
+                    # with pysam.AlignmentFile(output_file_path, "w", header=new_head) as outf:
+                    #     for read in input_bam.fetch():
+                    #         outf.write(read)
+    # for f in files:
+    #     
+   
+
+
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
-    gather_files_by_name('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
-    #samtools_merge('/external_HDD4/linda/unc_mouse_trial/genomes/','_pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
-    
-    #create_sample_folders('test.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline')
-    #gather_bam_files('test.csv','/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2')
+    #gather_files_by_name('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
+    #samtools_merge('/external_HDD4/linda/unc_mouse_trial/genomes/','_pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes')
+
+    samtools_idx('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
+
+    # Next filter species from merged file and place into corresponding species folder
+    #filter_bam_by_species('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam.bai','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+
+  
 
 
 if __name__ == '__main__':
