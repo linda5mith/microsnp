@@ -256,10 +256,10 @@ def reheader_file(path_to_file):
     output= subprocess.check_output([command],
             stderr=subprocess.STDOUT,
             shell=True)
-    print(output.split('\n'))
+    output_splt=output.splitlines()
+    output_decoded=[word.decode('utf-8') for word in output_splt] #decodes byte object to string
+    print(output_decoded)
 
-    #command = samtools view mouse_2_merged.bam | awk '{print $3}' | sort | uniq
-    # save output of subprocess call to list
 
     # for seq in new_head['SQ']:
     #     seq['SN'] = prefix + '_' + seq['SN']
