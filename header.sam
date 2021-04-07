@@ -1,0 +1,17 @@
+@HD	VN:1.0	SO:coordinate
+@SQ	SN:Enterococcus_phage_A2_length_149431	LN:149431
+@SQ	SN:Enterococcus_phage_Sw5_length_143759	LN:143759
+@SQ	SN:Escherichia_phage_A4_length_355528	LN:355528
+@SQ	SN:Escherichia_phage_A51.2_length_137300	LN:137300
+@SQ	SN:Escherichia_phage_i29_length_137044	LN:137044
+@SQ	SN:Escherichia_phage_W115_length_163997	LN:163997
+@SQ	SN:Lactococcus_phage_Q33_length_31106	LN:31106
+@SQ	SN:Imtechella_halotolerans_length_3113269	LN:3113269
+@SQ	SN:Allobacillus_halotolerans_length_2700297	LN:2700297
+@SQ	SN:NC_009614.1_Bacteroides_vulgatus_ATCC_8482_complete_sequence_length_5163189	LN:5163189
+@SQ	SN:NZ_LR134369.1_Bifidobacterium_longum_strain_NCTC11818_chromosome_1_length_2385160	LN:2385160
+@SQ	SN:NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625	LN:2739625
+@SQ	SN:NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108	LN:4773108
+@SQ	SN:NZ_CP022479.1_Faecalibacterium_prausnitzii_strain_A2165_chromosome_complete_genome_length_3110044	LN:3110044
+@SQ	SN:NC_006377.1_Lactobacillus_plantarum_WCFS1_complete_genome_length_3348943	LN:3348943
+@PG	PN:bowtie2	ID:bowtie2	VN:2.3.4.1	CL:"/usr/bin/bowtie2-align-s --wrapper basic-0 -p 20 -x /external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2/Combined --passthrough -1 UNC2FT197/UNC2FT197_QFilt_R1.fastq.gz -2 UNC2FT197/UNC2FT197_QFilt_R2.fastq.gz"
