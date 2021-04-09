@@ -235,37 +235,108 @@ def samtools_merge(path_to_bam_files, file_extension, output_dir, template_heade
 def samtools_idx(path_to_parent_folder,file_extension):
     '''Indexes all files with specified extension within subfolders of parent folder. 
     To open a file using pysam the file must first be indexed.'''
-    files=access_subfolder_contents(path_to_parent_folder,file_extension)
-    files=sorted(files)
-    for f in files:
-        command = f'samtools index {f}' # no need to specify output directory, samtools creates index file in same directory as input file
-        print(f'Executing: {command}\n')
-        try:
-            subprocess.call([command],shell=True)
-        except Exception as e:
-            print(e)
+    for root, dirs, files in os.walk(path_to_parent_folder):
+        for f in files:
+            if f.endswith(file_extension):
+                path_to_file=os.path.join(root, f)
+                command = f'samtools index {path_to_file}' # no need to specify output directory, samtools creates index file in same directory as input file
+                print(f'Executing: {command}\n')
+                try:
+                    subprocess.call([command],shell=True)
+                except Exception as e:
+                    print(e)
 
 
-def reheader_file(path_to_file):
-    '''Iterates through bam input file and finds unique sequence names to place in new header.'''
-    input_bam=pysam.AlignmentFile(path_to_file)
-    header = input_bam.header.to_dict()
+def os_walk(path_to_parent_folder,file_extension):
+    '''Python implementation unix find command in that it recursively searches all folders and subfolders in given path to find file
+    by name/extension. Efficient for returning small numbers of files. In case of large number of files use os_find'''
+    files=[]
+    for root, dirs, files in os.walk(path_to_parent_folder):
+        for f in files:
+            if f.endswith(file_extension):
+                path_to_file=os.path.join(root, f)
+                files.append(path_to_file)
+    return files
 
-    command= f'samtools view {path_to_file} | awk \'{{print $3}}\' | sort | uniq'
-    print(f'Executing {command}')
+def os_find(path_to_parent_folder,file_extension):
+    '''Uses linux find command inside python to return any files inside path with given file_extension.
+    Returns list of full paths to files.'''
+    command=f'find {path_to_parent_folder} -name \'*{file_extension}\''
+    files=save_process_output(command)
+    return files
+
+def save_process_output(command):
+    '''Saves the ouput of running a linux command inside python.'''
+    print(f'Executing: {command}')
     output= subprocess.check_output([command],
             stderr=subprocess.STDOUT,
             shell=True)
     output_splt=output.splitlines()
     output_decoded=[word.decode('utf-8') for word in output_splt] #decodes byte object to string
-    print(output_decoded)
+    return output_decoded
 
+def remove_header(path_to_files):
+    input_bam = pysam.AlignmentFile(path_to_files,'rb')
+    hdr = input_bam.header.copy() 
+    print(hdr)
+    hdr.formats.clear_header()
+    print(hdr)
+    pass
 
-    # for seq in new_head['SQ']:
-    #     seq['SN'] = prefix + '_' + seq['SN']
-    # #create output BAM with newly defined header
-    # with pysam.AlignmentFile(full_output_path, "w", header=new_head) as outf:
-   
+def reheader_file(path_to_files,file_extension):
+    '''Iterates through bam input file and finds the unique sequence names to create a new header from.
+    Merging of files creates a composite header from all the files so after filtering by species it is needed to find which sequence names are contained in the 
+    new filtered file and then recreate a new correct header.'''
+    # Find all files in path with file_extension
+
+    files=os_find(path_to_files,file_extension)
+    print(f'Found all files with {file_extension} extension in path.')
+    
+    for f in files:
+        print('----------------------------------------------------------------')
+        input_bam=pysam.AlignmentFile(f,'rb') #read bam
+        old_header = input_bam.header.to_dict()
+        command= f'samtools view {f} | awk \'{{print $3}}\' | sort | uniq'
+        unique_seq_names=save_process_output(command)
+        print(f'Found unique sequence names:{unique_seq_names}\n in {f}')
+        print('\n')
+    
+        new_header={}
+        new_header['HD']=old_header['HD']
+        key = "SQ"
+        new_header.setdefault(key, [])
+        for seq in old_header['SQ']:
+            if seq.get('SN') in unique_seq_names:
+                new_header[key].append(seq)
+
+        new_header['PG']=old_header['PG']
+        # # Will need to test if pysam overwrites original file 
+        # # Check length of file before and after as test
+        # # samtools view mouse_1_Allobacillus_halotolerans_length_merged.bam | wc -l   1980509
+        # print(new_header)
+
+        # # Checking BAM file
+        command = f'samtools quickcheck -qvvv {f}'
+        try:
+            output=save_process_output(command)
+            print(output)
+        except Exception as e:
+            print(e)
+
+        # Create output BAM with newly defined header / overwrite existing bam file with new header
+        # Try to create a new filename and output it to that
+        filename=get_file_basename(f)
+        path_to_file=get_file_dir(f)
+        new_filename=filename.split('.')[0]+'_rh.bam'
+        path_to_newfile=os.path.join(path_to_file,new_filename)
+        print(path_to_newfile)
+        try:
+            with pysam.AlignmentFile(f, "wb", header=new_header) as outfile:
+                for read in input_bam.fetch():
+                    outfile.write(read)
+        except Exception as e:
+            print(e) 
+
 
 def filter_bam_by_species(path_to_parent_folder, file_extension, file_with_species):
     '''Filters or extracts lines in a bam file pertaining to a given species from an input txt file and outputs them to a new bam file. '''
@@ -310,10 +381,18 @@ def main():
     #samtools_merge('/external_HDD4/linda/unc_mouse_trial/genomes/','_pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes','/external_HDD4/linda/unc_mouse_trial/genomes/dev/header.sam')
     #samtools_idx('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
 
-    reheader_file('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/mouse_1_merged.bam')
-
     # Next filter species from merged file and place into corresponding species folder
     #filter_bam_by_species('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+
+    #Index the newly filtered files 
+    #samtools_idx('/external_HDD4/linda/unc_mouse_trial/genomes/','merged.bam')
+
+    # Next step: understand is it necessary to reheader file? Do a test on some files in a different folder using pysam reheader 
+    #remove_header('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/mouse_1/Allobacillus_halotolerans_length/mouse_1_Allobacillus_halotolerans_length_merged.bam')
+
+    # Check whats different between headers
+
+    reheader_file('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/Allobacillus_halotolerans_length','merged.bam')
 
     # SNP pipeline
     #reheader_file('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/UNC2FT4158_vs_combined.sorted.bam.bai')
