@@ -246,7 +246,6 @@ def samtools_idx(path_to_parent_folder,file_extension):
                 except Exception as e:
                     print(e)
 
-
 def os_walk(path_to_parent_folder,file_extension):
     '''Python implementation unix find command in that it recursively searches all folders and subfolders in given path to find file
     by name/extension. Efficient for returning small numbers of files. In case of large number of files use os_find'''
@@ -263,6 +262,7 @@ def os_find(path_to_parent_folder,file_extension):
     Returns list of full paths to files.'''
     command=f'find {path_to_parent_folder} -name \'*{file_extension}\''
     files=save_process_output(command)
+
     return files
 
 def save_process_output(command):
@@ -374,6 +374,73 @@ def filter_bam_by_species(path_to_parent_folder, file_extension, file_with_speci
                                     output_bam.write(read)
         except Exception as e: 
             print(e)
+    
+
+def reheader_file(path_to_parent_folder, file_extension):
+    '''Heheader files with new header'''
+    files=access_subfolder_contents(path_to_parent_folder,file_extension)
+    files=sorted(files)
+    for f in files:
+        input_bam=pysam.AlignmentFile(f,'r')
+        old_header=input_bam.header.to_dict()
+        #print(old_header)
+        #print('\n')
+        #print(old_header.keys())
+        command= f'samtools view {f} | awk \'{{print $3}}\' | sort | uniq'
+        unique_seq_names=save_process_output(command)
+        print(f'Found unique sequence names:{unique_seq_names}\n in {f}\n')
+        new_header={}
+        new_header['HD']=old_header['HD']
+        key='SQ'
+        new_header.setdefault(key, [])
+        for item in old_header['SQ']:
+            for seq_name in unique_seq_names:
+                if seq_name in item.values():
+                    new_header[key].append(item) 
+                    #print(seq_name)
+        #new_header['PG']=old_header['PG']
+        key_PG='PG'
+        new_header.setdefault(key_PG, [])
+        for item in old_header['PG']:
+            # If ID doesn't have a unique identifier e.g. just exists as 'bowtie' as opposed to 'bowtie2-1F64DE3B' don't include it in new header PG
+            if '-' in item['ID']:
+                new_header[key_PG].append(item)
+            else:
+                pass
+                #print(f'Removed {item} from header')
+        print(f'Adding new header:\n {new_header}\n')
+        # Create header in temp file
+        outfolder_path=get_file_dir(f)
+        output_bam = pysam.AlignmentFile(outfolder_path+'/'+'newheader.sam', mode='w', header=new_header)
+        output_bam.close()
+        # Match all text occurring before last full stop
+        pattern='.*(?=\.)'
+        match=(re.search(pattern, f))
+        if match:
+            output_file=(match[0]+'_reheader.bam')
+            print(output_file)
+            #samtools reheader newheader.sam input_file.bam > reheadered_file.bam
+            command=f'samtools reheader {outfolder_path}/newheader.sam {f} > {os.path.join(outfolder_path,output_file)}'
+            subprocess.call([command],shell=True)
+
+    
+def samtools_sort(path_to_parent_folder, file_extension):
+    '''Searches inside path_to_parent_folder for folders and subfolders with specified file_extension
+    and sorts them using samtools.'''
+    files=access_subfolder_contents(path_to_parent_folder,file_extension)
+    files=sorted(files)
+    print(files)
+    # Match all text occurring before last full stop
+    # pattern='.*(?=\.)'
+    # for f in files:
+    #     match=(re.search(pattern, f))
+    #     if match:
+    #         output_file=(match[0]+'_sorted.bam')
+    #         print(output_file)
+    #         command = f'samtools sort {f} -o {output_file}'
+    #         print('Execting:',command)
+    #         subprocess.call([command],shell=True)
+
 
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
@@ -389,13 +456,30 @@ def main():
 
     # Next step: understand is it necessary to reheader file? Do a test on some files in a different folder using pysam reheader 
     #remove_header('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/mouse_1/Allobacillus_halotolerans_length/mouse_1_Allobacillus_halotolerans_length_merged.bam')
+    # Header of the input file needs to be changed first or segmentation fault will occur
+    # You can't just pass new_header into outfile: https://github.com/pysam-developers/pysam/issues/716
 
-    # Check whats different between headers
-
-    reheader_file('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/Allobacillus_halotolerans_length','merged.bam')
+    reheader_file('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/mouse_1/','merged.bam')
 
     # SNP pipeline
-    #reheader_file('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/UNC2FT4158_vs_combined.sorted.bam.bai')
+    # 1. Sort all the files
+    #samtools_sort('/external_HDD4/linda/unc_mouse_trial/genomes','merged.bam')
+
+    # Today - reheader files, sort all files
+
+    # 2. Index all the files again
+    # 3. samtools mpileup
+
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
