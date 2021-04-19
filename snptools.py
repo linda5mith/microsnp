@@ -182,12 +182,18 @@ def gather_files_by_name(path_to_bam_files, file_extension, path_to_csv, path_to
                 data_dict[key].append(value)
     print(f'CSV sample data converted to: {data_dict}\n')
     keys=data_dict.keys()
-    for fle in os.listdir(path_to_bam_files):
+    for fle in files:
         f=re.sub(pattern,'',fle)
         for key in keys:
             samples=data_dict.get(key)
             full_path_input_file=os.path.join(path_to_bam_files,fle)
-            full_path_output_file=os.path.join(path_to_output_dir,key,fle)
+            print('OUTPUT DIR',path_to_output_dir)
+            full_path_output_file=f'{path_to_output_dir}/{key}/{f}'
+
+            
+            
+            #full_path_output_file=os.path.join(path_to_output_dir,key,fle)
+            print('FULL output path',full_path_output_file)
             # If the file is present in the directory
             if os.path.exists(full_path_input_file):
                 try:
@@ -195,16 +201,19 @@ def gather_files_by_name(path_to_bam_files, file_extension, path_to_csv, path_to
                         if sample in fle:
                             print(f'Sample name: {sample} found in {fle}')
                             output_folder=os.path.join(path_to_output_dir,key)
-                            if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
-                                os.mkdir(output_folder)
-                                print(f'Moving file {f} to {full_path_output_file}\n')
-                                shutil.move(full_path_input_file, output_folder)
-                            elif not os.path.exists(full_path_output_file):
-                                print(f'Moving file {f} to {full_path_output_file}\n')
-                                shutil.move(full_path_input_file, output_folder)
-                            else:
-                                print(f'File {f} already exists in {full_path_output_file}\n')
-                                os.remove(full_path_input_file)
+                            print('FOLDER',output_folder)
+                            print('FILE',full_path_output_file)
+                            print('\n')
+                            # if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
+                            #     os.mkdir(output_folder)
+                            #     print(f'Moving file {f} to {full_path_output_file}\n')
+                            #     shutil.copy(full_path_input_file, output_folder)
+                            # elif not os.path.exists(full_path_output_file):
+                            #     print(f'Moving file {f} to {full_path_output_file}\n')
+                            #     shutil.copy(full_path_input_file, output_folder)
+                            # else:
+                            #     print(f'File {f} already exists in {full_path_output_file}\n')
+                            #     os.remove(full_path_input_file)
                 except Exception as e:
                     print(e)
                                                                    
@@ -398,16 +407,16 @@ def reheader_file(path_to_parent_folder, file_extension):
                 if seq_name in item.values():
                     new_header[key].append(item) 
                     #print(seq_name)
-        #new_header['PG']=old_header['PG']
-        key_PG='PG'
-        new_header.setdefault(key_PG, [])
-        for item in old_header['PG']:
-            # If ID doesn't have a unique identifier e.g. just exists as 'bowtie' as opposed to 'bowtie2-1F64DE3B' don't include it in new header PG
-            if '-' in item['ID']:
-                new_header[key_PG].append(item)
-            else:
-                pass
-                #print(f'Removed {item} from header')
+        new_header['PG']=old_header['PG']
+        # key_PG='PG'
+        # new_header.setdefault(key_PG, [])
+        # for item in old_header['PG']:
+        #     # If ID doesn't have a unique identifier e.g. just exists as 'bowtie' as opposed to 'bowtie2-1F64DE3B' don't include it in new header PG
+        #     if '-' in item['ID']:
+        #         new_header[key_PG].append(item)
+        #     else:
+        #         pass
+        #         #print(f'Removed {item} from header')
         print(f'Adding new header:\n {new_header}\n')
         # Create header in temp file
         outfolder_path=get_file_dir(f)
@@ -459,7 +468,7 @@ def main():
     # Header of the input file needs to be changed first or segmentation fault will occur
     # You can't just pass new_header into outfile: https://github.com/pysam-developers/pysam/issues/716
 
-    reheader_file('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/mouse_1/','merged.bam')
+    #reheader_file('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/mouse_1/','merged.bam')
 
     # SNP pipeline
     # 1. Sort all the files
@@ -469,6 +478,11 @@ def main():
 
     # 2. Index all the files again
     # 3. samtools mpileup
+
+    #create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
+    gather_files_by_name('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
+
+    #(path_to_bam_files, file_extension, path_to_csv, path_to_output_dir):
 
 
 
