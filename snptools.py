@@ -187,33 +187,30 @@ def gather_files_by_name(path_to_bam_files, file_extension, path_to_csv, path_to
         for key in keys:
             samples=data_dict.get(key)
             full_path_input_file=os.path.join(path_to_bam_files,fle)
-            print('OUTPUT DIR',path_to_output_dir)
-            full_path_output_file=f'{path_to_output_dir}/{key}/{f}'
-
-            
-            
+            #print('OUTPUT DIR',path_to_output_dir)
+            full_path_output_file=f'{path_to_output_dir}/{key}/{f}'               
             #full_path_output_file=os.path.join(path_to_output_dir,key,fle)
-            print('FULL output path',full_path_output_file)
+            #print('FULL output path',full_path_output_file)
             # If the file is present in the directory
             if os.path.exists(full_path_input_file):
                 try:
                     for sample in samples:
                         if sample in fle:
-                            print(f'Sample name: {sample} found in {fle}')
+                            #print(f'Sample name: {sample} found in {fle}')
                             output_folder=os.path.join(path_to_output_dir,key)
-                            print('FOLDER',output_folder)
-                            print('FILE',full_path_output_file)
-                            print('\n')
-                            # if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
-                            #     os.mkdir(output_folder)
-                            #     print(f'Moving file {f} to {full_path_output_file}\n')
-                            #     shutil.copy(full_path_input_file, output_folder)
-                            # elif not os.path.exists(full_path_output_file):
-                            #     print(f'Moving file {f} to {full_path_output_file}\n')
-                            #     shutil.copy(full_path_input_file, output_folder)
-                            # else:
-                            #     print(f'File {f} already exists in {full_path_output_file}\n')
-                            #     os.remove(full_path_input_file)
+                            #print('FOLDER',output_folder)
+                            #print('FILE',full_path_output_file)
+                            #print('\n')
+                            if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
+                                os.mkdir(output_folder)
+                                print(f'Moving file {f} to {full_path_output_file}\n')
+                                shutil.copy(full_path_input_file, output_folder)
+                            elif not os.path.exists(full_path_output_file):
+                                print(f'Moving file {f} to {full_path_output_file}\n')
+                                shutil.copy(full_path_input_file, output_folder)
+                            else:
+                                print(f'File {f} already exists in {full_path_output_file}\n')
+                                #os.remove(full_path_input_file)
                 except Exception as e:
                     print(e)
                                                                    
