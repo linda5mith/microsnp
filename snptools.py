@@ -268,7 +268,6 @@ def os_find(path_to_parent_folder,file_extension):
     Returns list of full paths to files.'''
     command=f'find {path_to_parent_folder} -name \'*{file_extension}\''
     files=save_process_output(command)
-
     return files
 
 def save_process_output(command):

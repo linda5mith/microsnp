@@ -2,6 +2,8 @@ import snptools as snp
 import os
 import subprocess
 import re
+import pandas as pd
+import csv	
 
 #  bcftools view var.raw.bcf.gz | bcftools filter -e'"Enterococcus"' 
 
@@ -64,10 +66,33 @@ def filter_bcf_by_species(path_to_files, file_extension):
                         filter_command=f'bcftools view {full_path_to_file} --regions {chrom} > {full_path_to_output_file}'
                         print('Executing:',filter_command)
                         subprocess.call([filter_command],shell=True)
+
                     
-def get_number_of_variants(path_to_files,file_extension):
-    # count the number of variants for each chromosome in bcf file and output to text file
-    pass
+def get_number_of_variants(path_to_files, file_extension, path_to_output_file=os.getcwd()):
+    '''Counts the number of variants for each chromosome in all bcf files or with specified file_extension
+     in specified path and outputs to csv file'''
+    d = {}
+    for folder in os.listdir(path_to_files):
+        path_to_folder=os.path.join(path_to_files,folder)
+        if os.path.isdir(path_to_folder):
+            files_in_folder=os.listdir(path_to_folder)
+            for f in files_in_folder:
+                #if file ends in bcf (or specified file_extension)
+                if re.search(r'{}$'.format(file_extension),f):
+                    full_path_to_file = os.path.join(path_to_folder,f)
+                    sample_species=snp.get_file_basename(full_path_to_file).split('.')[0]
+                    command=f'bcftools view {full_path_to_file} | wc -l'
+                    num_variants=snp.save_process_output(command)
+                    d[sample_species]=num_variants[0]
+    with open(f'{path_to_output_file}/num_variants.csv', 'w') as csv_file:  
+        writer = csv.writer(csv_file)
+        for key, value in d.items():
+            writer.writerow([key, value])
+    df=pd.read_csv(f'{path_to_output_file}/num_variants.csv')
+    df.columns=['sample_species','variants']
+    print(df)
+    return df
+
 
 def get_allele_frequency(path_to_files, file_extension, path_to_species_file):
     '''Uses vcftools to output the frequency of alleles for a chromosome in a vcf file.'''
@@ -79,28 +104,32 @@ def get_allele_frequency(path_to_files, file_extension, path_to_species_file):
                 output_file=f'{path_to_folder}/{folder}.raw.bcf'
                 #if not os.path.exists(output_file):
 
+# def get_depth_per_individual()
+# ''''Gets mean depth of coverage per individual'''
 
-    # Filter vcf file to extract species/create vcf file for each species
+# def get_depth_per_site()
+# ''''Gets mean depth of coverage per individual'''
+
+# def site_mean_depth()
+# estimate the mean depth of coverage for each site
+
+# def site_quality_score()
+# ''''extract the site quality score for each site'''
+
+# def get_missing_prop_per_site()
+# ''''Gets proportion of missing data'''
+
+# def get_missing_prop_per_indiv()
+# ''''Gets proportion of missing data'''
 
 
-
-    # On each species file calculate allele frequency
-    # Calculate mean depth of coverage per mouse sample 
-
-
-
-    #vcftools --bcf mouse_12.raw.bcf --freq --chr Enterococcus_phage_A2_length_149431
-    # vcftools --gzvcf input_file.vcf.gz --freq --chr 1 --out chr1_analysis
-
-    #vcftools --gzvcf $SUBSET_VCF --depth --out $OUT
-
-    # vcftools --gzvcf $SUBSET_VCF --depth --out $OUT
 
 
 def main():
     #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
     #index_bcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
-    filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
+    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
+    get_number_of_variants('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','flt.bcf','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
 
 if __name__ == '__main__':
     main()
