@@ -208,7 +208,6 @@ def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_outp
                 for read in input_bam.fetch():
                     outf.write(read)
 
-
 def get_file_basename(path_to_file):
     '''Returns filename from a full path e.g. /external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/mouse_1_merged.bam returns mouse_1_merged.bam'''
     pattern=r'.*\/'
@@ -219,6 +218,12 @@ def get_file_dir(path_to_file):
     '''Returns directory from a full path e.g. /external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/mouse_1_merged.bam returns /external_HDD4/linda/unc_mouse_trial/genomes/mouse_1/'''
     f=os.path.dirname(os.path.realpath(path_to_file))
     return f
+
+def get_output_name(file):
+    '''Returns name of file without extension e.g. Escherichia_phage_A4.flt.bcf returns Escherichia_phage_A4'''
+    file_name=get_file_basename(file)
+    output_name=file_name.split('.')[0]
+    return output_name
 
 def gather_files_by_name(path_to_bam_files, file_extension, path_to_csv, path_to_output_dir):
     '''Using a csv file for reference, finds all files corresponding to sample name and moves them to their corresponding parent folder.

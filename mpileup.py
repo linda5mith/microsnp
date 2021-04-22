@@ -94,37 +94,29 @@ def get_number_of_variants(path_to_files, file_extension, path_to_output_file=os
     print(df)
     return df
 
-def get_output_name(file):
-    file_name=snp.get_file_basename(file)
-    output_name=file_name.split('.')[0]
-    return output_name
-
 def bcf_to_vcf(path_to_files, file_extension):
-    # Converts bcf files to vcf
+    '''Searches for all bcf files in path with given file_extension and converts them to vcf'''
     files=snp.access_subfolder_contents(path_to_files, file_extension)
     for f in files:
-        base_file_name=snp.get_file_basename(f)
-        output_file_name=base_file_name.split('.')[0]
+        output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
         command =f'bcftools view -Oz -o {path_to_output_file}/{output_file_name}.vcf.gz {f}'
         try:
             subprocess.call([command],shell=True)
-            print('Executing:' command)
+            print('Executing:',command)
         except Exception as e:
             print(e)
-
-
-# Error: Could not open VCF file: /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_15/mouse_15_NZ_LR134369.1_Bifidobacterium.flt.bcf
 
 def get_allele_freq(path_to_files, file_extension):
     '''Uses vcftools to output the frequency of alleles for a chromosome in a vcf file.'''
     #vcftools --gzvcf $SUBSET_VCF --freq2 --out $OUT --max-alleles 2
     files=snp.access_subfolder_contents(path_to_files, file_extension)
     for f in files:
-        output_name=get_output_name(f)
-        command=f'vcftools --bcf {f} --freq2 --out {output_name} --max-alleles 2'
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --freq2 --out {path_to_output_file}/{output_file_name} --max-alleles 2'
         try:
-            print('Executing:',command)
+            print('Executing:',command,'\n')
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
@@ -161,9 +153,9 @@ def main():
     #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
     #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
-    bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf') 
+    #bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf') 
 
-    #get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf')
+    get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
 
 
 if __name__ == '__main__':
