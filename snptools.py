@@ -41,6 +41,57 @@ def create_sample_folders(path_to_csv, path_to_output_folder=os.getcwd()):
         print(e)    
     return sample_dict 
 
+def create_species_folders(path_to_files, file_with_species_names):
+    '''Creates subfolders inside a parent folder to house files containing species name in file name'''
+    species=[]
+    handle=open(file_with_species_names,"r")
+    species_file=handle.readlines()
+    for line in species_file:
+        species_list=line.split('_')
+        species_short='_'.join([species_list[0],species_list[1],species_list[2]])
+        species.append(species_short)
+    for folder in os.listdir(path_to_files):
+        path_to_folder=os.path.join(path_to_files,folder)
+        if os.path.isdir(path_to_folder):
+            files=os.listdir(path_to_folder)
+            for f in files:
+                for sp in species:
+                    if sp in f:
+                        # Make a folder of species name
+                        species_folder_path=os.path.join(path_to_folder,sp)
+                        print('Creating folder:',species_folder_path)
+                        try:
+                            os.mkdir(species_folder_path)
+                        except Exception as e:
+                            print(e)
+
+def move_files_to_species_folder(path_to_files, file_extension, file_with_species_names):
+    '''Moves any files in directory containing species name in file name into corresponding folder with matching file name.'''
+    species=[]
+    handle=open(file_with_species_names,"r")
+    species_file=handle.readlines()
+    for line in species_file:
+        species_list=line.split('_')
+        species_short='_'.join([species_list[0],species_list[1],species_list[2]])
+        species.append(species_short)
+    for parent_folder in os.listdir(path_to_files):
+        path_to_folder=os.path.join(path_to_files,parent_folder)
+        if os.path.isdir(path_to_folder):
+            files=os.listdir(path_to_folder)
+            folders=[]
+            for f in files:
+                for sp in species:
+                    full_path_to_file=os.path.join(path_to_folder,f)
+                    full_path_to_output_folder=os.path.join(path_to_folder,sp)  
+                    # if it is a file and a substring of it is present in one of the folders names move it there
+                    if sp in full_path_to_file and os.path.isfile(full_path_to_file):
+                        print('Moving:',full_path_to_file, 'to ',full_path_to_output_folder)
+                        try:
+                            shutil.move(full_path_to_file,full_path_to_output_folder)
+                        except Exception as e:
+                            print(e)
+                        print('\n')
+
 def access_folder_contents(path_to_folder,file_extension):
     '''Returns files with specified extension from inside one folder.'''
     files=[]
@@ -59,10 +110,14 @@ def access_subfolder_contents(path_to_parent_folder,file_extension):
         path_to_subfolders=os.path.join(path_to_parent_folder,folder)
         if os.path.isdir(path_to_subfolders):
             contents=os.listdir(path_to_subfolders)
-            for fle in contents:
-                if re.search(r'{}$'.format(file_extension),fle):
-                    match=os.path.join(path_to_subfolders,fle)
-                    files.append(match)
+            for folder in contents:
+                full_path_to_subfolder=os.path.join(path_to_subfolders,folder)
+                if os.path.isdir(full_path_to_subfolder):
+                    subfolder_contents=os.listdir(full_path_to_subfolder)
+                    for item in subfolder_contents:
+                        if re.search(r'{}$'.format(file_extension),item):
+                            match=os.path.join(path_to_subfolders,folder,item)
+                            files.append(match)
     return files  
     
 def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
@@ -82,7 +137,6 @@ def add_file_prefix_to_chrom(path_to_parent_folder, file_extension, path_to_spec
             print(f'Adding prefix {prefix} to chromosome: {s}')
             command='samtools view '+ f+' | sed -e '+'s/'+s+'/{}'.format(prefix)+'_'+s+'/g | samtools reheader - '+f+' > '+ path_to_output_files+'/'+output_file+'_pfx.bam'
             print('\n')
-
 
 def prefix_chr_pysam(path_to_parent_folder, file_extension, path_to_species_file, path_to_output_files):
     '''Deprecated for inefficiency: use add_file_prefix_to_chrom
