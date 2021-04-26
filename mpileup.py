@@ -121,41 +121,112 @@ def get_allele_freq(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
+def get_depth(path_to_files, file_extension):
+    ''''Calculates the mean depth of coverage per individual.'''
+    #vcftools --gzvcf $SUBSET_VCF --depth --out $OUT
+    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --depth --out {path_to_output_file}/{output_file_name}_depth_indiv'
+        try:
+            print('Executing:',command,'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
+def get_site_mean_depth(path_to_files, file_extension):
+    '''Estimates the mean depth of coverage for each site.'''
+    #vcftools --gzvcf $SUBSET_VCF --site-mean-depth --out $OUT
+    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --site-mean-depth --out {path_to_output_file}/{output_file_name}_site_mean_depth'
+        try:
+            print('Executing:',command,'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
-# def get_depth_per_individual()
-# ''''Gets mean depth of coverage per individual'''
+def get_site_quality(path_to_files, file_extension):
+    '''Extracts the site quality score for each site.'''
+    #vcftools --gzvcf $SUBSET_VCF --site-quality --out $OUT
+    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --site-quality --out {path_to_output_file}/{output_file_name}_site_quality'
+        try:
+            print('Executing:',command,'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
-# def get_depth_per_site()
-# ''''Gets mean depth of coverage per individual'''
+def get_missing_prop_per_site(path_to_files, file_extension):
+    ''''Another individual level statistic - calculates the proportion of missing data per sample.'''
+    #vcftools --gzvcf $SUBSET_VCF --missing-indv --out $OUT
+    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --missing-indv --out {path_to_output_file}/{output_file_name}_missing_indv'
+        try:
+            print('Executing:',command,'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
-# def site_mean_depth()
-# estimate the mean depth of coverage for each site
+def get_missing_prop_per_indiv(path_to_files, file_extension):
+    ''''Gets proportion of missing data per site rather than per individual'''
+    #vcftools --gzvcf $SUBSET_VCF --missing-site --out $OUT
+    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --missing-site --out {path_to_output_file}/{output_file_name}_missing_site'
+        try:
+            print('Executing:',command,'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
-# def site_quality_score()
-# ''''extract the site quality score for each site'''
-
-# def get_missing_prop_per_site()
-# ''''Gets proportion of missing data'''
-
-# def get_missing_prop_per_indiv()
-# ''''Gets proportion of missing data'''
-
+def get_het(path_to_files, file_extension):
+    '''Calculate heterozygosity and inbreeding coefficient per individual'''
+    #vcftools --gzvcf $SUBSET_VCF --het --out $OUT
+    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command=f'vcftools --gzvcf {f} --het --out {path_to_output_file}/{output_file_name}_het'
+        try:
+            print('Executing:',command,'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
 def main():
+    # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
     #index_bcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
     #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
     #get_number_of_variants('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','flt.bcf','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
-    #get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','flt.bcf')
 
-    # Create folders for each species inside each mouse folder
+    # --------------------- Create folders for each species inside each mouse folder -----------------------------------------------------------------------
     #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
     #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
+    # --------------------- Convert bcf to vcf  ------------------------------------------------------------------------------------------------------------
     #bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf') 
 
-    get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # --------------------- Vcftools statistics  -----------------------------------------------------------------------------------------------------------
+    # get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # get_depth('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # get_site_mean_depth('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # get_site_quality('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # get_missing_prop_per_site('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # get_missing_prop_per_indiv('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    get_het('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
 
 
 if __name__ == '__main__':
