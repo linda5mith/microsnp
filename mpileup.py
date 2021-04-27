@@ -205,6 +205,38 @@ def get_het(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
+# Filter variants from bcf files which have QUAL <=30 (1 in 1000 chance of being incorrect)
+
+
+# Filter variants according to parameters present in https://speciationgenomics.github.io/filtering_vcfs/ 
+
+# Generate gbk files using prokka
+def prokka_annotate(path_to_references,file_extension):
+    '''Annotates files in path file specified file_extension'''
+    # source ~/anaconda3/etc/profile.d/conda.sh
+    # conda activate prokka
+    files=snp.access_folder_contents(path_to_references,file_extension)
+    for f in files:
+        prefix=snp.get_output_name(f)
+        outdir=snp.get_file_dir(f)
+        command = f'prokka {f} --outdir {outdir} --prefix {prefix}'
+        print(command)
+
+
+# Build databases for references for SnpEff
+def build_snpeff_db(path_to_references, file_extension, path_to_snpeff_installation):
+    '''Builds a SnpEff reference database for each file with specified file_extension in path_to_references'''
+    files=snp.access_folder_contents(path_to_references,file_extension)
+    for f in files:
+        try:
+            command = f'java -jar {path_to_snpeff_installation}/snpEff.jar build {f} -v'
+            #java -Xmx8g -jar snpEff.jar download -c path/to/snpEff/snpEff.config -v GRCh37.75
+            print('Executing:',command)
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+
+
 def main():
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
@@ -226,7 +258,14 @@ def main():
     # get_site_quality('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
     # get_missing_prop_per_site('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
     # get_missing_prop_per_indiv('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
-    get_het('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+    # get_het('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
+
+    # --------------------- Annotate using Prokka ----------------------------------------------------------------------------------------------------------
+    prokka_annotate('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.fasta')
+
+
+    # --------------------- SnpEff pipeline ----------------------------------------------------------------------------------------------------------------
+    #build_snpeff_db('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.fasta','/data/programs/snpEff')
 
 
 if __name__ == '__main__':

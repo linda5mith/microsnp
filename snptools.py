@@ -493,19 +493,42 @@ def samtools_sort(path_to_parent_folder, file_extension):
     and sorts them using samtools.'''
     files=access_subfolder_contents(path_to_parent_folder,file_extension)
     files=sorted(files)
-    print(files)
-    # Match all text occurring before last full stop
-    # pattern='.*(?=\.)'
-    # for f in files:
-    #     match=(re.search(pattern, f))
-    #     if match:
-    #         output_file=(match[0]+'_sorted.bam')
-    #         print(output_file)
-    #         command = f'samtools sort {f} -o {output_file}'
-    #         print('Execting:',command)
-    #         subprocess.call([command],shell=True)
+    #print(files)
+    #Match all text occurring before last full stop
+    pattern='.*(?=\.)'
+    for f in files:
+        match=(re.search(pattern, f))
+        if match:
+            output_file=(match[0]+'_sorted.bam')
+            print(output_file)
+            command = f'samtools sort {f} -o {output_file}'
+            print('Execting:',command)
+            subprocess.call([command],shell=True)
 
 
+def pullseq_species_from_fasta(path_to_parent_file, path_to_species_file, path_to_output_file):
+    '''Given a multi species fasta file pulls out individiual species sequences and outputs them to their own fasta file.'''
+    handle=open(path_to_species_file,'r')
+    species=handle.readlines()
+    file_extension='fasta'
+    for s in species:
+        s=s.strip()
+        if s:
+            try:
+                dir_path=path_to_output_file
+                file_basename=s
+                extension='fasta'
+                full_output_path=os.path.join(dir_path, file_basename + "." + extension)
+                if not os.path.exists(full_output_path):
+                    command = f'pullseq -i {path_to_parent_file} -g {s} > {full_output_path}'
+                    print('Executing:',command)
+                    subprocess.call([command],shell=True)
+            except Exception as e:
+                print(e)
+
+
+ 
+            
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     #gather_files_by_name('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
@@ -535,19 +558,10 @@ def main():
     # 3. samtools mpileup
 
     #create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
-    gather_files_by_name('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
+    #gather_files_by_name('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
 
-    #(path_to_bam_files, file_extension, path_to_csv, path_to_output_dir):
-
-
-
-
-
-
-
-
-
-
+    pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Bacterial_genomes/Bowtie/Bacterial_genomes.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
+    #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/phages/All_phage.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
 
 
 
