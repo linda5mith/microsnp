@@ -1,0 +1,15 @@
+java -jar snpEff.jar build -genbank -v Allobacillus_halotolerans_length_2700297
+java -jar snpEff.jar build -genbank -v Bacteroides_vulgatus_ATCC_8482
+java -jar snpEff.jar build -genbank -v Bifidobacterium_longum_strain_NCTC11818
+java -jar snpEff.jar build -genbank -v Enterococcus_faecalis_OG1RF
+java -jar snpEff.jar build -genbank -v Enterococcus_phage_A2_length_149431
+java -jar snpEff.jar build -genbank -v Enterococcus_phage_Sw5_length_143759
+java -jar snpEff.jar build -genbank -v Escherichia_coli_LF82
+java -jar snpEff.jar build -genbank -v Escherichia_phage_A4_length_355528
+java -jar snpEff.jar build -genbank -v Escherichia_phage_A51
+java -jar snpEff.jar build -genbank -v Escherichia_phage_i29_length_137044
+java -jar snpEff.jar build -genbank -v Escherichia_phage_W115_length_163997
+java -jar snpEff.jar build -genbank -v Faecalibacterium_prausnitzii_strain_A2165
+java -jar snpEff.jar build -genbank -v Imtechella_halotolerans_length_3113269
+java -jar snpEff.jar build -genbank -v Lactobacillus_plantarum_WCFS1
+java -jar snpEff.jar build -genbank -v Lactococcus_phage_Q33_length_31106
