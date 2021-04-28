@@ -92,6 +92,8 @@ def move_files_to_species_folder(path_to_files, file_extension, file_with_specie
                             print(e)
                         print('\n')
 
+
+
 def access_folder_contents(path_to_folder,file_extension):
     '''Returns files with specified extension from inside one folder.'''
     files=[]
@@ -312,15 +314,15 @@ def samtools_idx(path_to_parent_folder,file_extension):
                     print(e)
 
 def os_walk(path_to_parent_folder,file_extension):
-    '''Python implementation unix find command in that it recursively searches all folders and subfolders in given path to find file
+    '''BUMP UP: USE instead of access_subfolder_contents: Python implementation unix find command in that it recursively searches all folders and subfolders in given path to find file
     by name/extension. Efficient for returning small numbers of files. In case of large number of files use os_find'''
-    files=[]
+    file_paths=[]
     for root, dirs, files in os.walk(path_to_parent_folder):
         for f in files:
             if f.endswith(file_extension):
                 path_to_file=os.path.join(root, f)
-                files.append(path_to_file)
-    return files
+                file_paths.append(path_to_file)
+    return file_paths
 
 def os_find(path_to_parent_folder,file_extension):
     '''Uses linux find command inside python to return any files inside path with given file_extension.
@@ -527,7 +529,18 @@ def pullseq_species_from_fasta(path_to_parent_file, path_to_species_file, path_t
                 print(e)
 
 
- 
+def copy_files_to_matching_dir(path_to_parent_folder, file_extension, path_to_output_folder):
+    '''If filename is contained withing folder name in path_to_output_folder it will be copied there. Used to 
+    copy annotated files from current directory to /data/programs/snpEff/data. 
+    To build a snpeff database the file listed inside the species directory must contain prefix 'genes 
+    E.g. /data/programs/snpEff/data/Allobacillus_halotolerans_length_2700297/genes.gbk'''
+    files = os_walk(path_to_parent_folder,file_extension)
+    outdir = path_to_output_folder
+    for f in files:
+        basename=get_output_name(f)
+        if basename in os.listdir(outdir):
+            print(f'Copying {f} to {os.path.join(path_to_output_folder,basename)}')
+            shutil.copy(f,os.path.join(path_to_output_folder,basename))
             
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
@@ -560,9 +573,10 @@ def main():
     #create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
     #gather_files_by_name('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
 
-    pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Bacterial_genomes/Bowtie/Bacterial_genomes.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
+    #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Bacterial_genomes/Bowtie/Bacterial_genomes.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
     #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/phages/All_phage.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
 
+    copy_files_to_matching_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db', '.gbk', '/data/programs/snpEff/data')
 
 
 if __name__ == '__main__':

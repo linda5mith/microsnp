@@ -212,31 +212,50 @@ def get_het(path_to_files, file_extension):
 
 # Generate gbk files using prokka
 def prokka_annotate(path_to_references,file_extension):
-    '''Annotates files in path file specified file_extension'''
+    '''Annotates files in path file specified file_extension. Note: Sequence ID in FASTA file must be less than 24 characters.'''
     # source ~/anaconda3/etc/profile.d/conda.sh
     # conda activate prokka
     files=snp.access_folder_contents(path_to_references,file_extension)
     for f in files:
         prefix=snp.get_output_name(f)
-        outdir=snp.get_file_dir(f)
-        command = f'prokka {f} --outdir {outdir} --prefix {prefix}'
-        print(command)
-
-
-# Build databases for references for SnpEff
-def build_snpeff_db(path_to_references, file_extension, path_to_snpeff_installation):
-    '''Builds a SnpEff reference database for each file with specified file_extension in path_to_references'''
-    files=snp.access_folder_contents(path_to_references,file_extension)
-    for f in files:
+        outdir=os.path.join(snp.get_file_dir(f),prefix)
+        command = f'prokka {f} --outdir {outdir}/ --prefix {prefix}'
         try:
-            command = f'java -jar {path_to_snpeff_installation}/snpEff.jar build {f} -v'
-            #java -Xmx8g -jar snpEff.jar download -c path/to/snpEff/snpEff.config -v GRCh37.75
-            print('Executing:',command)
             subprocess.call([command],shell=True)
+            print('Executing:',command)
         except Exception as e:
             print(e)
 
-
+def clean_prokka(path_to_references,file_extension):
+    '''Deletes lines 2-10 in prokka generated gbk file as these cause formatting issues.'''
+    files=snp.access_subfolder_contents(path_to_references, file_extension)
+    print(files)
+    for f in files:
+        print('Cleaning:',f)
+        with open(f,'r+') as handle:
+            gbk=handle.readlines()
+            handle.seek(0)
+            # Delete lines 2:10
+            for i in gbk:
+                if i not in list(range(2,11)):
+                    handle.write(i)
+            handle.truncate()
+        
+# Build databases for references for SnpEff
+def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
+    '''Builds a SnpEff reference database for each gbk file with specified file_extension in path_to_references. 
+    Note: must first add genomes to snpEff.config and gbk files to /data/programs/snpEff/data'''
+    files = snp.os_walk(path_to_snpeff_installation,file_extension)
+    print(files)
+    for f in files:
+        filename = snp.get_output_name(f)
+        command = f'java -jar /data/programs/snpEff/snpEff.jar build -genbank -v {filename}'
+        try:
+            print('Executing:',command)
+            subprocess.call([command],shell=True)
+        except Exception as e:
+                    print(e)
+    
 def main():
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
@@ -261,11 +280,11 @@ def main():
     # get_het('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
 
     # --------------------- Annotate using Prokka ----------------------------------------------------------------------------------------------------------
-    prokka_annotate('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.fasta')
-
+    #prokka_annotate('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.fasta')
+    #clean_prokka('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.gbk')
 
     # --------------------- SnpEff pipeline ----------------------------------------------------------------------------------------------------------------
-    #build_snpeff_db('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.fasta','/data/programs/snpEff')
+    build_snpeff_db_gbk('/data/programs/snpEff','.gbk')
 
 
 if __name__ == '__main__':
