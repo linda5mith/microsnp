@@ -541,7 +541,17 @@ def copy_files_to_matching_dir(path_to_parent_folder, file_extension, path_to_ou
         if basename in os.listdir(outdir):
             print(f'Copying {f} to {os.path.join(path_to_output_folder,basename)}')
             shutil.copy(f,os.path.join(path_to_output_folder,basename))
-            
+
+def rename_file_prefix(path_to_parent_folder, file_extension, new_prefix):
+    '''Renames all files inside path with specified file_extension with new_prefix'''
+    files = os_walk(path_to_parent_folder,file_extension)
+    #print(files)
+    for f in files:
+        basename=get_output_name(f)
+        outdir=get_file_dir(f)
+        new_file_path=os.path.join(outdir,new_prefix+'.gbk')
+        os.rename(f,new_file_path)
+
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     #gather_files_by_name('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
@@ -576,7 +586,8 @@ def main():
     #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Bacterial_genomes/Bowtie/Bacterial_genomes.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
     #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/phages/All_phage.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
 
-    copy_files_to_matching_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db', '.gbk', '/data/programs/snpEff/data')
+    #copy_files_to_matching_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db', '.gbk', '/data/programs/snpEff/data')
+    rename_file_prefix('/data/programs/snpEff/data','.gbk','genes')
 
 
 if __name__ == '__main__':
