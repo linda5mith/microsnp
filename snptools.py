@@ -552,6 +552,10 @@ def rename_file_prefix(path_to_parent_folder, file_extension, new_prefix):
         new_file_path=os.path.join(outdir,new_prefix+'.gbk')
         os.rename(f,new_file_path)
 
+def rename_dir()
+    '''Renaming directory names so that they match the exact chromosome/species name in vcf files'''
+    
+
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
     #gather_files_by_name('/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam','pfx.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/genomes')
