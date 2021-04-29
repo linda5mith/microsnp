@@ -558,6 +558,7 @@ def rename_dir(path_to_parent_folder, path_to_species_file):
     handle=open(path_to_species_file,'r')
     species=handle.readlines()
     for s in species:
+        s=s.strip()
         for root, dirs, files in os.walk(path_to_parent_folder):
             for d in dirs:
                 path_to_dir=os.path.join(root, d)

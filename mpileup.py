@@ -206,9 +206,10 @@ def get_het(path_to_files, file_extension):
             print(e)
 
 # Filter variants from bcf files which have QUAL <=30 (1 in 1000 chance of being incorrect)
-
-
 # Filter variants according to parameters present in https://speciationgenomics.github.io/filtering_vcfs/ 
+def filter_qual_vcf(path_to_references,file_extension):
+    pass
+
 
 # Generate gbk files using prokka
 def prokka_annotate(path_to_references,file_extension):
