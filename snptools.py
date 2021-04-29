@@ -552,9 +552,24 @@ def rename_file_prefix(path_to_parent_folder, file_extension, new_prefix):
         new_file_path=os.path.join(outdir,new_prefix+'.gbk')
         os.rename(f,new_file_path)
 
-def rename_dir()
+
+def rename_dir(path_to_parent_folder, path_to_species_file):
     '''Renaming directory names so that they match the exact chromosome/species name in vcf files'''
-    
+    handle=open(path_to_species_file,'r')
+    species=handle.readlines()
+    for s in species:
+        for root, dirs, files in os.walk(path_to_parent_folder):
+            for d in dirs:
+                path_to_dir=os.path.join(root, d)
+                path_to_new_dir=os.path.join(root, s)
+                # If dir is a substring of species name
+                if d in s:
+                    try:
+                        print(f'Renaming directory {path_to_dir} to \n {path_to_new_dir}')
+                        os.rename(path_to_dir, path_to_new_dir)
+                    except Exception as e:
+                        print(e)
+
 
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')
@@ -591,7 +606,9 @@ def main():
     #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/phages/All_phage.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
 
     #copy_files_to_matching_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db', '.gbk', '/data/programs/snpEff/data')
-    rename_file_prefix('/data/programs/snpEff/data','.gbk','genes')
+    #rename_file_prefix('/data/programs/snpEff/data','.gbk','genes')
+
+    rename_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
 
 if __name__ == '__main__':
