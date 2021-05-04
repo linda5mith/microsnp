@@ -207,9 +207,19 @@ def get_het(path_to_files, file_extension):
 
 # Filter variants from bcf files which have QUAL <=30 (1 in 1000 chance of being incorrect)
 # Filter variants according to parameters present in https://speciationgenomics.github.io/filtering_vcfs/ 
-def filter_qual_vcf(path_to_references,file_extension):
-    pass
-
+def filter_qual_vcf(path_to_files, file_extension, min_qual):
+    files=snp.os_walk(path_to_files,file_extension)
+    for f in files:
+        filename = snp.get_output_name(f)
+        path_to_output = snp.get_file_dir(f)
+        full_filename=filename+'_fltq'+'.vcf.gz'
+        full_output_path = os.path.join(path_to_output,full_filename)
+        try:
+            command = f'vcftools --gzvcf {f} --minQ {min_qual} --recode --stdout | gzip -c > {full_output_path}'
+            print('Executing:',command)
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
 
 # Generate gbk files using prokka
 def prokka_annotate(path_to_references,file_extension):
@@ -288,7 +298,10 @@ def main():
     #clean_prokka('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db','.gbk')
 
     # --------------------- SnpEff pipeline ----------------------------------------------------------------------------------------------------------------
-    build_snpeff_db_gbk('/data/programs/snpEff','.gbk')
+    #build_snpeff_db_gbk('/data/programs/snpEff','.gbk')
+
+    # --------------------- Filter VCF quality -------------------------------------------------------------------------------------------------------------
+    filter_qual_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','.vcf.gz',20)
 
 
 if __name__ == '__main__':

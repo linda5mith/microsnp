@@ -1,0 +1,11 @@
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_1/Allobacillus_halotolerans_length_2700297/mouse_1_Allobacillus_halotolerans_length_fltq.vcf.gz
+
+Using zlib version: 1.2.11
+After filtering, kept 7 out of 7 Individuals
+After filtering, kept 13 out of a possible 13 Sites
+Run Time = 0.00 seconds

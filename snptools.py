@@ -256,19 +256,21 @@ def gather_files_by_name(path_to_bam_files, file_extension, path_to_csv, path_to
             if os.path.exists(full_path_input_file):
                 try:
                     for sample in samples:
-                        if sample in fle:
+                        # This match is too liberal need to match sample with _ after it
+                        if re.search(r"^"+re.escape(sample)+r"_",fle):
+                        #if sample in fle:
                             #print(f'Sample name: {sample} found in {fle}')
                             output_folder=os.path.join(path_to_output_dir,key)
                             #print('FOLDER',output_folder)
                             #print('FILE',full_path_output_file)
                             #print('\n')
                             if not os.path.exists(output_folder) and not os.path.exists(full_path_output_file):
-                                os.mkdir(output_folder)
-                                print(f'Moving file {f} to {full_path_output_file}\n')
-                                shutil.copy(full_path_input_file, output_folder)
+                                #os.mkdir(output_folder)
+                                print(f'Copying file {f} to {full_path_output_file}\n')
+                                #shutil.copy(full_path_input_file, output_folder)
                             elif not os.path.exists(full_path_output_file):
-                                print(f'Moving file {f} to {full_path_output_file}\n')
-                                shutil.copy(full_path_input_file, output_folder)
+                                print(f'Copying file {f} to {full_path_output_file}\n')
+                                #shutil.copy(full_path_input_file, output_folder)
                             else:
                                 print(f'File {f} already exists in {full_path_output_file}\n')
                                 #os.remove(full_path_input_file)
@@ -552,7 +554,6 @@ def rename_file_prefix(path_to_parent_folder, file_extension, new_prefix):
         new_file_path=os.path.join(outdir,new_prefix+'.gbk')
         os.rename(f,new_file_path)
 
-
 def rename_dir(path_to_parent_folder, path_to_species_file):
     '''Renaming directory names so that they match the exact chromosome/species name in vcf files'''
     handle=open(path_to_species_file,'r')
@@ -570,6 +571,21 @@ def rename_dir(path_to_parent_folder, path_to_species_file):
                         os.rename(path_to_dir, path_to_new_dir)
                     except Exception as e:
                         print(e)
+
+def find_unique_species_bam(path_to_parent_folder, file_extension):
+    '''Finds the unique species present in each bam file and outputs findings to csv file.'''
+    files = os_walk(path_to_parent_folder,file_extension)
+    data_dict={}
+    for f in files:
+        filename=get_output_name(f)
+        command= f'samtools view {f} | awk \'{{print $3}}\' | sort | uniq'
+        output=save_process_output(command)
+        data_dict[filename] = output 
+        print(data_dict)
+    df=pd.dataframe(data_dict)
+    df.to_csv('unique_species_per_bam.csv', index=False)
+
+
 
 
 def main():
@@ -600,8 +616,10 @@ def main():
     # 2. Index all the files again
     # 3. samtools mpileup
 
-    #create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
-    #gather_files_by_name('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
+    #create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/snp_pipeline')
+    #gather_files_by_name('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/snp_pipeline')
+
+    find_unique_species_bam('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.sorted.bam')
 
     #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Bacterial_genomes/Bowtie/Bacterial_genomes.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
     #pullseq_species_from_fasta('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/phages/All_phage.fasta', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt', '/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db')
@@ -609,7 +627,7 @@ def main():
     #copy_files_to_matching_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/reference_genomes_db', '.gbk', '/data/programs/snpEff/data')
     #rename_file_prefix('/data/programs/snpEff/data','.gbk','genes')
 
-    rename_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+    #rename_dir('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
 
 if __name__ == '__main__':
