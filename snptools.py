@@ -581,10 +581,9 @@ def find_unique_species_bam(path_to_parent_folder, file_extension):
         command= f'samtools view {f} | awk \'{{print $3}}\' | sort | uniq'
         output=save_process_output(command)
         data_dict[filename] = output 
-        print(data_dict)
-    df=pd.dataframe(data_dict)
+        #print(data_dict)
+    df=pd.Dataframe(data_dict)
     df.to_csv('unique_species_per_bam.csv', index=False)
-
 
 
 
