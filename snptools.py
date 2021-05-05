@@ -41,15 +41,18 @@ def create_sample_folders(path_to_csv, path_to_output_folder=os.getcwd()):
         print(e)    
     return sample_dict 
 
+
 def create_species_folders(path_to_files, file_with_species_names):
     '''Creates subfolders inside a parent folder to house files containing species name in file name'''
     species=[]
     handle=open(file_with_species_names,"r")
     species_file=handle.readlines()
     for line in species_file:
-        species_list=line.split('_')
-        species_short='_'.join([species_list[0],species_list[1],species_list[2]])
-        species.append(species_short)
+        line = line.strip()
+        if line:
+            species_list=line.split('_')
+            species_short='_'.join([species_list[0],species_list[1],species_list[2]])
+            species.append(species_short)
     for folder in os.listdir(path_to_files):
         path_to_folder=os.path.join(path_to_files,folder)
         if os.path.isdir(path_to_folder):
@@ -57,42 +60,45 @@ def create_species_folders(path_to_files, file_with_species_names):
             for f in files:
                 for sp in species:
                     if sp in f:
-                        # Make a folder of species name
-                        species_folder_path=os.path.join(path_to_folder,sp)
-                        print('Creating folder:',species_folder_path)
-                        try:
-                            os.mkdir(species_folder_path)
-                        except Exception as e:
-                            print(e)
+                        for entry in species_file:
+                            if sp in entry:
+                                #print(sp,'------------------------', f)
+                                # Make a folder of species name
+                                species_folder_path=os.path.join(path_to_folder,entry)
+                                try:
+                                    print('Creating folder:', species_folder_path)
+                                    os.mkdir(species_folder_path)
+                                except Exception as e:
+                                    print(e)
+
 
 def move_files_to_species_folder(path_to_files, file_extension, file_with_species_names):
     '''Moves any files in directory containing species name in file name into corresponding folder with matching file name.'''
-    species=[]
     handle=open(file_with_species_names,"r")
     species_file=handle.readlines()
-    for line in species_file:
-        species_list=line.split('_')
-        species_short='_'.join([species_list[0],species_list[1],species_list[2]])
-        species.append(species_short)
-    for parent_folder in os.listdir(path_to_files):
-        path_to_folder=os.path.join(path_to_files,parent_folder)
-        if os.path.isdir(path_to_folder):
-            files=os.listdir(path_to_folder)
-            folders=[]
-            for f in files:
-                for sp in species:
-                    full_path_to_file=os.path.join(path_to_folder,f)
-                    full_path_to_output_folder=os.path.join(path_to_folder,sp)  
-                    # if it is a file and a substring of it is present in one of the folders names move it there
-                    if sp in full_path_to_file and os.path.isfile(full_path_to_file):
-                        print('Moving:',full_path_to_file, 'to ',full_path_to_output_folder)
+    files = os_walk(path_to_files, file_extension)
+    for f in files:
+        #remove mouse_1 prefix to file name to extract species name
+        basename=get_output_name(f)
+        file_names=basename.split('_')
+        try:
+            species_id='_'.join([file_names[2],file_names[3]])
+            for line in species_file:
+                if line:
+                    output_dir=get_file_dir(f)
+                    full_path_to_file=os.path.join(output_dir,f)
+                    full_path_to_output_folder=os.path.join(output_dir,line)
+                    # if species name is in filename and folder name move it therre
+                    if species_id in full_path_to_file and species_id in full_path_to_output_folder:
                         try:
+                            print('Moving:', full_path_to_file, 'to ',full_path_to_output_folder)
                             shutil.move(full_path_to_file,full_path_to_output_folder)
                         except Exception as e:
                             print(e)
                         print('\n')
-
-
+        except Exception as e:
+            print(e)
+                
 
 def access_folder_contents(path_to_folder,file_extension):
     '''Returns files with specified extension from inside one folder.'''
@@ -582,10 +588,9 @@ def find_unique_species_bam(path_to_parent_folder, file_extension):
         output=save_process_output(command)
         data_dict[filename] = output 
         #print(data_dict)
-    df=pd.Dataframe(data_dict)
+    df = pd.DataFrame.from_dict(data_dict, orient='index')
+    df = df.transpose()
     df.to_csv('unique_species_per_bam.csv', index=False)
-
-
 
 def main():
     #add_file_prefix_to_chrom('/external_HDD4/Tom/S.A.3_MouseTrial/Genomes/Round_2','.sorted.bam','/external_HDD4/linda/unc_mouse_trial/genomes/prefixed_bam')

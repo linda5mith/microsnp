@@ -19,7 +19,8 @@ def bcftools_mpileup(path_to_files, file_extension, path_to_reference_file):
         path_to_folder=os.path.join(path_to_files,folder)
         if os.path.isdir(path_to_folder):
             output_file=f'{path_to_folder}/{folder}.raw.bcf'
-            if not os.path.exists(output_file):
+            if 'mouse_7' in output_file:
+            #if not os.path.exists(output_file):
                 try:
                     command=f'bcftools mpileup -Ou -f {path_to_reference_file}  {path_to_folder}/*.bam | bcftools call --ploidy 1 -mv -Ob -o {path_to_folder}/{folder}.raw.bcf'
                     print('Executing:',command)
@@ -44,7 +45,7 @@ def index_bcf(path_to_files, file_extension):
 
 
 def filter_bcf_by_species(path_to_files, file_extension):
-    '''Finds the unique species/chromosomes from #CHROM column in a bcf file and outputs the filtered variants for that species to a new bcf file
+    '''Finds the unique species/chromosomes from #CHROM column in a bcf/vcf file and outputs the filtered variants for that species to a new bcf file
     with the naming convention <species>.flt.bcf'''
     for folder in os.listdir(path_to_files):
         path_to_folder=os.path.join(path_to_files,folder)
@@ -55,7 +56,7 @@ def filter_bcf_by_species(path_to_files, file_extension):
                 if re.search(r'{}$'.format(file_extension),f):
                     print('\n')
                     full_path_to_file = os.path.join(path_to_folder,f)
-                    # Extract all unique chromosomes/species from file
+                    # Extract all unique chromosomes/species from bcf file
                     command=f'bcftools view {full_path_to_file} |  grep -v "#" | cut -f 1 | uniq | sort'
                     unique_chrom=snp.save_process_output(command)
                     for chrom in unique_chrom:
@@ -212,14 +213,24 @@ def filter_qual_vcf(path_to_files, file_extension, min_qual):
     for f in files:
         filename = snp.get_output_name(f)
         path_to_output = snp.get_file_dir(f)
-        full_filename=filename+'_fltq'+'.vcf.gz'
+        full_filename=filename+'_flt'+'.vcf.gz'
         full_output_path = os.path.join(path_to_output,full_filename)
         try:
-            command = f'vcftools --gzvcf {f} --minQ {min_qual} --recode --stdout | gzip -c > {full_output_path}'
+            # htsfile file.vcf.gz # prints file type
+            # z for compressed vcf, b for compressed bcf
+            command = f'bcftools view -i \'%QUAL>={min_qual}\' {f} -O z -o {full_output_path}'
+            #command = f'vcftools --gzvcf {f} --minQ {min_qual} --recode --stdout | gzip -c > {full_output_path}'
             print('Executing:',command)
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
+
+
+# mv file.vcf.gz plain.vcf
+# bcftools view -Oz -o compressed.vcf.gz plain.vcf
+# htsfile compressed.vcf.gz
+# bcftools index compressed.vcf.gz
+
 
 # Generate gbk files using prokka
 def prokka_annotate(path_to_references,file_extension):
@@ -268,18 +279,22 @@ def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
             print('Executing:',command)
             subprocess.call([command],shell=True)
         except Exception as e:
-                    print(e)
+            print(e)
     
 def main():
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
-    #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
-    #index_bcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
-    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.bcf')
-    #get_number_of_variants('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','flt.bcf','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
+    #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
+    #index_bcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.bcf')
+    # --------------------- Filter VCF quality -------------------------------------------------------------------------------------------------------------
+    #filter_qual_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.bcf',20)
+    #index_bcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf.gz')
+    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','flt.vcf.gz')
+    
+    #get_number_of_variants('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','flt.bcf','/external_HDD4/linda/unc_mouse_trial/snp_pipeline')
 
     # --------------------- Create folders for each species inside each mouse folder -----------------------------------------------------------------------
-    #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
-    #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+    #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt') 
+    snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
     # --------------------- Convert bcf to vcf  ------------------------------------------------------------------------------------------------------------
     #bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf') 
@@ -300,9 +315,7 @@ def main():
     # --------------------- SnpEff pipeline ----------------------------------------------------------------------------------------------------------------
     #build_snpeff_db_gbk('/data/programs/snpEff','.gbk')
 
-    # --------------------- Filter VCF quality -------------------------------------------------------------------------------------------------------------
-    filter_qual_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','.vcf.gz',20)
-
+   
 
 if __name__ == '__main__':
     main()
