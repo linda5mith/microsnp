@@ -99,12 +99,13 @@ def bcf_to_vcf(path_to_files, file_extension):
     '''Searches for all bcf files in path with given file_extension and converts them to vcf'''
     files=snp.access_subfolder_contents(path_to_files, file_extension)
     for f in files:
+        print(f)
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
         command =f'bcftools view -Oz -o {path_to_output_file}/{output_file_name}.vcf.gz {f}'
         try:
-            subprocess.call([command],shell=True)
             print('Executing:',command)
+            #subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
 
@@ -294,10 +295,10 @@ def main():
 
     # --------------------- Create folders for each species inside each mouse folder -----------------------------------------------------------------------
     #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt') 
-    snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+    #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
     # --------------------- Convert bcf to vcf  ------------------------------------------------------------------------------------------------------------
-    #bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.flt.bcf') 
+    bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf') 
 
     # --------------------- Vcftools statistics  -----------------------------------------------------------------------------------------------------------
     # get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
