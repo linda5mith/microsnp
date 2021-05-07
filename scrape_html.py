@@ -3,13 +3,14 @@ import re
 import pandas as pd
 from bs4 import BeautifulSoup
 
+import snptools as snp
 
 path_to_output='/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports'
 
 def scrape_snpeff_html_to_txt(path_to_files, file_extension, path_to_output_files):
     files = snp.access_folder_contents(path_to_files,file_extension)
     for f in files:
-        if 'Enterococcus_faecalis' in f:  #Escherichia_coli
+        if 'Enterococcus_faecalis' in f: # Escherichia_coli
             print(f)
             output_filename=snp.get_output_name(f)
             print(output_filename)
@@ -20,13 +21,52 @@ def scrape_snpeff_html_to_txt(path_to_files, file_extension, path_to_output_file
                 print('Outputting scrapes to:',output_file)
                 output_file.write(line.text)
             output_file.close()
+            results2 = soup.find_all('table', attrs={'border': '1'})
+            output_file = open(f'{path_to_output_files}/{output_filename}.txt', "a") # a for append mode
+            for line in results2:
+                print('Outputting scrapes to:',output_file)
+                output_file.write(line.text)
+
+
+def scrape_snpeff_txt_to_csv_2(path_to_files,file_extension):
+    data_dict={}
+    files=snp.access_folder_contents(path_to_files, file_extension)
+    for fle in files:
+        with open(fle,'r') as f:
+            for line in f:
+                print(line)
+                line=line.strip()
+                if re.match(r"^Command line arguments$",line):
+                    command=next(f)
+                    command=command.strip()
+                    mouse=command.split('/')[6]
+                    data_dict['mouse']=mouse
+                elif re.match(r"^Genome$",line):
+                    genome=next(f)
+                    genome=genome.strip()
+                    data_dict['Genome']=genome
+                elif re.match(r"^Number of variants",line):
+                    numVariants=next(f)
+                    numVariants=numVariants.strip()
+                    data_dict['numVariants']=numVariants
+                elif re.match(r"^Number of known variants",line):
+                    skip=next(f)
+                    numknownVariants=next(f)
+                    numknownVariants=numknownVariants.strip()
+                    data_dict['numKnownVariants']=numknownVariants
+                elif re.match(r"^SNP$",line):
+                    print(line)
+                    #skip=next(f)
+                    snps=next(f)
+                    snps=snps.strip()
+                    data_dict['SNP']=snps
+    print(data_dict)
 
 
 # Make csv file from data
 def scrape_snpeff_txt_to_csv(path_to_files,file_extension):
     data_dict={}
     files=snp.access_folder_contents(path_to_files, file_extension)
-    print(files)
     for fle in files:
         with open(fle,'r') as f:
             for line in f:
@@ -39,13 +79,48 @@ def scrape_snpeff_txt_to_csv(path_to_files,file_extension):
                 elif re.match(r"^Genome$",line):
                     genome=next(f)
                     genome=genome.strip()
-                    #print(genome)
                     data_dict['Genome']=genome
-                elif re.match(r"^Number of lines (input file)$",line):
+                elif re.match(r"^Number of variants",line):
                     numVariants=next(f)
                     numVariants=numVariants.strip()
-                    #print(numVariants)
                     data_dict['numVariants']=numVariants
+                elif re.match(r"^Number of known variants",line):
+                    skip=next(f)
+                    numknownVariants=next(f)
+                    numknownVariants=numknownVariants.strip()
+                    data_dict['numKnownVariants']=numknownVariants
+                elif re.match(r"^SNP",line):
+                    snps=next(f)
+                    snps=snps.strip()
+                    data_dict['SNP']=snps
+                elif re.match(r"^MNP",line):
+                    mnp=next(f)
+                    mnp=mnp.strip()
+                    data_dict['MNP']=mnp
+                elif re.match(r"^INS",line):
+                    ins=next(f)
+                    ins=ins.strip()
+                    data_dict['INS']=ins
+                elif re.match(r"^DEL",line):
+                    delete=next(f)
+                    delete=delete.strip()
+                    data_dict['DEL']=delete
+                elif re.match(r"^MIXED",line):
+                    mixed=next(f)
+                    mixed=mixed.strip()
+                    data_dict['MIXED']=mixed
+                elif re.match(r"^INV",line):
+                    inv=next(f)
+                    inv=inv.strip()
+                    data_dict['INV']=inv
+                elif re.match(r"^DUP",line):
+                    dup=next(f)
+                    dup=dup.strip()
+                    data_dict['DUP']=dup
+                elif re.match(r"^BND",line):
+                    bnd=next(f)
+                    bnd=bnd.strip()
+                    data_dict['BND']=bnd
                 elif re.match(r"^Number of effects$",line):
                     numEffects=next(f)
                     numEffects=numEffects.strip()
@@ -258,16 +333,16 @@ def append_data(path_to_dfs,file_extension):
     for f in files:
         df=pd.read_csv(f)
         mydf=mydf.append(df)
-    mydf.to_csv('Escherichia_coli_all_snps.csv')
+    mydf.to_csv('Enterococcus_faecalis_all_snps_flt.csv')
     return mydf
 
 
 def main():
-    scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/html_snpeff','.html','/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports')
+    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/html_reports_filtered','.html','/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports')
     #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','.txt')
-    #append_data('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','csv')
+    append_data('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','csv')
 
 
 if __name__ == '__main__':
     main()
-    
+   
