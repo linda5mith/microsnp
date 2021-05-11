@@ -5,12 +5,13 @@ from bs4 import BeautifulSoup
 
 import snptools as snp
 
+
 path_to_output='/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports'
 
 def scrape_snpeff_html_to_txt(path_to_files, file_extension, path_to_output_files):
     files = snp.access_folder_contents(path_to_files,file_extension)
     for f in files:
-        if 'Enterococcus_faecalis' in f: # Escherichia_coli
+        if 'Allobacillus' in f:  
             print(f)
             output_filename=snp.get_output_name(f)
             print(output_filename)
@@ -333,7 +334,7 @@ def append_data(path_to_dfs,file_extension):
     for f in files:
         df=pd.read_csv(f)
         mydf=mydf.append(df)
-    mydf.to_csv('Enterococcus_faecalis_all_snps_flt.csv')
+    mydf.to_csv('Allobacillus_all_snps_flt.csv')
     return mydf
 
 

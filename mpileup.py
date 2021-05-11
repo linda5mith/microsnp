@@ -266,15 +266,15 @@ def clean_prokka(path_to_references,file_extension):
         
 # Build databases for references for SnpEff
 def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
-    '''Builds a SnpEff reference database for each gbk file with specified file_extension in path_to_references. 
+    '''Note 0_0 SnpEff path to data folder is hardcoded so you have to build database inside snpEff program folder.
+    Builds a SnpEff reference database for each gbk file with specified file_extension in path_to_references. 
     Note: must first add genomes to snpEff.config and gbk files to /data/programs/snpEff/data.
-    Note 0_0 SnpEff path to data folder is hardcoded so you have to build database inside snpEff folder'''
+    '''
     files = snp.os_walk(path_to_snpeff_installation,file_extension)
     print(files)
     for f in files:
         dirname = snp.get_file_dir(f)
         path_to_data_dir = os.path.join(path_to_snpeff_installation,'data',dirname)
-        #print(path_to_data_dir)
         command = f'java -jar /data/programs/snpEff/snpEff.jar build -genbank -v {path_to_data_dir}'
         try:
             print('Executing:',command)
@@ -282,6 +282,14 @@ def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
         except Exception as e:
             print(e)
     
+
+def filter_vcf_by_col():
+    # Inside species folder 
+    pass
+
+
+
+
 def main():
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
@@ -298,7 +306,7 @@ def main():
     #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
     # --------------------- Convert bcf to vcf  ------------------------------------------------------------------------------------------------------------
-    bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf') 
+    #bcf_to_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.flt.bcf') 
 
     # --------------------- Vcftools statistics  -----------------------------------------------------------------------------------------------------------
     # get_allele_freq('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2','.vcf.gz')
@@ -315,6 +323,8 @@ def main():
 
     # --------------------- SnpEff pipeline ----------------------------------------------------------------------------------------------------------------
     #build_snpeff_db_gbk('/data/programs/snpEff','.gbk')
+
+    snp.create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
 
    
 

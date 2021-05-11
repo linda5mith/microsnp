@@ -20,14 +20,17 @@ def create_sample_folders(path_to_csv, path_to_output_folder=os.getcwd()):
     try:
         for item in keys:
             parent_folder = path_to_output_folder+'/'+item
-            if os.path.exists(parent_folder):
-                print(parent_folder, ' directory already exists.')
-            else:
-                os.mkdir(parent_folder)
-                print('\n')
-                print(f"Creating folder {parent_folder}")
-                subfolders=sample_dict.get(item)
-                for f in subfolders:
+            # if os.path.exists(parent_folder):
+            #     print(parent_folder, ' directory already exists.')
+            # else:
+            #     #os.mkdir(parent_folder)
+            #     print('\n')
+            #     print(f"Creating folder {parent_folder}")
+            subfolders=sample_dict.get(item)
+            for f in subfolders:
+                if pd.isnull(f):
+                    pass
+                else:   
                     try:  
                         subfolder_path=os.path.join(parent_folder,f)
                         if os.path.exists(subfolder_path):
@@ -37,6 +40,7 @@ def create_sample_folders(path_to_csv, path_to_output_folder=os.getcwd()):
                             print('Creating subfolder: ',subfolder_path)
                     except Exception as e:  
                         print('Error: ',e,' occurred trying to create subfolder: ',f)
+            print('\n')
     except Exception as e:
         print(e)    
     return sample_dict 
