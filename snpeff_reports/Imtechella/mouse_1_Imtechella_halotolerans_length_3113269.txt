@@ -1,0 +1,1858 @@
+
+
+  Genome  
+ Imtechella_halotolerans_length_3113269 
+
+
+  Date  
+ 2021-05-06 07:22 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_1/Imtechella_halotolerans_length_3113269/mouse_1_Imtechella_halotolerans_length_3113269.html 
+Imtechella_halotolerans_length_3113269 /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_1/Imtechella_halotolerans_length_3113269/mouse_1_Imtechella_halotolerans_length_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 17 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 23 
+
+
+  Number of variants (before filter)  
+ 23 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 23 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 199 
+
+
+  Genome total length  
+ 3,113,269 
+
+
+  Genome effective length  
+ 3,113,269 
+
+
+  Variant rate  
+ 1 variant every 135,359 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 8 
+ 4.02% 
+
+
+  LOW  
+   
+ 2 
+ 1.005% 
+
+
+  MODERATE  
+   
+ 8 
+ 4.02% 
+
+
+  MODIFIER  
+   
+ 181 
+ 90.955% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 8 
+ 66.667% 
+
+
+  NONSENSE  
+   
+ 2 
+ 16.667% 
+
+
+  SILENT  
+   
+ 2 
+ 16.667% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 91 
+ 45.274% 
+
+
+  feature_elongation  
+   
+ 1 
+ 0.498% 
+
+
+  frameshift_variant  
+   
+ 6 
+ 2.985% 
+
+
+  intergenic_region  
+   
+ 4 
+ 1.99% 
+
+
+  missense_variant  
+   
+ 8 
+ 3.98% 
+
+
+  splice_region_variant  
+   
+ 1 
+ 0.498% 
+
+
+  stop_gained  
+   
+ 2 
+ 0.995% 
+
+
+  stop_lost  
+   
+ 1 
+ 0.498% 
+
+
+  synonymous_variant  
+   
+ 2 
+ 0.995% 
+
+
+  upstream_gene_variant  
+   
+ 85 
+ 42.289% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  CHROMOSOME  
+   
+ 1 
+ 0.503% 
+
+
+  DOWNSTREAM  
+   
+ 91 
+ 45.729% 
+
+
+  EXON  
+   
+ 18 
+ 9.045% 
+
+
+  INTERGENIC  
+   
+ 4 
+ 2.01% 
+
+
+  UPSTREAM  
+   
+ 85 
+ 42.714% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 91 
+ 45.274% 
+
+
+  feature_elongation  
+   
+ 1 
+ 0.498% 
+
+
+  frameshift_variant  
+   
+ 6 
+ 2.985% 
+
+
+  intergenic_region  
+   
+ 4 
+ 1.99% 
+
+
+  missense_variant  
+   
+ 8 
+ 3.98% 
+
+
+  splice_region_variant  
+   
+ 1 
+ 0.498% 
+
+
+  stop_gained  
+   
+ 2 
+ 0.995% 
+
+
+  stop_lost  
+   
+ 1 
+ 0.498% 
+
+
+  synonymous_variant  
+   
+ 2 
+ 0.995% 
+
+
+  upstream_gene_variant  
+   
+ 85 
+ 42.289% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  CHROMOSOME  
+   
+ 1 
+ 0.503% 
+
+
+  DOWNSTREAM  
+   
+ 91 
+ 45.729% 
+
+
+  EXON  
+   
+ 18 
+ 9.045% 
+
+
+  INTERGENIC  
+   
+ 4 
+ 2.01% 
+
+
+  UPSTREAM  
+   
+ 85 
+ 42.714% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ Imtechella_halotolerans_length_3113269 
+ 3,113,269 
+ 23 
+ 135,359 
+
+
+ Total 
+ 3,113,269 
+ 23 
+ 135,359 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 15 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 7 
+
+
+  DEL  
+ 1 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 23 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  0  1  
+   C   0  0  1  4  
+   G   1  1  0  1  
+   T   1  1  4  0  
+
+  Transitions  22  
+  Transversions  27  
+  Ts/Tv ratio  0.8148  
+
+
+
+   
+ -   AAA   AAG   AAT   ACC   ACT   AGC   AGG   AGT   ATC   ATT   CCA   CCT   GAT   GCG   GCT   GGA   GGG   GTA   GTC   TAA   TAG   TAT   TCA   TGA   TGC   TGG   TTA   TTC   TTT 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAG 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACC 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGC 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CCA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CCT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAT 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GCG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GCT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GGA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GGG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GTA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GTC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ TAG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TAT 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TCA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ TGA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TGC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TGG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+ 1 
+
+
+ TTC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+   
+ *   -   ?   A   C   D   F   G   I   K   L   N   P   R   S   T   V   W   Y 
+
+
+
+ * 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ - 
+   
+   
+ 6 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+ 2 
+   
+   
+   
+ 1 
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ A 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ C 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ D 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ F 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ G 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ I 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ K 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ L 
+ 1 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ N 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ P 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ R 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ S 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+ 2 
+ 1 
+   
+   
+   
+   
+   
+
+
+ T 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ V 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ W 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ Y 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+

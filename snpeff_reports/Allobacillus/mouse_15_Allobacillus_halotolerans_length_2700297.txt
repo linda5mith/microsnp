@@ -1,0 +1,682 @@
+
+
+  Genome  
+ Allobacillus_halotolerans_length_2700297 
+
+
+  Date  
+ 2021-05-06 07:17 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_15/Allobacillus_halotolerans_length_2700297/mouse_15_Allobacillus_halotolerans_length_2700297.html 
+Allobacillus_halotolerans_length_2700297 /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_15/Allobacillus_halotolerans_length_2700297/mouse_15_Allobacillus_halotolerans_length_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 5 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 9 
+
+
+  Number of variants (before filter)  
+ 9 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 9 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 80 
+
+
+  Genome total length  
+ 2,700,297 
+
+
+  Genome effective length  
+ 2,700,297 
+
+
+  Variant rate  
+ 1 variant every 300,033 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 2 
+ 2.5% 
+
+
+  MODERATE  
+   
+ 5 
+ 6.25% 
+
+
+  MODIFIER  
+   
+ 73 
+ 91.25% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 4 
+ 100% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  disruptive_inframe_deletion  
+   
+ 1 
+ 1.25% 
+
+
+  downstream_gene_variant  
+   
+ 34 
+ 42.5% 
+
+
+  frameshift_variant  
+   
+ 2 
+ 2.5% 
+
+
+  intergenic_region  
+   
+ 2 
+ 2.5% 
+
+
+  missense_variant  
+   
+ 4 
+ 5% 
+
+
+  upstream_gene_variant  
+   
+ 37 
+ 46.25% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 34 
+ 42.5% 
+
+
+  EXON  
+   
+ 7 
+ 8.75% 
+
+
+  INTERGENIC  
+   
+ 2 
+ 2.5% 
+
+
+  UPSTREAM  
+   
+ 37 
+ 46.25% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  disruptive_inframe_deletion  
+   
+ 1 
+ 1.25% 
+
+
+  downstream_gene_variant  
+   
+ 34 
+ 42.5% 
+
+
+  frameshift_variant  
+   
+ 2 
+ 2.5% 
+
+
+  intergenic_region  
+   
+ 2 
+ 2.5% 
+
+
+  missense_variant  
+   
+ 4 
+ 5% 
+
+
+  upstream_gene_variant  
+   
+ 37 
+ 46.25% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 34 
+ 42.5% 
+
+
+  EXON  
+   
+ 7 
+ 8.75% 
+
+
+  INTERGENIC  
+   
+ 2 
+ 2.5% 
+
+
+  UPSTREAM  
+   
+ 37 
+ 46.25% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ Allobacillus_halotolerans_length_2700297 
+ 2,700,297 
+ 9 
+ 300,033 
+
+
+ Total 
+ 2,700,297 
+ 9 
+ 300,033 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 6 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 0 
+
+
+  DEL  
+ 3 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 9 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  1  1  
+   C   1  0  0  0  
+   G   1  0  0  2  
+   T   0  0  0  0  
+
+  Transitions  7  
+  Transversions  10  
+  Ts/Tv ratio  0.7  
+
+
+
+   
+ -   AAA   AAT   ACA   ACT   AGT   GAT   GCC   GTA   TAT   TCC   TTA 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAT 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ ACA 
+ 1 
+ 1 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACT 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAT 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GCC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ GTA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+
+
+ TAT 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TCC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+   
+ -   A   D   K   L   N   S   T   V   Y 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ A 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ D 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ K 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ L 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ N 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ S 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ T 
+ 2 
+   
+   
+ 1 
+   
+   
+   
+ 1 
+   
+   
+
+
+ V 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+
+
+ Y 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+

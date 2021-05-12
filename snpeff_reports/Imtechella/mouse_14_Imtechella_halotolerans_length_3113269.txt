@@ -1,0 +1,560 @@
+
+
+  Genome  
+ Imtechella_halotolerans_length_3113269 
+
+
+  Date  
+ 2021-05-06 07:20 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_14/Imtechella_halotolerans_length_3113269/mouse_14_Imtechella_halotolerans_length_3113269.html 
+Imtechella_halotolerans_length_3113269 /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_14/Imtechella_halotolerans_length_3113269/mouse_14_Imtechella_halotolerans_length_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 0 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 7 
+
+
+  Number of variants (before filter)  
+ 7 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 7 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 54 
+
+
+  Genome total length  
+ 3,113,269 
+
+
+  Genome effective length  
+ 3,113,269 
+
+
+  Variant rate  
+ 1 variant every 444,752 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 1 
+ 1.852% 
+
+
+  LOW  
+   
+ 1 
+ 1.852% 
+
+
+  MODERATE  
+   
+ 2 
+ 3.704% 
+
+
+  MODIFIER  
+   
+ 50 
+ 92.593% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 2 
+ 66.667% 
+
+
+  SILENT  
+   
+ 1 
+ 33.333% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 23 
+ 42.593% 
+
+
+  frameshift_variant  
+   
+ 1 
+ 1.852% 
+
+
+  intergenic_region  
+   
+ 3 
+ 5.556% 
+
+
+  missense_variant  
+   
+ 2 
+ 3.704% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 1.852% 
+
+
+  upstream_gene_variant  
+   
+ 24 
+ 44.444% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 23 
+ 42.593% 
+
+
+  EXON  
+   
+ 4 
+ 7.407% 
+
+
+  INTERGENIC  
+   
+ 3 
+ 5.556% 
+
+
+  UPSTREAM  
+   
+ 24 
+ 44.444% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 23 
+ 42.593% 
+
+
+  frameshift_variant  
+   
+ 1 
+ 1.852% 
+
+
+  intergenic_region  
+   
+ 3 
+ 5.556% 
+
+
+  missense_variant  
+   
+ 2 
+ 3.704% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 1.852% 
+
+
+  upstream_gene_variant  
+   
+ 24 
+ 44.444% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 23 
+ 42.593% 
+
+
+  EXON  
+   
+ 4 
+ 7.407% 
+
+
+  INTERGENIC  
+   
+ 3 
+ 5.556% 
+
+
+  UPSTREAM  
+   
+ 24 
+ 44.444% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ Imtechella_halotolerans_length_3113269 
+ 3,113,269 
+ 7 
+ 444,752 
+
+
+ Total 
+ 3,113,269 
+ 7 
+ 444,752 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 5 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 1 
+
+
+  DEL  
+ 1 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 7 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  1  1  
+   C   0  0  1  1  
+   G   0  0  0  1  
+   T   0  0  0  0  
+
+  Transitions  3  
+  Transversions  3  
+  Ts/Tv ratio  1  
+
+
+
+   
+ AAA   AAC   AAG   AAT   CAA   GAA   GCG   TCG 
+
+
+
+ AAA 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAC 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAG 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAT 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ CAA 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAA 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ GCG 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+
+
+ TCG 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+   
+ -   ?   A   E   K   N   Q   S 
+
+
+
+ - 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ A 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+
+
+ E 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ K 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ N 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ Q 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ S 
+   
+   
+   
+   
+   
+   
+   
+   
+

@@ -1,0 +1,348 @@
+
+
+  Genome  
+ NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+
+
+  Date  
+ 2021-04-29 16:48 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_1/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_1_NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625.html 
+NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_1/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_1_NC_017316.vcf.gz 
+ 
+
+
+  Warnings  
+ 110 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 136 
+
+
+  Number of variants (before filter)  
+ 136 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 136 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 1,369 
+
+
+  Genome total length  
+ 2,739,625 
+
+
+  Genome effective length  
+ 2,739,625 
+
+
+  Variant rate  
+ 1 variant every 20,144 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 8 
+ 0.584% 
+
+
+  LOW  
+   
+ 51 
+ 3.725% 
+
+
+  MODERATE  
+   
+ 56 
+ 4.091% 
+
+
+  MODIFIER  
+   
+ 1,254 
+ 91.6% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 56 
+ 51.852% 
+
+
+  NONSENSE  
+   
+ 1 
+ 0.926% 
+
+
+  SILENT  
+   
+ 51 
+ 47.222% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 574 
+ 41.898% 
+
+
+  frameshift_variant  
+   
+ 7 
+ 0.511% 
+
+
+  intergenic_region  
+   
+ 21 
+ 1.533% 
+
+
+  missense_variant  
+   
+ 56 
+ 4.088% 
+
+
+  splice_region_variant  
+   
+ 1 
+ 0.073% 
+
+
+  stop_gained  
+   
+ 1 
+ 0.073% 
+
+
+  stop_retained_variant  
+   
+ 1 
+ 0.073% 
+
+
+  synonymous_variant  
+   
+ 50 
+ 3.65% 
+
+
+  upstream_gene_variant  
+   
+ 659 
+ 48.102% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 574 
+ 41.928% 
+
+
+  EXON  
+   
+ 114 
+ 8.327% 
+
+
+  INTERGENIC  
+   
+ 21 
+ 1.534% 
+
+
+  SPLICE_SITE_REGION  
+   
+ 1 
+ 0.073% 
+
+
+  UPSTREAM  
+   
+ 659 
+ 48.137% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 574 
+ 41.898% 
+
+
+  frameshift_variant  
+   
+ 7 
+ 0.511% 
+
+
+  intergenic_region  
+   
+ 21 
+ 1.533% 
+
+
+  missense_variant  
+   
+ 56 
+ 4.088% 
+
+
+  splice_region_variant  
+   
+ 1 
+ 0.073% 
+
+
+  stop_gained  
+   
+ 1 
+ 0.073% 
+
+
+  stop_retained_variant  
+   
+ 1 
+ 0.073% 
+
+
+  synonymous_variant  
+   
+ 50 
+ 3.65% 
+
+
+  upstream_gene_variant  
+   
+ 659 
+ 48.102% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 574 
+ 41.928% 
+
+
+  EXON  
+   
+ 114 
+ 8.327% 
+
+
+  INTERGENIC  
+   
+ 21 
+ 1.534% 
+
+
+  SPLICE_SITE_REGION  
+   
+ 1 
+ 0.073% 
+
+
+  UPSTREAM  
+   
+ 659 
+ 48.137% 
+

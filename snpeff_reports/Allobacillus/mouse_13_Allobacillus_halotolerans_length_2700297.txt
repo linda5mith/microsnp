@@ -1,0 +1,388 @@
+
+
+  Genome  
+ Allobacillus_halotolerans_length_2700297 
+
+
+  Date  
+ 2021-05-06 07:18 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_13/Allobacillus_halotolerans_length_2700297/mouse_13_Allobacillus_halotolerans_length_2700297.html 
+Allobacillus_halotolerans_length_2700297 /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_13/Allobacillus_halotolerans_length_2700297/mouse_13_Allobacillus_halotolerans_length_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 8 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 11 
+
+
+  Number of variants (before filter)  
+ 11 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 11 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 110 
+
+
+  Genome total length  
+ 2,700,297 
+
+
+  Genome effective length  
+ 2,700,297 
+
+
+  Variant rate  
+ 1 variant every 245,481 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MODERATE  
+   
+ 2 
+ 1.818% 
+
+
+  MODIFIER  
+   
+ 108 
+ 98.182% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 2 
+ 100% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 59 
+ 53.636% 
+
+
+  intergenic_region  
+   
+ 9 
+ 8.182% 
+
+
+  missense_variant  
+   
+ 2 
+ 1.818% 
+
+
+  upstream_gene_variant  
+   
+ 40 
+ 36.364% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 59 
+ 53.636% 
+
+
+  EXON  
+   
+ 2 
+ 1.818% 
+
+
+  INTERGENIC  
+   
+ 9 
+ 8.182% 
+
+
+  UPSTREAM  
+   
+ 40 
+ 36.364% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 59 
+ 53.636% 
+
+
+  intergenic_region  
+   
+ 9 
+ 8.182% 
+
+
+  missense_variant  
+   
+ 2 
+ 1.818% 
+
+
+  upstream_gene_variant  
+   
+ 40 
+ 36.364% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 59 
+ 53.636% 
+
+
+  EXON  
+   
+ 2 
+ 1.818% 
+
+
+  INTERGENIC  
+   
+ 9 
+ 8.182% 
+
+
+  UPSTREAM  
+   
+ 40 
+ 36.364% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ Allobacillus_halotolerans_length_2700297 
+ 2,700,297 
+ 11 
+ 245,481 
+
+
+ Total 
+ 2,700,297 
+ 11 
+ 245,481 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 10 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 1 
+
+
+  DEL  
+ 0 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 11 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  0  1  
+   C   0  0  0  2  
+   G   1  0  0  0  
+   T   0  5  1  0  
+
+  Transitions  13  
+  Transversions  8  
+  Ts/Tv ratio  1.625  
+
+
+
+   
+ GAA   GCA   GCT   GTT 
+
+
+
+ GAA 
+   
+ 1 
+   
+   
+
+
+ GCA 
+   
+   
+   
+   
+
+
+ GCT 
+   
+   
+   
+ 1 
+
+
+ GTT 
+   
+   
+   
+   
+
+
+
+
+   
+ A   E   V 
+
+
+
+ A 
+   
+   
+ 1 
+
+
+ E 
+ 1 
+   
+   
+
+
+ V 
+   
+   
+   
+

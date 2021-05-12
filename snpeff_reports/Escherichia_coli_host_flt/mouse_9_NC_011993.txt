@@ -1,0 +1,897 @@
+
+
+  Genome  
+ NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108 
+
+
+  Date  
+ 2021-05-06 07:17 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_9/NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108/mouse_9_NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108.html 
+NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108 
+/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_9/NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108/mouse_9_NC_011993_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 6 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 13 
+
+
+  Number of variants (before filter)  
+ 13 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 13 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 131 
+
+
+  Genome total length  
+ 4,773,108 
+
+
+  Genome effective length  
+ 4,773,108 
+
+
+  Variant rate  
+ 1 variant every 367,162 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 8 
+ 6.107% 
+
+
+  LOW  
+   
+ 1 
+ 0.763% 
+
+
+  MODERATE  
+   
+ 3 
+ 2.29% 
+
+
+  MODIFIER  
+   
+ 119 
+ 90.84% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 3 
+ 75% 
+
+
+  SILENT  
+   
+ 1 
+ 25% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 79 
+ 60.305% 
+
+
+  frameshift_variant  
+   
+ 8 
+ 6.107% 
+
+
+  intergenic_region  
+   
+ 1 
+ 0.763% 
+
+
+  missense_variant  
+   
+ 3 
+ 2.29% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 0.763% 
+
+
+  upstream_gene_variant  
+   
+ 39 
+ 29.771% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 79 
+ 60.305% 
+
+
+  EXON  
+   
+ 12 
+ 9.16% 
+
+
+  INTERGENIC  
+   
+ 1 
+ 0.763% 
+
+
+  UPSTREAM  
+   
+ 39 
+ 29.771% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 79 
+ 60.305% 
+
+
+  frameshift_variant  
+   
+ 8 
+ 6.107% 
+
+
+  intergenic_region  
+   
+ 1 
+ 0.763% 
+
+
+  missense_variant  
+   
+ 3 
+ 2.29% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 0.763% 
+
+
+  upstream_gene_variant  
+   
+ 39 
+ 29.771% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 79 
+ 60.305% 
+
+
+  EXON  
+   
+ 12 
+ 9.16% 
+
+
+  INTERGENIC  
+   
+ 1 
+ 0.763% 
+
+
+  UPSTREAM  
+   
+ 39 
+ 29.771% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108 
+ 4,773,108 
+ 13 
+ 367,162 
+
+
+ Total 
+ 4,773,108 
+ 13 
+ 367,162 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 4 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 2 
+
+
+  DEL  
+ 7 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 13 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  0  1  
+   C   0  0  1  1  
+   G   0  0  0  0  
+   T   1  0  0  0  
+
+  Transitions  6  
+  Transversions  10  
+  Ts/Tv ratio  0.6  
+
+
+
+   
+ -   AAC   ACA   ACC   ATC   CCA   CTA   GAC   GAG   GAT   GCT   GTT   TAC   TAT   TTA   TTT 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAC 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACA 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACC 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATC 
+ 2 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CCA 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CTA 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAC 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GCT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+
+
+ GTT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ TAC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ TAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+
+
+   
+ -   ?   A   D   E   F   I   L   N   P   T   V   Y 
+
+
+
+ - 
+   
+ 2 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ A 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ D 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ E 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ F 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+
+
+ I 
+ 2 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ L 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ N 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ P 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ T 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ V 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ Y 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+

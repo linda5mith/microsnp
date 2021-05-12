@@ -1,0 +1,1101 @@
+
+
+  Genome  
+ NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+
+
+  Date  
+ 2021-05-06 07:25 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_7/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_7_NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625.html 
+NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_7/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_7_NC_017316_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 11 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 15 
+
+
+  Number of variants (before filter)  
+ 15 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 15 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 155 
+
+
+  Genome total length  
+ 2,739,625 
+
+
+  Genome effective length  
+ 2,739,625 
+
+
+  Variant rate  
+ 1 variant every 182,641 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 3 
+ 1.935% 
+
+
+  LOW  
+   
+ 2 
+ 1.29% 
+
+
+  MODERATE  
+   
+ 6 
+ 3.871% 
+
+
+  MODIFIER  
+   
+ 144 
+ 92.903% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 6 
+ 66.667% 
+
+
+  NONSENSE  
+   
+ 1 
+ 11.111% 
+
+
+  SILENT  
+   
+ 2 
+ 22.222% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 71 
+ 45.806% 
+
+
+  frameshift_variant  
+   
+ 2 
+ 1.29% 
+
+
+  intergenic_region  
+   
+ 4 
+ 2.581% 
+
+
+  missense_variant  
+   
+ 6 
+ 3.871% 
+
+
+  stop_gained  
+   
+ 1 
+ 0.645% 
+
+
+  synonymous_variant  
+   
+ 2 
+ 1.29% 
+
+
+  upstream_gene_variant  
+   
+ 69 
+ 44.516% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 71 
+ 45.806% 
+
+
+  EXON  
+   
+ 11 
+ 7.097% 
+
+
+  INTERGENIC  
+   
+ 4 
+ 2.581% 
+
+
+  UPSTREAM  
+   
+ 69 
+ 44.516% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 71 
+ 45.806% 
+
+
+  frameshift_variant  
+   
+ 2 
+ 1.29% 
+
+
+  intergenic_region  
+   
+ 4 
+ 2.581% 
+
+
+  missense_variant  
+   
+ 6 
+ 3.871% 
+
+
+  stop_gained  
+   
+ 1 
+ 0.645% 
+
+
+  synonymous_variant  
+   
+ 2 
+ 1.29% 
+
+
+  upstream_gene_variant  
+   
+ 69 
+ 44.516% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 71 
+ 45.806% 
+
+
+  EXON  
+   
+ 11 
+ 7.097% 
+
+
+  INTERGENIC  
+   
+ 4 
+ 2.581% 
+
+
+  UPSTREAM  
+   
+ 69 
+ 44.516% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+ 2,739,625 
+ 15 
+ 182,641 
+
+
+ Total 
+ 2,739,625 
+ 15 
+ 182,641 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 10 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 2 
+
+
+  DEL  
+ 3 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 15 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  2  0  
+   C   2  0  1  1  
+   G   2  0  0  1  
+   T   0  1  0  0  
+
+  Transitions  9  
+  Transversions  8  
+  Ts/Tv ratio  1.125  
+
+
+
+   
+ -   AAT   ACA   AGC   AGG   AGT   CAA   CAT   CGC   CGT   GAA   GTT   TAA   TAC   TAT   TCG   TCT   TGC   TTA   TTG 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGC 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGG 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AGT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ CAT 
+   
+ 1 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CGC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CGT 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GTT 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TAC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ TAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TCG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TCT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+
+
+ TGC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTA 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+
+
+
+
+   
+ *   -   ?   C   E   H   L   N   Q   R   S   T   V   Y 
+
+
+
+ * 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ - 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ C 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ E 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ H 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+ 1 
+   
+   
+
+
+ L 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ N 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ Q 
+ 1 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ R 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+ 1 
+   
+   
+   
+
+
+ S 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+ 1 
+
+
+ T 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ V 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ Y 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+

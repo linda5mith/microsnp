@@ -1,0 +1,789 @@
+
+
+  Genome  
+ NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+
+
+  Date  
+ 2021-05-06 07:20 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_12/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_12_NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625.html 
+NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_12/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_12_NC_017316_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 9 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 12 
+
+
+  Number of variants (before filter)  
+ 12 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 12 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 117 
+
+
+  Genome total length  
+ 2,739,625 
+
+
+  Genome effective length  
+ 2,739,625 
+
+
+  Variant rate  
+ 1 variant every 228,302 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 2 
+ 1.709% 
+
+
+  MODERATE  
+   
+ 5 
+ 4.274% 
+
+
+  MODIFIER  
+   
+ 110 
+ 94.017% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 4 
+ 100% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  conservative_inframe_deletion  
+   
+ 1 
+ 0.855% 
+
+
+  downstream_gene_variant  
+   
+ 58 
+ 49.573% 
+
+
+  frameshift_variant  
+   
+ 2 
+ 1.709% 
+
+
+  intergenic_region  
+   
+ 5 
+ 4.274% 
+
+
+  missense_variant  
+   
+ 4 
+ 3.419% 
+
+
+  upstream_gene_variant  
+   
+ 47 
+ 40.171% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 58 
+ 49.573% 
+
+
+  EXON  
+   
+ 7 
+ 5.983% 
+
+
+  INTERGENIC  
+   
+ 5 
+ 4.274% 
+
+
+  UPSTREAM  
+   
+ 47 
+ 40.171% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  conservative_inframe_deletion  
+   
+ 1 
+ 0.855% 
+
+
+  downstream_gene_variant  
+   
+ 58 
+ 49.573% 
+
+
+  frameshift_variant  
+   
+ 2 
+ 1.709% 
+
+
+  intergenic_region  
+   
+ 5 
+ 4.274% 
+
+
+  missense_variant  
+   
+ 4 
+ 3.419% 
+
+
+  upstream_gene_variant  
+   
+ 47 
+ 40.171% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 58 
+ 49.573% 
+
+
+  EXON  
+   
+ 7 
+ 5.983% 
+
+
+  INTERGENIC  
+   
+ 5 
+ 4.274% 
+
+
+  UPSTREAM  
+   
+ 47 
+ 40.171% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+ 2,739,625 
+ 12 
+ 228,302 
+
+
+ Total 
+ 2,739,625 
+ 12 
+ 228,302 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 4 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 4 
+
+
+  DEL  
+ 4 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 12 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  2  0  
+   C   0  0  0  0  
+   G   1  0  0  1  
+   T   0  0  0  0  
+
+  Transitions  5  
+  Transversions  2  
+  Ts/Tv ratio  2.5  
+
+
+
+   
+ -   AAA   AAC   ACA   ATT   CAT   CGC   CGT   GAA   GTT   TAT   TCT   TTA 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAA 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAC 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ACA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ CAT 
+   
+   
+   
+ 1 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+
+
+ CGC 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ CGT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAA 
+ 2 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GTT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TCT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ TTA 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+   
+ -   ?   E   H   I   K   L   N   R   S   T   V   Y 
+
+
+
+ - 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ E 
+ 2 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ H 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+ 1 
+   
+   
+
+
+ I 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ K 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ L 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ N 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ R 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+
+
+ S 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+
+
+ T 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ V 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ Y 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+

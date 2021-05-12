@@ -1,0 +1,622 @@
+
+
+  Genome  
+ Allobacillus_halotolerans_length_2700297 
+
+
+  Date  
+ 2021-05-06 07:19 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_5/Allobacillus_halotolerans_length_2700297/mouse_5_Allobacillus_halotolerans_length_2700297.html 
+Allobacillus_halotolerans_length_2700297 /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_5/Allobacillus_halotolerans_length_2700297/mouse_5_Allobacillus_halotolerans_length_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 13 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 16 
+
+
+  Number of variants (before filter)  
+ 16 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 16 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 185 
+
+
+  Genome total length  
+ 2,700,297 
+
+
+  Genome effective length  
+ 2,700,297 
+
+
+  Variant rate  
+ 1 variant every 168,768 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 1 
+ 0.541% 
+
+
+  LOW  
+   
+ 1 
+ 0.541% 
+
+
+  MODERATE  
+   
+ 3 
+ 1.622% 
+
+
+  MODIFIER  
+   
+ 180 
+ 97.297% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 3 
+ 75% 
+
+
+  SILENT  
+   
+ 1 
+ 25% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 108 
+ 58.378% 
+
+
+  frameshift_variant  
+   
+ 1 
+ 0.541% 
+
+
+  intergenic_region  
+   
+ 11 
+ 5.946% 
+
+
+  missense_variant  
+   
+ 3 
+ 1.622% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 0.541% 
+
+
+  upstream_gene_variant  
+   
+ 61 
+ 32.973% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 108 
+ 58.378% 
+
+
+  EXON  
+   
+ 5 
+ 2.703% 
+
+
+  INTERGENIC  
+   
+ 11 
+ 5.946% 
+
+
+  UPSTREAM  
+   
+ 61 
+ 32.973% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 108 
+ 58.378% 
+
+
+  frameshift_variant  
+   
+ 1 
+ 0.541% 
+
+
+  intergenic_region  
+   
+ 11 
+ 5.946% 
+
+
+  missense_variant  
+   
+ 3 
+ 1.622% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 0.541% 
+
+
+  upstream_gene_variant  
+   
+ 61 
+ 32.973% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 108 
+ 58.378% 
+
+
+  EXON  
+   
+ 5 
+ 2.703% 
+
+
+  INTERGENIC  
+   
+ 11 
+ 5.946% 
+
+
+  UPSTREAM  
+   
+ 61 
+ 32.973% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ Allobacillus_halotolerans_length_2700297 
+ 2,700,297 
+ 16 
+ 168,768 
+
+
+ Total 
+ 2,700,297 
+ 16 
+ 168,768 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 15 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 1 
+
+
+  DEL  
+ 0 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 16 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  4  1  
+   C   0  0  0  1  
+   G   2  1  0  0  
+   T   0  5  1  0  
+
+  Transitions  18  
+  Transversions  14  
+  Ts/Tv ratio  1.2857  
+
+
+
+   
+ ATA   ATT   CGC   CGT   GAA   GCA   GCC   GTC   TCA   TTA 
+
+
+
+ ATA 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CGC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CGT 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAA 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+
+
+ GCA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GCC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GTC 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ TCA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TTA 
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+
+
+   
+ -   ?   A   E   I   L   R   S   V 
+
+
+
+ - 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ A 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ E 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ I 
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+
+
+ L 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ R 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+
+
+ S 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ V 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+

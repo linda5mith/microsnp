@@ -1,0 +1,862 @@
+
+
+  Genome  
+ Allobacillus_halotolerans_length_2700297 
+
+
+  Date  
+ 2021-05-06 07:16 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_9/Allobacillus_halotolerans_length_2700297/mouse_9_Allobacillus_halotolerans_length_2700297.html 
+Allobacillus_halotolerans_length_2700297 /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_9/Allobacillus_halotolerans_length_2700297/mouse_9_Allobacillus_halotolerans_length_fltq.vcf.gz 
+ 
+
+
+  Warnings  
+ 6 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 10 
+
+
+  Number of variants (before filter)  
+ 10 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 10 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 91 
+
+
+  Genome total length  
+ 2,700,297 
+
+
+  Genome effective length  
+ 2,700,297 
+
+
+  Variant rate  
+ 1 variant every 270,029 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 3 
+ 3.297% 
+
+
+  LOW  
+   
+ 1 
+ 1.099% 
+
+
+  MODERATE  
+   
+ 5 
+ 5.495% 
+
+
+  MODIFIER  
+   
+ 82 
+ 90.11% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 5 
+ 83.333% 
+
+
+  SILENT  
+   
+ 1 
+ 16.667% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 33 
+ 36.264% 
+
+
+  frameshift_variant  
+   
+ 3 
+ 3.297% 
+
+
+  intergenic_region  
+   
+ 1 
+ 1.099% 
+
+
+  missense_variant  
+   
+ 5 
+ 5.495% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 1.099% 
+
+
+  upstream_gene_variant  
+   
+ 48 
+ 52.747% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 33 
+ 36.264% 
+
+
+  EXON  
+   
+ 9 
+ 9.89% 
+
+
+  INTERGENIC  
+   
+ 1 
+ 1.099% 
+
+
+  UPSTREAM  
+   
+ 48 
+ 52.747% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 33 
+ 36.264% 
+
+
+  frameshift_variant  
+   
+ 3 
+ 3.297% 
+
+
+  intergenic_region  
+   
+ 1 
+ 1.099% 
+
+
+  missense_variant  
+   
+ 5 
+ 5.495% 
+
+
+  synonymous_variant  
+   
+ 1 
+ 1.099% 
+
+
+  upstream_gene_variant  
+   
+ 48 
+ 52.747% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  DOWNSTREAM  
+   
+ 33 
+ 36.264% 
+
+
+  EXON  
+   
+ 9 
+ 9.89% 
+
+
+  INTERGENIC  
+   
+ 1 
+ 1.099% 
+
+
+  UPSTREAM  
+   
+ 48 
+ 52.747% 
+
+
+ Chromosome  Length  Variants  Variants rate 
+
+ Allobacillus_halotolerans_length_2700297 
+ 2,700,297 
+ 10 
+ 270,029 
+
+
+ Total 
+ 2,700,297 
+ 10 
+ 270,029 
+
+
+
+
+  Type    
+  Total   
+
+
+
+
+  SNP  
+ 7 
+
+
+  MNP  
+ 0 
+
+
+  INS  
+ 1 
+
+
+  DEL  
+ 2 
+
+
+  MIXED  
+ 0 
+
+
+  INV  
+ 0 
+
+
+  DUP  
+ 0 
+
+
+  BND  
+ 0 
+
+
+  INTERVAL  
+ 0 
+
+
+
+
+Total  
+ 10 
+
+
+
+
+      A     C     G     T  
+
+   A   0  0  1  1  
+   C   3  0  1  0  
+   G   0  0  0  0  
+   T   0  0  1  0  
+
+  Transitions  1  
+  Transversions  9  
+  Ts/Tv ratio  0.1111  
+
+
+
+   
+ -   AAT   ATA   ATC   ATG   CAG   CCA   CCC   CCG   GAA   GAT   GCA   GGT   GTT   TGG 
+
+
+
+ - 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ AAT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+
+
+ ATA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATC 
+ 1 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ATG 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CAG 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CCA 
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+
+
+ CCC 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ CCG 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GAA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+
+
+ GAT 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GCA 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ GGT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ GTT 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ TGG 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+   
+ -   ?   A   D   E   G   I   M   N   P   Q   V   W 
+
+
+
+ - 
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ ? 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ A 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ D 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ E 
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ G 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+   
+
+
+ I 
+ 1 
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ M 
+   
+   
+   
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+
+
+ N 
+   
+   
+   
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ P 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 1 
+ 1 
+   
+   
+
+
+ Q 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ V 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+ W 
+ 1 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+

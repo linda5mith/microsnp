@@ -1,0 +1,336 @@
+
+
+  Genome  
+ NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+
+
+  Date  
+ 2021-04-29 16:42 
+
+
+  SnpEff version  
+ SnpEff 5.0e (build 2021-03-09 06:01), by Pablo Cingolani 
+
+
+  Command line arguments  
+ SnpEff  -stats /external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_9/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_9_NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625.html 
+NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625 
+/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_9/NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625/mouse_9_NC_017316.vcf.gz 
+ 
+
+
+  Warnings  
+ 105 
+
+
+  Errors  
+ 0 
+
+
+  Number of lines (input file)  
+ 128 
+
+
+  Number of variants (before filter)  
+ 128 
+
+
+  Number of not variants (i.e. reference equals alternative)  
+ 0 
+
+
+  Number of variants processed  (i.e. after filter and non-variants)  
+ 128 
+
+
+  Number of known variants (i.e. non-empty ID)  
+ 
+		0
+		( 0% ) 
+		
+
+
+  Number of multi-allelic VCF entries (i.e. more than two alleles)  
+ 
+		0
+		
+
+
+  Number of effects  
+ 1,316 
+
+
+  Genome total length  
+ 2,739,625 
+
+
+  Genome effective length  
+ 2,739,625 
+
+
+  Variant rate  
+ 1 variant every 21,403 bases 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  HIGH  
+   
+ 9 
+ 0.684% 
+
+
+  LOW  
+   
+ 32 
+ 2.432% 
+
+
+  MODERATE  
+   
+ 64 
+ 4.863% 
+
+
+  MODIFIER  
+   
+ 1,211 
+ 92.021% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  MISSENSE  
+   
+ 64 
+ 64.646% 
+
+
+  NONSENSE  
+   
+ 3 
+ 3.03% 
+
+
+  SILENT  
+   
+ 32 
+ 32.323% 
+
+
+
+ Type 
+ Region 
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 540 
+ 41.033% 
+
+
+  feature_elongation  
+   
+ 2 
+ 0.152% 
+
+
+  frameshift_variant  
+   
+ 6 
+ 0.456% 
+
+
+  intergenic_region  
+   
+ 21 
+ 1.596% 
+
+
+  missense_variant  
+   
+ 64 
+ 4.863% 
+
+
+  stop_gained  
+   
+ 3 
+ 0.228% 
+
+
+  synonymous_variant  
+   
+ 32 
+ 2.432% 
+
+
+  upstream_gene_variant  
+   
+ 648 
+ 49.24% 
+
+
+
+ 
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  CHROMOSOME  
+   
+ 2 
+ 0.152% 
+
+
+  DOWNSTREAM  
+   
+ 540 
+ 41.033% 
+
+
+  EXON  
+   
+ 105 
+ 7.979% 
+
+
+  INTERGENIC  
+   
+ 21 
+ 1.596% 
+
+
+  UPSTREAM  
+   
+ 648 
+ 49.24% 
+
+
+
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  downstream_gene_variant  
+   
+ 540 
+ 41.033% 
+
+
+  feature_elongation  
+   
+ 2 
+ 0.152% 
+
+
+  frameshift_variant  
+   
+ 6 
+ 0.456% 
+
+
+  intergenic_region  
+   
+ 21 
+ 1.596% 
+
+
+  missense_variant  
+   
+ 64 
+ 4.863% 
+
+
+  stop_gained  
+   
+ 3 
+ 0.228% 
+
+
+  synonymous_variant  
+   
+ 32 
+ 2.432% 
+
+
+  upstream_gene_variant  
+   
+ 648 
+ 49.24% 
+
+
+
+
+ Type (alphabetical order)  
+   
+ Count 
+ Percent 
+
+
+
+  CHROMOSOME  
+   
+ 2 
+ 0.152% 
+
+
+  DOWNSTREAM  
+   
+ 540 
+ 41.033% 
+
+
+  EXON  
+   
+ 105 
+ 7.979% 
+
+
+  INTERGENIC  
+   
+ 21 
+ 1.596% 
+
+
+  UPSTREAM  
+   
+ 648 
+ 49.24% 
+
