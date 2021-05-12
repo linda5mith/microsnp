@@ -283,45 +283,7 @@ def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
             print(e)
     
 
-def filter_vcf_by_col(path_to_files, file_extension, path_to_sample_csv):
-    '''Uses bcftools on gzipped vcf files e.g. file_extension is vcf.gz '''
-    files = snp.os_walk(path_to_files, file_extension)
-    for f in files:
-        # extract column names from each vcf file 
-        command=f'bcftools query -l {f}' 
-        vcf_columns=snp.save_process_output(command)
-        print('\n')
-        path_to_output_file=snp.get_file_dir(f)
-        species = snp.get_file_basename(path_to_output_file)
-        species_short = species.split('_')
-        spec = '_'.join([species_short[0],species_short[1],species_short[2]])
-        for col in vcf_columns:
-            column=snp.get_file_basename(col)
-            sample_name=snp.get_output_name(column)
-            try:
-                sample_name=sample_name.split('_')[0]
-            except:
-                sample_name=sample_name
-            output_filename=sample_name + '_' + spec+'.vcf.gz'
-            output_file_path=os.path.join(path_to_output_file,output_filename)
-            # create a new vcf file containing only that column
-            command2=f'bcftools view {f} --regions {col} -O z -o {os.path.join(path_to_output_file,output_file_path)}'
-            try:
-                print('Executing:',command2)
-                subprocess.call([command2],shell=True)
-            except Exception as e:
-                print(e)
 
-
-    # bcftools view input.vcf.gz --regions chr1
-
-    # view all sample names in file
-    # bcftools query -l input.vcf
-
-    # mv file.vcf.gz plain.vcf
-    # bcftools view -Oz -o compressed.vcf.gz plain.vcf
-    # htsfile compressed.vcf.gz
-    # bcftools index compressed.vcf.gz
 
 def rename_file_extension(path_to_files, file_extension, new_file_extension):
     '''Renames all files in path with specified file_extension to new_file_extension.'''
@@ -376,14 +338,47 @@ def htsfile(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
-        
-def recompress_bgzip_vcfs(path_to_files, file_extension, new_file_extension):
+def recompress_bgzip_vcfs(path_to_files, file_extension):
     '''This function is to counteract error you get if your vcf files are not properly compressed. E.g. overcome error:
     Failed to open file.vcf.gz: not compressed with bgzip. Converts files with file_extension vcf.gz back to vcf, recompresses and indexes them.'''
     rename_file_extension(path_to_files, file_extension)
     bcftools_compress_vcf(path_to_files, file_extension)
     bcftools_index_vcf(path_to_files, file_extension)
     htsfile(path_to_files, file_extension)
+
+
+def filter_vcf_by_col(path_to_files, file_extension):
+    '''Uses bcftools on gzipped vcf files e.g. file_extension is vcf.gz '''
+    files = snp.os_walk(path_to_files, file_extension)
+    for f in files:
+        # extract all column names from each vcf file 
+        command=f'bcftools query -l {f}' 
+        vcf_columns=snp.save_process_output(command)
+        print('\n')
+        path_to_output_file=snp.get_file_dir(f)
+        mouse_path=snp.get_file_dir(path_to_output_file)
+        mouse=snp.get_file_basename(mouse_path)
+        species = snp.get_file_basename(path_to_output_file)
+        species_short = species.split('_')
+        spec = '_'.join([species_short[0],species_short[1],species_short[2]])
+        for col in vcf_columns:
+            column=snp.get_file_basename(col)
+            sample_name=snp.get_output_name(column)
+            try:
+                sample_name=sample_name.split('_')[0]
+            except:
+                sample_name=sample_name
+            output_filename=mouse+'_'+sample_name + '_' + spec+'.vcf.gz'
+            #grab mouse ID to put in file_name
+            output_file_path=os.path.join(path_to_output_file,output_filename)
+            #create a new vcf file containing only that column
+            command2=f'bcftools view {f} --regions {col} -Oz -o {os.path.join(path_to_output_file,output_file_path)}'
+            try:
+                print('Executing:',command2)
+                subprocess.call([command2],shell=True)
+                print('\n')
+            except Exception as e:
+                print(e)
 
 
 def main():
@@ -422,12 +417,13 @@ def main():
 
     #snp.create_sample_folders('/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2')
 
-    #filter_vcf_by_col('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/mouse_1','fltq.vcf.gz','/external_HDD4/linda/unc_mouse_trial/genomes/mouse_samples.csv')
-
     #rename_file_extension('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', 'fltq.vcf.gz','.vcf')
     #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', '_fltq.vcf')
     #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', 'fltq.vcf.gz')
-    htsfile('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', 'fltq.vcf.gz')
+    #htsfile('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', 'fltq.vcf.gz')
+
+    filter_vcf_by_col('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','fltq.vcf.gz')
+
 
 if __name__ == '__main__':
     main()
