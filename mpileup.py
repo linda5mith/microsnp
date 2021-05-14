@@ -10,10 +10,46 @@ import csv
 # Count the number of variants by species and output to file 
 # bcftools view var.raw.bcf.gz | bcftools filter -e'"Enterococcus"' | wc -l 
 
-# MOUSE 10 too many files ---> have a look
 
-def bcftools_mpileup(path_to_files, file_extension, path_to_reference_file):
-    '''Run bcftools mpileup on the bam contents of multiple folders. Path to faidx indexed reference sequence file path_to_reference_file 
+def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference_file):
+    '''Runs bcftools mpileup on a single bam file with the reference. Path to faidx indexed reference sequence file path_to_reference_file 
+    needs to be included.'''
+    files = snp.os_walk(path_to_files, file_extension)
+    for f in files:
+        # get mouseID
+        subject_path=snp.get_file_dir(f)
+        subject_clean=snp.get_file_basename(subject_path)
+        # get sample_ID
+        sample_id=snp.get_file_basename(f)
+        sample_id_clean=sample_id.split('_')[0]
+        command=f'bcftools mpileup -Ou -f {path_to_reference_file}  {f} | bcftools call --ploidy 1 -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {subject_path}/{subject_clean}_{sample_id_clean}.flt.vcf'
+        print(command)
+        subprocess.call([command],shell=True)
+
+# bcftools view -e 'QUAL<20' mouse_1_UNC2FT2113.flt.vcf
+
+def filter_vcf_qual(path_to_files, file_extension, qual=20):
+    '''Filters out snp calls from vcf file with quality below specified qual. Default threshold is 20.'''
+    files = snp.os_walk(path_to_files, file_extension)
+    for f in files:
+        # get mouse_ID
+        subject_path=snp.get_file_dir(f)
+        subject_clean=snp.get_file_basename(subject_path)
+        # get sample_ID
+        sample_id=snp.get_output_name(f)
+        sample_id_clean=sample_id.split('_')[2]
+        command=f'bcftools view -e \'QUAL<{qual}\' {f} > {subject_path}/{subject_clean}_{sample_id_clean}.fltq.vcf'
+        try:
+            print(command)
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+
+
+
+
+def bcftools_mpileup_multi(path_to_files, file_extension, path_to_reference_file):
+    '''Runs bcftools mpileup on multiple bam files (all bam files present in a folder). Path to faidx indexed reference sequence file path_to_reference_file 
     needs to be included.'''
     for folder in os.listdir(path_to_files):
         path_to_folder=os.path.join(path_to_files,folder)
@@ -383,7 +419,11 @@ def filter_vcf_by_col(path_to_files, file_extension):
 
 def main():
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
-    #bcftools_mpileup('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
+    #bcftools_mpileup_single('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.sorted.bam', '/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
+    filter_vcf_qual('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.flt.vcf', 20)
+    
+
+    #bcftools_mpileup_multi('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
     #index_bcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.bcf')
     # --------------------- Filter VCF quality -------------------------------------------------------------------------------------------------------------
     #filter_qual_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.bcf',20)
@@ -422,7 +462,7 @@ def main():
     #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', 'fltq.vcf.gz')
     #htsfile('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/', 'fltq.vcf.gz')
 
-    filter_vcf_by_col('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','fltq.vcf.gz')
+    #filter_vcf_by_col('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','fltq.vcf.gz')
 
 
 if __name__ == '__main__':

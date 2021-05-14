@@ -8,13 +8,11 @@ import snptools as snp
 
 path_to_output='/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports'
 
-def scrape_snpeff_html_to_txt(path_to_files, file_extension, path_to_output_files):
-    files = snp.access_folder_contents(path_to_files,file_extension)
+def scrape_snpeff_html_to_txt(path_to_files, file_extension, species, path_to_output_files):
+    files = snp.os_walk(path_to_files,file_extension)
     for f in files:
-        if 'Allobacillus' in f:  
-            print(f)
+        if species in f:  
             output_filename=snp.get_output_name(f)
-            print(output_filename)
             soup = BeautifulSoup(open(f), "html.parser")
             results = soup.find_all('table', attrs={'border': '0'})
             output_file = open(f'{path_to_output_files}/{output_filename}.txt', "w")
@@ -339,9 +337,9 @@ def append_data(path_to_dfs,file_extension):
 
 
 def main():
-    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/html_reports_filtered','.html','/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports')
-    #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','.txt')
-    append_data('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','csv')
+    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','.html','Enterococcus_faecalis','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/all_mouse_all_timepoints_all_species')
+    #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/all_mouse_all_timepoints_all_species','.txt')
+    #append_data('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','csv')
 
 
 if __name__ == '__main__':
