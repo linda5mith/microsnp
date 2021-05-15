@@ -82,27 +82,27 @@ def index_bcf(path_to_files, file_extension):
 
 def filter_bcf_by_species(path_to_files, file_extension):
     '''Finds the unique species/chromosomes from #CHROM column in a bcf/vcf file and outputs the filtered variants for that species to a new bcf file
-    with the naming convention <species>.flt.bcf'''
-    for folder in os.listdir(path_to_files):
-        path_to_folder=os.path.join(path_to_files,folder)
-        if os.path.isdir(path_to_folder):
-            files_in_folder=os.listdir(path_to_folder)
-            for f in files_in_folder:
-                #if file ends in bcf (or specified file_extension)
-                if re.search(r'{}$'.format(file_extension),f):
-                    print('\n')
-                    full_path_to_file = os.path.join(path_to_folder,f)
-                    # Extract all unique chromosomes/species from bcf file
-                    command=f'bcftools view {full_path_to_file} |  grep -v "#" | cut -f 1 | uniq | sort'
-                    unique_chrom=snp.save_process_output(command)
-                    for chrom in unique_chrom:
-                        species=chrom.split('_')
-                        species_prefix = '_'.join([species[0],species[1],species[2]])
-                        output_file_name = f'{folder}_{species_prefix}.flt.bcf'
-                        full_path_to_output_file=os.path.join(path_to_folder,output_file_name)
-                        filter_command=f'bcftools view {full_path_to_file} --regions {chrom} > {full_path_to_output_file}'
-                        print('Executing:',filter_command)
-                        subprocess.call([filter_command],shell=True)
+    with the naming convention <species>.fltq.bcf'''
+    files = snp.os_walk(path_to_files, file_extension)
+    # print(files)
+    for f in files:
+        if 'mouse_1_' in f:
+            pass
+    # # Extract all unique chromosomes/species from bcf file
+        else:
+            command=f'bcftools view {f} |  grep -v "#" | cut -f 1 | uniq | sort'
+            unique_chrom=snp.save_process_output(command)
+            for chrom in unique_chrom:
+                species=chrom.split('_')
+                species_prefix = '_'.join([species[0],species[1],species[2]]) 
+                outfile = snp.get_output_name(f)
+                out_file_name = f'{outfile}_{species_prefix}.fltqs.vcf'
+                out_dir = snp.get_file_dir(f)
+                full_outfile_path=os.path.join(out_dir,out_file_name)
+                filter_command=f'bcftools view {f} --regions {chrom} > {full_outfile_path}'
+                print(filter_command)
+                print('\n')
+                subprocess.call([filter_command],shell=True)
 
                     
 def get_number_of_variants(path_to_files, file_extension, path_to_output_file=os.getcwd()):
@@ -318,9 +318,6 @@ def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
         except Exception as e:
             print(e)
     
-
-
-
 def rename_file_extension(path_to_files, file_extension, new_file_extension):
     '''Renames all files in path with specified file_extension to new_file_extension.'''
     files = snp.os_walk(path_to_files, file_extension)
@@ -342,7 +339,7 @@ def bcftools_compress_vcf(path_to_files, file_extension):
     for f in files:
         basename=snp.get_output_name(f)
         outdir=snp.get_file_dir(f)
-        vcf_out_file=basename+'.vcf.gz'
+        vcf_out_file=basename+'.fltq.vcf.gz'
         out_file_path=os.path.join(outdir,vcf_out_file)
         command=f'bcftools view -Oz -o {out_file_path} {f}'
         try:
@@ -352,7 +349,7 @@ def bcftools_compress_vcf(path_to_files, file_extension):
             print(e)
 
 def bcftools_index_vcf(path_to_files, file_extension):
-    '''Indexes all vcf.gz files in path'''
+    '''Indexes all files with specified file_extension in path.'''
     files = snp.os_walk(path_to_files, file_extension)
     for f in files:
         command=f'bcftools index {f}'
@@ -384,7 +381,7 @@ def recompress_bgzip_vcfs(path_to_files, file_extension):
 
 
 def filter_vcf_by_col(path_to_files, file_extension):
-    '''Uses bcftools on gzipped vcf files e.g. file_extension is vcf.gz '''
+    '''DOESNT WORK -- EMPTY FILES?? Uses bcftools on gzipped vcf files e.g. file_extension is vcf.gz '''
     files = snp.os_walk(path_to_files, file_extension)
     for f in files:
         # extract all column names from each vcf file 
@@ -418,10 +415,23 @@ def filter_vcf_by_col(path_to_files, file_extension):
 
 
 def main():
+    # --------------------- Pipeline 2.0 14_05_21 ----------------------------------------------------------------------------------------------------------
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup_single('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.sorted.bam', '/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
-    filter_vcf_qual('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.flt.vcf', 20)
-    
+    #filter_vcf_qual('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.flt.vcf', 20)
+
+    # Compress files with bgzip and then index before filtering can be applied
+    #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf')
+    #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+    #htsfile('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+
+    # Filter fltq.vcf.gz by species 
+    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+
+    # create species folders 
+    snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+
+    # -------------------------------------------------------------------------------------------------------------------------------------------------------
 
     #bcftools_mpileup_multi('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','sorted.bam','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/Combined.fasta')
     #index_bcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.bcf')

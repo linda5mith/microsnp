@@ -6,12 +6,11 @@ from bs4 import BeautifulSoup
 import snptools as snp
 
 
-path_to_output='/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports'
-
 def scrape_snpeff_html_to_txt(path_to_files, file_extension, species, path_to_output_files):
     files = snp.os_walk(path_to_files,file_extension)
     for f in files:
-        if species in f:  
+        if species in f:
+            print('Scraping:',f)
             output_filename=snp.get_output_name(f)
             soup = BeautifulSoup(open(f), "html.parser")
             results = soup.find_all('table', attrs={'border': '0'})
@@ -25,6 +24,7 @@ def scrape_snpeff_html_to_txt(path_to_files, file_extension, species, path_to_ou
             for line in results2:
                 print('Outputting scrapes to:',output_file)
                 output_file.write(line.text)
+            print('\n')  
 
 
 def scrape_snpeff_txt_to_csv_2(path_to_files,file_extension):
@@ -332,16 +332,19 @@ def append_data(path_to_dfs,file_extension):
     for f in files:
         df=pd.read_csv(f)
         mydf=mydf.append(df)
-    mydf.to_csv('Allobacillus_all_snps_flt.csv')
+    mydf.to_csv('NC_017316.1_Enterococcus_faecalis_OG1RF_all_snps.csv')
     return mydf
 
 
 def main():
-    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/','.html','Enterococcus_faecalis','/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/all_mouse_all_timepoints_all_species')
-    #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/test_snp_pipeline/snp_take2/all_mouse_all_timepoints_all_species','.txt')
-    #append_data('/external_HDD4/linda/unc_mouse_trial/genomes/snpeff_reports','csv')
+    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/','.html','NC_017316','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports')
+    #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','.txt')
+    append_data('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','csv')
 
 
 if __name__ == '__main__':
     main()
    
+
+# NC_017316.1_Enterococcus_faecalis_OG1RF_complete_genome_length_2739625
+# NC_011993.1_Escherichia_coli_LF82_complete_genome_length_4773108
