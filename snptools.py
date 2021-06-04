@@ -81,22 +81,34 @@ def move_files_to_species_folder(path_to_files, file_extension, file_with_specie
     handle=open(file_with_species_names,"r")
     species_file=handle.readlines()
     files = os_walk(path_to_files, file_extension)
+    #print(files)
     for f in files:
         #remove mouse_1 prefix to file name to extract species name
         basename=get_output_name(f)
         file_names=basename.split('_')
+        print(file_names)
         try:
-            species_id='_'.join([file_names[2],file_names[3]])
+            species_id='_'.join([file_names[3],file_names[4]])
+            print(species_id)
             for line in species_file:
+                line=line.strip()
                 if line:
+                    #print(line)
                     output_dir=get_file_dir(f)
                     full_path_to_file=os.path.join(output_dir,f)
                     full_path_to_output_folder=os.path.join(output_dir,line)
+                    #print(full_path_to_output_folder)
                     # if species name is in filename and folder name move it therre
                     if species_id in full_path_to_file and species_id in full_path_to_output_folder:
                         try:
                             print('Moving:', full_path_to_file, 'to ',full_path_to_output_folder)
-                            shutil.move(full_path_to_file,full_path_to_output_folder)
+                            print(os.path.exists(full_path_to_output_folder))
+                            if not os.path.exists(full_path_to_output_folder):
+                                print('Creating folder: ',full_path_to_output_folder)
+                                os.mkdir(full_path_to_output_folder)  
+                                shutil.move(full_path_to_file, full_path_to_output_folder)
+                            else:
+                                shutil.move(full_path_to_file, full_path_to_output_folder)
                         except Exception as e:
                             print(e)
                         print('\n')

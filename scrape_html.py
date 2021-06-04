@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 
 import snptools as snp
 
+# path to Tom's breseq output
+#  /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/Breseq_Polymode_out/
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/Breseq_Polymode_out/UNC2FT29_Polymorphism_mode/output/summary.html
 
 def scrape_snpeff_html_to_txt(path_to_files, file_extension, species, path_to_output_files):
     files = snp.os_walk(path_to_files,file_extension)
@@ -332,12 +335,12 @@ def append_data(path_to_dfs,file_extension):
     for f in files:
         df=pd.read_csv(f)
         mydf=mydf.append(df)
-    mydf.to_csv('NC_017316.1_Enterococcus_faecalis_OG1RF_all_snps.csv')
+    mydf.to_csv('Imtechella_all_snps.csv')
     return mydf
 
 
 def main():
-    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/','.html','NC_017316','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports')
+    #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/','.html','Imtechella','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports')
     #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','.txt')
     append_data('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','csv')
 

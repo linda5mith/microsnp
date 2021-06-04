@@ -18,23 +18,10 @@ def read_params(args):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--path_to_html_files', type=str, help='Path to html files for scraping.')
 parser.add_argument('--file_extension', type=str, help='File extension of files e.g. \'html\'')
 parser.add_argument('--path_to_output_files', type=str, default=os.getcwd(), help='Path to output scraped files.')
-
 parser.add_argument('--path_to_txt_files', type=str, help='Path to html files for scraping.')
 
 args = parser.parse_args()
