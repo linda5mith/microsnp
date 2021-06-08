@@ -411,14 +411,17 @@ def bcftools_isec(path_to_files, file_extension, isec_outdir, nfiles_output_pos)
     to create intersection and complements of the sets saving the output to isec_outdir/ The set confguration is specified by nfiles_output_pos
     e.g. +2 means find intersection between 2 files or more. Other options: output positions present in this many (=), this many or more (+), this many or fewer (-), or the exact same (~) files'''
     for folder in os.listdir(path_to_files):
-        path_to_folder=os.path.join(path_to_files,folder)
-        if os.path.isdir(path_to_folder):
-            try:
-                command = f'bcftools isec {path_to_folder}/*{file_extension} -p {os.path.join(path_to_folder,isec_outdir)} -n {nfiles_output_pos}'
-                print(command, '\n')
-                subprocess.call([command],shell=True)
-            except Exception as e:
-                print(e)
+        if 'mouse' in folder:
+            path_to_mouse_folder=os.path.join(path_to_files,folder)
+            for dir_ in os.listdir(path_to_mouse_folder):
+                path_to_species_dir=os.path.join(path_to_mouse_folder,dir_)
+                if os.path.isdir(path_to_species_dir):
+                    try:
+                        command = f'bcftools isec {path_to_species_dir}/*{file_extension} -p {os.path.join(path_to_species_dir,isec_outdir)} -n {nfiles_output_pos}'
+                        print(command, '\n')
+                        subprocess.call([command],shell=True)
+                    except Exception as e:
+                        print(e)
 
 
 def main():
@@ -433,14 +436,13 @@ def main():
     #htsfile('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
 
     # Filter fltq.vcf.gz by species 
-    # filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '.fltq.vcf.gz')
+    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '.fltq.vcf.gz')
 
     # create species folders 
-    # snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+    #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
     # move species files to corresponding folder
-    # snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/','.fltqs.vcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
-
+    #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.fltqs.vcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
     # -------------------- 03_06_21 Find common variants between multiple files -----------------------------------------------------------------------------
     
@@ -448,13 +450,9 @@ def main():
     #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltqs.vcf')
     #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
 
-
-    bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '.fltq.vcf.gz','isec_out','+2')
+    #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
 
     #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', file_extension, isec_outdir, nfiles_output_pos)
-
-
-
 
     # -------------------------------------------------------------------------------------------------------------------------------------------------------
 
