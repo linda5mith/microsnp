@@ -1,22 +1,114 @@
 import snptools as snp
+import sys
 import os
-import subprocess
 import re
+import csv
+import subprocess
 import pandas as pd
-import csv	
+import argparse
+import textwrap
 
-#  bcftools view var.raw.bcf.gz | bcftools filter -e'"Enterococcus"' 
 
-# Count the number of variants by species and output to file 
-# bcftools view var.raw.bcf.gz | bcftools filter -e'"Enterococcus"' | wc -l 
+def read_params():
+    FUNCTION_MAP = {'bcftools_mpileup_single' : bcftools_mpileup_single,
+                    'bcftools_mpileup_multi' : bcftools_mpileup_multi,
+                    'filter_vcf_qual' : filter_vcf_qual,
+                    'bcftools_compress_vcf' : bcftools_compress_vcf,
+                    'htsfile': htsfile,
+                    'filter_bcf_by_species': filter_bcf_by_species,
+                    'get_number_of_variants' : get_number_of_variants,
+                    'create_species_folders': snp.create_species_folders,
+                    'move_files_to_species_folder' : snp.move_files_to_species_folder,
+                    'bcftools_isec' : bcftools_isec,
+                    'bcf_to_vcf' : bcf_to_vcf,
+                    'get_allele_freq', get_allele_freq,
+                    'get_depth', get_depth,
+                    'get_site_mean_depth' : get_site_mean_depth,
+                    'get_site_quality' : get_site_quality,
+                    'get_missing_prop_per_site', get_missing_prop_per_site,
+                    'get_het', get_het,
 
+
+
+
+                    }
+
+    p = argparse.ArgumentParser(
+            formatter_class=argparse.RawDescriptionHelpFormatter,
+            description=textwrap.dedent('''    -------------------------------------------------------------------
+    
+    Microbial SNP pipeline using bcftools and SNPEff. 
+
+    # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
+    1. The first step is to create a mpileup of genomes vs. the reference genome. To make a mpileup consisting of one sample file vs. reference genome use:
+    bcftools_mpileup_single /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
+
+    To create a mpileup of multiple samples genomes (located in a single folder) vs. reference use: 
+    bcftools_mpileup_multi /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
+
+    #filter_vcf_qual('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.flt.vcf', 20)
+
+    # Compress files with bgzip and then index before filtering can be applied
+    #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf')
+    #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+    #htsfile('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+
+    # Filter fltq.vcf.gz by species 
+    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '.fltq.vcf.gz')
+
+    # create species folders 
+    #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+
+    # move species files to corresponding folder
+    #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.fltqs.vcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
+
+    # -------------------- 03_06_21 Find common variants between multiple files -----------------------------------------------------------------------------
+    
+    # Index filtered species files
+    #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltqs.vcf')
+    #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+
+    #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
+
+    #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', file_extension, isec_outdir, nfiles_output_pos)
+
+
+    Documentation: github/flannsmith/snp-calling
+
+    -------------------------------------------------------------------'''))
+
+    p.add_argument('command', choices=FUNCTION_MAP.keys())
+    p.add_argument('--i', type=path_to_dir, help='Path to files to process. If parent directory specified, files with given --file_extension are recursively found in subdirectories.')
+    p.add_argument('--file_extension', type=str, help='File extension of files e.g. \'.vcf\'  \'.vcf.gz\'  \'flt.vcf.gz\'')
+    p.add_argument('--o', type=path_to_dir, default=os.getcwd(), help='Path to output files. Default is current directory.')
+    p.add_argument('--qual', type=int, help='QUAL score to filter by in vcf file.')
+    p.add_argument('--path_to_reference_file', type=path_to_file, default=os.getcwd(), help='Path to output files. Default is current working directory.')
+
+    args = p.parse_args()
+    func = FUNCTION_MAP[args.command]
+    func()
+
+
+def dir_path(path_to_dir):
+    if os.path.isdir(path_to_dir):
+        return path_to_dir
+    else:
+        raise NotADirectoryError(path_to_dir)
+
+def file_path(path_to_file):
+    if os.path.isfile(path_to_file):
+        return path_to_file
+    else:
+        except OSError:
+            print("Could not open/read file:", path_to_file)
+            sys.exit()
 
 def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference_file):
-    '''Runs bcftools mpileup on a single bam file with the reference. Path to faidx indexed reference sequence file path_to_reference_file 
-    needs to be included.'''
+    '''Runs bcftools mpileup on a single BAM file against the reference. Path to faidx indexed reference sequence path_to_reference_file 
+    must be included.'''
     files = snp.os_walk(path_to_files, file_extension)
     for f in files:
-        # get mouseID
+        # get subject_ID
         subject_path=snp.get_file_dir(f)
         subject_clean=snp.get_file_basename(subject_path)
         # get sample_ID
@@ -26,13 +118,11 @@ def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference_fil
         print(command)
         subprocess.call([command],shell=True)
 
-# bcftools view -e 'QUAL<20' mouse_1_UNC2FT2113.flt.vcf
-
 def filter_vcf_qual(path_to_files, file_extension, qual=20):
-    '''Filters out snp calls from vcf file with quality below specified qual. Default threshold is 20.'''
+    '''Filters out snp calls from vcf file with quality below specified qual. Default threshold is 20. Outputs file with fltq.vcf extension.'''
     files = snp.os_walk(path_to_files, file_extension)
     for f in files:
-        # get mouse_ID
+        # get subject_ID
         subject_path=snp.get_file_dir(f)
         subject_clean=snp.get_file_basename(subject_path)
         # get sample_ID
@@ -44,8 +134,6 @@ def filter_vcf_qual(path_to_files, file_extension, qual=20):
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
-
-
 
 def bcftools_mpileup_multi(path_to_files, file_extension, path_to_reference_file):
     '''Runs bcftools mpileup on multiple bam files (all bam files present in a folder). Path to faidx indexed reference sequence file path_to_reference_file 
@@ -61,29 +149,24 @@ def bcftools_mpileup_multi(path_to_files, file_extension, path_to_reference_file
             except Exception as e:
                 print(e)
 
-
 def index_bcf(path_to_files, file_extension):
     '''Indexes bcf files'''
-    for folder in os.listdir(path_to_files):
-        path_to_folder=os.path.join(path_to_files,folder)
-        if os.path.isdir(path_to_folder):
-            files_in_folder=os.listdir(path_to_folder)
-            for f in files_in_folder:
-                #if file ends in file_extension 
-                if re.search(r'{}$'.format(file_extension),f):
-                    full_path_to_file = os.path.join(path_to_folder,f)
-                    command=f'bcftools index {full_path_to_file}'
-                    print('Executing:',command)
-                    subprocess.call([command],shell=True)
-
+    files=snp.os_walk(path_to_files, file_extension)
+    for f in files:
+        command=f'bcftools index {f}'
+        try:
+            print(command)
+            subprocess.call([command],shell=True)
+            print('\n')
+        except Exception as e:
+            print(e)
 
 def filter_bcf_by_species(path_to_files, file_extension):
-    '''Finds the unique species/chromosomes from #CHROM column in a bcf/vcf file and outputs the filtered variants for that species to a new bcf file
+    '''Finds all unique species/chromosomes from #CHROM column in a bcf/vcf file and outputs the filtered variants to a new bcf file
     with the naming convention <species>.fltq.bcf'''
     files = snp.os_walk(path_to_files, file_extension)
-    print(files)
     for f in files:
-    # # Extract all unique chromosomes/species from bcf file
+    # Extract all unique chromosomes/species from bcf file
         command=f'bcftools view {f} |  grep -v "#" | cut -f 1 | uniq | sort'
         unique_chrom=snp.save_process_output(command)
         for chrom in unique_chrom:
@@ -98,23 +181,16 @@ def filter_bcf_by_species(path_to_files, file_extension):
             print('\n')
             subprocess.call([filter_command],shell=True)
 
-                    
 def get_number_of_variants(path_to_files, file_extension, path_to_output_file=os.getcwd()):
-    '''Counts the number of variants for each chromosome in all bcf files or with specified file_extension
-     in specified path and outputs to csv file'''
+    '''Counts the number of variants for each chromosome in all bcf files or files with specified file_extension
+     in path_to_files and outputs result to csv file.'''
     d = {}
-    for folder in os.listdir(path_to_files):
-        path_to_folder=os.path.join(path_to_files,folder)
-        if os.path.isdir(path_to_folder):
-            files_in_folder=os.listdir(path_to_folder)
-            for f in files_in_folder:
-                #if file ends in bcf (or specified file_extension)
-                if re.search(r'{}$'.format(file_extension),f):
-                    full_path_to_file = os.path.join(path_to_folder,f)
-                    sample_species=snp.get_file_basename(full_path_to_file).split('.')[0]
-                    command=f'bcftools view {full_path_to_file} | wc -l'
-                    num_variants=snp.save_process_output(command)
-                    d[sample_species]=num_variants[0]
+    files=snp.os_walk(path_to_files, file_extension)
+    for f in files:
+        sample_species=snp.get_file_basename(full_path_to_file).split('.')[0]
+        command=f'bcftools view {full_path_to_file} | wc -l'
+        num_variants=snp.save_process_output(command)
+        d[sample_species]=num_variants[0]
     with open(f'{path_to_output_file}/num_variants.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
         for key, value in d.items():
@@ -126,23 +202,22 @@ def get_number_of_variants(path_to_files, file_extension, path_to_output_file=os
     return df
 
 def bcf_to_vcf(path_to_files, file_extension):
-    '''Searches for all bcf files in path with given file_extension and converts them to vcf'''
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    '''Searches for all bcf files in path with given file_extension and converts them to vcf.'''
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
-        print(f)
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
         command =f'bcftools view -Oz -o {path_to_output_file}/{output_file_name}.vcf.gz {f}'
         try:
             print('Executing:',command)
-            #subprocess.call([command],shell=True)
+            subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
 
 def get_allele_freq(path_to_files, file_extension):
     '''Uses vcftools to output the frequency of alleles for a chromosome in a vcf file.'''
     #vcftools --gzvcf $SUBSET_VCF --freq2 --out $OUT --max-alleles 2
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -156,7 +231,7 @@ def get_allele_freq(path_to_files, file_extension):
 def get_depth(path_to_files, file_extension):
     ''''Calculates the mean depth of coverage per individual.'''
     #vcftools --gzvcf $SUBSET_VCF --depth --out $OUT
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -170,7 +245,7 @@ def get_depth(path_to_files, file_extension):
 def get_site_mean_depth(path_to_files, file_extension):
     '''Estimates the mean depth of coverage for each site.'''
     #vcftools --gzvcf $SUBSET_VCF --site-mean-depth --out $OUT
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -184,7 +259,7 @@ def get_site_mean_depth(path_to_files, file_extension):
 def get_site_quality(path_to_files, file_extension):
     '''Extracts the site quality score for each site.'''
     #vcftools --gzvcf $SUBSET_VCF --site-quality --out $OUT
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -198,7 +273,7 @@ def get_site_quality(path_to_files, file_extension):
 def get_missing_prop_per_site(path_to_files, file_extension):
     ''''Another individual level statistic - calculates the proportion of missing data per sample.'''
     #vcftools --gzvcf $SUBSET_VCF --missing-indv --out $OUT
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -212,7 +287,7 @@ def get_missing_prop_per_site(path_to_files, file_extension):
 def get_missing_prop_per_indiv(path_to_files, file_extension):
     ''''Gets proportion of missing data per site rather than per individual'''
     #vcftools --gzvcf $SUBSET_VCF --missing-site --out $OUT
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -226,7 +301,7 @@ def get_missing_prop_per_indiv(path_to_files, file_extension):
 def get_het(path_to_files, file_extension):
     '''Calculate heterozygosity and inbreeding coefficient per individual'''
     #vcftools --gzvcf $SUBSET_VCF --het --out $OUT
-    files=snp.access_subfolder_contents(path_to_files, file_extension)
+    files=snp.os_walk(path_to_files, file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
@@ -237,52 +312,23 @@ def get_het(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
-# Filter variants from bcf files which have QUAL <=30 (1 in 1000 chance of being incorrect)
-# Filter variants according to parameters present in https://speciationgenomics.github.io/filtering_vcfs/ 
-def filter_qual_vcf(path_to_files, file_extension, min_qual):
-    files=snp.os_walk(path_to_files,file_extension)
-    for f in files:
-        filename = snp.get_output_name(f)
-        path_to_output = snp.get_file_dir(f)
-        full_filename=filename+'_flt'+'.vcf.gz'
-        full_output_path = os.path.join(path_to_output,full_filename)
-        try:
-            # htsfile file.vcf.gz # prints file type
-            # z for compressed vcf, b for compressed bcf
-            command = f'bcftools view -i \'%QUAL>={min_qual}\' {f} -O z -o {full_output_path}'
-            #command = f'vcftools --gzvcf {f} --minQ {min_qual} --recode --stdout | gzip -c > {full_output_path}'
-            print('Executing:',command)
-            subprocess.call([command],shell=True)
-        except Exception as e:
-            print(e)
-
-
-# mv file.vcf.gz plain.vcf
-# bcftools view -Oz -o compressed.vcf.gz plain.vcf
-# htsfile compressed.vcf.gz
-# bcftools index compressed.vcf.gz
-
-
-# Generate gbk files using prokka
-def prokka_annotate(path_to_references,file_extension):
+def prokka_annotate(path_to_files, file_extension):
     '''Annotates files in path file specified file_extension. Note: Sequence ID in FASTA file must be less than 24 characters.'''
-    # source ~/anaconda3/etc/profile.d/conda.sh
     # conda activate prokka
-    files=snp.access_folder_contents(path_to_references,file_extension)
+    files=snp.os_walk(path_to_files,file_extension)
     for f in files:
         prefix=snp.get_output_name(f)
         outdir=os.path.join(snp.get_file_dir(f),prefix)
         command = f'prokka {f} --outdir {outdir}/ --prefix {prefix}'
         try:
+            print(command)
             subprocess.call([command],shell=True)
-            print('Executing:',command)
         except Exception as e:
             print(e)
 
-def clean_prokka(path_to_references,file_extension):
+def clean_prokka(path_to_references, file_extension):
     '''Deletes lines 2-10 in prokka generated gbk file as these cause formatting issues.'''
-    files=snp.access_subfolder_contents(path_to_references, file_extension)
-    print(files)
+    files=snp.os_walk(path_to_references, file_extension)
     for f in files:
         print('Cleaning:',f)
         with open(f,'r+') as handle:
@@ -422,6 +468,9 @@ def bcftools_isec(path_to_files, file_extension, isec_outdir, nfiles_output_pos)
                         subprocess.call([command],shell=True)
                     except Exception as e:
                         print(e)
+
+def read_params():
+
 
 
 def main():
