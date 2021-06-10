@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+__author__ = ('Linda Smith (linda.smith@ucc.ie)')
+__version__ = '1.0.0'
+__date__ = '10 June 2021'
+
+
 import snptools as snp
 import sys
 import os
@@ -21,45 +27,48 @@ def read_params():
                     'move_files_to_species_folder' : snp.move_files_to_species_folder,
                     'bcftools_isec' : bcftools_isec,
                     'bcf_to_vcf' : bcf_to_vcf,
-                    'get_allele_freq', get_allele_freq,
-                    'get_depth', get_depth,
+                    'get_allele_freq' : get_allele_freq,
+                    'get_depth' : get_depth,
                     'get_site_mean_depth' : get_site_mean_depth,
                     'get_site_quality' : get_site_quality,
-                    'get_missing_prop_per_site', get_missing_prop_per_site,
-                    'get_het', get_het,
-
-
-
-
+                    'get_missing_prop_per_site' : get_missing_prop_per_site,
+                    'get_het' : get_het,
+                    'rename_file_extension' : rename_file_extension,
+                    'bcftools_isec' : bcftools_isec
                     }
 
     p = argparse.ArgumentParser(
             formatter_class=argparse.RawDescriptionHelpFormatter,
-            description=textwrap.dedent('''    -------------------------------------------------------------------
+            description=textwrap.dedent('''    ---------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     Microbial SNP pipeline using bcftools and SNPEff. 
 
-    # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
+    --------------------- SNP calling pipeline --------------------------------------------------------------------------------------------------------------------
     1. The first step is to create a mpileup of genomes vs. the reference genome. To make a mpileup consisting of one sample file vs. reference genome use:
-    bcftools_mpileup_single /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
+    ./mpileup.py bcftools_mpileup_single /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
 
     To create a mpileup of multiple samples genomes (located in a single folder) vs. reference use: 
-    bcftools_mpileup_multi /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
+    ./mpileup.py bcftools_mpileup_multi /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
 
-    #filter_vcf_qual('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.flt.vcf', 20)
+    2. Filter quality of sequences
+    ./mpileup.py filter_vcf_qual /external_HDD4/linda/unc_mouse_trial/snp_pipeline .flt.vcf 20
 
-    # Compress files with bgzip and then index before filtering can be applied
-    #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf')
-    #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
-    #htsfile('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+    3. Compress files with bcftools bgzip and then index 
+    ./mpileup.py bcftools_compress_vcf /external_HDD4/linda/unc_mouse_trial/snp_pipeline/ .fltq.vcf
+    
+    ./mpileup.py bcftools_index_vcf /external_HDD4/linda/unc_mouse_trial/snp_pipeline/ .fltq.vcf.gz
 
-    # Filter fltq.vcf.gz by species 
-    #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '.fltq.vcf.gz')
+    4. Test if files have been correctly bgzipped with htsfile
+    ./mpileup.py htsfile /external_HDD4/linda/unc_mouse_trial/snp_pipeline/ .fltq.vcf.gz
 
-    # create species folders 
+    5. Filter individual species from quality checked bgzipped vcf files
+    ./mpileup.py filter_bcf_by_species /external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1 .fltq.vcf.gz
+
+    6 Create species folders to house extracted sequences for each species from vcf files
+    ./mpileup.py create_species_folders /external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1 /external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt
     #snp.create_species_folders('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
-    # move species files to corresponding folder
+    7. Move species files to corresponding parent folder
     #snp.move_files_to_species_folder('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.fltqs.vcf','/external_HDD4/linda/unc_mouse_trial/genomes/species_sequences.txt')
 
     # -------------------- 03_06_21 Find common variants between multiple files -----------------------------------------------------------------------------
@@ -72,21 +81,22 @@ def read_params():
 
     #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', file_extension, isec_outdir, nfiles_output_pos)
 
+    
 
-    Documentation: github/flannsmith/snp-calling
-
-    -------------------------------------------------------------------'''))
+    -------------------------------------------------------------------'''),
+    epilog='Linda Smith https://github/flannsmith/snp-calling')
 
     p.add_argument('command', choices=FUNCTION_MAP.keys())
-    p.add_argument('--i', type=path_to_dir, help='Path to files to process. If parent directory specified, files with given --file_extension are recursively found in subdirectories.')
-    p.add_argument('--file_extension', type=str, help='File extension of files e.g. \'.vcf\'  \'.vcf.gz\'  \'flt.vcf.gz\'')
-    p.add_argument('--o', type=path_to_dir, default=os.getcwd(), help='Path to output files. Default is current directory.')
-    p.add_argument('--qual', type=int, help='QUAL score to filter by in vcf file.')
-    p.add_argument('--path_to_reference_file', type=path_to_file, default=os.getcwd(), help='Path to output files. Default is current working directory.')
+    p.add_argument('--i', metavar='input_dir', type=dir_path, nargs='+', default=None, help='Path to files to process. If parent directory specified, files with given --file_extension are recursively found in subdirectories.')
+    p.add_argument('--file_ext', metavar='file_extension', type=str, nargs='+', default=None, help='File extension of files e.g. \'.vcf\'  \'.vcf.gz\'  \'flt.vcf.gz\'')
+    p.add_argument('--o', metavar='output_dir', type=dir_path, nargs='+', default=os.getcwd(), help='Path to output files. Default is current directory.')
+    p.add_argument('--qual', metavar='qual', type=int, default=None, nargs='+', help='QUAL score to filter vcf file by.')
+    p.add_argument('--path_to_reference', type=file_path, nargs='+', default=os.getcwd(), help='Path to reference fasta file.')
 
     args = p.parse_args()
     func = FUNCTION_MAP[args.command]
-    func()
+    namespace=func()
+    print(namespace)
 
 
 def dir_path(path_to_dir):
@@ -99,11 +109,10 @@ def file_path(path_to_file):
     if os.path.isfile(path_to_file):
         return path_to_file
     else:
-        except OSError:
-            print("Could not open/read file:", path_to_file)
-            sys.exit()
+        print("Could not open/read file:", path_to_file)
+        sys.exit()
 
-def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference_file):
+def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference):
     '''Runs bcftools mpileup on a single BAM file against the reference. Path to faidx indexed reference sequence path_to_reference_file 
     must be included.'''
     files = snp.os_walk(path_to_files, file_extension)
@@ -340,14 +349,12 @@ def clean_prokka(path_to_references, file_extension):
                     handle.write(i)
             handle.truncate()
         
-# Build databases for references for SnpEff
 def build_snpeff_db_gbk(path_to_snpeff_installation, file_extension):
-    '''Note 0_0 SnpEff path to data folder is hardcoded so you have to build database inside snpEff program folder.
+    '''Note 0_0 SnpEff path to data folder is hardcoded so you have to build reference database inside snpEff program folder.
     Builds a SnpEff reference database for each gbk file with specified file_extension in path_to_references. 
     Note: must first add genomes to snpEff.config and gbk files to /data/programs/snpEff/data.
     '''
     files = snp.os_walk(path_to_snpeff_installation,file_extension)
-    print(files)
     for f in files:
         dirname = snp.get_file_dir(f)
         path_to_data_dir = os.path.join(path_to_snpeff_installation,'data',dirname)
@@ -411,14 +418,6 @@ def htsfile(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
-def recompress_bgzip_vcfs(path_to_files, file_extension):
-    '''This function is to counteract error you get if your vcf files are not properly compressed. E.g. overcome error:
-    Failed to open file.vcf.gz: not compressed with bgzip. Converts files with file_extension vcf.gz back to vcf, recompresses and indexes them.'''
-    rename_file_extension(path_to_files, file_extension)
-    bcftools_compress_vcf(path_to_files, file_extension)
-    bcftools_index_vcf(path_to_files, file_extension)
-    htsfile(path_to_files, file_extension)
-
 def filter_vcf_by_col(path_to_files, file_extension):
     '''DOESNT WORK -- EMPTY FILES?? Uses bcftools on gzipped vcf files e.g. file_extension is vcf.gz '''
     files = snp.os_walk(path_to_files, file_extension)
@@ -469,11 +468,9 @@ def bcftools_isec(path_to_files, file_extension, isec_outdir, nfiles_output_pos)
                     except Exception as e:
                         print(e)
 
-def read_params():
-
-
 
 def main():
+    read_params()
     # --------------------- Pipeline 2.0 14_05_21 ----------------------------------------------------------------------------------------------------------
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup_single('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.sorted.bam', '/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
