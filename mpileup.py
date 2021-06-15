@@ -15,7 +15,7 @@ import argparse
 import textwrap
 
 
-def read_params():
+def read_params(args):
     FUNCTION_MAP = {'bcftools_mpileup_single' : bcftools_mpileup_single,
                     'bcftools_mpileup_multi' : bcftools_mpileup_multi,
                     'filter_vcf_qual' : filter_vcf_qual,
@@ -45,7 +45,7 @@ def read_params():
 
     --------------------- SNP calling pipeline --------------------------------------------------------------------------------------------------------------------
     1. The first step is to create a mpileup of genomes vs. the reference genome. To make a mpileup consisting of one sample file vs. reference genome use:
-    ./mpileup.py bcftools_mpileup_single /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
+    python mpileup.py bcftools_mpileup_single /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
 
     To create a mpileup of multiple samples genomes (located in a single folder) vs. reference use: 
     ./mpileup.py bcftools_mpileup_multi /external_HDD4/linda/unc_mouse_trial/snp_pipeline .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
@@ -91,12 +91,12 @@ def read_params():
     p.add_argument('--file_ext', metavar='file_extension', type=str, nargs='+', default=None, help='File extension of files e.g. \'.vcf\'  \'.vcf.gz\'  \'flt.vcf.gz\'')
     p.add_argument('--o', metavar='output_dir', type=dir_path, nargs='+', default=os.getcwd(), help='Path to output files. Default is current directory.')
     p.add_argument('--qual', metavar='qual', type=int, default=None, nargs='+', help='QUAL score to filter vcf file by.')
-    p.add_argument('--path_to_reference', type=file_path, nargs='+', default=os.getcwd(), help='Path to reference fasta file.')
+    p.add_argument('--path_to_ref', metavar='path_to_reference', type=file_path, nargs='+', default=os.getcwd(), help='Path to reference fasta file.')
 
-    args = p.parse_args()
-    func = FUNCTION_MAP[args.command]
-    namespace=func()
-    print(namespace)
+    arg = p.parse_args()
+    func = FUNCTION_MAP[arg.command]
+    func()
+    #return vars(p.parse_args())
 
 
 def dir_path(path_to_dir):
@@ -112,10 +112,11 @@ def file_path(path_to_file):
         print("Could not open/read file:", path_to_file)
         sys.exit()
 
-def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference):
+def bcftools_mpileup_single(args):
     '''Runs bcftools mpileup on a single BAM file against the reference. Path to faidx indexed reference sequence path_to_reference_file 
     must be included.'''
-    files = snp.os_walk(path_to_files, file_extension)
+    # args=sys.argv
+    files = snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
         # get subject_ID
         subject_path=snp.get_file_dir(f)
@@ -123,7 +124,7 @@ def bcftools_mpileup_single(path_to_files, file_extension, path_to_reference):
         # get sample_ID
         sample_id=snp.get_file_basename(f)
         sample_id_clean=sample_id.split('_')[0]
-        command=f'bcftools mpileup -Ou -f {path_to_reference_file}  {f} | bcftools call --ploidy 1 -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {subject_path}/{subject_clean}_{sample_id_clean}.flt.vcf'
+        command=f'bcftools mpileup -Ou -f {args.path_to_reference_file}  {f} | bcftools call --ploidy 1 -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {subject_path}/{subject_clean}_{sample_id_clean}.flt.vcf'
         print(command)
         subprocess.call([command],shell=True)
 
@@ -470,7 +471,10 @@ def bcftools_isec(path_to_files, file_extension, isec_outdir, nfiles_output_pos)
 
 
 def main():
-    read_params()
+    pars = read_params(sys.argv)
+    print(pars)
+
+    #print(params)
     # --------------------- Pipeline 2.0 14_05_21 ----------------------------------------------------------------------------------------------------------
     # --------------------- SNP calling --------------------------------------------------------------------------------------------------------------------
     #bcftools_mpileup_single('/external_HDD4/linda/unc_mouse_trial/snp_pipeline', '.sorted.bam', '/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
