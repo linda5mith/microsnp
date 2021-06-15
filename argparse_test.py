@@ -9,12 +9,12 @@ import argparse
 import textwrap
 import time
 
+# python argparse_test.py /external_HDD4/linda/unc_mouse_trial/argparse_test .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
 
 def action(args):
     print(args.path_to_files)
     print(args.file_extension)
     print(args.path_to_reference_file)
-
 
 def parse_args():
     # Top-level parser
@@ -26,21 +26,22 @@ def parse_args():
 
     # Create the parser for the bcftools_mpileup_single command
     bcftools_parser = subparser.add_parser('bcftools_mpileup_single', help='run an mpileup')
-    bcftools_parser.add_argument("path_to_files", help='Path to files')
-    bcftools_parser.add_argument("file_extension", help='File extension e.g. .vcf')
-    bcftools_parser.add_argument("path_to_reference_file",help='path_to_reference_file')
+    bcftools_parser.add_argument("path_to_files", type=str, help='Path to files')
+    bcftools_parser.add_argument("file_extension", type=str, help='File extension e.g. .vcf')
+    bcftools_parser.add_argument("path_to_reference_file", type=str, help='path_to_reference_file')
     bcftools_parser.required = True
-    bcftools_parser.set_defaults(func=action)
+    bcftools_parser.set_defaults(func=bcftools_mpileup_single)
 
     args = parser.parse_args()
-    print(args)
-     
+    #print(args) 
+    return args.func(args)
 
 def bcftools_mpileup_single(args):
     '''Runs bcftools mpileup on a single BAM file against the reference. Path to faidx indexed reference sequence path_to_reference_file 
     must be included.'''
     # args=sys.argv
     files = snp.os_walk(args.path_to_files, args.file_extension)
+    print(files)
     # print(files)
     # for f in files:
     #     # get subject_ID
@@ -56,23 +57,6 @@ def bcftools_mpileup_single(args):
     
 def main():
     parse_args()
-#     # pars = read_params(sys.argv)
-#     # print(pars)
-
-#     # # create the top-level parser
-#     # parser = argparse.ArgumentParser()
-#     # subparsers = parser.add_subparsers()
-
-#     # # create the parser for the "bcftools_mpileup_single" command
-#     # parser_mpileup_s = subparsers.add_parser('bcftools_mpileup_single')
-#     # parser_mpileup_s.add_argument('--path_to_files', type=str)
-#     # parser_mpileup_s.add_argument('--file_extension', type=str)
-#     # parser_mpileup_s.add_argument('--path_to_reference_file', type=str)
-#     # parser_mpileup_s.set_defaults(func=bcftools_mpileup_single)
-
-#     # args = parser.parse_args('bcftools_mpileup_single --path_to_files 1 --file_extension 2 --path_to_reference_file 3'.split())
-#     # args.func(args)
-
 
 if __name__ == '__main__':
     #t0 = time.time()
