@@ -81,12 +81,13 @@ def read_params(args):
 
     #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', file_extension, isec_outdir, nfiles_output_pos)
 
-    
-
     -------------------------------------------------------------------'''),
     epilog='Linda Smith https://github/flannsmith/snp-calling')
 
     p.add_argument('command', choices=FUNCTION_MAP.keys())
+    # if command is 'bcftools_mpileup_single' or 'bcftools_mpileup_multi'
+                    
+
     p.add_argument('--i', metavar='input_dir', type=dir_path, nargs='+', default=None, help='Path to files to process. If parent directory specified, files with given --file_extension are recursively found in subdirectories.')
     p.add_argument('--file_ext', metavar='file_extension', type=str, nargs='+', default=None, help='File extension of files e.g. \'.vcf\'  \'.vcf.gz\'  \'flt.vcf.gz\'')
     p.add_argument('--o', metavar='output_dir', type=dir_path, nargs='+', default=os.getcwd(), help='Path to output files. Default is current directory.')
