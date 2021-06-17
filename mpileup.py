@@ -13,6 +13,8 @@ import subprocess
 import pandas as pd
 import argparse
 import textwrap
+import glob
+import shutil
 
 
 def read_params(args):
@@ -456,24 +458,57 @@ def filter_vcf_by_col(path_to_files, file_extension):
 def bcftools_isec(path_to_files, file_extension, isec_outdir, nfiles_output_pos):
     '''Finds all files in path with specified file_extension that are inside a folder and applies a minimal bcftools isec on them
     to create intersection and complements of the sets saving the output to isec_outdir/ The set confguration is specified by nfiles_output_pos
-    e.g. +2 means find intersection between 2 files or more. Other options: output positions present in this many (=), this many or more (+), this many or fewer (-), or the exact same (~) files'''
+    e.g. +2 means find intersection between 2 files or more. Other options: output positions present in this many (=), this many or more (+), this many or fewer (-), or the exact same (~) files.
+    Output file name includes subject and species name.'''
     for folder in os.listdir(path_to_files):
         if 'mouse' in folder:
             path_to_mouse_folder=os.path.join(path_to_files,folder)
             for dir_ in os.listdir(path_to_mouse_folder):
-                path_to_species_dir=os.path.join(path_to_mouse_folder,dir_)
+                path_to_species_dir=os.path.join(path_to_mouse_folder,dir_) 
                 if os.path.isdir(path_to_species_dir):
+                    mouse = snp.get_file_basename(path_to_mouse_folder)
+                    species = snp.get_output_name(path_to_species_dir)
                     try:
-                        command = f'bcftools isec {path_to_species_dir}/*{file_extension} -p {os.path.join(path_to_species_dir,isec_outdir)} -n {nfiles_output_pos}'
+                        command = f'bcftools isec {path_to_species_dir}/*{file_extension} -p {os.path.join(path_to_species_dir,isec_outdir)} -n {nfiles_output_pos} -o {mouse}_{species}.vcf'
                         print(command, '\n')
                         subprocess.call([command],shell=True)
                     except Exception as e:
                         print(e)
 
+def find_isec_file(path_to_files, file_extension, isec_outdir, isec_cp_path):
+    '''Returns the last vcf file in isec output e.g. 0004.vcf which would contain the intersection of 0001.vcf, 0002.vcf, 0003.vcf'''
+    files = snp.os_walk(path_to_files, file_extension)
+    path_to_isec_files = []
+    for f in files:
+        if isec_outdir in f:
+            vcf_path = snp.get_file_dir(f)
+            path_to_isec_files.append(vcf_path)
+    vcf_isecs = []
+    for g in path_to_isec_files:
+        vcf_isecs.append(max(glob.glob(f'{g}/????.vcf')))
+    uniq_vcf_isec = set(vcf_isecs)
+    print(uniq_vcf_isec)
+    
+    # rename file to have subject_species prefix
+    # copy all files to new output folder
+    # for h in uniq_vcf_isec:
+    #     #print(h)
+    #     try:
+    #         print(f'Copying {h} to {isec_cp_path}')
+    #         shutil.copy(h, isec_cp_path)
+    #     except Exception as e:
+    #         print(e)
+        
+    
 
 def main():
-    pars = read_params(sys.argv)
-    print(pars)
+    bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
+    #find_isec_file('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
+    
+
+
+    # pars = read_params(sys.argv)
+    # print(pars)
 
     #print(params)
     # --------------------- Pipeline 2.0 14_05_21 ----------------------------------------------------------------------------------------------------------
