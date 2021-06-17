@@ -475,7 +475,7 @@ def bcftools_isec(path_to_files, file_extension, isec_outdir, nfiles_output_pos)
                     except Exception as e:
                         print(e)
 
-def find_isec_file(path_to_files, file_extension, isec_outdir, isec_cp_path):
+def find_isec_files(path_to_files, file_extension, isec_outdir, isec_cp_path):
     '''Returns the last vcf file in isec output e.g. 0004.vcf which would contain the intersection of 0001.vcf, 0002.vcf, 0003.vcf'''
     files = snp.os_walk(path_to_files, file_extension)
     path_to_isec_files = []
@@ -487,23 +487,28 @@ def find_isec_file(path_to_files, file_extension, isec_outdir, isec_cp_path):
     for g in path_to_isec_files:
         vcf_isecs.append(max(glob.glob(f'{g}/????.vcf')))
     uniq_vcf_isec = set(vcf_isecs)
-    print(uniq_vcf_isec)
-    
-    # rename file to have subject_species prefix
-    # copy all files to new output folder
-    # for h in uniq_vcf_isec:
-    #     #print(h)
-    #     try:
-    #         print(f'Copying {h} to {isec_cp_path}')
-    #         shutil.copy(h, isec_cp_path)
-    #     except Exception as e:
-    #         print(e)
-        
+    for vcf in uniq_vcf_isec:
+        isec_dir=snp.get_file_dir(vcf)
+        vcf_name=snp.get_file_basename(vcf)
+        species=snp.get_file_dir(isec_dir)
+        species_base=snp.get_file_basename(species)
+        species_l=species_base.split('_')
+        try:
+            species_short='_'.join([species_l[0],species_l[1],species_l[2]])
+        except:
+            species_short='_'.join([species_l[0],species_l[1]])
+        species_dir=snp.get_file_dir(isec_dir)
+        subject_dir=snp.get_file_dir(species_dir)
+        subject=snp.get_file_basename(subject_dir)
+        # new filename path
+        new_filename=f'{isec_dir}/{subject}_{species_short}_{vcf_name}'
+        os.rename(vcf,new_filename)
     
 
+
 def main():
-    bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
-    #find_isec_file('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
+    #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
+    find_isec_files('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
     
 
 
