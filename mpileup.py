@@ -519,6 +519,11 @@ def find_renamed_isec(path_to_files, file_extension, isec_outdir, isec_cp_dest):
     # copy all renamed isec files to a single location for downloading
     for fle in renamed_isec:
         shutil.copy(fle, isec_cp_dest)
+
+# Since bcftools isec doesn't tell you from which sample the variants are common 
+# So need to do a whole other series of steps 
+# https://www.biostars.org/p/298361/#298464
+# https://www.biostars.org/p/9477018/
     
 def main():
     #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
