@@ -520,17 +520,90 @@ def find_renamed_isec(path_to_files, file_extension, isec_outdir, isec_cp_dest):
     for fle in renamed_isec:
         shutil.copy(fle, isec_cp_dest)
 
-# Since bcftools isec doesn't tell you from which sample the variants are common 
+# Since bcftools isec doesn't tell you from which sample the variants are common for
 # So need to do a whole other series of steps 
 # https://www.biostars.org/p/298361/#298464
 # https://www.biostars.org/p/9477018/
     
+def bcftools_norm(path_to_files, file_extension, path_to_reference):
+    '''Normalise (split multi-allelic calls + left-align indels) each VCF and set a unique identifier for ID field'''
+    files = snp.os_walk(path_to_files,file_extension)
+    #print(files)
+    for f in files:
+        file_base = snp.get_output_name(f)
+        out_file = f'{file_base}.norm.fltq.vcf.gz'
+        #print(out_file)
+        file_dir = snp.get_file_dir(f)
+        out_file_path = os.path.join(file_dir,out_file)
+        try:
+            command = f'bcftools norm -m-any --check-ref w -f {path_to_reference} {f} | bcftools annotate -x ID --set-id +\'%CHROM\_%POS\_%REF\_%FIRST_ALT\' -Oz > {out_file_path}'
+            print(f'{command}')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+        try:
+            command2 = f'tabix -p vcf {out_file_path}'
+            print(f'{command2}\n')
+            subprocess.call([command2],shell=True)
+        except Exception as e:
+            print(e)
+
+def bcftools_merge_norms(path_to_files, file_extension):
+    '''Merges all normalised files in path for a particular subject.'''
+    for folder in os.listdir(path_to_files):
+        path_to_folder=os.path.join(path_to_files,folder)
+        if os.path.isdir(path_to_folder):
+            files = snp.os_walk(path_to_folder,file_extension)
+            f = files[0]
+            # prepare file output name and path
+            species_path=snp.get_file_dir(f)
+            species=snp.get_file_basename(species_path)
+            subject_path=snp.get_file_dir(species_path)
+            subject=snp.get_file_basename(subject_path)
+            species_l = species.split('_')
+            try:
+                species_short='_'.join([species_l[0],species_l[1],species_l[2]])
+            except:
+                species_short='_'.join([species_l[0],species_l[1]])
+            out_name = f'{subject}_{species_short}_merged.norm.fltq.vcf.gz'
+            out_path=(os.path.join(species_path,out_name))
+            command = f'bcftools merge {path_to_folder}/*{file_extension} -Oz > {out_path}'
+            try:
+                print(f'{command}\n') 
+                subprocess.call([command],shell=True) 
+            except Exception as e:
+                print(e)
+            command2 = f'tabix -p vcf {out_path}'
+            try:
+                print(f'{command2}\n') 
+                subprocess.call([command2],shell=True) 
+            except Exception as e:
+                print(e)
+            
+
+            # bcftools merge \
+            # UNC2FT198_Imtechella_halotolerans.fltq.norm.vcf.gz \
+            # UNC2FT2114_Imtechella_halotolerans.fltq.norm.vcf.gz \
+            # .. .. -Oz \
+            # > merge.vcf.gz ;
+            # tabix -p vcf merge.vcf.gz 
+
+            #print(files)
+            # basename = snp.get_file_dir()
+            # output_file=f'{path_to_folder}/{folder}.raw.bcf'
+            # try:
+            #     command=f'bcftools mpileup -Ou -f {path_to_reference_file}  {path_to_folder}/*.bam
+
+
+
 def main():
     #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
     #find_isec_files('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out')
     #find_max_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out')
-    find_renamed_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
-    
+    #find_renamed_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
+
+    #bcftools_norm('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.fltq.vcf.gz','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
+    bcftools_merge_norms('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.norm.fltq.vcf.gz')
 
 
     # pars = read_params(sys.argv)
