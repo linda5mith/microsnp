@@ -548,62 +548,75 @@ def bcftools_norm(path_to_files, file_extension, path_to_reference):
         except Exception as e:
             print(e)
 
-def bcftools_merge_norms(path_to_files, file_extension):
+def bcftools_merge_norms(path_to_files, file_extension, path_to_output_files=''):
     '''Merges all normalised files in path for a particular subject.'''
-    for folder in os.listdir(path_to_files):
-        path_to_folder=os.path.join(path_to_files,folder)
-        if os.path.isdir(path_to_folder):
-            files = snp.os_walk(path_to_folder,file_extension)
-            f = files[0]
-            # prepare file output name and path
-            species_path=snp.get_file_dir(f)
-            species=snp.get_file_basename(species_path)
-            subject_path=snp.get_file_dir(species_path)
-            subject=snp.get_file_basename(subject_path)
-            species_l = species.split('_')
-            try:
-                species_short='_'.join([species_l[0],species_l[1],species_l[2]])
-            except:
-                species_short='_'.join([species_l[0],species_l[1]])
-            out_name = f'{subject}_{species_short}_merged.norm.fltq.vcf.gz'
-            out_path=(os.path.join(species_path,out_name))
-            command = f'bcftools merge {path_to_folder}/*{file_extension} -Oz > {out_path}'
-            try:
-                print(f'{command}\n') 
-                subprocess.call([command],shell=True) 
-            except Exception as e:
-                print(e)
-            command2 = f'tabix -p vcf {out_path}'
-            try:
-                print(f'{command2}\n') 
-                subprocess.call([command2],shell=True) 
-            except Exception as e:
-                print(e)
-            
+    files = snp.os_walk(path_to_files, file_extension)
+    # for folder in os.listdir(path_to_files):
+    #     path_to_folder=os.path.join(path_to_files,folder)
+    #     #print('HERE')
+    #     if os.path.isdir(path_to_folder):
+    #         files = snp.os_walk(path_to_folder,file_extension)
+    #print(files)
+    f = files[0]
+    # prepare file output name and path
+    species_path=snp.get_file_dir(f)
+    species=snp.get_file_basename(species_path)
+    subject_path=snp.get_file_dir(species_path)
+    subject=snp.get_file_basename(subject_path)
+    species_l = species.split('_')
+    try:
+        species_short='_'.join([species_l[0],species_l[1],species_l[2]])
+    except:
+        species_short='_'.join([species_l[0],species_l[1]])
+    out_name = f'{subject}_{species_short}_merged.norm.fltq.vcf.gz'
+    out_path=(os.path.join(species_path,out_name))
+    print(out_path)
+    if path_to_output_files != '':
+        command = f'bcftools merge {path_to_files}/*{file_extension} -Oz > {os.path.join(out_name,out_path)}'
+    else:
+        command = f'bcftools merge {path_to_files}/*{file_extension} -Oz > {out_path}'
+    try:
+        print(f'{command}\n') 
+        subprocess.call([command],shell=True) 
+    except Exception as e:
+        print(e)
+    command2 = f'tabix -p vcf {out_path}'
+    try:
+        print(f'{command2}\n') 
+        subprocess.call([command2],shell=True) 
+    except Exception as e:
+        print(e)
 
-            # bcftools merge \
-            # UNC2FT198_Imtechella_halotolerans.fltq.norm.vcf.gz \
-            # UNC2FT2114_Imtechella_halotolerans.fltq.norm.vcf.gz \
-            # .. .. -Oz \
-            # > merge.vcf.gz ;
-            # tabix -p vcf merge.vcf.gz 
+def validate_num_sample_files(path_to_files, file_extension, path_to_txt):
+    '''Finds the difference in contents of folder compared to list of samples present in txt file'''
+    files = snp.os_walk(path_to_files,file_extension)
+    handle = open(path_to_txt,'r')
+    samples = [line.split('\n') for line in handle.readlines()]
+    print(samples)
+    # Read through all files, extract sample name ID in file, then see is it in sample list
+    for f in files:
+        basename = snp.get_file_basename(f)
+        file_split=basename.split('_')
+        samplename=file_split[2]
+        if samplename not in samples:
+            print(f)
+            # move/delete file  
 
-            #print(files)
-            # basename = snp.get_file_dir()
-            # output_file=f'{path_to_folder}/{folder}.raw.bcf'
-            # try:
-            #     command=f'bcftools mpileup -Ou -f {path_to_reference_file}  {path_to_folder}/*.bam
-
-
-
+    
 def main():
     #bcftools_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz','isec_out','+2')
     #find_isec_files('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out')
     #find_max_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out')
     #find_renamed_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
 
-    #bcftools_norm('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.fltq.vcf.gz','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
-    bcftools_merge_norms('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1','.norm.fltq.vcf.gz')
+    # move all files ending in fltq.vcf.gz to all_samples_merged
+    # find . -name "*.fltq.vcf.gz.csi" -exec mv {} /external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged \;
+    # find . -name "*Allobacillus*.fltq.vcf.gz.csi" -exec mv {} /external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Allobacillus_halotolerans \;
+
+    #bcftools_norm('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/NC_011993.1_Escherichia_coli_LF82','.fltq.vcf.gz','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
+    bcftools_merge_norms('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/NC_011993.1_Escherichia_coli_LF82','.norm.fltq.vcf.gz')
+
+    #validate_num_sample_files('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/NC_017316.1_Enterococcus_faecalis_OG1RF','.vcf.gz','/external_HDD4/linda/unc_mouse_trial/genomes/dev/all_samples.txt')
 
 
     # pars = read_params(sys.argv)
