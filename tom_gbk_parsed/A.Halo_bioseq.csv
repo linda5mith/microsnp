@@ -1,0 +1,2791 @@
+,Start,End,Protein_ID,Gene,Product,Strand
+0,61,325,,,['SSU ribosomal protein S17p (S11e)'],1
+1,365,734,,,['LSU ribosomal protein L14p (L23e)'],1
+2,772,1084,,,['LSU ribosomal protein L24p (L26e)'],1
+3,1110,1650,,,['LSU ribosomal protein L5p (L11e)'],1
+4,1676,1862,,,"['SSU ribosomal protein S14p (S29e) @ SSU ribosomal protein S14p (S29e), zinc-dependent']",1
+5,1892,2291,,,['SSU ribosomal protein S8p (S15Ae)'],1
+6,2319,2856,,,['LSU ribosomal protein L6p (L9e)'],1
+7,2888,3251,,,['LSU ribosomal protein L18p (L5e)'],1
+8,3278,3782,,,['SSU ribosomal protein S5p (S2e)'],1
+9,3794,3977,,,['LSU ribosomal protein L30p (L7e)'],1
+10,4006,4447,,,['LSU ribosomal protein L15p (L27Ae)'],1
+11,4446,5739,,,['Protein translocase subunit SecY'],1
+12,5772,6423,,,['Adenylate kinase (EC 2.7.4.3)'],1
+13,6423,7170,,,['Methionine aminopeptidase (EC 3.4.11.18)'],1
+14,7191,7515,,,['L14e-like protein'],1
+15,7507,7726,,,['Translation initiation factor 1'],1
+16,7758,7872,,,"['LSU ribosomal protein L36p @ LSU ribosomal protein L36p, zinc-dependent']",1
+17,7896,8262,,,['SSU ribosomal protein S13p (S18e)'],1
+18,8287,8683,,,['SSU ribosomal protein S11p (S14e)'],1
+19,8848,9793,,,['DNA-directed RNA polymerase alpha subunit (EC 2.7.7.6)'],1
+20,9835,10201,,,['LSU ribosomal protein L17p'],1
+21,11096,11924,,,['ATPase component of general energizing module of ECF transporters'],1
+22,11899,12766,,,['ATPase component of general energizing module of ECF transporters'],1
+23,12762,13560,,,['Transmembrane component of general energizing module of ECF transporters'],1
+24,13668,14406,,,['tRNA pseudouridine(38-40) synthase (EC 5.4.99.12)'],1
+25,14592,15888,,,['Adenylosuccinate lyase (EC 4.3.2.2) @ SAICAR lyase (EC 4.3.2.2)'],1
+26,16026,17559,,,['IMP cyclohydrolase (EC 3.5.4.10) / Phosphoribosylaminoimidazolecarboxamide formyltransferase (EC 2.1.2.3)'],1
+27,17799,18237,,,['LSU ribosomal protein L13p (L13Ae)'],1
+28,18262,18655,,,['SSU ribosomal protein S9p (S16e)'],1
+29,18815,19361,,,['conserved hypothetical protein'],1
+30,19601,21551,,,['Type III restriction-modification system methylation subunit (EC 2.1.1.72)'],1
+31,21553,24259,,,['Type III restriction-modification system DNA endonuclease res (EC 3.1.21.5)'],1
+32,24664,25432,,,['Mobile element protein'],-1
+33,25433,26987,,,"['Integrase, catalytic region']",-1
+34,27431,27623,,,"['Uncharacterized transcriptional regulator YozG, Cro/CI family']",-1
+35,27674,28247,,,['hypothetical protein'],-1
+36,28508,29003,,,"['transmembrane protein, distant homology with ydbS']",1
+37,29002,30508,,,"['transmembrane protein, distant homology with ydbT']",1
+38,30538,30649,,,[''],1
+39,30859,31870,,,['hypothetical protein'],1
+40,33050,33284,,,[''],1
+41,33270,33840,,,['hypothetical protein'],1
+42,33887,34502,,,[''],1
+43,34604,35021,,,"['acetyltransferase, GNAT family']",-1
+44,35057,35405,,,['DUF488 family protein SAV0238'],-1
+45,35461,35638,,,[''],-1
+46,35940,37026,,,"['ABC transporter, substrate-binding protein (cluster 12, methionine/phosphonates)']",1
+47,37116,37896,,,"['ABC transporter, ATP-binding protein (cluster 12, methionine/phosphonates)']",1
+48,37888,38701,,,"['ABC transporter, permease protein (cluster 12, methionine/phosphonates)']",1
+49,38715,39522,,,"['ABC transporter, permease protein (cluster 12, methionine/phosphonates)']",1
+50,39582,41157,,,"[""2',3'-cyclic-nucleotide 2'-phosphodiesterase (EC 3.1.4.16)""]",-1
+51,41277,41718,,,['Universal stress protein family'],-1
+52,41886,42858,,,['cation antiporter (Na+/Ca2+)'],-1
+53,43115,44693,,,['Glycine betaine transporter OpuD'],-1
+54,44977,46033,,,"['TRAP transporter solute receptor, unknown substrate 1']",1
+55,46019,46595,,,['hypothetical protein'],1
+56,46697,48941,,,"['TRAP-type uncharacterized transport system, fused permease component']",1
+57,49037,49469,,,[''],1
+58,49566,50301,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",1
+59,50412,51132,,,['N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28)'],1
+60,51199,52237,,,"['Scaffold protein for [4Fe-4S] cluster assembly ApbC, MRP-like']",1
+61,52319,52976,,,['Spore germination protein GerD'],-1
+62,53119,53806,,,['KinB signaling pathway activation protein'],1
+63,53880,54642,,,['hypothetical protein'],-1
+64,54722,54932,,,[''],1
+65,54925,55153,,,[''],1
+66,61645,61762,,,[''],-1
+67,61820,62996,,,['Mobile element protein'],1
+68,63099,63243,,,[''],-1
+69,63377,63527,,,[''],-1
+70,63712,64612,,,['Arginase (EC 3.5.3.1)'],1
+71,64790,65369,,,['RNA polymerase sigma factor RpoE'],1
+72,65373,65988,,,['hypothetical protein'],1
+73,66151,66973,,,['Diadenylate cyclase spyDAC; Bacterial checkpoint controller DisA with nucleotide-binding domain'],1
+74,66965,68207,,,[''],1
+75,68229,69576,,,['Phosphoglucosamine mutase (EC 5.4.2.10)'],1
+76,69959,71762,,,['Glutamine--fructose-6-phosphate aminotransferase [isomerizing] (EC 2.6.1.16)'],1
+77,71959,73381,,,[''],1
+78,73739,74678,,,[''],1
+79,75411,76173,,,['Peptidoglycan N-acetylglucosamine deacetylase (EC 3.5.1.-)'],1
+80,76255,76693,,,[''],1
+81,76816,77938,,,['DNA-binding response regulator ResD'],1
+82,77987,78494,,,[''],1
+83,78494,79292,,,[''],1
+84,79683,80220,,,['hypothetical protein'],1
+85,80267,81278,,,[''],1
+86,81499,82633,,,[''],1
+87,82651,83023,,,[''],1
+88,83052,83505,,,[''],1
+89,83792,85622,,,['Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) AsnB'],1
+90,85708,86599,,,['23S rRNA (guanine(748)-N(1))-methyltransferase (EC 2.1.1.188)'],1
+91,87135,87852,,,[''],1
+92,87896,88091,,,[''],-1
+93,88298,88643,,,[''],1
+94,88865,89084,,,[''],1
+95,89789,90236,,,[''],-1
+96,90478,90730,,,[''],1
+97,91295,91883,,,"['Cytoplasmic thiamin-binding component of thiamin ABC transporter, COG0011 family']",-1
+98,92139,93117,,,['GMP reductase (EC 1.7.1.7)'],-1
+99,93291,93558,,,[''],1
+100,93544,93955,,,[''],1
+101,94036,95296,,,['Uncharacterized MFS-type transporter YxiO'],-1
+102,95487,96060,,,['Uncharacterized protein SAV1929'],1
+103,96309,96588,,,[''],1
+104,96616,96979,,,[''],1
+105,97002,97209,,,['Predicted nucleic-acid-binding protein containing a Zn-ribbon domain'],1
+106,97299,97479,,,[''],1
+107,97650,98418,,,['Probable iron export permease protein FetB'],-1
+108,98414,99140,,,[''],-1
+109,99442,99604,,,[''],1
+110,99646,100432,,,['Tryptophan synthase alpha chain (EC 4.2.1.20)'],-1
+111,100424,101630,,,['Tryptophan synthase beta chain (EC 4.2.1.20)'],-1
+112,101626,102244,,,['Phosphoribosylanthranilate isomerase (EC 5.3.1.24)'],-1
+113,102233,103028,,,['Indole-3-glycerol phosphate synthase (EC 4.1.1.48)'],-1
+114,103029,104052,,,['Anthranilate phosphoribosyltransferase (EC 2.4.2.18)'],-1
+115,104522,104648,,,[''],1
+116,104925,105588,,,[''],1
+117,105784,106096,,,"['Repetitive hypothetical protein in ESAT cluster, COG4495']",1
+118,106120,106528,,,[''],1
+119,106689,107097,,,['UPF0047 protein Bsu YugU'],-1
+120,107156,108023,,,['Carboxylesterase (EC 3.1.1.1)'],1
+121,108292,108619,,,[''],-1
+122,108633,108963,,,['Protein secretion chaperonin CsaA'],-1
+123,109063,109642,,,[''],-1
+124,109783,110764,,,"['Rhodanese domain protein UPF0176, Firmicutes subgroup']",1
+125,110845,111166,,,[''],-1
+126,111294,111945,,,['hypothetical protein'],1
+127,112133,112559,,,['Uncharacterized protein YrkC'],-1
+128,112638,113037,,,[''],-1
+129,113183,113819,,,"['Transcriptional regulator, AcrR family']",1
+130,113832,114732,,,"['Efflux ABC transporter, ATP-binding protein']",1
+131,114728,116327,,,"['Efflux ABC transporter, permease protein']",1
+132,116415,117291,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",1
+133,117420,117747,,,"['Transcriptional regulator, PadR family']",1
+134,117743,118469,,,['hypothetical protein'],1
+135,118949,120077,,,['hypothetical protein'],-1
+136,120217,121159,,,[''],-1
+137,121527,121677,,,[''],1
+138,121707,123129,,,['Amidase family protein'],1
+139,123177,123627,,,[''],-1
+140,123815,124196,,,"['Transcriptional regulator, GntR family']",1
+141,124192,125089,,,"['Efflux ABC transporter, ATP-binding protein']",1
+142,125075,125819,,,[''],1
+143,125815,126523,,,['hypothetical protein'],1
+144,126823,126961,,,[''],1
+145,127190,127388,,,['Cold shock protein of CSP family'],-1
+146,127624,128770,,,['PBS lyase HEAT-like repeat domain protein'],-1
+147,128998,129259,,,[''],1
+148,129267,129930,,,"['putative membrane-associated phospholipid phosphatase, PAP2 superfamily']",1
+149,130014,130839,,,[''],1
+150,130835,131105,,,[''],-1
+151,131201,131486,,,[''],1
+152,131482,131653,,,[''],1
+153,131671,131848,,,[''],1
+154,131903,132176,,,[''],1
+155,132348,132657,,,[''],-1
+156,132886,133504,,,['Uncharacterized Nudix hydrolase NudL'],-1
+157,133601,133763,,,[''],1
+158,134112,134277,,,[''],-1
+159,134474,134684,,,"['Transcriptional regulator, Xre family']",1
+160,134695,134986,,,[''],1
+161,135005,135641,,,[''],1
+162,135641,135872,,,[''],1
+163,135915,136431,,,[''],-1
+164,136740,137430,,,['alternate gene name: ipa-62r'],-1
+165,137706,138456,,,['Coproheme decarboxylase HemQ (no EC)'],-1
+166,138582,139407,,,['Octanoyl-[GcvH]:protein N-octanoyltransferase (EC 2.3.1.204)'],-1
+167,139518,140505,,,[''],1
+168,140796,142050,,,[''],-1
+169,142258,143557,,,"['dNTP triphosphohydrolase, broad substrate specificity']",1
+170,143569,144070,,,['Uncharacterized protein YwgA'],1
+171,144083,144260,,,[''],1
+172,144346,144652,,,[''],-1
+173,144709,145237,,,['Superoxide dismutase [Fe] (EC 1.15.1.1)'],-1
+174,145283,146720,,,['Integral membrane protein'],1
+175,146764,147661,,,['Protease HtpX'],-1
+176,147808,149092,,,"['Hydrolase, alpha/beta fold family functionally coupled to Phosphoribulokinase']",1
+177,149126,149294,,,[''],1
+178,149576,150434,,,[''],1
+179,150614,150869,,,[''],1
+180,151074,152013,,,"['Uncharacterized iron compound ABC uptake transporter, substrate-binding protein']",-1
+181,152045,152804,,,"['Uncharacterized iron compound ABC uptake transporter, ATP-binding protein']",-1
+182,152800,153745,,,"['Uncharacterized iron compound ABC uptake transporter, permease protein']",-1
+183,153737,154688,,,"['Uncharacterized iron compound ABC uptake transporter, permease protein']",-1
+184,155198,155525,,,['Uncharacterized cysteine-rich DUF326 protein bsYhjQ/STM1261'],-1
+185,155662,156703,,,['Choloylglycine hydrolase (EC 3.5.1.24)'],1
+186,156756,156870,,,[''],1
+187,156857,157820,,,"['Threonine dehydratase, catabolic (EC 4.3.1.19) @ L-serine dehydratase, (PLP)-dependent (EC 4.3.1.17)']",1
+188,157921,158491,,,['hypothetical protein'],1
+189,158754,159408,,,[''],1
+190,159518,160853,,,['Serine hydroxymethyltransferase (EC 2.1.2.1)'],-1
+191,160865,161516,,,"['Transcriptional regulator, GntR family']",-1
+192,161657,162542,,,['Nicotinamidase (EC 3.5.1.19)'],1
+193,162632,163322,,,['Aspartate racemase (EC 5.1.1.13)'],1
+194,163360,163465,,,[''],-1
+195,163667,165626,,,['Aconitate hydratase (EC 4.2.1.3)'],1
+196,165664,165841,,,[''],1
+197,166023,166929,,,[''],1
+198,167617,168241,,,['UPF0126 membrane protein YvgT'],1
+199,168506,168740,,,[''],1
+200,168764,169250,,,['Cytochrome c oxidase (B(O/a)3-type) chain II (EC 1.9.3.1)'],1
+201,169250,170885,,,['Cytochrome c oxidase (B(O/a)3-type) chain I (EC 1.9.3.1)'],1
+202,170933,171422,,,[''],-1
+203,171557,172016,,,[''],1
+204,172165,173644,,,['Catalase KatE (EC 1.11.1.6)'],-1
+205,173916,174294,,,['RidA/YER057c/UK114 superfamily protein'],-1
+206,174337,175228,,,['Cobalt-zinc-cadmium resistance protein'],-1
+207,175574,175904,,,[''],1
+208,176053,176872,,,[''],1
+209,177020,178850,,,"['Efflux ABC transporter, permease/ATP-binding protein YfiC']",-1
+210,178842,180570,,,"['Efflux ABC transporter, permease/ATP-binding protein YfiB']",-1
+211,180769,181057,,,[''],1
+212,181075,181936,,,"[""DNA polymerase I 5'-3' exonuclease domain""]",1
+213,181956,182121,,,[''],1
+214,182556,183033,,,['Thioredoxin'],-1
+215,183035,183458,,,['Disulphide bond formation protein DsbB'],-1
+216,183581,184349,,,[''],1
+217,184371,185664,,,['Arsenite/antimonite:H+ antiporter ArsB'],1
+218,185679,186096,,,"['Arsenate reductase (EC 1.20.4.4) thioredoxin-coupled, LMWP family']",1
+219,186219,186663,,,[''],1
+220,187025,187241,,,['Copper chaperone'],1
+221,187256,187463,,,[''],1
+222,187484,189380,,,"['Lead, cadmium, zinc and mercury transporting ATPase (EC 3.6.3.3) (EC 3.6.3.5); Copper-translocating P-type ATPase (EC 3.6.3.4)']",1
+223,189761,190478,,,"['transcriptional regulator, Crp/Fnr family']",1
+224,190536,191463,,,['hypothetical protein'],-1
+225,191511,192009,,,[''],-1
+226,192259,192508,,,[''],1
+227,192609,193386,,,[''],-1
+228,193646,193844,,,['Cold shock protein of CSP family'],1
+229,193872,194007,,,[''],1
+230,194453,196052,,,['Catalase KatE (EC 1.11.1.6)'],-1
+231,196263,196686,,,['Organic hydroperoxide resistance protein'],1
+232,196767,197508,,,[''],1
+233,197656,198019,,,[''],-1
+234,198141,198789,,,['Uncharacterized protein YabE'],-1
+235,199181,199754,,,['NADPH-dependent FMN reductase family protein'],1
+236,199866,200109,,,[''],-1
+237,200222,200993,,,['Enoyl-CoA hydratase (EC 4.2.1.17)'],-1
+238,200992,202252,,,[''],-1
+239,202680,203682,,,"['Vitamin B12 ABC transporter, substrate-binding protein BtuF']",1
+240,203685,204744,,,"['Vitamin B12 ABC transporter, permease component BtuC']",1
+241,205002,205776,,,"['Vitamin B12 ABC transporter, ATPase component BtuD']",1
+242,205850,206675,,,[''],1
+243,206785,207313,,,[''],1
+244,207354,209139,,,['Oligoendopeptidase F-like protein'],-1
+245,209722,210403,,,['hypothetical protein'],-1
+246,210427,211432,,,['Luciferase-like monooxygenase YhbW'],-1
+247,211551,211884,,,[''],1
+248,211930,212176,,,['hypothetical protein'],-1
+249,212542,212812,,,['General stress protein'],1
+250,212926,213079,,,['General stress protein'],1
+251,213163,213775,,,['unknown conserved protein in others'],-1
+252,213953,214193,,,[''],1
+253,214266,214542,,,[''],1
+254,214674,215520,,,['hypothetical protein'],-1
+255,215535,216441,,,['Permease of the drug/metabolite transporter (DMT) superfamily'],-1
+256,216470,217067,,,['Rhomboid family protein'],-1
+257,217237,218593,,,['Mobile element protein'],1
+258,218718,219087,,,['Holo-[acyl-carrier-protein] synthase (EC 2.7.8.7)'],1
+259,219251,220274,,,['outer membrane lipoprotein receptor'],1
+260,220863,221997,,,['Alanine racemase (EC 5.1.1.1)'],1
+261,222131,222407,,,['Programmed cell death antitoxin YdcD'],1
+262,222412,222763,,,['Programmed cell death toxin YdcE'],1
+263,223024,223900,,,['RsbT co-antagonist protein RsbRA'],1
+264,223905,224265,,,"['RsbS, negative regulator of sigma-B']",1
+265,224264,224666,,,['Anti-sigma B factor RsbT'],1
+266,224679,225693,,,"['Serine phosphatase RsbU, regulator of sigma subunit']",1
+267,225757,226084,,,['Anti-sigma B factor antagonist RsbV'],1
+268,226083,226563,,,['Serine-protein kinase RsbW (EC 2.7.11.1)'],1
+269,226534,227323,,,['RNA polymerase sigma factor SigB'],1
+270,227319,227925,,,[''],1
+271,228040,230203,,,['Transcription accessory protein (S1 RNA-binding domain)'],1
+272,230206,230320,,,['hypothetical protein'],-1
+273,230411,230852,,,['Putative metallopeptidase (Zinc) SprT family'],1
+274,230958,231075,,,[''],-1
+275,237811,238768,,,['Thiamine-monophosphate kinase (EC 2.7.4.16)'],1
+276,238783,239233,,,['tRNA threonylcarbamoyladenosine biosynthesis protein TsaE'],1
+277,239229,239928,,,['tRNA threonylcarbamoyladenosine biosynthesis protein TsaB'],1
+278,239911,240370,,,['Ribosomal-protein-S18p-alanine acetyltransferase (EC 2.3.1.128)'],1
+279,240370,241381,,,['N(6)-L-threonylcarbamoyladenine synthase (EC 2.3.1.234)'],1
+280,241699,243637,,,['Bis-ABC ATPase YheS'],-1
+281,243724,244354,,,['Redox-sensing transcriptional repressor Rex'],1
+282,244390,245800,,,['Uncharacterized MFS-type transporter'],1
+283,246002,246137,,,[''],-1
+284,246380,246584,,,[''],-1
+285,246587,247304,,,['CAAX amino terminal protease family protein'],-1
+286,247553,247838,,,['Heat shock protein 10 kDa family chaperone GroES'],1
+287,247877,249509,,,['Heat shock protein 60 kDa family chaperone GroEL'],1
+288,250101,250872,,,"['Gluconate 2-dehydrogenase (EC 1.1.99.3), membrane-bound, gamma subunit']",1
+289,250892,252644,,,"['Gluconate 2-dehydrogenase (EC 1.1.99.3), membrane-bound, flavoprotein']",1
+290,252802,253375,,,"['Cytochrome oxidase biogenesis protein Sco1/SenC/PrrC, thiol-disulfide reductase involved in Cu(I) insertion into CoxII Cu(A) center']",1
+291,254493,254850,,,[''],-1
+292,254955,255297,,,[''],1
+293,255659,255788,,,[''],1
+294,255884,256097,,,[''],-1
+295,256218,256446,,,[''],-1
+296,256823,257780,,,['FIG022979: MoxR-like ATPases'],1
+297,257781,259047,,,['FIG002343: hypothetical protein'],1
+298,259046,261251,,,"['FIG001454: Transglutaminase-like enzymes, putative cysteine proteases']",1
+299,261634,262957,,,['Xanthine/uracil/thiamine/ascorbate permease family protein'],1
+300,263242,263809,,,['Integral membrane protein'],1
+301,263840,263960,,,['Uncharacterized protein YebG'],1
+302,264031,264262,,,[''],-1
+303,264334,266083,,,['Adenine deaminase (EC 3.5.4.2)'],1
+304,266116,267175,,,['BH0638 unknown conserved protein'],1
+305,267218,267524,,,['His repressor'],1
+306,267524,267737,,,[''],1
+307,267752,268091,,,['Fluoride ion transporter CrcB'],-1
+308,268087,268462,,,['Fluoride ion transporter CrcB'],-1
+309,268577,269948,,,"['Mg/Co/Ni transporter MgtE, CBS domain-containing']",1
+310,270385,271768,,,['Glycyl-tRNA synthetase (EC 6.1.1.14)'],-1
+311,272185,272896,,,['Heptaprenylglyceryl phosphate synthase (EC 2.5.1.n9)'],1
+312,272896,275110,,,['ATP-dependent DNA helicase UvrD/PcrA (EC 3.6.4.12)'],1
+313,275140,277144,,,['DNA ligase (NAD(+)) (EC 6.5.1.2)'],1
+314,277156,278368,,,['hypothetical protein'],1
+315,278477,280034,,,['Delta-1-pyrroline-5-carboxylate dehydrogenase (EC 1.2.1.88)'],1
+316,280349,280529,,,[''],-1
+317,280525,281203,,,['COG2102: Predicted ATPases of PP-loop superfamily'],-1
+318,281319,283119,,,['Oligoendopeptidase F-like protein'],-1
+319,283483,283777,,,['Aspartyl-tRNA(Asn) amidotransferase subunit C (EC 6.3.5.6) @ Glutamyl-tRNA(Gln) amidotransferase subunit C (EC 6.3.5.7)'],1
+320,283789,285268,,,['Aspartyl-tRNA(Asn) amidotransferase subunit A (EC 6.3.5.6) @ Glutamyl-tRNA(Gln) amidotransferase subunit A (EC 6.3.5.7)'],1
+321,285264,286695,,,['Aspartyl-tRNA(Asn) amidotransferase subunit B (EC 6.3.5.6) @ Glutamyl-tRNA(Gln) amidotransferase subunit B (EC 6.3.5.7)'],1
+322,286762,287668,,,['Transcription regulator [contains diacylglycerol kinase catalytic domain]'],1
+323,287755,287953,,,[''],-1
+324,288203,289571,,,['23S rRNA (uracil(1939)-C(5))-methyltransferase (EC 2.1.1.190)'],1
+325,289959,291399,,,['hypothetical protein'],1
+326,291959,292229,,,['Programmed cell death antitoxin MazE'],1
+327,292228,292552,,,['Programmed cell death toxin MazF'],1
+328,292604,292823,,,[''],-1
+329,292993,293098,,,[''],-1
+330,293449,294913,,,"['RNA methyltransferase, TrmA family']",1
+331,295068,295749,,,[''],1
+332,295732,297439,,,['Glucose-methanol-choline (GMC) oxidoreductase:NAD binding site'],1
+333,298088,298922,,,['hypothetical protein'],1
+334,298998,300354,,,['Mobile element protein'],-1
+335,300485,300929,,,['Translation initiation factor 2'],1
+336,301244,301691,,,['FIG01231220: hypothetical protein'],1
+337,301755,302109,,,['hypothetical protein'],1
+338,302182,303082,,,"['Heme O synthase, protoheme IX farnesyltransferase, COX10-CtaB']",-1
+339,303215,303356,,,[''],-1
+340,303617,304655,,,['L-lactate dehydrogenase'],1
+341,304742,305201,,,[''],1
+342,305394,305913,,,['Putative exported protein precursor'],-1
+343,306008,306428,,,['Universal stress protein family'],-1
+344,306430,307894,,,['Sulfate permease'],-1
+345,308108,308660,,,['hypothetical protein'],1
+346,308789,309572,,,"['Beta-ketoadipate enol-lactone hydrolase, putative']",1
+347,309767,311018,,,['Cytosine deaminase (EC 3.5.4.1)'],1
+348,311755,313024,,,['Uncharacterized MFS-type transporter'],1
+349,313041,313197,,,[''],1
+350,313671,315060,,,['Retron-type RNA-directed DNA polymerase (EC 2.7.7.49)'],1
+351,315135,315309,,,[''],-1
+352,315459,315906,,,"['Transcriptional regulator, MarR family']",1
+353,315917,316859,,,['Ring-cleaving dioxygenase MhqO'],1
+354,316878,317862,,,['Glyoxalase family protein'],1
+355,318115,319045,,,['Auxin efflux carrier family protein'],1
+356,319060,319237,,,[''],1
+357,319313,320630,,,['O-acetylhomoserine sulfhydrylase (EC 2.5.1.49) @ O-succinylhomoserine sulfhydrylase (EC 2.5.1.48)'],-1
+358,320644,321694,,,['Homoserine O-acetyltransferase (EC 2.3.1.31)'],-1
+359,322365,322815,,,['Uncharacterized protein YrkC'],1
+360,323170,324325,,,['Uncharacterized MFS-type transporter'],-1
+361,324426,325032,,,[''],1
+362,325024,325531,,,['conserved hypothetical protein protein'],1
+363,325607,325805,,,[''],-1
+364,325898,326369,,,['FIG01235320: hypothetical protein'],1
+365,326493,326910,,,['FIG01248368: hypothetical protein'],1
+366,326988,327546,,,[''],1
+367,327623,327938,,,['small multidrug resistance family (SMR) protein'],-1
+368,327940,328276,,,['Broad-specificity multidrug efflux pump YkkC'],-1
+369,328518,329916,,,['Sodium/glutamate symporter'],-1
+370,330518,330821,,,[''],1
+371,330865,331297,,,[''],-1
+372,331862,332768,,,[''],1
+373,332986,334012,,,['Fatty acid desaturase'],1
+374,334079,335243,,,['Sensor histidine kinase DesK'],1
+375,335244,335844,,,"['Transcriptional response regulator DesR, LuxR family']",1
+376,335944,336769,,,"['oxidoreductase of aldo/keto reductase family, subgroup 1']",1
+377,336748,337126,,,[''],-1
+378,337160,337319,,,[''],-1
+379,337338,337731,,,['hypothetical protein'],-1
+380,338080,340171,,,['FIG00673015: hypothetical protein'],1
+381,340353,341055,,,[''],1
+382,341107,341470,,,[''],1
+383,341483,342005,,,"['D-glycero-beta-D-manno-heptose-1,7-bisphosphate 7-phosphatase (EC 3.1.3.82)']",-1
+384,342082,342577,,,[''],1
+385,342666,343008,,,['FIG01226121: hypothetical protein'],-1
+386,343080,344649,,,"['Probable oxidoreductase, with Rieske iron-sulfur protein 2Fe-2S subunit']",-1
+387,344809,345931,,,['Mobile element protein'],-1
+388,346261,346360,,,[''],-1
+389,346356,347712,,,['Mobile element protein'],-1
+390,347873,349550,,,['diguanylate cyclase/phosphodiesterase (GGDEF & EAL domains) with PAS/PAC sensor(s)'],1
+391,349594,349852,,,[''],1
+392,350117,350972,,,['Probable metallo-hydrolase YflN'],-1
+393,351131,352649,,,['K(+)/H(+) antiporter NhaP2'],-1
+394,352925,353900,,,"['Efflux ABC transporter, ATP-binding protein']",1
+395,353877,354651,,,[''],1
+396,354729,355212,,,['tRNA-specific adenosine-34 deaminase (EC 3.5.4.-)'],1
+397,355997,356930,,,['Permease of the drug/metabolite transporter (DMT) superfamily'],1
+398,357095,358103,,,['Rod shape-determining protein MreB'],-1
+399,358404,359235,,,[''],-1
+400,359410,360136,,,['Acyl-CoA:1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)'],1
+401,360283,360949,,,['protein of unknown function DUF159'],1
+402,361012,362368,,,['Sodium/glycine symporter GlyP'],-1
+403,362556,363042,,,['Low molecular weight protein tyrosine phosphatase (EC 3.1.3.48)'],1
+404,363041,363302,,,[''],1
+405,363399,364248,,,['Ribonuclease BN (EC 3.1.-.-)'],1
+406,365012,366188,,,['Uncharacterized MFS-type transporter YfkF'],-1
+407,366294,366681,,,[''],1
+408,366890,368204,,,['Histidine permease YuiF'],1
+409,368309,369089,,,['Peptidoglycan-N-acetylmuramic acid deacetylase PdaA'],1
+410,369113,369404,,,['G:T/U mismatch-specific uracil/thymine DNA-glycosylase'],1
+411,369453,370323,,,['DNA-3-methyladenine glycosylase II (EC 3.2.2.21)'],1
+412,370774,372268,,,['hypothetical protein'],-1
+413,372302,372719,,,[''],1
+414,372715,373237,,,[''],1
+415,373665,375324,,,"['Type IV fimbrial assembly, ATPase PilB']",1
+416,375339,376548,,,['Type IV fimbrial assembly protein PilC'],1
+417,376634,377111,,,[''],1
+418,377189,377948,,,['Leader peptidase (Prepilin peptidase) (EC 3.4.23.43) / N-methyltransferase (EC 2.1.1.-)'],1
+419,377959,378937,,,['hypothetical protein'],1
+420,378937,379471,,,[''],1
+421,379467,380037,,,[''],1
+422,380309,381083,,,['hypothetical protein'],-1
+423,381082,381991,,,"['Efflux ABC transporter, ATP-binding protein']",-1
+424,381994,382198,,,[''],-1
+425,382237,382357,,,['Flagellar hook-associated protein FlgL'],-1
+426,382521,382941,,,[''],-1
+427,383560,383938,,,[''],-1
+428,383979,384531,,,['hypothetical protein'],-1
+429,384782,385688,,,['Cell division inhibitor SulA'],-1
+430,385745,386567,,,['regulatory protein RecX'],1
+431,386583,386922,,,['Transcription regulator CDS_ID OB0894'],1
+432,386969,387953,,,['Uncharacterized membrane protein YfhP'],-1
+433,388007,389093,,,['A/G-specific adenine glycosylase (EC 3.2.2.-)'],1
+434,389186,389357,,,[''],1
+435,389403,389841,,,['hypothetical protein'],-1
+436,389952,390477,,,['DUF402 family nucleoside diphosphatase'],1
+437,390596,392384,,,"['Efflux ABC transporter, permease/ATP-binding protein YgaD']",1
+438,393058,393472,,,[''],1
+439,393654,393876,,,[''],1
+440,393924,394161,,,[''],1
+441,394379,395573,,,[''],1
+442,395556,396771,,,['hypothetical protein'],1
+443,396763,397261,,,[''],1
+444,397257,398319,,,['Putative lipoprotein SAV1865'],-1
+445,398689,398884,,,"['ABC-type siderophore export system, fused ATPase and permease components']",1
+446,398976,400272,,,"['Glutamate-1-semialdehyde 2,1-aminomutase (EC 5.4.3.8)']",-1
+447,400385,400772,,,['Potassium channel protein'],1
+448,400928,401399,,,"['Thiol peroxidase, Bcp-type (EC 1.11.1.15)']",1
+449,401428,402379,,,['D-3-phosphoglycerate dehydrogenase (EC 1.1.1.95)'],1
+450,402380,402938,,,['ATP:Cob(I)alamin adenosyltransferase (EC 2.5.1.17)'],1
+451,403116,403560,,,"['Peroxide stress regulator PerR, FUR family']",1
+452,403641,404013,,,['FIG01236629: hypothetical protein'],-1
+453,404240,404804,,,[''],1
+454,411928,412906,,,[''],1
+455,413144,413324,,,['hypothetical protein'],1
+456,413590,414352,,,['Thiamin-related 3-oxoacyl-[acyl-carrier protein] reductase OarX'],1
+457,414370,415165,,,['Hydroxyethylthiazole kinase (EC 2.7.1.50)'],1
+458,415177,415987,,,['Hydroxymethylpyrimidine phosphate kinase ThiD (EC 2.7.4.7)'],1
+459,415988,416645,,,['Thiamin-phosphate pyrophosphorylase (EC 2.5.1.3)'],1
+460,416899,417511,,,['Carboxylesterase (EC 3.1.1.1)'],-1
+461,417847,417982,,,[''],-1
+462,418089,418479,,,['hypothetical protein'],-1
+463,418581,419964,,,['Sensor histidine kinase colocalized with HrtAB transporter'],-1
+464,419960,420644,,,['Two-component response regulator colocalized with HrtAB transporter'],-1
+465,420960,421644,,,['Heme efflux system ATPase HrtA'],-1
+466,421645,422680,,,['Heme efflux system permease HrtB'],-1
+467,423156,424518,,,['Na(+)-dependent branched-chain amino acid transporter'],1
+468,424888,425740,,,['MBL-fold metallo-hydrolase superfamily'],-1
+469,425901,427401,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],1
+470,427565,428213,,,[''],1
+471,428532,429102,,,['Alkyl hydroperoxide reductase protein C (EC 1.11.1.15)'],1
+472,429116,430688,,,['Alkyl hydroperoxide reductase protein F'],1
+473,431193,432153,,,"['Aminopeptidase Y (Arg, Lys, Leu preference) (EC 3.4.11.15)']",-1
+474,432326,432455,,,[''],1
+475,432499,433459,,,['tRNA-dihydrouridine synthase 2'],1
+476,433606,434032,,,[''],-1
+477,434380,435235,,,"[""Pyridoxal 5'-phosphate synthase (glutamine hydrolyzing), synthase subunit (EC 4.3.3.6)""]",-1
+478,435367,435616,,,"['Unspecified monosaccharide ABC transport system, permease component 2']",1
+479,435771,437130,,,['Na(+)-dependent branched-chain amino acid transporter'],1
+480,437186,437834,,,"['Transcriptional regulator, GntR family']",-1
+481,438127,439309,,,['Lipoylation-related NADH-dependent flavin oxidoreductase'],-1
+482,439481,439814,,,"['Biotinyl-lipoyl attachment domain protein, GcvH-like']",1
+483,439823,440615,,,"['Macro domain protein YmdB, possibly ADP-ribose binding']",1
+484,440624,441524,,,['NAD-dependent protein deacetylase of SIR2 family'],1
+485,441527,442574,,,['Lipoate-protein ligase A'],1
+486,442590,443595,,,['Luciferase-like monooxygenase in lipoylation-related cluster'],1
+487,443921,445301,,,['Uncharacterized MFS-type transporter'],-1
+488,445696,446038,,,[''],1
+489,446649,446793,,,[''],-1
+490,446909,447218,,,['Repressor CsoR of the copZA operon'],1
+491,447230,449615,,,"['Lead, cadmium, zinc and mercury transporting ATPase (EC 3.6.3.3) (EC 3.6.3.5); Copper-translocating P-type ATPase (EC 3.6.3.4)']",1
+492,449647,449851,,,['Copper(I) chaperone CopZ'],1
+493,449991,450165,,,[''],1
+494,450653,451022,,,['Cadmium efflux system accessory protein'],1
+495,451014,453156,,,['Cadmium-transporting ATPase (EC 3.6.3.3)'],1
+496,453292,453790,,,['Hypothetical protein involved in heavy metal export'],1
+497,454284,455022,,,['hypothetical protein'],1
+498,455591,455951,,,['Rhodanese-like domain protein'],1
+499,455981,456371,,,['hypothetical protein'],1
+500,456387,456651,,,[''],1
+501,457035,458226,,,['Mobile element protein'],1
+502,458555,459200,,,['Pentapeptide repeat family protein'],1
+503,459276,460209,,,['myo-inositol operon protein IolS'],1
+504,460664,462041,,,['Xanthine permease'],1
+505,462027,463050,,,['Vanillate demethylase( EC:1.14.13.82 )'],1
+506,463101,464031,,,"['Glycine betaine ABC transport system, glycine betaine-binding protein OpuAC']",-1
+507,464292,464673,,,[''],-1
+508,464669,464819,,,[''],-1
+509,464958,466428,,,['FIG098404: Hypothetical protein'],1
+510,466433,467588,,,['FIG087842: Hypothetical protein'],1
+511,467590,471724,,,['FIG100068: Hypothetical protein'],1
+512,471723,473004,,,['hypothetical protein'],1
+513,473073,473319,,,[''],1
+514,473464,473626,,,[''],1
+515,473618,473933,,,[''],1
+516,474078,474465,,,[''],1
+517,474612,474819,,,[''],1
+518,474815,475070,,,[''],1
+519,475134,475515,,,[''],1
+520,475538,475976,,,"['transcriptional regulator, MerR family']",1
+521,476174,476372,,,[''],1
+522,476358,476706,,,['hypothetical protein'],1
+523,476902,477430,,,[''],-1
+524,477402,477516,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",-1
+525,477650,478391,,,['Pirin'],1
+526,478627,479098,,,[''],-1
+527,479174,482933,,,['hypothetical protein'],-1
+528,483147,484632,,,"['Type I restriction-modification system, DNA-methyltransferase subunit M (EC 2.1.1.72)']",1
+529,484624,485905,,,"['Type I restriction-modification system, specificity subunit S']",1
+530,485901,488838,,,"['Type I restriction-modification system, restriction subunit R (EC 3.1.21.3)']",1
+531,488864,489635,,,['Putative predicted metal-dependent hydrolase'],-1
+532,490241,491426,,,['hypothetical protein'],1
+533,492257,492659,,,['MaoC family protein'],1
+534,492658,492988,,,['hypothetical protein'],1
+535,493307,493469,,,[''],1
+536,493610,494951,,,['Na(+)-dependent branched-chain amino acid transporter'],-1
+537,495569,496898,,,"['Multi antimicrobial extrusion protein (Na(+)/drug antiporter), MATE family of MDR efflux pumps']",1
+538,496933,497053,,,[''],-1
+539,497100,497919,,,['FIG01127020: hypothetical protein'],1
+540,498170,499187,,,[''],-1
+541,499179,499683,,,['RNA polymerase ECF-type sigma factor'],-1
+542,499866,500127,,,['FIG007303: uncharacterized protein'],1
+543,500228,500456,,,['Rhodanese-like domain protein'],1
+544,500556,501036,,,['Uncharacterized protein YrkE'],1
+545,501054,501351,,,['Rhodanese-like domain protein'],1
+546,501369,501942,,,['UPF0033 protein YrkF'],1
+547,502004,503135,,,['MBL-fold metallo-hydrolase superfamily'],1
+548,503205,503988,,,['UPF0721 transmembrane protein YrkJ'],1
+549,504244,507313,,,['hypothetical protein'],1
+550,507290,508424,,,"['Two-component transcriptional response regulator, LuxR family']",1
+551,508596,518205,,,['Collagen adhesion protein'],1
+552,518268,518922,,,[''],1
+553,518944,519244,,,[''],-1
+554,519244,519952,,,['Short-chain dehydrogenase/reductase SDR'],-1
+555,520028,520940,,,"['Glutamate synthase operon transcriptional activator GltC, LysR family']",-1
+556,521059,522436,,,['NADP-specific glutamate dehydrogenase (EC 1.4.1.4)'],1
+557,522492,523632,,,['hypothetical protein'],-1
+558,523900,524812,,,['Cobalt/zinc/cadmium resistance protein CzcD'],1
+559,524985,525906,,,['FIG01234368: hypothetical protein'],-1
+560,526047,526611,,,"['Transcriptional regulator, AcrR family']",1
+561,526715,527060,,,['hypothetical protein'],1
+562,527400,528537,,,['Alpha-methylacyl-CoA racemase (EC 5.1.99.4)'],1
+563,528921,529335,,,[''],1
+564,529458,530625,,,['Uncharacterized MFS-type transporter'],1
+565,530944,532276,,,['Pyridine nucleotide-disulfide oxidoreductase; NADH dehydrogenase (EC 1.6.99.3)'],1
+566,532292,532943,,,['Uncharacterized sugar epimerase YhfK'],1
+567,532943,533057,,,[''],1
+568,533492,534065,,,"['Transcriptional regulator, AcrR family']",-1
+569,534220,536284,,,['putative membrane protein'],1
+570,536287,538222,,,['hypothetical protein'],1
+571,538498,538900,,,[''],1
+572,538937,539609,,,"['RNA pseudouridylate synthase, group 1']",-1
+573,539819,540218,,,['Mobile element protein'],1
+574,540224,541304,,,['Mobile element protein'],1
+575,541462,541636,,,[''],1
+576,541786,542233,,,[''],1
+577,542233,543625,,,"['Multi antimicrobial extrusion protein (Na(+)/drug antiporter), MATE family of MDR efflux pumps']",1
+578,544201,544849,,,['hypothetical protein'],1
+579,544848,545607,,,['Cytochrome c-type biogenesis protein CcdA (DsbD analog)'],1
+580,545622,546201,,,['Thiol:disulfide oxidoreductase related to ResA'],1
+581,546231,546921,,,"['Two-component transcriptional response regulator, OmpR family']",1
+582,546976,547129,,,[''],-1
+583,547275,547626,,,[''],1
+584,547685,548252,,,['NADPH-dependent FMN reductase family protein'],-1
+585,548256,549330,,,['Luciferase-like monooxygenase YhbW'],-1
+586,549555,550479,,,"['Efflux ABC transporter, ATP-binding protein']",1
+587,550471,551416,,,"['Efflux ABC transporter, permease protein']",1
+588,551830,552682,,,['Glyoxalase family protein'],1
+589,552723,553284,,,['Putative reductase'],1
+590,553403,554225,,,['FIG00672996: hypothetical protein'],1
+591,554529,554883,,,"['Transcriptional regulator, PadR family']",1
+592,554851,555370,,,['hypothetical protein'],1
+593,555552,556314,,,[''],1
+594,556548,557517,,,"['Hydrolase, alpha/beta fold family']",1
+595,557663,558242,,,['hypothetical protein'],1
+596,558505,559450,,,['FIG01021048: hypothetical protein'],-1
+597,559575,560241,,,[''],1
+598,560255,561935,,,['Isopentenyl-diphosphate Delta-isomerase (EC 5.3.3.2)'],1
+599,561977,563123,,,['Epoxyqueuosine reductase (EC 1.17.99.6) QueG'],1
+600,563163,563778,,,[''],1
+601,563767,564289,,,['Methylated-DNA--protein-cysteine methyltransferase (EC 2.1.1.63)'],1
+602,564393,564867,,,"[""tRNA (cytidine(34)-2'-O)-methyltransferase (EC 2.1.1.207)""]",1
+603,565194,566841,,,[''],1
+604,567052,569914,,,['2-oxoglutarate dehydrogenase E1 component (EC 1.2.4.2)'],1
+605,569929,571204,,,['Dihydrolipoamide succinyltransferase component (E2) of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61)'],1
+606,571734,572757,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",1
+607,572756,573782,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",1
+608,573819,575613,,,"['Oligopeptide ABC transporter, periplasmic oligopeptide-binding protein OppA (TC 3.A.1.5.1)']",1
+609,575649,576615,,,"['Oligopeptide ABC transporter, permease protein OppB (TC 3.A.1.5.1)']",1
+610,576626,577529,,,"['Oligopeptide ABC transporter, permease protein OppC (TC 3.A.1.5.1)']",1
+611,577590,578346,,,[''],1
+612,578566,579754,,,['Nucleoside permease NupC'],1
+613,580026,581100,,,['UDP-N-acetylglucosamine--N-acetylmuramyl-(pentape ptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase (EC 2.4.1.227)'],1
+614,581513,582662,,,['hypothetical protein'],-1
+615,582645,583758,,,['hypothetical protein'],-1
+616,583766,585296,,,['Nutrient germinant receptor inner membrane subunit A (GerKA/GerAA/GerBA)'],-1
+617,585426,585555,,,[''],1
+618,585797,587549,,,"['Heterodimeric efflux ABC transporter, multidrug resistance => BmrC subunit of BmrCD']",1
+619,587541,589557,,,"['Heterodimeric efflux ABC transporter, multidrug resistance => BmrD subunit of BmrCD']",1
+620,589583,590531,,,[''],1
+621,590569,591301,,,['RNA polymerase sigma-54 factor RpoN'],1
+622,591307,592801,,,['hypothetical protein'],1
+623,592885,593035,,,[''],-1
+624,593163,594354,,,['hypothetical protein'],1
+625,594353,595337,,,[''],1
+626,595360,596062,,,[''],1
+627,596196,596814,,,[''],1
+628,596924,597155,,,[''],1
+629,597268,598273,,,['hypothetical protein'],1
+630,598297,600049,,,[''],1
+631,600115,600901,,,"['Vitamin B12 ABC transporter, substrate-binding protein BtuF']",1
+632,600926,601661,,,['Branched-chain amino acid transporter'],1
+633,601657,601951,,,[''],1
+634,602069,602666,,,['Trp repressor binding protein'],1
+635,602899,603151,,,[''],1
+636,603234,604008,,,['D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)'],1
+637,603996,604278,,,['N-methylhydantoinase A (EC 3.5.2.14)'],-1
+638,604330,605896,,,['Mobile element protein'],-1
+639,605935,606295,,,['Mobile element protein'],-1
+640,606291,606633,,,[''],-1
+641,606998,608390,,,['Fumarate hydratase class II (EC 4.2.1.2)'],1
+642,608472,608682,,,"['Small acid-soluble spore protein, alpha/beta family, SASP_1']",1
+643,608739,609096,,,['hypothetical protein'],-1
+644,609296,610433,,,['Hypothetical protein SAV1846'],1
+645,610513,610873,,,['UPF0342 protein YheA'],1
+646,610943,611129,,,[''],-1
+647,611283,612519,,,['DNA double-strand break repair protein Mre11'],1
+648,612518,615506,,,['hypothetical protein'],1
+649,615537,616095,,,['Transcriptional regulator'],1
+650,616120,617068,,,"[""3'->5' exoribonuclease Bsu YhaM""]",1
+651,617245,618196,,,['FIG022979: MoxR-like ATPases'],1
+652,618192,619404,,,[''],1
+653,619400,620621,,,['Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129)'],1
+654,620654,621620,,,[''],-1
+655,621819,621912,,,['hypothetical protein'],1
+656,622097,622280,,,[''],-1
+657,622313,622853,,,[''],-1
+658,622965,623487,,,['Protease production regulatory protein Hpr (ScoC)'],-1
+659,623744,624242,,,[''],-1
+660,624527,625730,,,"['Betaine ABC transporter, ATP-binding protein BusAA']",1
+661,625722,626565,,,"['Betaine ABC transporter, permease protein BusAB.1 / Betaine ABC transporter, substrate-binding protein BusAB.2']",1
+662,626666,627590,,,"['Glycine betaine ABC transport system, glycine betaine-binding protein OpuAC']",1
+663,628327,628705,,,[''],-1
+664,628881,629301,,,"['Histidine triad (HIT) nucleotide-binding protein, similarity with At5g48545 and yeast YDL125C (HNT1)']",-1
+665,629354,629468,,,[''],1
+666,629457,630183,,,"['ABC transporter, ATP-binding protein EcsA']",1
+667,630184,631411,,,"['ABC transporter, permease protein EscB']",1
+668,631613,632861,,,['Manganese transport protein MntH'],1
+669,633032,633890,,,['hypothetical protein BH3604'],1
+670,633957,635130,,,['N-acyl-L-amino acid amidohydrolase (EC 3.5.1.14)'],-1
+671,635443,635629,,,[''],1
+672,635638,636073,,,['DNA protection during starvation protein'],-1
+673,636283,637117,,,['hypothetical protein'],1
+674,637128,638169,,,"['Cell envelope stress response system LiaFSR, sensor histidine kinase LiaS(VraS)']",1
+675,638188,638833,,,"['Cell envelope stress response system LiaFSR, response regulator LiaR(VraR)']",1
+676,639814,640252,,,[''],1
+677,640230,640452,,,['hypothetical protein'],1
+678,640598,641105,,,[''],-1
+679,641205,643347,,,['Multimodular transpeptidase-transglycosylase (EC 2.4.1.129) (EC 3.4.-.-)'],1
+680,643505,644540,,,['Uroporphyrinogen III decarboxylase (EC 4.1.1.37)'],1
+681,644559,645480,,,['Coproporphyrin ferrochelatase (EC 4.99.1.9)'],1
+682,645499,646891,,,"['Protoporphyrinogen IX oxidase, aerobic, HemY (EC 1.3.3.4)']",1
+683,647320,648052,,,['Metal-dependent hydrolases of the beta-lactamase superfamily I; PhnP protein'],1
+684,648140,649151,,,['Lipoate-protein ligase A'],1
+685,649562,649928,,,"['Transcriptional regulator, ArsR family']",1
+686,649924,651658,,,['Sulfate permease'],1
+687,651956,652226,,,[''],1
+688,652573,654112,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],1
+689,654285,654774,,,[''],1
+690,654786,655224,,,[''],1
+691,655240,655354,,,[''],-1
+692,655483,656479,,,"['ABC transporter, substrate-binding protein (cluster 15, trp?)']",1
+693,656517,657540,,,"['ABC transporter, permease protein (cluster 15, trp?)']",1
+694,657514,658312,,,"['ABC transporter, ATP-binding protein (cluster 15, trp?)']",1
+695,658381,659377,,,"['ABC transporter, substrate-binding protein (cluster 15, trp?)']",1
+696,659799,659925,,,[''],-1
+697,660561,661047,,,['hypothetical protein'],1
+698,661021,661402,,,['hypothetical protein'],-1
+699,661560,662217,,,['Uncharacterized membrane protein YhjE'],1
+700,662280,665754,,,"['ATP-dependent helicase/nuclease AddAB, subunit B']",1
+701,665756,669467,,,"['ATP-dependent helicase/nuclease AddAB, subunit A']",1
+702,669664,669835,,,[''],1
+703,669824,670154,,,[''],1
+704,670296,670668,,,[''],1
+705,670664,671057,,,[''],1
+706,671410,671887,,,['Uncharacterized membrane protein YoaS'],1
+707,671897,672116,,,"['Uncharacterized transcriptional regulator YozG, Cro/CI family']",1
+708,672163,672592,,,[''],1
+709,672632,673037,,,[''],-1
+710,673212,674394,,,['hypothetical protein'],1
+711,674409,675615,,,['hypothetical protein'],1
+712,675604,676114,,,[''],1
+713,676158,677349,,,['Ornithine aminotransferase (EC 2.6.1.13)'],-1
+714,677610,677985,,,['Uncharacterized protein UPF0344'],1
+715,678087,679503,,,['hypothetical protein'],1
+716,679616,679841,,,['hypothetical protein'],1
+717,680403,682548,,,"['Lead, cadmium, zinc and mercury transporting ATPase (EC 3.6.3.3) (EC 3.6.3.5); Copper-translocating P-type ATPase (EC 3.6.3.4)']",1
+718,682681,683542,,,['DegV family protein'],-1
+719,683638,684487,,,['UPF0750 membrane protein YitT'],1
+720,684548,685427,,,[''],1
+721,685548,685812,,,[''],-1
+722,685957,686419,,,[''],1
+723,686980,687829,,,['D-alanine aminotransferase (EC 2.6.1.21)'],-1
+724,688023,688821,,,"['ABC transporter, permease protein (cluster 12, methionine/phosphonates)']",-1
+725,688820,689630,,,"['ABC transporter, permease protein (cluster 12, methionine/phosphonates)']",-1
+726,689622,690414,,,"['ABC transporter, ATP-binding protein (cluster 12, methionine/phosphonates)']",-1
+727,690547,691471,,,"['ABC transporter, substrate-binding protein (cluster 12, methionine/phosphonates)']",-1
+728,691639,691837,,,[''],-1
+729,691838,691982,,,[''],-1
+730,692082,692919,,,['Putative phosphatase YitU'],-1
+731,693079,693838,,,[''],1
+732,693906,694218,,,['PaaD-like protein (DUF59) involved in Fe-S cluster assembly'],1
+733,694534,694624,,,[''],-1
+734,694776,695592,,,['Undecaprenyl-diphosphatase (EC 3.6.1.27)'],-1
+735,695663,695951,,,[''],1
+736,696074,696257,,,[''],-1
+737,696393,696972,,,[''],1
+738,697100,698048,,,[''],1
+739,698198,699137,,,"['3-oxoacyl-[acyl-carrier-protein] synthase, KASIII (EC 2.3.1.180)']",1
+740,699193,700432,,,"['3-oxoacyl-[acyl-carrier-protein] synthase, KASII (EC 2.3.1.179)']",1
+741,700808,701015,,,[''],1
+742,701087,701846,,,['UPF0736 protein YjbA'],1
+743,702032,702965,,,['Cell wall-binding protein'],1
+744,703055,704054,,,['Tryptophanyl-tRNA synthetase (EC 6.1.1.2)'],-1
+745,704756,704885,,,[''],-1
+746,704932,705241,,,['Uncharacterized membrane protein YuzA'],-1
+747,705432,705558,,,[''],1
+748,705566,705764,,,['Catalase (EC 1.11.1.6)'],-1
+749,705796,707614,,,['Catalase KatE-intracellular protease (EC 1.11.1.6)'],-1
+750,708006,708825,,,"['Metal transporter, ZIP family']",1
+751,709088,710318,,,['glycoside hydrolase'],1
+752,710585,711173,,,['Putative acetyltransferase YjbC'],1
+753,711443,711839,,,['Regulatory protein Spx'],1
+754,711888,712581,,,['Uncharacterized membrane protein YjbE'],-1
+755,712961,713663,,,['ClpCP protease substrate adapter protein MecA'],1
+756,714519,716034,,,"['Cardiolipin synthase, bacterial type ClsA']",1
+757,716053,717265,,,[''],1
+758,717302,719111,,,['Oligoendopeptidase F'],1
+759,719614,719782,,,[''],-1
+760,719853,720747,,,"['YjbH-like, GTP pyrophosphokinase domain']",-1
+761,720775,721159,,,['Hemoglobin-like protein HbO'],-1
+762,721257,721836,,,['Adenylate cyclase (EC 4.6.1.1)'],-1
+763,721973,722588,,,['GTP pyrophosphokinase (EC 2.7.6.5)'],1
+764,722622,723435,,,['NAD kinase (EC 2.7.1.23)'],1
+765,723459,724335,,,"['Similar to ribosomal large subunit pseudouridine synthase D, Bacillus subtilis YjbO type']",1
+766,724313,724859,,,[''],-1
+767,724941,726120,,,['Rod shape-determining protein RodA'],-1
+768,726259,727636,,,"['Mg/Co/Ni transporter MgtE, CBS domain-containing']",1
+769,727795,728578,,,['Enoyl-[acyl-carrier-protein] reductase [NADH] (EC 1.3.1.9)'],1
+770,729010,729424,,,[''],1
+771,729533,729995,,,['Spore coat protein of CotY/CotZ family'],-1
+772,730191,730425,,,[''],1
+773,730653,730968,,,[''],1
+774,731068,731743,,,[''],-1
+775,731994,732423,,,['GNAT family acetyltransferase YjcF'],-1
+776,732432,732951,,,['2H phosphoesterase superfamily protein Bsu1186 (yjcG)'],-1
+777,733043,733769,,,['Putative acetyl esterase YjcH (EC 3.1.1.-)'],-1
+778,734007,734727,,,['Allophanate hydrolase 2 subunit 1 (EC 3.5.1.54)'],1
+779,734716,735478,,,['Lactam utilization protein LamB'],1
+780,735489,736356,,,['Allophanate hydrolase 2 subunit 2 (EC 3.5.1.54)'],1
+781,736372,737371,,,['Alcohol dehydrogenase (EC 1.1.1.1)'],1
+782,737490,738201,,,[''],1
+783,738184,739546,,,['sensor histidine kinase'],1
+784,739606,740434,,,[''],1
+785,740600,741263,,,['hypothetical protein'],1
+786,741417,742107,,,['N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28)'],1
+787,742120,742369,,,[''],1
+788,742408,742816,,,[''],-1
+789,742812,743268,,,[''],-1
+790,743638,743815,,,[''],-1
+791,743867,745604,,,"['ATP-dependent DNA ligase (EC 6.5.1.1) clustered with Ku protein, LigD']",-1
+792,745748,746642,,,['Ku domain protein'],1
+793,747301,747433,,,[''],-1
+794,748034,749021,,,"['ABC-type Fe3+-siderophore transport system, periplasmic iron-binding component']",-1
+795,749254,750253,,,"['ABC-type Fe3+-siderophore transport system, permease component']",1
+796,750249,751302,,,"['ABC-type Fe3+-siderophore transport system, permease 2 component']",1
+797,751338,752163,,,"['ABC-type Fe3+-siderophore transport system, ATPase component']",1
+798,752140,752950,,,[''],1
+799,753129,753933,,,[''],1
+800,753994,754615,,,['BRAMP'],1
+801,754712,754898,,,"['RND efflux system, inner membrane transporter']",1
+802,754905,755730,,,[''],-1
+803,755830,756211,,,['hypothetical protein'],-1
+804,756296,756491,,,[''],-1
+805,756841,757975,,,[''],-1
+806,758124,758643,,,[''],-1
+807,758800,759049,,,[''],1
+808,759135,759324,,,[''],1
+809,759316,760090,,,[''],1
+810,760093,761623,,,['hypothetical protein'],1
+811,761624,761900,,,[''],1
+812,761899,762589,,,['Cell division protein FtsH (EC 3.4.24.-)'],1
+813,762867,763716,,,['Mobile element protein'],-1
+814,763718,764003,,,['Mobile element protein'],-1
+815,764281,764527,,,[''],1
+816,764623,764842,,,[''],1
+817,764843,765056,,,[''],1
+818,765052,765217,,,[''],1
+819,766009,767302,,,['Methyl-accepting chemotaxis protein'],1
+820,767720,768662,,,"['Dipeptide ABC transporter, permease protein DppB (TC 3.A.1.5.2)']",1
+821,768676,769573,,,"['Dipeptide ABC transporter, permease protein DppC (TC 3.A.1.5.2)']",1
+822,769589,771155,,,"['Oligopeptide ABC transporter, periplasmic oligopeptide-binding protein OppA (TC 3.A.1.5.1)']",1
+823,771166,772168,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",1
+824,772136,773108,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",1
+825,773288,774137,,,['Uncharacterized protein YkwD'],-1
+826,774502,774931,,,[''],1
+827,775073,775556,,,[''],-1
+828,775576,775816,,,"['4Fe-4S ferredoxin, iron-sulfur binding']",-1
+829,775975,776530,,,['hypothetical protein'],1
+830,776573,776993,,,[''],-1
+831,777223,777664,,,['hypothetical protein'],1
+832,777755,778400,,,['Nitric oxide-dependent regulator DnrN or NorA'],-1
+833,778573,779257,,,"['transcriptional regulator, Crp/Fnr family']",1
+834,779485,779866,,,[''],1
+835,779891,780350,,,['hypothetical protein'],1
+836,780620,781409,,,['UPF0317 protein YcsI'],-1
+837,781476,782154,,,[''],-1
+838,782297,782789,,,[''],1
+839,782883,784410,,,['Aminobenzoyl-glutamate transport protein'],1
+840,784808,785309,,,[''],1
+841,785359,785668,,,['UPF0213 protein YazA'],1
+842,785763,787200,,,['Sodium:alanine symporter family protein'],1
+843,787389,787695,,,"['Transcriptional regulator, HxlR family']",-1
+844,787829,788357,,,['Protein yceI precursor'],1
+845,788443,789370,,,['Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)'],-1
+846,789575,790952,,,['Acetylornithine deacetylase/Succinyl-diaminopimelate desuccinylase and related deacylases'],1
+847,791482,792193,,,['hypothetical protein'],1
+848,792292,793993,,,[''],1
+849,794237,795449,,,['Xaa-Pro dipeptidase (EC 3.4.13.9)'],1
+850,795493,796702,,,['Cystathionine gamma-synthase (EC 2.5.1.48)'],1
+851,796768,797170,,,['Uncharacterized protein YuxK'],-1
+852,797188,797488,,,[''],-1
+853,797500,797644,,,[''],-1
+854,798030,798600,,,['Substrate-specific component ThiT of thiamin ECF transporter'],1
+855,798761,799238,,,['Glutathione peroxidase (EC 1.11.1.9) @ Thioredoxin peroxidase (EC 1.11.1.15)'],1
+856,799400,800054,,,[''],-1
+857,800216,802619,,,['Penicillin acylase (EC 3.5.1.11)'],1
+858,802773,804246,,,['Methyl-accepting chemotaxis protein'],-1
+859,804442,804970,,,['Putative phosphohydrolase YueE'],1
+860,805038,805464,,,['hypothetical protein'],1
+861,805593,806958,,,"['KtrCD potassium uptake system, integral membrane component KtrD']",1
+862,807189,807354,,,['hypothetical protein'],-1
+863,807453,808662,,,['Serine protease precursor MucD/AlgY associated with sigma factor RpoE'],-1
+864,808674,809829,,,[''],-1
+865,809986,810103,,,[''],1
+866,810224,810443,,,[''],1
+867,810476,810692,,,[''],1
+868,810815,810962,,,[''],1
+869,811160,811670,,,['Signal peptidase I (EC 3.4.21.89)'],-1
+870,812247,812418,,,[''],1
+871,812421,813570,,,"['N-acetyl-L,L-diaminopimelate aminotransferase (EC 2.6.1.-)']",-1
+872,813646,813991,,,[''],1
+873,814026,814629,,,"['Cytochrome oxidase biogenesis protein Sco1/SenC/PrrC, thiol-disulfide reductase involved in Cu(I) insertion into CoxII Cu(A) center']",-1
+874,814735,815602,,,['Uncharacterized metallophosphoesterase YkuE'],-1
+875,815746,816511,,,"['2,4-dienoyl-CoA reductase (EC 1.3.1.34)']",1
+876,816784,817231,,,['CBS domain-containing protein YkuL'],1
+877,817230,817980,,,"['2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-acetyltransferase (EC 2.3.1.89)']",1
+878,818070,819183,,,"['N-acetyl-L,L-diaminopimelate deacetylase (EC 3.5.1.47)']",1
+879,819202,819577,,,"['glyoxalase family protein, putative']",1
+880,819666,820488,,,['Potassium efflux system KefA protein / Small-conductance mechanosensitive channel'],-1
+881,820735,822490,,,"['Efflux ABC transporter, permease/ATP-binding protein YknU']",1
+882,822504,824328,,,"['Efflux ABC transporter, permease/ATP-binding protein YknV']",1
+883,824425,825091,,,"['KtrCD potassium uptake system, peripheral membrane component KtrC']",1
+884,825271,826939,,,"[""Ribonuclease J1 (endonuclease and 5' exonuclease)""]",-1
+885,826942,827152,,,['Protein of unknown function DUF1447'],-1
+886,827248,827398,,,[''],-1
+887,827549,828107,,,['Peptide deformylase (EC 3.5.1.88)'],-1
+888,828306,828975,,,['hypothetical protein'],1
+889,829940,831029,,,['Pyruvate dehydrogenase E1 component alpha subunit (EC 1.2.4.1)'],1
+890,831032,832010,,,['Pyruvate dehydrogenase E1 component beta subunit (EC 1.2.4.1)'],1
+891,832041,833337,,,['Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex (EC 2.3.1.12)'],1
+892,833339,834749,,,['Dihydrolipoamide dehydrogenase of pyruvate dehydrogenase complex (EC 1.8.1.4)'],1
+893,834886,835030,,,[''],1
+894,835202,836750,,,['Glycine betaine transporter OpuD'],-1
+895,836806,836938,,,[''],1
+896,836969,837860,,,['Polysaccharide deacetylase'],1
+897,838024,838990,,,"['putative oxidoreductase, nitronate monooxygenase family']",1
+898,839006,839273,,,['UPF0223 protein YktA'],1
+899,839425,840070,,,['DUF1054 superfamily protein'],-1
+900,840232,841033,,,['Inositol-1-monophosphatase (EC 3.1.3.25)'],1
+901,841176,841359,,,[''],-1
+902,841477,841813,,,[''],1
+903,841842,842043,,,[''],-1
+904,842213,842489,,,['hypothetical protein'],1
+905,842556,843129,,,[''],-1
+906,843228,843687,,,['Uncharacterized protein YlaL'],-1
+907,843768,844701,,,['Glutaminase (EC 3.5.1.2)'],1
+908,844810,845101,,,['UPF0358 protein YlaN'],1
+909,845241,845835,,,['DNA-3-methyladenine glycosylase II (EC 3.2.2.21)'],-1
+910,846000,849444,,,['Pyruvate carboxylase (EC 6.4.1.1)'],1
+911,849551,850466,,,"['Heme A synthase, cytochrome oxidase biogenesis protein Cox15-CtaA']",-1
+912,850872,851811,,,"['Heme O synthase, protoheme IX farnesyltransferase, COX10-CtaB']",1
+913,851896,853102,,,['Cytochrome c oxidase polypeptide II (EC 1.9.3.1)'],1
+914,853147,855013,,,['Cytochrome c oxidase polypeptide I (EC 1.9.3.1)'],1
+915,855005,855626,,,['Cytochrome c oxidase polypeptide III (EC 1.9.3.1)'],1
+916,855629,855962,,,"['Cytochrome c oxidase, subunit IV (EC 1.9.3.1)']",1
+917,856224,857241,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",1
+918,857221,858190,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",1
+919,858235,859939,,,"['Dipeptide ABC transporter, substrate-binding protein DppA (TC 3.A.1.5.2)']",1
+920,860022,861024,,,"['Dipeptide ABC transporter, permease protein DppB (TC 3.A.1.5.2)']",1
+921,861036,861957,,,"['Dipeptide ABC transporter, permease protein DppC (TC 3.A.1.5.2)']",1
+922,862319,863870,,,[''],1
+923,863871,864639,,,['Mobile element protein'],1
+924,864951,865344,,,['Mercuric resistance operon regulatory protein MerR'],1
+925,865368,867009,,,['Mercuric ion reductase (EC 1.16.1.1)'],1
+926,867270,868593,,,['Mobile element protein'],1
+927,868746,869271,,,['hypothetical protein'],-1
+928,869730,870048,,,"['Transcriptional regulator, PadR family']",1
+929,870044,870761,,,['hypothetical protein'],1
+930,870947,871859,,,['Cytochrome c oxidase caa3-type assembly factor CtaG_BS (unrelated to Cox11-CtaG family)'],1
+931,871865,872315,,,"['Terminal oxidase biogenesis protein CtaM, putative heme A, heme O chaperone']",1
+932,872338,872485,,,[''],-1
+933,872608,873667,,,['Sporulation integral membrane protein YtvI'],-1
+934,873909,874284,,,['Phenylalanyl-tRNA synthetase alpha subunit'],-1
+935,874459,874837,,,[''],1
+936,874897,875344,,,['ComK regulator YlbF'],1
+937,875383,875668,,,[''],1
+938,875725,876115,,,[''],-1
+939,876569,877142,,,['16S rRNA (guanine(966)-N(2))-methyltransferase (EC 2.1.1.171)'],1
+940,877138,877618,,,['Phosphopantetheine adenylyltransferase (EC 2.7.7.3)'],1
+941,877630,878860,,,['Sporulation integral membrane protein YlbJ'],-1
+942,879006,879789,,,['FIG00613342: Bacterial patatin-like phospholipase domain containing protein'],1
+943,879789,880818,,,['Lon-like protease with PDZ domain'],1
+944,880969,882181,,,['UPF0348 protein family'],-1
+945,882338,882893,,,"['FIG01269488: protein, clustered with ribosomal protein L32p']",1
+946,882933,883107,,,"['LSU ribosomal protein L32p @ LSU ribosomal protein L32p, zinc-dependent']",1
+947,883812,884574,,,['Enoyl-CoA hydratase (EC 4.2.1.17)'],1
+948,884660,885128,,,['Prespore specific transcriptional activator RsfA'],1
+949,885280,885760,,,['Uncharacterized N-acetyltransferase BT9727_3663 (EC 2.3.1.-)'],-1
+950,885898,886774,,,['2-dehydropantoate 2-reductase (EC 1.1.1.169)'],1
+951,887292,887409,,,[''],-1
+952,887533,889156,,,['Glucosaminyl-malate:cysteine ligase'],1
+953,889341,889773,,,['Transcriptional regulator MraZ'],1
+954,889790,890765,,,['16S rRNA (cytosine(1402)-N(4))-methyltransferase (EC 2.1.1.199)'],1
+955,890769,891144,,,[''],1
+956,891165,893376,,,['Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129)'],1
+957,893512,895432,,,['Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129) @ Sporulation peptidoglycan synthetase SpoVD'],1
+958,895724,895922,,,['Glutathione reductase (EC 1.8.1.7)'],1
+959,896160,897630,,,"['UDP-N-acetylmuramoyl-dipeptide--2,6-diaminopimela te ligase (EC 6.3.2.13)']",1
+960,897631,898978,,,['UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alani ne ligase (EC 6.3.2.10)'],1
+961,899010,899994,,,['Phospho-N-acetylmuramoyl-pentapeptide-transferase (EC 2.7.8.13)'],1
+962,899993,901346,,,['UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase (EC 6.3.2.9)'],1
+963,901438,902554,,,['Peptidoglycan glycosyltransferase FtsW (EC 2.4.1.129) @ Stage V sporulation protein E'],1
+964,902994,903789,,,['Cell division protein FtsQ'],1
+965,903945,905238,,,['Cell division protein FtsA'],1
+966,905300,906425,,,['Cell division protein FtsZ'],1
+967,906900,907812,,,[''],1
+968,907811,908537,,,['RNA polymerase sporulation specific sigma factor SigE'],1
+969,908618,909413,,,['RNA polymerase sporulation specific sigma factor SigG'],1
+970,909510,909741,,,[''],1
+971,909806,910607,,,['FIG00003370: Multicopper polyphenol oxidase'],1
+972,910625,911300,,,['Pyridoxal phosphate-containing protein YggS'],1
+973,911313,911736,,,"['SepF, FtsZ-interacting protein related to cell division']",1
+974,911741,912008,,,"['Cell division integral membrane protein, YggT and half-length relatives']",1
+975,912030,912804,,,['Putative RNA-binding protein YlmH'],1
+976,912887,913412,,,['Cell division initiation protein DivIVA'],1
+977,913759,916516,,,['Isoleucyl-tRNA synthetase (EC 6.1.1.5)'],1
+978,916823,916955,,,[''],-1
+979,917205,917679,,,['Lipoprotein signal peptidase (EC 3.4.23.36)'],1
+980,917671,918580,,,['LSU rRNA pseudouridine(1911/1915/1917) synthase (EC 5.4.99.23)'],1
+981,918784,919324,,,['Pyrimidine operon regulatory protein PyrR'],1
+982,919492,920866,,,['Uracil permease @ Uracil:proton symporter UraA'],1
+983,920885,921065,,,[''],1
+984,921404,923114,,,['Fibronectin/fibrinogen-binding protein'],-1
+985,923314,924193,,,['UPF0701 protein YicC'],1
+986,924282,924543,,,['UPF0296 protein YlzA'],1
+987,924554,925175,,,['Guanylate kinase (EC 2.7.4.8)'],1
+988,925174,925372,,,['DNA-directed RNA polymerase omega subunit (EC 2.7.7.6)'],1
+989,925636,926833,,,['Phosphopantothenoylcysteine decarboxylase (EC 4.1.1.36) / Phosphopantothenoylcysteine synthetase (EC 6.3.2.5)'],1
+990,926835,929247,,,['Helicase PriA essential for oriC/DnaA-independent DNA replication'],1
+991,929280,930216,,,['Methionyl-tRNA formyltransferase (EC 2.1.2.9)'],1
+992,930220,931558,,,['16S rRNA (cytosine(967)-C(5))-methyltransferase (EC 2.1.1.176)'],1
+993,931587,932349,,,"['Protein serine/threonine phosphatase PrpC, regulation of stationary phase']",1
+994,932342,934352,,,"['Serine/threonine protein kinase PrkC, regulator of stationary phase']",1
+995,934367,935255,,,['Ribosome small subunit biogenesis RbfA-release protein RsgA'],1
+996,935258,935906,,,['Ribulose-phosphate 3-epimerase (EC 5.1.3.1)'],1
+997,935912,936563,,,['Thiamin pyrophosphokinase (EC 2.7.6.2)'],1
+998,936608,937253,,,[''],-1
+999,937313,937502,,,"['LSU ribosomal protein L28p @ LSU ribosomal protein L28p, zinc-independent']",-1
+1000,937699,938059,,,['FIG001802: Putative alkaline-shock protein'],1
+1001,938094,939765,,,"['Dihydroxyacetone kinase-like protein, phosphatase domain / Dihydroxyacetone kinase-like protein, kinase domain']",1
+1002,940518,940884,,,['hypothetical protein'],1
+1003,941325,942003,,,[''],1
+1004,941999,944621,,,['hypothetical protein'],1
+1005,944677,945937,,,['Xanthine/uracil/thiamine/ascorbate permease family protein'],-1
+1006,946113,946776,,,"['L-serine dehydratase, beta subunit (EC 4.3.1.17)']",1
+1007,946799,947693,,,"['L-serine dehydratase, alpha subunit (EC 4.3.1.17)']",1
+1008,947696,949727,,,['ATP-dependent DNA helicase RecG (EC 3.6.4.12)'],1
+1009,950246,950804,,,['Transcription factor FapR'],1
+1010,950821,951832,,,['Phosphate:acyl-ACP acyltransferase PlsX (EC 2.3.1.n2)'],1
+1011,951824,952769,,,['Malonyl CoA-acyl carrier protein transacylase (EC 2.3.1.39)'],1
+1012,952769,953510,,,"['3-oxoacyl-[acyl-carrier protein] reductase (EC 1.1.1.100), FadG']",1
+1013,953556,953790,,,['Acyl carrier protein'],1
+1014,953857,954616,,,['Ribonuclease III (EC 3.1.26.3)'],1
+1015,954782,955007,,,[''],-1
+1016,955118,958685,,,['Chromosome partition protein smc'],1
+1017,958703,959699,,,['Signal recognition particle receptor FtsY'],1
+1018,959712,960039,,,['Signal recognition particle associated protein'],1
+1019,960053,961394,,,['Signal recognition particle protein Ffh'],1
+1020,961473,961746,,,['SSU ribosomal protein S16p'],1
+1021,961761,961989,,,['KH domain RNA binding protein YlqC'],1
+1022,962064,962454,,,[''],1
+1023,962459,962981,,,['16S rRNA processing protein RimM'],1
+1024,962977,963712,,,['tRNA (guanine(37)-N(1))-methyltransferase (EC 2.1.1.228)'],1
+1025,963843,964188,,,['LSU ribosomal protein L19p'],1
+1026,964693,966988,,,['putative surface/cell-adhesion protein'],1
+1027,967010,967973,,,[''],1
+1028,968235,969036,,,['Transmembrane component CbrV of energizing module of predicted cobalamin ECF transporter'],1
+1029,969026,970703,,,['Duplicated ATPase component CbrU of energizing module of predicted cobalamin ECF transporter'],1
+1030,970807,971398,,,['Substrate-specific component CbrT of predicted cobalamin ECF transporter'],1
+1031,971483,972119,,,"['FIG01964566: Predicted membrane protein, hemolysin III homolog']",-1
+1032,972140,973349,,,['Alcohol dehydrogenase (EC 1.1.1.1)'],-1
+1033,973494,974343,,,['LSU ribosomal maturation GTPase RbgA (B. subtilis YlqF)'],1
+1034,974398,975172,,,['Ribonuclease HII (EC 3.1.26.4)'],1
+1035,975185,977042,,,['hypothetical protein'],1
+1036,977038,977323,,,['Flagellar biosynthesis protein FlhB'],1
+1037,977420,978581,,,['Succinyl-CoA ligase [ADP-forming] beta chain (EC 6.2.1.5)'],1
+1038,978597,979503,,,['Succinyl-CoA ligase [ADP-forming] alpha chain (EC 6.2.1.5)'],1
+1039,979663,980557,,,['Rossmann fold nucleotide-binding protein Smf possibly involved in DNA uptake'],1
+1040,981057,983130,,,['DNA topoisomerase I (EC 5.99.1.2)'],1
+1041,983561,984422,,,['Site-specific tyrosine recombinase XerC'],1
+1042,984444,985002,,,['ATP-dependent protease subunit HslV (EC 3.4.25.2)'],1
+1043,985005,986397,,,['ATP-dependent hsl protease ATP-binding subunit HslU'],1
+1044,986418,987198,,,['GTP-sensing transcriptional pleiotropic repressor CodY'],1
+1045,987595,987985,,,['Flagellar basal-body rod protein FlgB'],1
+1046,987987,988446,,,['Flagellar basal-body rod protein FlgC'],1
+1047,988460,988784,,,['Flagellar hook-basal body complex protein FliE'],1
+1048,988875,990453,,,['Flagellar M-ring protein FliF'],1
+1049,990465,991479,,,['Flagellar motor switch protein FliG'],1
+1050,991462,992236,,,[''],1
+1051,992225,993536,,,['Flagellum-specific ATP synthase FliI'],1
+1052,993535,993982,,,[''],1
+1053,993990,994563,,,['hypothetical protein'],1
+1054,994607,995843,,,[''],1
+1055,995846,996302,,,['Flagellar basal-body rod modification protein FlgD'],1
+1056,996288,996669,,,['FIG01228626: hypothetical protein'],1
+1057,996754,997648,,,['Flagellar hook protein FlgE'],1
+1058,997690,997909,,,['Flagellar protein FlbD'],1
+1059,997901,998333,,,['hypothetical protein'],1
+1060,998363,999359,,,['Flagellar motor switch protein FliM'],1
+1061,999351,1000542,,,['Flagellar motor switch protein FliN'],1
+1062,1000583,1000946,,,['Chemotaxis regulator - transmits chemoreceptor signals to flagellar motor components CheY'],1
+1063,1001037,1001706,,,['hypothetical protein'],1
+1064,1001698,1002367,,,['Flagellar biosynthesis protein FliP'],1
+1065,1002382,1002652,,,['Flagellar biosynthesis protein FliQ'],1
+1066,1002653,1003433,,,['Flagellar biosynthesis protein FliR'],1
+1067,1003435,1004518,,,['Flagellar biosynthesis protein FlhB'],1
+1068,1004538,1006572,,,['Flagellar biosynthesis protein FlhA'],1
+1069,1006568,1007672,,,['Flagellar biosynthesis protein FlhF'],1
+1070,1007668,1008532,,,['Flagellar synthesis regulator FleN'],1
+1071,1008666,1009722,,,['Chemotaxis response regulator protein-glutamate methylesterase CheB (EC 3.1.1.61)'],1
+1072,1009734,1011738,,,['Signal transduction histidine kinase CheA'],1
+1073,1011751,1012219,,,['Positive regulator of CheA protein activity (CheW)'],1
+1074,1012243,1012876,,,['Chemotaxis protein CheC -- inhibitor of MCP methylation'],1
+1075,1012868,1013366,,,['Chemotaxis protein CheD'],1
+1076,1013399,1014167,,,['RNA polymerase sigma factor for flagellar operon'],1
+1077,1014196,1015600,,,['hypothetical protein'],1
+1078,1015617,1015935,,,['hypothetical protein'],1
+1079,1015955,1016456,,,[''],1
+1080,1016602,1017370,,,['SSU ribosomal protein S2p (SAe)'],1
+1081,1017472,1018357,,,['Translation elongation factor Ts'],1
+1082,1018560,1019289,,,['Uridylate kinase (EC 2.7.4.22)'],1
+1083,1019285,1019843,,,['Ribosome recycling factor'],1
+1084,1019933,1020683,,,['Undecaprenyl diphosphate synthase (EC 2.5.1.31)'],1
+1085,1020702,1021491,,,['Phosphatidate cytidylyltransferase (EC 2.7.7.41)'],1
+1086,1021523,1022669,,,['1-deoxy-D-xylulose 5-phosphate reductoisomerase (EC 1.1.1.267)'],1
+1087,1022685,1023945,,,"['Intramembrane protease RasP/YluC, implicated in cell division based on FtsL cleavage']",1
+1088,1023988,1025695,,,"['Prolyl-tRNA synthetase (EC 6.1.1.15), bacterial type']",1
+1089,1025768,1030058,,,['DNA polymerase III polC-type (EC 2.7.7.7)'],1
+1090,1030253,1030370,,,[''],1
+1091,1030812,1030962,,,[''],1
+1092,1031044,1031518,,,['Bacterial ribosome SSU maturation protein RimP'],1
+1093,1031534,1032644,,,['Transcription termination protein NusA'],1
+1094,1032660,1032933,,,['COG2740: Predicted nucleic-acid-binding protein implicated in transcription termination'],1
+1095,1032925,1033225,,,['ribosomal protein L7Ae family protein'],1
+1096,1033242,1035600,,,['Translation initiation factor 2'],1
+1097,1035596,1035875,,,['YlxP-like protein'],1
+1098,1035899,1036253,,,['Ribosome-binding factor A'],1
+1099,1036372,1037284,,,['tRNA pseudouridine(55) synthase (EC 5.4.99.25)'],1
+1100,1037299,1038244,,,['FMN adenylyltransferase (EC 2.7.7.2) / Riboflavin kinase (EC 2.7.1.26)'],1
+1101,1038374,1038644,,,['SSU ribosomal protein S15p (S13e)'],1
+1102,1038830,1040948,,,['Polyribonucleotide nucleotidyltransferase (EC 2.7.7.8)'],1
+1103,1041439,1042660,,,"['FIG007959: peptidase, M16 family']",1
+1104,1042691,1042931,,,[''],1
+1105,1043124,1044000,,,['Dipicolinate synthase subunit A'],1
+1106,1044022,1044616,,,['Dipicolinate synthase subunit B'],1
+1107,1044674,1045718,,,['Aspartate-semialdehyde dehydrogenase (EC 1.2.1.11)'],1
+1108,1045738,1046956,,,['Aspartokinase (EC 2.7.2.4)'],1
+1109,1046973,1047840,,,['4-hydroxy-tetrahydrodipicolinate synthase (EC 4.3.3.7)'],1
+1110,1047959,1048697,,,['Translocation-enhancing protein TepA'],1
+1111,1048693,1048900,,,[''],1
+1112,1048964,1051268,,,['DNA translocase FtsK'],1
+1113,1051428,1051662,,,[''],1
+1114,1051720,1052449,,,"['Transcriptional regulator, MerR family']",1
+1115,1052691,1052811,,,[''],-1
+1116,1052848,1054135,,,['FIG001621: Zinc protease'],1
+1117,1054131,1055421,,,['Uncharacterized zinc protease YmfH'],1
+1118,1055423,1056140,,,[''],1
+1119,1056210,1056459,,,['FIG007042: hypothetical protein'],1
+1120,1057279,1058068,,,['FIG00003568: ACT domain protein'],1
+1121,1058086,1059013,,,['Transcriptional regulator in cluster with unspecified monosaccharide ABC transport system'],1
+1122,1059106,1059685,,,['CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase (EC 2.7.8.5)'],1
+1123,1059681,1060944,,,['ADP-ribose pyrophosphatase of COG1058 family (EC 3.6.1.13) / Nicotinamide-nucleotide amidase (EC 3.5.1.42)'],1
+1124,1061076,1062117,,,['RecA protein'],1
+1125,1062117,1062249,,,[''],-1
+1126,1062502,1064068,,,['Ribonuclease Y'],1
+1127,1064242,1065040,,,"[""2',3'-cyclic-nucleotide 2'-phosphodiesterase, Bsub YmdB""]",1
+1128,1065147,1065408,,,['Spore core dehydratation and coat assembly protein SpoVS'],1
+1129,1065630,1067211,,,['tRNA-i(6)A37 methylthiotransferase (EC 2.8.4.3)'],1
+1130,1067211,1067613,,,['FIG00646845: hypothetical YMCA protein'],1
+1131,1067766,1068606,,,[''],1
+1132,1068802,1069330,,,['Outer spore coat protein CotE'],1
+1133,1069460,1072010,,,['DNA mismatch repair protein MutS'],1
+1134,1072023,1073853,,,['DNA mismatch repair protein MutL'],1
+1135,1073874,1074822,,,['tRNA dimethylallyltransferase (EC 2.5.1.75)'],1
+1136,1074854,1075076,,,['RNA-binding protein Hfq'],1
+1137,1075297,1076554,,,['Ribosome LSU-associated GTP-binding protein HflX'],1
+1138,1076546,1077779,,,['Aluminum resistance protein'],1
+1139,1077893,1078235,,,['FIG01060185: hypothetical protein'],-1
+1140,1078449,1078845,,,[''],1
+1141,1078928,1080263,,,['Glutamine synthetase type I (EC 6.3.1.2)'],1
+1142,1080643,1081363,,,[''],1
+1143,1081786,1082425,,,['prophage Lp1 protein 5'],1
+1144,1082837,1083062,,,[''],1
+1145,1083065,1083389,,,[''],1
+1146,1083413,1084682,,,['Putative UV-damage repair protein UvrX'],1
+1147,1084772,1085510,,,[''],1
+1148,1085594,1086215,,,['SOS-response repressor and protease LexA (EC 3.4.21.88)'],-1
+1149,1086371,1086602,,,['hypothetical protein'],1
+1150,1086756,1088766,,,['Transketolase (EC 2.2.1.1)'],1
+1151,1088917,1089160,,,['UPF0154 protein YneF'],1
+1152,1089314,1090019,,,['Cytochrome c-type biogenesis protein CcdA (DsbD analog)'],1
+1153,1090095,1090551,,,['Na(+) H(+) antiporter subunit A / Na(+) H(+) antiporter subunit B'],1
+1154,1090555,1091032,,,['CcdC protein'],1
+1155,1091072,1091501,,,['Uncharacterized protein YneK'],-1
+1156,1091732,1092779,,,[''],1
+1157,1093293,1096005,,,['Aconitate hydratase (EC 4.2.1.3)'],1
+1158,1096218,1096797,,,['hypothetical protein'],1
+1159,1096875,1097022,,,[''],1
+1160,1097080,1097314,,,"['Small, acid-soluble spore protein Tlp']",1
+1161,1097553,1097973,,,['4-hydroxybenzoyl-CoA thioesterase family active site'],1
+1162,1097976,1098273,,,['Uncharacterized protein YneQ'],1
+1163,1098614,1099535,,,['GTP cyclohydrolase I (EC 3.5.4.16) type 2'],-1
+1164,1099616,1100810,,,['Capsule biosynthesis protein capA'],-1
+1165,1100854,1101436,,,['Acyl-phosphate:glycerol-3-phosphate O-acyltransferase PlsY (EC 2.3.1.n3)'],-1
+1166,1101635,1102052,,,['Uncharacterized CoA-binding protein YneT'],1
+1167,1102167,1104120,,,['DNA topoisomerase IV subunit B (EC 5.99.1.3)'],1
+1168,1104131,1106579,,,['DNA topoisomerase IV subunit A (EC 5.99.1.3)'],1
+1169,1106798,1109066,,,['Phage infection protein'],1
+1170,1109233,1109854,,,"['Transcriptional regulator, AcrR family']",1
+1171,1109972,1111115,,,['Isovaleryl-CoA dehydrogenase (EC 1.3.8.4)'],1
+1172,1111135,1112773,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],1
+1173,1112795,1114139,,,['Biotin carboxylase of methylcrotonyl-CoA carboxylase (EC 6.3.4.14)'],1
+1174,1114151,1114361,,,['Biotin carboxyl carrier protein of methylcrotonyl-CoA carboxylase'],1
+1175,1114383,1115283,,,['Hydroxymethylglutaryl-CoA lyase (EC 4.1.3.4)'],1
+1176,1115298,1116078,,,['Methylglutaconyl-CoA hydratase (EC 4.2.1.18)'],1
+1177,1116108,1117635,,,['Methylcrotonyl-CoA carboxylase carboxyl transferase subunit (EC 6.4.1.4)'],1
+1178,1117705,1119352,,,['Fumarate/succinate/L-aspartate dehydrogenases'],1
+1179,1119531,1120311,,,['Hydrolase (HAD superfamily) in cluster with DUF1447'],1
+1180,1120758,1121613,,,"['YpfJ protein, zinc metalloprotease superfamily']",1
+1181,1121624,1122683,,,['D-aminopeptidase (EC 3.4.11.19)'],-1
+1182,1122730,1124674,,,['Acetyl-CoA synthetase (EC 6.2.1.1)'],-1
+1183,1124776,1124983,,,[''],-1
+1184,1125075,1125201,,,[''],1
+1185,1125329,1126298,,,['Rossmann fold nucleotide-binding protein Smf possibly involved in DNA uptake'],-1
+1186,1126303,1126858,,,[''],-1
+1187,1127037,1127784,,,[''],-1
+1188,1127780,1128494,,,[''],-1
+1189,1129017,1129260,,,['Twin-arginine translocation protein TatA'],-1
+1190,1129457,1129682,,,[''],-1
+1191,1129856,1131107,,,['D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)'],-1
+1192,1131286,1131880,,,['UPF0702 transmembrane protein YdfR'],1
+1193,1131964,1132399,,,[''],1
+1194,1132508,1133489,,,['Superoxide dismutase [Fe] (EC 1.15.1.1) @ Exosporium SOD'],1
+1195,1133601,1134867,,,['hypothetical protein'],-1
+1196,1135053,1135971,,,['Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)'],1
+1197,1136022,1138065,,,"['Peptidoglycan D,D-transpeptidase MrdA (EC 3.4.16.4)']",-1
+1198,1138117,1138435,,,[''],-1
+1199,1138565,1138712,,,[''],1
+1200,1138812,1139340,,,['Peptide-methionine (S)-S-oxide reductase MsrA (EC 1.8.4.11)'],1
+1201,1139384,1141373,,,['Acylamino-acid-releasing enzyme (EC 3.4.19.1)'],-1
+1202,1141474,1145056,,,['Uncharacterized protein Bsub YpbR'],-1
+1203,1145104,1146142,,,[''],-1
+1204,1146245,1146482,,,['Ferredoxin'],-1
+1205,1146736,1147924,,,['gamma-D-glutamyl-L-diamino acid endopeptidase I'],1
+1206,1148027,1148228,,,['Uncharacterized protein YozC'],-1
+1207,1148273,1149224,,,['Peptide-methionine (S)-S-oxide reductase MsrA (EC 1.8.4.11)'],-1
+1208,1149245,1149695,,,[''],-1
+1209,1149763,1150429,,,"['Uracil-DNA glycosylase, family 1 (EC 3.2.2.27)']",-1
+1210,1150505,1150754,,,[''],-1
+1211,1150906,1151131,,,[''],-1
+1212,1151146,1151905,,,['Twin-arginine translocation protein TatCd'],-1
+1213,1152014,1152215,,,['Twin-arginine translocation protein TatA'],-1
+1214,1152258,1152423,,,['Twin-arginine translocation protein TatA'],-1
+1215,1152516,1153002,,,['Dihydrofolate reductase (EC 1.5.1.3)'],-1
+1216,1153016,1153976,,,['Thymidylate synthase (EC 2.1.1.45)'],-1
+1217,1154148,1155153,,,['Cell wall lytic activity'],1
+1218,1155452,1155653,,,['Cold shock protein of CSP family'],1
+1219,1155830,1156511,,,['Putative preQ0 transporter YhhQ'],1
+1220,1156621,1157452,,,"['Thiosulfate sulfurtransferase, rhodanese (EC 2.8.1.1)']",-1
+1221,1157451,1157973,,,[''],-1
+1222,1157969,1159034,,,['Naringenin-chalcone synthase (EC 2.3.1.74)'],-1
+1223,1159066,1160569,,,['Thermostable carboxypeptidase 1 (EC 3.4.17.19)'],-1
+1224,1160587,1161724,,,['23S rRNA (guanine(2445)-N(2))-methyltransferase (EC 2.1.1.173)'],-1
+1225,1161916,1162126,,,[''],-1
+1226,1162255,1162540,,,"['Cell division protein GpsB, coordinates the switch between cylindrical and septal cell wall synthesis by re-localization of PBP1']",-1
+1227,1162559,1163108,,,[''],-1
+1228,1163166,1163580,,,['Cytidine deaminase (EC 3.5.4.5)'],-1
+1229,1163625,1163979,,,[''],-1
+1230,1164039,1164168,,,[''],-1
+1231,1164276,1165239,,,['Uncharacterized protein YppC'],-1
+1232,1165466,1166072,,,['RecU Holliday junction resolvase'],1
+1233,1166074,1168717,,,['Multimodular transpeptidase-transglycosylase (EC 2.4.1.129) (EC 3.4.-.-)'],1
+1234,1169001,1169667,,,['Endonuclease III (EC 4.2.99.18)'],-1
+1235,1169678,1170341,,,['Chromosome replication initiation protein DnaD'],-1
+1236,1170491,1171784,,,['Asparaginyl-tRNA synthetase (EC 6.1.1.22)'],-1
+1237,1171798,1172986,,,['Aspartate aminotransferase (EC 2.6.1.1)'],-1
+1238,1173016,1173523,,,[''],-1
+1239,1173626,1174373,,,['hypothetical protein'],-1
+1240,1174413,1177095,,,['DinG family ATP-dependent helicase YoaA'],-1
+1241,1177157,1177541,,,['Aspartate 1-decarboxylase (EC 4.1.1.11)'],-1
+1242,1177540,1178422,,,['Pantoate--beta-alanine ligase (EC 6.3.2.1)'],-1
+1243,1178418,1179228,,,['3-methyl-2-oxobutanoate hydroxymethyltransferase (EC 2.1.2.11)'],-1
+1244,1179269,1180241,,,['Biotin operon repressor / Biotin--protein ligase (EC 6.3.4.9)(EC 6.3.4.10)(EC 6.3.4.11)(EC 6.3.4.15)'],-1
+1245,1180216,1181422,,,['CCA tRNA nucleotidyltransferase (EC 2.7.7.72)'],-1
+1246,1181437,1182562,,,['UDP-N-acetylglucosamine:L-malate glycosyltransferase'],-1
+1247,1182551,1182968,,,['Methylglyoxal synthase (EC 4.2.3.3)'],-1
+1248,1182979,1183783,,,['4-hydroxy-tetrahydrodipicolinate reductase (EC 1.17.1.8)'],-1
+1249,1183775,1184120,,,['MazG nucleotide pyrophosphohydrolase'],-1
+1250,1184255,1185128,,,['Uncharacterized UPF0750 membrane protein YpjC'],1
+1251,1185193,1185649,,,['hypothetical protein'],-1
+1252,1185740,1186421,,,['Putative membrane protease YugP'],-1
+1253,1186691,1187276,,,['Uncharacterized protein YpjA'],-1
+1254,1187372,1188209,,,"['Menaquinone-cytochrome C oxidoreductase, cytochrome C subunit']",-1
+1255,1188244,1188919,,,"['Menaquinone-cytochrome c reductase, cytochrome B subunit']",-1
+1256,1188922,1189432,,,['Menaquinone-cytochrome C reductase iron-sulfur subunit'],-1
+1257,1189565,1190027,,,['FIG013069: hypothetical protein co-occurring with TPR domain protein'],-1
+1258,1190042,1190591,,,[''],-1
+1259,1190607,1191867,,,"['TPR-repeat-containing protein, putative component of Menaquinone-cytochrome C reductase']",-1
+1260,1191881,1193174,,,['3-phosphoshikimate 1-carboxyvinyltransferase (EC 2.5.1.19)'],-1
+1261,1193161,1194265,,,['3-dehydroquinate synthase (EC 4.2.3.4)'],-1
+1262,1194261,1195428,,,['Chorismate synthase (EC 4.2.3.5)'],-1
+1263,1195443,1196217,,,['Chemotaxis protein methyltransferase CheR (EC 2.1.1.80)'],-1
+1264,1196379,1196826,,,['Nucleoside diphosphate kinase (EC 2.7.4.6)'],-1
+1265,1196909,1197884,,,['Heptaprenyl diphosphate synthase component II (EC 2.5.1.30)'],-1
+1266,1197901,1198606,,,['Demethylmenaquinone methyltransferase (EC 2.1.1.163)'],-1
+1267,1198619,1199243,,,[''],-1
+1268,1199596,1199869,,,['DNA-binding protein HBsu'],-1
+1269,1200199,1201678,,,['Stage IV sporulation protein A'],-1
+1270,1201833,1202544,,,['ABC transporter periplasmic binding protein yphF'],-1
+1271,1202558,1202756,,,['FIG01226975: hypothetical protein'],-1
+1272,1203012,1203276,,,[''],-1
+1273,1203366,1204395,,,['Glycerol-3-phosphate dehydrogenase [NAD(P)+] (EC 1.1.1.94)'],-1
+1274,1204411,1205722,,,['GTP-binding protein EngA'],-1
+1275,1206183,1207323,,,['SSU ribosomal protein S1p'],-1
+1276,1207386,1207968,,,['Acyl-CoA:1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)'],-1
+1277,1207968,1208652,,,['Cytidylate kinase (EC 2.7.4.25)'],-1
+1278,1208648,1209338,,,[''],-1
+1279,1209429,1210770,,,['Spore germination protein YpeB'],-1
+1280,1210786,1211593,,,"['Spore cortex-lytic enzyme, lytic transglycosylase SleB']",-1
+1281,1211888,1212842,,,['L-asparaginase (EC 3.5.1.1)'],-1
+1282,1212860,1213841,,,['Thioredoxin reductase (EC 1.8.1.9)'],-1
+1283,1214074,1215346,,,['NAD-specific glutamate dehydrogenase (EC 1.4.1.2)'],-1
+1284,1215454,1216387,,,['D-alanine--D-alanine ligase (EC 6.3.2.4)'],-1
+1285,1216408,1216981,,,[''],-1
+1286,1217157,1217793,,,[''],-1
+1287,1217914,1218148,,,[''],-1
+1288,1218154,1218739,,,['CAAX amino terminal protease family protein'],-1
+1289,1218743,1220213,,,['ATP-dependent DNA helicase RecQ'],-1
+1290,1220218,1221259,,,['FIG00743178: hypothetical protein'],-1
+1291,1221402,1221654,,,['Ferredoxin'],1
+1292,1221731,1222223,,,['Inorganic pyrophosphatase (EC 3.6.1.1)'],1
+1293,1222273,1222840,,,['FIG01227158: hypothetical protein'],-1
+1294,1222918,1224151,,,['hypothetical protein'],-1
+1295,1224147,1224678,,,['RNA polymerase sigma factor SigX'],-1
+1296,1224824,1226600,,,['Sensor histidine kinase ResE (EC 2.7.13.3)'],-1
+1297,1226599,1227316,,,['DNA-binding response regulator ResD'],-1
+1298,1227344,1228532,,,['Cytochrome c-type biogenesis protein CcsA/ResC'],-1
+1299,1228557,1230195,,,['Cytochrome c-type biogenesis protein Ccs1/ResB'],-1
+1300,1230225,1230765,,,['Cytochrome c-type biogenesis protein ResA'],-1
+1301,1230832,1231594,,,['LSU rRNA pseudouridine(2605) synthase (EC 5.4.99.22)'],-1
+1302,1231844,1232000,,,[''],-1
+1303,1232140,1232665,,,['Spore maturation protein B'],-1
+1304,1232665,1233253,,,['Spore maturation protein A'],-1
+1305,1233246,1234143,,,['D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)'],-1
+1306,1234405,1234873,,,[''],-1
+1307,1234897,1235473,,,['Segregation and condensation protein B'],-1
+1308,1235478,1236303,,,['Segregation and condensation protein A'],-1
+1309,1236318,1236795,,,['DUF309 domain-containing protein'],1
+1310,1236947,1237295,,,['Protein RibT'],-1
+1311,1237453,1237885,,,['Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)'],-1
+1312,1237905,1239183,,,['Diaminopimelate decarboxylase (EC 4.1.1.20)'],-1
+1313,1239415,1240903,,,['Stage V sporulation protein AF (SpoVAF)'],-1
+1314,1240916,1241273,,,['Stage V sporulation protein AE1 (SpoVAE1)'],-1
+1315,1241272,1242280,,,['Stage V sporulation protein AD (SpoVAD)'],-1
+1316,1242298,1242745,,,['Stage V sporulation protein AC (SpoVAC)'],-1
+1317,1242759,1243179,,,['Stage V sporulation protein AB (SpoVAB)'],-1
+1318,1243168,1243786,,,['Stage V sporulation protein AA (SpoVAA)'],-1
+1319,1244731,1245484,,,['RNA polymerase sporulation specific sigma factor SigF'],-1
+1320,1245493,1245934,,,['Anti-sigma F factor (EC 2.7.11.1)'],-1
+1321,1245930,1246290,,,['Anti-sigma F factor antagonist'],-1
+1322,1246361,1247534,,,['D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)'],-1
+1323,1247719,1249024,,,['Pyrimidine-nucleoside phosphorylase (EC 2.4.2.2)'],-1
+1324,1249039,1249861,,,['Purine nucleoside phosphorylase (EC 2.4.2.1) @ N-Ribosylnicotinamide phosphorylase (EC 2.4.2.1)'],-1
+1325,1249883,1251059,,,['Phosphopentomutase (EC 5.4.2.7)'],-1
+1326,1251098,1252043,,,['Site-specific tyrosine recombinase XerD'],-1
+1327,1252157,1252616,,,['Ferric uptake regulation protein FUR'],-1
+1328,1252733,1253363,,,['Stage II sporulation protein M (SpoIIM)'],-1
+1329,1253438,1254605,,,"[""Endonuclease Q, cleaves 5' to damaged DNA bases""]",-1
+1330,1254608,1255151,,,['ADP-ribose pyrophosphatase (EC 3.6.1.13)'],-1
+1331,1255259,1256183,,,['Uncharacterized oxidoreductase YqkF'],1
+1332,1256336,1257311,,,['Probable metallo-hydrolase YqjP'],-1
+1333,1257481,1258234,,,['Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)'],1
+1334,1258275,1259298,,,['NADPH dehydrogenase (EC 1.6.99.1)'],1
+1335,1259313,1260231,,,['Ribonuclease Z (EC 3.1.26.11)'],1
+1336,1260248,1261619,,,['Aldehyde dehydrogenase (EC 1.2.1.3)'],1
+1337,1261716,1262961,,,['DNA polymerase IV (EC 2.7.7.7)'],-1
+1338,1263042,1264179,,,['Uncharacterized peptidase YqjE'],-1
+1339,1264191,1265739,,,['Acetyl-coenzyme A carboxyl transferase alpha chain (EC 6.4.1.2) / Acetyl-coenzyme A carboxyl transferase beta chain (EC 6.4.1.2); Propionyl-CoA carboxylase beta chain (EC 6.4.1.3)'],-1
+1340,1265741,1266149,,,['Methylmalonyl-CoA epimerase (EC 5.1.99.1)'],-1
+1341,1266145,1266550,,,['B12 binding domain of Methylmalonyl-CoA mutase (EC 5.4.99.2)'],-1
+1342,1266604,1268263,,,['Methylmalonyl-CoA mutase (EC 5.4.99.2)'],-1
+1343,1268396,1268558,,,[''],1
+1344,1268666,1269617,,,['Uncharacterized membrane protein YqjA'],-1
+1345,1269773,1270205,,,['UPF0403 protein YqiW'],-1
+1346,1270230,1270356,,,[''],1
+1347,1270387,1271668,,,['Dihydrolipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex (EC 2.3.1.168)'],-1
+1348,1271686,1272670,,,"['Branched-chain alpha-keto acid dehydrogenase, E1 component, beta subunit (EC 1.2.4.4)']",-1
+1349,1272671,1273682,,,"['Branched-chain alpha-keto acid dehydrogenase, E1 component, alpha subunit (EC 1.2.4.4)']",-1
+1350,1273700,1275122,,,['Dihydrolipoamide dehydrogenase of branched-chain alpha-keto acid dehydrogenase (EC 1.8.1.4)'],-1
+1351,1275209,1276307,,,['Branched-chain amino acid dehydrogenase [deaminating] (EC 1.4.1.9)(EC 1.4.1.23)'],-1
+1352,1276368,1278435,,,['Transcriptional regulator BkdR of isoleucine and valine catabolism operon'],-1
+1353,1278574,1278829,,,[''],1
+1354,1279324,1280275,,,"['Arginase/agmatinase/formimionoglutamate hydrolase, arginase family']",-1
+1355,1280365,1281865,,,['Proline/sodium symporter PutP (TC 2.A.21.2.1) @ Propionate/sodium symporter'],-1
+1356,1281861,1281984,,,[''],-1
+1357,1282045,1283407,,,['Aspartokinase (EC 2.7.2.4)'],-1
+1358,1283545,1284325,,,['Stage 0 sporulation two-component response regulator (Spo0A)'],-1
+1359,1284543,1285617,,,['Stage IV sporulation protein B'],-1
+1360,1285845,1287567,,,['DNA repair protein RecN'],-1
+1361,1287580,1288033,,,"['Arginine pathway regulatory protein ArgR, repressor of arg regulon']",-1
+1362,1288106,1288913,,,['RNA binding methyltransferase FtsJ like'],-1
+1363,1288916,1290809,,,['1-deoxy-D-xylulose 5-phosphate synthase (EC 2.2.1.7)'],-1
+1364,1290826,1291435,,,['Putative membrane-spanning protein'],-1
+1365,1292134,1293013,,,"['(2E,6E)-farnesyl diphosphate synthase (EC 2.5.1.10)']",-1
+1366,1293002,1293260,,,['Exodeoxyribonuclease VII small subunit (EC 3.1.11.6)'],-1
+1367,1293252,1294605,,,['Exodeoxyribonuclease VII large subunit (EC 3.1.11.6)'],-1
+1368,1294634,1295489,,,['Methenyltetrahydrofolate cyclohydrolase (EC 3.5.4.9) / Methylenetetrahydrofolate dehydrogenase (NADP+) (EC 1.5.1.5)'],-1
+1369,1295502,1295886,,,['Transcription termination protein NusB'],-1
+1370,1296065,1296455,,,['Alkaline shock protein'],-1
+1371,1296471,1297833,,,['Biotin carboxylase of acetyl-CoA carboxylase (EC 6.3.4.14)'],-1
+1372,1297846,1298365,,,['Biotin carboxyl carrier protein of acetyl-CoA carboxylase'],-1
+1373,1298622,1299321,,,['hypothetical protein'],-1
+1374,1299331,1299943,,,[''],-1
+1375,1299947,1300544,,,['hypothetical protein'],-1
+1376,1300557,1301724,,,['Stage III sporulation protein AE'],-1
+1377,1301740,1302133,,,[''],-1
+1378,1302146,1302356,,,['Stage III sporulation protein AC'],-1
+1379,1302827,1303823,,,['Stage III sporulation protein AA'],-1
+1380,1304098,1304659,,,['Translation elongation factor P'],-1
+1381,1304682,1305744,,,"['Aminopeptidase YpdF (MP-, MA-, MS-, AP-, NP- specific)']",-1
+1382,1305757,1306192,,,['3-dehydroquinate dehydratase II (EC 4.2.1.10)'],-1
+1383,1306273,1306756,,,[''],-1
+1384,1306879,1307239,,,[''],1
+1385,1307500,1307701,,,[''],1
+1386,1307773,1311460,,,['Ribonucleotide reductase of class II (coenzyme B12-dependent) (EC 1.17.4.1)'],-1
+1387,1311752,1312145,,,['Rhodanese-like domain protein'],1
+1388,1312193,1312979,,,['Short-chain dehydrogenase'],-1
+1389,1313140,1314604,,,['Glycine dehydrogenase [decarboxylating] (glycine cleavage system P2 protein) (EC 1.4.4.2)'],-1
+1390,1314596,1315946,,,['Glycine dehydrogenase [decarboxylating] (glycine cleavage system P1 protein) (EC 1.4.4.2)'],-1
+1391,1315960,1317064,,,['Aminomethyltransferase (glycine cleavage system T protein) (EC 2.1.2.10)'],-1
+1392,1317425,1319030,,,"['Superfamily II DNA/RNA helicases, SNF2 family']",1
+1393,1319016,1319823,,,['Conserved protein YqhG'],1
+1394,1319947,1320442,,,['Shikimate kinase I (EC 2.7.1.71)'],-1
+1395,1320475,1321534,,,"['Late competence protein ComGA, access of DNA to ComEA']",1
+1396,1321556,1322495,,,[''],1
+1397,1322515,1322842,,,[''],1
+1398,1322831,1323323,,,[''],1
+1399,1323369,1323642,,,[''],1
+1400,1324016,1324424,,,[''],1
+1401,1324599,1324842,,,['Uncharacterized membrane protein YqgY'],1
+1402,1324953,1325577,,,['MBL-fold metallo-hydrolase superfamily'],-1
+1403,1325736,1325910,,,[''],1
+1404,1326216,1328103,,,['Lipoteichoic acid synthase LtaS Type IIIa'],-1
+1405,1328228,1328420,,,[''],-1
+1406,1328455,1329997,,,['FIG056164: rhomboid family serine protease'],-1
+1407,1330019,1330508,,,[''],-1
+1408,1330522,1330771,,,[''],-1
+1409,1330924,1331074,,,"['LSU ribosomal protein L33p @ LSU ribosomal protein L33p, zinc-independent']",1
+1410,1332000,1332588,,,['5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)'],1
+1411,1332759,1334874,,,['Uncharacterized protein YqgF'],-1
+1412,1334961,1336167,,,[''],-1
+1413,1336370,1336979,,,['Superoxide dismutase [Mn] (EC 1.15.1.1)'],-1
+1414,1337183,1338911,,,"['Efflux ABC transporter for glutathione/L-cysteine, essential for assembly of bd-type respiratory oxidases => CydD subunit']",1
+1415,1338907,1340608,,,"['Efflux ABC transporter for glutathione/L-cysteine, essential for assembly of bd-type respiratory oxidases => CydC subunit']",1
+1416,1341002,1341113,,,[''],-1
+1417,1341127,1342141,,,['Cytochrome d ubiquinol oxidase subunit II (EC 1.10.3.-)'],-1
+1418,1342137,1343478,,,['Cytochrome d ubiquinol oxidase subunit I (EC 1.10.3.-)'],-1
+1419,1343776,1345171,,,['Uncharacterized MFS-type transporter'],-1
+1420,1346213,1347845,,,['Sodium-dependent phosphate transporter'],-1
+1421,1347961,1348600,,,[''],-1
+1422,1348792,1349905,,,['(E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase (flavodoxin) (EC 1.17.7.3)'],1
+1423,1349969,1350392,,,[''],-1
+1424,1350560,1350833,,,[''],1
+1425,1350840,1351731,,,['Endonuclease IV (EC 3.1.21.2)'],-1
+1426,1351748,1353068,,,['DEAD-box ATP-dependent RNA helicase CshB (EC 3.6.4.13)'],-1
+1427,1353215,1354205,,,['4-hydroxy-3-methylbut-2-enyl diphosphate reductase (EC 1.17.7.4)'],1
+1428,1354817,1355771,,,['hypothetical protein'],1
+1429,1355795,1356947,,,['L-proline glycine betaine ABC transport system permease protein ProW (TC 3.A.1.12.1)'],1
+1430,1356939,1357869,,,['L-proline glycine betaine ABC transport system permease protein ProV (TC 3.A.1.12.1)'],1
+1431,1357855,1358590,,,['hypothetical protein'],1
+1432,1358763,1360281,,,"['GMP synthase [glutamine-hydrolyzing], amidotransferase subunit (EC 6.3.5.2) / GMP synthase [glutamine-hydrolyzing], ATP pyrophosphatase subunit (EC 6.3.5.2)']",-1
+1433,1360582,1361275,,,['3-oxoacyl-[acyl-carrier protein] reductase (EC 1.1.1.100)'],1
+1434,1361647,1362631,,,['hypothetical protein'],1
+1435,1362891,1364430,,,"['GMP synthase [glutamine-hydrolyzing], amidotransferase subunit (EC 6.3.5.2) / GMP synthase [glutamine-hydrolyzing], ATP pyrophosphatase subunit (EC 6.3.5.2)']",-1
+1436,1364456,1365920,,,"[""Inosine-5'-monophosphate dehydrogenase (EC 1.1.1.205) / CBS domain""]",-1
+1437,1366022,1367132,,,['GTP cyclohydrolase 1 type 2 homolog YbgI'],-1
+1438,1367128,1367824,,,['tRNA (adenine(22)-N(1))-methyltransferase (EC 2.1.1.217)'],-1
+1439,1367893,1368253,,,[''],-1
+1440,1368359,1368899,,,[''],-1
+1441,1368918,1370022,,,['RNA polymerase sigma factor RpoD'],-1
+1442,1370045,1371854,,,['DNA primase DnaG'],-1
+1443,1372340,1373156,,,['Phosphoenolpyruvate synthase regulatory protein'],-1
+1444,1373171,1373795,,,"['Transcriptional repressor CcpN, MarR family']",-1
+1445,1373906,1374656,,,['DNA recombination and repair protein RecO'],-1
+1446,1374686,1374833,,,[''],-1
+1447,1374940,1375852,,,['GTP-binding protein Era'],-1
+1448,1376444,1376792,,,[''],-1
+1449,1376814,1377288,,,"['Metal-dependent hydrolase YbeY, involved in rRNA and/or ribosome maturation and assembly']",-1
+1450,1377284,1378748,,,"['Membrane protein containing HD superfamily hydrolase domain, YQFF ortholog']",-1
+1451,1378776,1379733,,,"['Phosphate starvation-inducible protein PhoH, predicted ATPase']",-1
+1452,1379736,1380822,,,[''],-1
+1453,1380897,1381188,,,[''],-1
+1454,1381293,1381773,,,[''],-1
+1455,1381804,1382803,,,['UPF0365 protein YqfA'],-1
+1456,1382824,1384156,,,['Putative membrane-bound ClpP-class protease associated with aq_911'],-1
+1457,1384464,1384908,,,['Transamidase GatB domain protein'],-1
+1458,1384926,1385106,,,['SSU ribosomal protein S21p'],-1
+1459,1385269,1386256,,,['Sodium-dependent phosphate transporter'],1
+1460,1386383,1387442,,,['Histidinol-phosphate aminotransferase (EC 2.6.1.9)'],-1
+1461,1387444,1388080,,,['Phosphoribosyl-AMP cyclohydrolase (EC 3.5.4.19) / Phosphoribosyl-ATP pyrophosphatase (EC 3.6.1.31)'],-1
+1462,1388076,1388835,,,['Imidazole glycerol phosphate synthase cyclase subunit'],-1
+1463,1388837,1389542,,,['Phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase (EC 5.3.1.16)'],-1
+1464,1389538,1390153,,,['Imidazole glycerol phosphate synthase amidotransferase subunit HisH'],-1
+1465,1390170,1390758,,,['Imidazoleglycerol-phosphate dehydratase (EC 4.2.1.19)'],-1
+1466,1390773,1392060,,,['Histidinol dehydrogenase (EC 1.1.1.23)'],-1
+1467,1392052,1392706,,,['ATP phosphoribosyltransferase (EC 2.4.2.17) => HisGs'],-1
+1468,1392692,1393934,,,['ATP phosphoribosyltransferase regulatory subunit (EC 2.4.2.17)'],-1
+1469,1394078,1394867,,,['Histidinol-phosphatase (EC 3.1.3.15)'],1
+1470,1394909,1395140,,,['LSU ribosomal protein L22p (L17e)'],1
+1471,1395516,1396188,,,['Deoxyribose-phosphate aldolase (EC 4.1.2.4)'],-1
+1472,1396204,1397560,,,['tRNA t(6)A37-methylthiotransferase (EC 2.8.4.5)'],-1
+1473,1397564,1398314,,,['16S rRNA (uracil(1498)-N(3))-methyltransferase (EC 2.1.1.193)'],-1
+1474,1398315,1399275,,,['Ribosomal protein L11 methyltransferase'],-1
+1475,1399308,1400442,,,['Chaperone protein DnaJ'],-1
+1476,1400692,1402516,,,['Chaperone protein DnaK'],-1
+1477,1402556,1403162,,,['Heat shock protein GrpE'],-1
+1478,1403259,1404291,,,['Heat-inducible transcription repressor HrcA'],-1
+1479,1404360,1405521,,,['Oxygen-independent coproporphyrinogen-III oxidase-like protein YggW'],-1
+1480,1405587,1407402,,,['Translation elongation factor LepA'],-1
+1481,1407481,1407772,,,[''],-1
+1482,1407774,1408893,,,['Stage II sporulation protein P'],-1
+1483,1409035,1410124,,,['Spore germination endopeptidase Gpr (EC 3.4.24.78)'],-1
+1484,1410288,1410555,,,['SSU ribosomal protein S20p'],1
+1485,1410679,1411711,,,['DNA polymerase III delta subunit (EC 2.7.7.7)'],-1
+1486,1412007,1412142,,,['Uncharacterized protein Bsu2552.5'],1
+1487,1412193,1414437,,,['DNA internalization-related competence protein ComEC/Rec2'],-1
+1488,1414449,1415019,,,['dCMP deaminase (EC 3.5.4.12) @ Late competence protein ComEB'],-1
+1489,1415080,1415674,,,"['Late competence protein ComEA, DNA receptor']",-1
+1490,1415729,1416572,,,[''],1
+1491,1416627,1417356,,,['FIG145533: Methyltransferase (EC 2.1.1.-)'],-1
+1492,1417373,1417718,,,['Ribosomal silencing factor RsfA'],-1
+1493,1417729,1418290,,,"['Hydrolase (HAD superfamily), YqeK']",-1
+1494,1418279,1418840,,,['Nicotinate-nucleotide adenylyltransferase (EC 2.7.7.18)'],-1
+1495,1418942,1419233,,,['RNA-binding protein YhbY'],-1
+1496,1419237,1420050,,,['Shikimate 5-dehydrogenase I alpha (EC 1.1.1.25)'],-1
+1497,1420063,1421170,,,"['GTP-binding protein YqeH, required for biogenesis of 30S ribosome subunit']",-1
+1498,1421171,1421687,,,"['FIG001553: Hydrolase, HAD subfamily IIIA']",-1
+1499,1421803,1421968,,,[''],-1
+1500,1422103,1422244,,,[''],1
+1501,1422390,1424724,,,['Na(+) H(+) antiporter subunit A'],1
+1502,1424725,1425064,,,['Na(+) H(+) antiporter subunit C'],1
+1503,1425056,1426541,,,['Na(+) H(+) antiporter subunit D'],1
+1504,1426546,1427023,,,['Na(+) H(+) antiporter subunit E'],1
+1505,1427022,1427328,,,['Na(+) H(+) antiporter subunit F'],1
+1506,1427308,1427680,,,['Na(+) H(+) antiporter subunit G'],1
+1507,1427818,1428544,,,['RNA polymerase sporulation specific sigma factor SigK'],1
+1508,1428778,1429465,,,"[""5'-methylthioadenosine nucleosidase (EC 3.2.2.16) @ S-adenosylhomocysteine nucleosidase (EC 3.2.2.9)""]",-1
+1509,1429485,1430220,,,[''],-1
+1510,1430314,1430791,,,['Transcription elongation factor GreA'],-1
+1511,1430839,1431472,,,['Uridine kinase (EC 2.7.1.48)'],-1
+1512,1431464,1432130,,,['FIG011945: O-methyltransferase family protein'],-1
+1513,1432227,1433361,,,['Murein endolytic transglycosylase MltG'],-1
+1514,1433580,1433862,,,['UPF0473 protein YrzB'],-1
+1515,1433877,1434297,,,['Putative pre-16S rRNA nuclease YqgF'],-1
+1516,1434293,1434566,,,['UPF0297 protein YrzL'],-1
+1517,1434615,1437255,,,['Alanyl-tRNA synthetase (EC 6.1.1.7)'],-1
+1518,1437267,1437609,,,[''],-1
+1519,1437927,1438095,,,[''],-1
+1520,1438218,1440651,,,['RecD-like DNA helicase YrrC'],-1
+1521,1440682,1441345,,,['Tetratricopeptide repeat (TPR) family protein'],-1
+1522,1441517,1442633,,,['tRNA-specific 2-thiouridylase MnmA (EC 2.8.1.13)'],-1
+1523,1442644,1443802,,,['Cysteine desulfurase (EC 2.8.1.7)'],-1
+1524,1443823,1444246,,,['Iron-sulfur cluster regulator IscR'],-1
+1525,1444352,1445651,,,['Replication-associated recombination protein RarA'],-1
+1526,1445807,1446419,,,['Prespore specific transcriptional activator RsfA'],1
+1527,1446821,1448594,,,['Aspartyl-tRNA synthetase (EC 6.1.1.12)'],-1
+1528,1448595,1449858,,,['Histidyl-tRNA synthetase (EC 6.1.1.21)'],-1
+1529,1450207,1450672,,,['D-aminoacyl-tRNA deacylase (EC 3.1.1.96)'],-1
+1530,1450681,1452877,,,"[""Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase (EC 3.1.7.2) / GTP pyrophosphokinase (EC 2.7.6.5), (p)ppGpp synthetase II""]",-1
+1531,1453082,1453598,,,['Adenine phosphoribosyltransferase (EC 2.4.2.7)'],-1
+1532,1453587,1455891,,,['Single-stranded-DNA-specific exonuclease RecJ'],-1
+1533,1455965,1456331,,,['Uncharacterized membrane protein YrvD'],-1
+1534,1456528,1458823,,,['Protein translocase subunit SecD / Protein translocase subunit SecF'],-1
+1535,1458875,1459190,,,['hypothetical protein'],-1
+1536,1459342,1460887,,,['Stage V sporulation protein B'],1
+1537,1461326,1462601,,,['putative anion permease'],-1
+1538,1462705,1463080,,,['hypothetical protein'],1
+1539,1463259,1463565,,,[''],-1
+1540,1463621,1463747,,,[''],-1
+1541,1463912,1464179,,,['Protein translocase subunit YajC'],-1
+1542,1464194,1465331,,,['Queuine tRNA-ribosyltransferase (EC 2.4.2.29)'],-1
+1543,1465364,1466393,,,['S-adenosylmethionine:tRNA ribosyltransferase-isomerase (EC 2.4.99.17)'],-1
+1544,1466421,1466622,,,[''],-1
+1545,1466622,1467609,,,['Holliday junction ATP-dependent DNA helicase RuvB (EC 3.6.4.12)'],-1
+1546,1467633,1468245,,,['Holliday junction ATP-dependent DNA helicase RuvA (EC 3.6.4.12)'],-1
+1547,1468373,1469093,,,['Probable transcriptional regulatory protein YebC'],-1
+1548,1469114,1469873,,,[''],-1
+1549,1469947,1470427,,,[''],-1
+1550,1470541,1471096,,,[''],-1
+1551,1471243,1472533,,,['GTP-binding protein Obg'],-1
+1552,1472541,1473027,,,[''],-1
+1553,1473603,1473894,,,['LSU ribosomal protein L27p'],-1
+1554,1473908,1474241,,,['FIG139598: Potential ribosomal protein'],-1
+1555,1474252,1474561,,,['LSU ribosomal protein L21p'],-1
+1556,1474689,1476099,,,['Ribonuclease G'],-1
+1557,1476114,1476945,,,[''],-1
+1558,1476946,1477699,,,[''],-1
+1559,1477940,1478741,,,['Septum site-determining protein MinD'],-1
+1560,1478733,1479414,,,['Septum site-determining protein MinC'],-1
+1561,1479464,1479986,,,['hypothetical protein'],-1
+1562,1479987,1480851,,,['Rod shape-determining protein MreC'],-1
+1563,1480866,1481907,,,['Rod shape-determining protein MreB'],-1
+1564,1482202,1482892,,,['UPF0758 family protein'],-1
+1565,1483041,1483842,,,[''],-1
+1566,1483888,1484002,,,[''],-1
+1567,1484500,1486213,,,['diguanylate cyclase/phosphodiesterase (GGDEF & EAL domains) with PAS/PAC sensor(s)'],-1
+1568,1486230,1487523,,,['Dihydrofolate synthase (EC 6.3.2.12) @ Folylpolyglutamate synthase (EC 6.3.2.17)'],-1
+1569,1487605,1490257,,,['Valyl-tRNA synthetase (EC 6.1.1.9)'],-1
+1570,1490636,1490825,,,[''],1
+1571,1490821,1491940,,,[''],-1
+1572,1492733,1494023,,,"['Glutamate-1-semialdehyde 2,1-aminomutase (EC 5.4.3.8)']",-1
+1573,1494037,1495015,,,['Porphobilinogen synthase (EC 4.2.1.24)'],-1
+1574,1495011,1495788,,,[''],-1
+1575,1495787,1496720,,,['Porphobilinogen deaminase (EC 2.5.1.61)'],-1
+1576,1496909,1498274,,,['Glutamyl-tRNA reductase (EC 1.2.1.70)'],-1
+1577,1498462,1498942,,,[''],1
+1578,1499117,1499297,,,[''],-1
+1579,1500249,1500834,,,['GTP-binding protein EngB'],-1
+1580,1500840,1503159,,,['ATP-dependent protease La (EC 3.4.21.53) Type I'],-1
+1581,1503360,1504635,,,['ATP-dependent Clp protease ATP-binding subunit ClpX'],-1
+1582,1505048,1506383,,,['Cell division trigger factor (EC 5.2.1.8)'],-1
+1583,1506519,1507482,,,[''],-1
+1584,1507623,1508481,,,['Ribulosamine/erythrulosamine 3-kinase potentially involved in protein deglycation'],-1
+1585,1508607,1509873,,,[''],-1
+1586,1510194,1510581,,,[''],1
+1587,1510643,1510760,,,['hypothetical protein'],-1
+1588,1511319,1511904,,,"['Nucleoside 5-triphosphatase RdgB (dHAPTP, dITP, XTP-specific) (EC 3.6.1.66)']",-1
+1589,1511917,1512652,,,['Ribonuclease PH (EC 2.7.7.56)'],-1
+1590,1512736,1513555,,,['Glutamate racemase (EC 5.1.1.3)'],-1
+1591,1513581,1514037,,,"['Uncharacterized transcriptional regulator YsmB, MarR family']",-1
+1592,1514836,1515061,,,['Major transcriptional regulator of spore coat formation GerE'],-1
+1593,1515187,1515643,,,['4-hydroxybenzoyl-CoA thioesterase'],-1
+1594,1515758,1516526,,,['Succinate dehydrogenase iron-sulfur protein (EC 1.3.5.1)'],-1
+1595,1516566,1518318,,,['Succinate dehydrogenase flavoprotein subunit (EC 1.3.5.1)'],-1
+1596,1518359,1518980,,,['Succinate dehydrogenase cytochrome b558 subunit'],-1
+1597,1519125,1520937,,,['Excinuclease ABC subunit C'],-1
+1598,1521029,1521344,,,['Thioredoxin'],-1
+1599,1521739,1522711,,,"['Electron transfer flavoprotein, alpha subunit']",-1
+1600,1522738,1523512,,,"['Electron transfer flavoprotein, beta subunit']",-1
+1601,1523530,1524304,,,['Enoyl-CoA hydratase (EC 4.2.1.17)'],-1
+1602,1524317,1524905,,,"['Fatty acid metabolism regulator protein FadR, TetR family']",-1
+1603,1525005,1526691,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],-1
+1604,1527020,1527215,,,['hypothetical protein'],1
+1605,1527343,1529692,,,['Recombination inhibitory protein MutS2'],-1
+1606,1529691,1531410,,,['DNA polymerase X family'],-1
+1607,1531499,1532033,,,[''],-1
+1608,1532034,1532313,,,[''],-1
+1609,1532457,1533375,,,['Ribonuclease HIII (EC 3.1.26.4)'],1
+1610,1533381,1533582,,,['Polyketide synthase modules and related proteins'],1
+1611,1533637,1536073,,,['Phenylalanyl-tRNA synthetase beta chain (EC 6.1.1.20)'],-1
+1612,1536086,1537121,,,['Phenylalanyl-tRNA synthetase alpha chain (EC 6.1.1.20)'],-1
+1613,1537236,1537356,,,[''],-1
+1614,1537453,1538191,,,['Uncharacterized RNA methyltransferase YsgA'],-1
+1615,1538276,1538489,,,"['Small, acid-soluble spore protein I']",1
+1616,1538520,1538700,,,[''],1
+1617,1538788,1539871,,,['Putative aminopeptidase YsdC'],-1
+1618,1539940,1540423,,,['Dimeric dUTPase (EC 3.6.1.23)'],-1
+1619,1540482,1541064,,,[''],-1
+1620,1541138,1541393,,,['Uncharacterized membrane protein YsdA'],-1
+1621,1541507,1541672,,,[''],-1
+1622,1541842,1543459,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],-1
+1623,1543615,1543846,,,[''],1
+1624,1543883,1544240,,,['LSU ribosomal protein L20p'],-1
+1625,1544277,1544475,,,['LSU ribosomal protein L35p'],-1
+1626,1544506,1545004,,,['Translation initiation factor 3'],-1
+1627,1545333,1547268,,,['Threonyl-tRNA synthetase (EC 6.1.1.3)'],-1
+1628,1547555,1547684,,,[''],1
+1629,1547792,1548608,,,[''],-1
+1630,1548771,1549713,,,['Helicase loader DnaI'],-1
+1631,1549750,1551118,,,['Helicase loader DnaB'],-1
+1632,1551136,1551601,,,['Ribonucleotide reductase transcriptional regulator NrdR'],-1
+1633,1552280,1553339,,,['NADP-dependent glyceraldehyde-3-phosphate dehydrogenase (EC 1.2.1.13)'],-1
+1634,1553452,1554064,,,['Dephospho-CoA kinase (EC 2.7.1.24)'],-1
+1635,1554072,1554690,,,[''],-1
+1636,1554795,1555629,,,['Formamidopyrimidine-DNA glycosylase (EC 3.2.2.23)'],-1
+1637,1555693,1558327,,,['DNA polymerase I (EC 2.7.7.7)'],-1
+1638,1558366,1560070,,,['Phosphate regulon sensor protein PhoR (SphS) (EC 2.7.13.3)'],-1
+1639,1560073,1560760,,,['Alkaline phosphatase synthesis transcriptional regulatory protein PhoP'],-1
+1640,1560913,1562965,,,['Uncharacterized protein YyaL'],-1
+1641,1563135,1563561,,,[''],-1
+1642,1563834,1564086,,,[''],-1
+1643,1564206,1565154,,,['Malate dehydrogenase (EC 1.1.1.37)'],-1
+1644,1565216,1566488,,,['Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)'],-1
+1645,1566617,1567733,,,['Citrate synthase (si) (EC 2.3.3.1)'],-1
+1646,1567788,1567905,,,[''],-1
+1647,1567953,1568427,,,['UPF0756 membrane protein YtwI'],-1
+1648,1568544,1569639,,,[''],1
+1649,1570075,1570477,,,['hypothetical protein'],-1
+1650,1570488,1572255,,,['Pyruvate kinase (EC 2.7.1.40) / Phosphohistidine swiveling domain'],-1
+1651,1572275,1573235,,,['6-phosphofructokinase (EC 2.7.1.11)'],-1
+1652,1573503,1574493,,,['Acetyl-coenzyme A carboxyl transferase alpha chain (EC 6.4.1.2)'],-1
+1653,1574492,1575350,,,['Acetyl-coenzyme A carboxyl transferase beta chain (EC 6.4.1.2)'],-1
+1654,1575437,1576052,,,"['Transcriptional regulator, GntR family']",-1
+1655,1576078,1577317,,,['NADP-dependent malic enzyme (EC 1.1.1.40)'],-1
+1656,1577654,1580999,,,['DNA polymerase III alpha subunit (EC 2.7.7.7)'],-1
+1657,1581181,1581511,,,['FIG012070: hypothetical protein'],1
+1658,1581541,1582060,,,[''],1
+1659,1582187,1582388,,,[''],1
+1660,1582499,1583462,,,"[""3'-to-5' oligoribonuclease A, Bacillus type""]",-1
+1661,1583592,1583883,,,[''],1
+1662,1583886,1585200,,,['Uncharacterized protein YtoI'],-1
+1663,1585817,1586498,,,['FIG002379: metal-dependent hydrolase'],-1
+1664,1586607,1587696,,,['Proline dipeptidase (EC 3.4.13.9)'],1
+1665,1587774,1588896,,,['Alanine dehydrogenase (EC 1.4.1.1)'],-1
+1666,1588965,1589730,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",-1
+1667,1589883,1590339,,,['Universal stress protein family'],1
+1668,1590396,1591212,,,['hypothetical protein'],-1
+1669,1591244,1592234,,,['Adenine-specific methyltransferase (EC 2.1.1.72)'],-1
+1670,1592435,1592906,,,"['Spore protein GerW (YtfJ), not involved in spore germination']",-1
+1671,1592898,1593474,,,['hypothetical protein'],-1
+1672,1593659,1593848,,,"['Small, acid-soluble spore protein D']",-1
+1673,1593950,1595153,,,['tRNA 4-thiouridine synthase (EC 2.8.1.4)'],-1
+1674,1595157,1596294,,,"['Cysteine desulfurase (EC 2.8.1.7), associated with tRNA 4-thiouridine synthase']",-1
+1675,1596452,1596773,,,[''],-1
+1676,1596788,1598492,,,['Septation ring formation regulator EzrA'],-1
+1677,1598596,1599223,,,[''],-1
+1678,1599315,1599798,,,"['Free methionine-(R)-sulfoxide reductase, contains GAF domain']",1
+1679,1600033,1600636,,,"['SSU ribosomal protein S4p (S9e) @ SSU ribosomal protein S4p (S9e), zinc-independent']",1
+1680,1600812,1601001,,,[''],-1
+1681,1601188,1601839,,,['hypothetical protein'],-1
+1682,1601968,1602085,,,[''],1
+1683,1602179,1604150,,,['Bacitracin export permease protein BceB'],-1
+1684,1604139,1604901,,,['Bacitracin export ATP-binding protein BceA'],-1
+1685,1605040,1606045,,,['Two-component sensor histidine kinase BceS'],-1
+1686,1606041,1606728,,,['Two-component response regulator BceR'],-1
+1687,1606889,1608458,,,"['Acyl-coenzyme A synthetases/AMP-(fatty) acid ligases, YtcI homolog']",-1
+1688,1608720,1609467,,,['FMN reductase (NADPH) (EC 1.5.1.38)'],-1
+1689,1609591,1610254,,,"['Peroxiredoxin, Bcp-type (EC 1.11.1.15)']",1
+1690,1610343,1613097,,,['Rhomboid family protein'],-1
+1691,1613202,1613535,,,['Urease accessory protein UreF'],-1
+1692,1613789,1615058,,,['Tyrosyl-tRNA synthetase (EC 6.1.1.1)'],-1
+1693,1615489,1618588,,,['Multimodular transpeptidase-transglycosylase (EC 2.4.1.129) (EC 3.4.-.-)'],1
+1694,1618777,1619416,,,"['Acetyltransferase AcuA, acetyl-CoA synthetase inhibitor']",1
+1695,1619429,1620083,,,['CBS domain protein AcuB'],1
+1696,1620079,1621255,,,['NAD-independent protein deacetylase AcuC'],1
+1697,1621383,1622166,,,['Flagellar motor rotation protein MotB'],-1
+1698,1622155,1622980,,,['Flagellar motor rotation protein MotA'],-1
+1699,1623039,1624041,,,['Catabolite control protein A'],-1
+1700,1624194,1625253,,,['Chorismate mutase I (EC 5.4.99.5) / 2-keto-3-deoxy-D-arabino-heptulosonate-7-phosphate synthase I beta (EC 2.5.1.54)'],-1
+1701,1625583,1626006,,,['Mn-dependent transcriptional regulator MntR'],1
+1702,1626066,1626387,,,[''],-1
+1703,1626536,1626962,,,[''],-1
+1704,1626989,1627397,,,[''],-1
+1705,1627536,1628649,,,['Aminopeptidase'],1
+1706,1628715,1630011,,,['UDP-N-acetylmuramate--L-alanine ligase (EC 6.3.2.8)'],-1
+1707,1630223,1630607,,,[''],1
+1708,1631079,1632192,,,['Nicotinate phosphoribosyltransferase (EC 6.3.4.21)'],-1
+1709,1632335,1632941,,,['Phenylalanyl-tRNA synthetase domain protein (Bsu YtpR)'],-1
+1710,1632947,1633760,,,['FIG002434: Uncharacterized protein YtpQ'],-1
+1711,1633834,1634857,,,['Predicted nicotinate-regulated transporter BH3254'],-1
+1712,1634882,1635389,,,[''],-1
+1713,1635478,1635919,,,['Uncharacterized protein YtoQ'],1
+1714,1636151,1637219,,,['Glutamyl aminopeptidase (EC 3.4.11.7); Deblocking aminopeptidase'],-1
+1715,1637377,1637689,,,['Uncharacterized protein YtzB'],1
+1716,1637824,1639048,,,['Mobile element protein'],-1
+1717,1639216,1640071,,,['Quorum-quenching lactonase YtnP'],-1
+1718,1640086,1640731,,,['tRNA (guanine(46)-N(7))-methyltransferase (EC 2.1.1.33)'],-1
+1719,1640972,1641152,,,[''],1
+1720,1641195,1641993,,,['Putative phosphotransferase YtmP'],-1
+1721,1642161,1643091,,,['Transcription regulator [contains diacylglycerol kinase catalytic domain]'],-1
+1722,1643094,1644006,,,['hypothetical protein'],-1
+1723,1643989,1644601,,,"[""2'-5' RNA ligase""]",-1
+1724,1644675,1645386,,,['SSU rRNA pseudouridine(516) synthase (EC 5.4.99.19)'],-1
+1725,1645397,1646987,,,"['Membrane protein involved in the export of O-antigen, teichoic acid lipoteichoic acids']",-1
+1726,1647110,1648376,,,['Uncharacterized flavin-containing protein YtfP'],1
+1727,1648780,1649959,,,['hypothetical protein'],-1
+1728,1649971,1650805,,,[''],-1
+1729,1650801,1651491,,,"['Efflux ABC transporter, ATP-binding protein']",-1
+1730,1651483,1651864,,,"['Transcriptional regulator, GntR family']",-1
+1731,1652058,1652829,,,['Exodeoxyribonuclease III (EC 3.1.11.2)'],1
+1732,1652850,1653687,,,['Hydroxymethylpyrimidine phosphate kinase ThiD (EC 2.7.4.7)'],1
+1733,1653732,1654203,,,['DinB family protein'],-1
+1734,1654328,1654694,,,['hypothetical protein'],-1
+1735,1654795,1655242,,,[''],-1
+1736,1655361,1655592,,,[''],-1
+1737,1655600,1655780,,,[''],-1
+1738,1656330,1657251,,,['Aspartate carbamoyltransferase (EC 2.1.3.2)'],1
+1739,1657213,1658503,,,['Dihydroorotase (EC 3.5.2.3)'],1
+1740,1658495,1659599,,,['Carbamoyl-phosphate synthase small chain (EC 6.3.5.5)'],1
+1741,1659582,1662780,,,['Carbamoyl-phosphate synthase large chain (EC 6.3.5.5)'],1
+1742,1662776,1663535,,,"['Dihydroorotate dehydrogenase (NAD(+)), electron transfer subunit (EC 1.3.1.14)']",1
+1743,1663531,1664467,,,"['Dihydroorotate dehydrogenase (NAD(+)), catalytic subunit (EC 1.3.1.14)']",1
+1744,1664438,1665143,,,"[""Orotidine 5'-phosphate decarboxylase (EC 4.1.1.23)""]",1
+1745,1665139,1665754,,,['Orotate phosphoribosyltransferase (EC 2.4.2.10)'],1
+1746,1665854,1667243,,,['Retron-type RNA-directed DNA polymerase (EC 2.7.7.49)'],-1
+1747,1667719,1669108,,,"['RNA methyltransferase, TrmA family']",-1
+1748,1674328,1674640,,,['Rhodanese-like domain protein'],-1
+1749,1674865,1677280,,,['Leucyl-tRNA synthetase (EC 6.1.1.4)'],-1
+1750,1677621,1678101,,,"['Acetyltransferase, GNAT family']",-1
+1751,1678122,1678416,,,['hypothetical protein'],-1
+1752,1678502,1679066,,,['Putative rRNA methylase YtqB'],1
+1753,1679069,1680131,,,['Tetraprenyl-beta-curcumene synthase (EC 4.2.3.130)'],-1
+1754,1680172,1680964,,,['Lysophospholipase (EC 3.1.1.5); Monoglyceride lipase (EC 3.1.1.23)'],-1
+1755,1681045,1681564,,,"['Carbonic anhydrase, gamma class (EC 4.2.1.1)']",1
+1756,1682201,1682408,,,['Twin-arginine translocation protein TatAd'],-1
+1757,1682459,1684214,,,"['Gluconate 2-dehydrogenase (EC 1.1.99.3), membrane-bound, flavoprotein']",-1
+1758,1684214,1684985,,,"['Gluconate 2-dehydrogenase (EC 1.1.99.3), membrane-bound, gamma subunit']",-1
+1759,1685525,1685804,,,[''],-1
+1760,1685859,1687131,,,['hypothetical protein'],-1
+1761,1687154,1688198,,,['FIG01227706: hypothetical protein'],-1
+1762,1688792,1689098,,,['Glutathione reductase (EC 1.8.1.7)'],1
+1763,1688259,1688802,,,[''],-1
+1764,1689282,1690485,,,['S-adenosylmethionine synthetase (EC 2.5.1.6)'],-1
+1765,1690886,1691450,,,[''],-1
+1766,1691735,1693325,,,['Phosphoenolpyruvate carboxykinase [ATP] (EC 4.1.1.49)'],1
+1767,1693827,1694820,,,[''],1
+1768,1695095,1695212,,,[''],-1
+1769,1695411,1695600,,,[''],-1
+1770,1695586,1696039,,,[''],-1
+1771,1696348,1696828,,,['Low G+C gram positive nudix hydrolase YtkD (EC 3.6.-.-)'],-1
+1772,1696846,1697440,,,[''],-1
+1773,1697540,1697873,,,[''],-1
+1774,1698078,1698612,,,['Transcriptional regulator'],1
+1775,1698625,1699303,,,[''],1
+1776,1699305,1700190,,,"['Glycine betaine ABC transporter, substrate-binding protein OtaC']",1
+1777,1700270,1701614,,,"['Oxidoreductase, FAD-binding']",-1
+1778,1701601,1702774,,,"['L-gulono-1,4-lactone oxidase (EC 1.1.3.8)']",-1
+1779,1703061,1704237,,,['Uncharacterized MFS-type transporter'],1
+1780,1704965,1705496,,,[''],-1
+1781,1705791,1706580,,,"['Inner membrane protein translocase and chaperone YidC, OxaA protein']",-1
+1782,1707015,1707921,,,"['Transcriptional regulator, AraC family']",-1
+1783,1708066,1708579,,,['hypothetical protein'],-1
+1784,1708720,1709677,,,['Acetamidase (EC 3.5.1.4)'],-1
+1785,1709847,1710345,,,[''],-1
+1786,1710388,1713547,,,['DNA or RNA helicase of superfamily II'],-1
+1787,1713695,1714019,,,['hypothetical protein'],1
+1788,1714018,1716439,,,['DNA/RNA helicase'],1
+1789,1716488,1717613,,,['hypothetical protein'],-1
+1790,1717590,1718451,,,['hypothetical protein'],-1
+1791,1718454,1720377,,,['hypothetical protein'],-1
+1792,1720482,1722348,,,['hypothetical protein'],-1
+1793,1722458,1723922,,,['O-succinylbenzoic acid--CoA ligase (EC 6.2.1.26)'],-1
+1794,1724132,1725500,,,['hypothetical protein'],-1
+1795,1725945,1726212,,,[''],1
+1796,1726213,1726549,,,['Programmed cell death toxin MazF'],1
+1797,1726578,1727172,,,['Ubiquinone/menaquinone biosynthesis methyltransferase UbiE (EC 2.1.1.-)'],-1
+1798,1727207,1727351,,,[''],-1
+1799,1727386,1728205,,,['Naphthoate synthase (EC 4.1.3.36)'],-1
+1800,1728217,1729039,,,"['2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxy late synthase (EC 4.2.99.20)']",-1
+1801,1729044,1730772,,,['2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene- 1-carboxylic-acid synthase (EC 2.2.1.9)'],-1
+1802,1730772,1732164,,,['Isochorismate synthase (EC 5.4.4.2) @ Menaquinone-specific isochorismate synthase (EC 5.4.4.2)'],-1
+1803,1732301,1732499,,,['Uncharacterized protein YwbE'],-1
+1804,1732663,1732855,,,[''],-1
+1805,1733065,1734001,,,"['1,4-dihydroxy-2-naphthoate polyprenyltransferase (EC 2.5.1.74)']",1
+1806,1734048,1734429,,,"['1,4-dihydroxy-2-naphthoyl-CoA hydrolase (EC 3.1.2.28) in menaquinone biosynthesis']",1
+1807,1734451,1734805,,,"['DNA binding protein, DksA/TraR family']",1
+1808,1735668,1735986,,,[''],-1
+1809,1736037,1737030,,,"['Potassium voltage-gated channel subfamily KQT; possible potassium channel, VIC family']",1
+1810,1737031,1737424,,,[''],-1
+1811,1737562,1738720,,,['Long-chain-alcohol dehydrogenase (EC 1.1.1.192)'],-1
+1812,1738846,1739233,,,['General stress protein 13'],-1
+1813,1739541,1740711,,,['Cystathionine beta-lyase (EC 4.4.1.8)'],1
+1814,1740837,1741182,,,['hypothetical protein'],1
+1815,1741515,1742070,,,[''],-1
+1816,1742327,1742564,,,[''],1
+1817,1742568,1743150,,,['Superoxide dismutase [Cu-Zn] precursor (EC 1.15.1.1)'],-1
+1818,1743245,1743470,,,[''],-1
+1819,1743561,1744029,,,"['6,7-dimethyl-8-ribityllumazine synthase (EC 2.5.1.78)']",-1
+1820,1744075,1745263,,,"['3,4-dihydroxy-2-butanone 4-phosphate synthase (EC 4.1.99.12) / GTP cyclohydrolase II (EC 3.5.4.25)']",-1
+1821,1745278,1745929,,,['Riboflavin synthase eubacterial/eukaryotic (EC 2.5.1.9)'],-1
+1822,1745940,1747032,,,['Diaminohydroxyphosphoribosylaminopyrimidine deaminase (EC 3.5.4.26) / 5-amino-6-(5-phosphoribosylamino)uracil reductase (EC 1.1.1.193)'],-1
+1823,1747363,1748173,,,['hypothetical protein'],1
+1824,1748277,1748988,,,['Purine nucleoside phosphorylase (EC 2.4.2.1)'],1
+1825,1749159,1749762,,,['Substrate-specific component BioY of biotin ECF transporter'],1
+1826,1749852,1750029,,,[''],1
+1827,1750152,1751634,,,['Cytosol aminopeptidase PepA (EC 3.4.11.1)'],-1
+1828,1751802,1752276,,,['Uncharacterized membrane protein YuiD'],1
+1829,1752330,1752963,,,['Uncharacterized protein YuiC'],-1
+1830,1753058,1753376,,,['Uncharacterized protein YuiB'],-1
+1831,1753534,1754755,,,['NADH dehydrogenase (EC 1.6.99.3)'],-1
+1832,1755159,1756146,,,['Thioredoxin reductase (EC 1.8.1.9)'],1
+1833,1756641,1757547,,,[''],-1
+1834,1757575,1757698,,,[''],-1
+1835,1757748,1758105,,,['Uncharacterized protein SufA'],-1
+1836,1758151,1759021,,,['Diaminopimelate epimerase (EC 5.1.1.7)'],-1
+1837,1759042,1759279,,,['hypothetical protein'],-1
+1838,1759347,1759674,,,['YuzD-like protein'],-1
+1839,1759854,1760079,,,['NifU-like domain protein'],1
+1840,1760191,1761160,,,['D-3-phosphoglycerate dehydrogenase (EC 1.1.1.95)'],-1
+1841,1761237,1761732,,,['Low temperature requirement C protein'],1
+1842,1761779,1762550,,,['Hypothetical NagD-like phosphatase'],-1
+1843,1762556,1763000,,,['BH3430 unknown conserved protein'],-1
+1844,1763141,1763411,,,[''],1
+1845,1763519,1763780,,,[''],1
+1846,1763964,1767204,,,"['DNA/RNA helicases, SNF2 family']",1
+1847,1767200,1767677,,,"['Para-aminobenzoate synthase, aminase component (EC 2.6.1.85)']",-1
+1848,1767813,1768548,,,['FIG01225447: hypothetical protein'],1
+1849,1768627,1769479,,,"['NG,NG-dimethylarginine dimethylaminohydrolase 1 (EC 3.5.3.18)']",1
+1850,1769606,1769876,,,['Uncharacterized DUF1027 domain protein YutD'],-1
+1851,1769998,1770952,,,['L-Ala--D-Glu endopeptidase'],1
+1852,1771024,1772086,,,['hypothetical protein'],1
+1853,1772430,1773684,,,['Isocitrate lyase (EC 4.1.3.1)'],-1
+1854,1773708,1775268,,,['Malate synthase (EC 2.3.3.9)'],-1
+1855,1775514,1775634,,,[''],-1
+1856,1775647,1775752,,,[''],-1
+1857,1775751,1777275,,,"['Sodium-dependent transporter, SNF family']",-1
+1858,1777519,1779073,,,['Na+/H+ antiporter'],-1
+1859,1779469,1780267,,,[''],-1
+1860,1780320,1780665,,,[''],1
+1861,1780650,1781757,,,[''],-1
+1862,1781822,1782131,,,['Uncharacterized DUF1805-containing protein YunC'],-1
+1863,1782230,1783598,,,"[""5'-nucleotidase family protein in cluster with NagD-like phosphatase""]",-1
+1864,1783619,1784438,,,['UPF0721 transmembrane protein YunE'],-1
+1865,1784787,1786020,,,['Flavohemoglobin / Nitric oxide dioxygenase (EC 1.14.12.17)'],-1
+1866,1786298,1787288,,,['Bacterial luciferase family protein'],-1
+1867,1787478,1787784,,,[''],1
+1868,1787922,1788120,,,[''],1
+1869,1788245,1789643,,,['Iron-sulfur cluster assembly protein SufB'],-1
+1870,1789694,1790144,,,"['Putative iron-sulfur cluster assembly scaffold protein for SUF system, SufE2']",-1
+1871,1790133,1791360,,,['Cysteine desulfurase (EC 2.8.1.7) => SufS'],-1
+1872,1791359,1792667,,,['Iron-sulfur cluster assembly protein SufD'],-1
+1873,1792694,1793474,,,['Iron-sulfur cluster assembly ATPase protein SufC'],-1
+1874,1794508,1794649,,,[''],-1
+1875,1794890,1795727,,,['Methionine ABC transporter substrate-binding protein'],-1
+1876,1795744,1796413,,,['Methionine ABC transporter permease protein'],-1
+1877,1796405,1797431,,,['Methionine ABC transporter ATP-binding protein'],-1
+1878,1797920,1798340,,,[''],1
+1879,1798645,1798975,,,[''],-1
+1880,1798977,1799337,,,[''],-1
+1881,1799407,1799794,,,['Glycine cleavage system H protein'],-1
+1882,1799985,1800171,,,[''],1
+1883,1800197,1801484,,,['Mobile element protein'],-1
+1884,1801678,1802035,,,['FIG138056: a glutathione-dependent thiol reductase'],-1
+1885,1802184,1803969,,,['Long chain acyl-CoA dehydrogenase [fadN-fadA-fadE operon] (EC 1.3.8.8)'],-1
+1886,1803995,1805171,,,['3-ketoacyl-CoA thiolase [fadN-fadA-fadE operon] (EC 2.3.1.16)'],-1
+1887,1805211,1807614,,,['3-hydroxyacyl-CoA dehydrogenase [fadN-fadA-fadE operon] (EC 1.1.1.35) / Enoyl-CoA hydratase [fadN-fadA-fadE operon] (EC 4.2.1.17)'],-1
+1888,1807832,1807973,,,[''],-1
+1889,1808362,1809277,,,['Proline dehydrogenase (EC 1.5.5.2)'],-1
+1890,1809588,1809795,,,[''],-1
+1891,1809983,1810922,,,"['Zinc ABC transporter, substrate-binding protein ZnuA']",1
+1892,1810935,1811688,,,"['Zinc ABC transporter, ATP-binding protein ZnuC']",1
+1893,1811705,1812560,,,"['Zinc ABC transporter, permease protein ZnuB']",1
+1894,1812556,1812967,,,['Zinc uptake regulation protein Zur'],1
+1895,1813242,1814406,,,['Cell division protein FtsW'],-1
+1896,1814584,1816192,,,['Bis-ABC ATPase YbiT'],-1
+1897,1816363,1817569,,,['Siderophore transport protein'],1
+1898,1817639,1817912,,,[''],1
+1899,1817945,1818914,,,['cation efflux family protein'],-1
+1900,1818988,1819279,,,[''],-1
+1901,1819299,1819737,,,['hypothetical protein'],-1
+1902,1820377,1820842,,,['tmRNA-binding protein SmpB'],-1
+1903,1821107,1821353,,,[''],-1
+1904,1821411,1822587,,,['Mobile element protein'],1
+1905,1822690,1822924,,,[''],-1
+1906,1822970,1823891,,,['hypothetical protein'],1
+1907,1823939,1826114,,,"[""3'-to-5' exoribonuclease RNase R""]",-1
+1908,1826133,1826880,,,['Carboxylesterase (EC 3.1.1.1)'],-1
+1909,1827060,1827294,,,['Protein translocase membrane subunit SecG'],-1
+1910,1827439,1828693,,,['Proton/glutamate symporter @ Sodium/glutamate symporter'],-1
+1911,1829618,1830902,,,['Enolase (EC 4.2.1.11)'],-1
+1912,1831168,1832704,,,"['2,3-bisphosphoglycerate-independent phosphoglycerate mutase (EC 5.4.2.12)']",-1
+1913,1832693,1833458,,,['Triosephosphate isomerase (EC 5.3.1.1)'],-1
+1914,1833457,1834654,,,['Phosphoglycerate kinase (EC 2.7.2.3)'],-1
+1915,1835016,1836027,,,['NAD-dependent glyceraldehyde-3-phosphate dehydrogenase (EC 1.2.1.12)'],-1
+1916,1836053,1837088,,,['Central glycolytic genes regulator'],-1
+1917,1837319,1837577,,,[''],-1
+1918,1837675,1838080,,,['hypothetical protein'],-1
+1919,1838486,1839065,,,['ATP-dependent Clp protease proteolytic subunit ClpP (EC 3.4.21.92)'],1
+1920,1839120,1840584,,,['Sodium/proline symporter'],-1
+1921,1840619,1841597,,,[''],-1
+1922,1841628,1842792,,,['Sarcosine oxidase beta subunit (EC 1.5.3.1)'],-1
+1923,1842959,1844135,,,[''],1
+1924,1844300,1844588,,,[''],1
+1925,1844821,1845997,,,['CaiB/BaiF family protein'],1
+1926,1846009,1847209,,,['Acyl-CoA dehydrogenase'],1
+1927,1847227,1848682,,,['Succinate-semialdehyde dehydrogenase [NAD(P)+] (EC 1.2.1.16)'],1
+1928,1848735,1848969,,,['Phosphoenolpyruvate synthase (EC 2.7.9.2)'],1
+1929,1849049,1849649,,,['Short-chain dehydrogenase'],1
+1930,1849913,1850585,,,[''],-1
+1931,1850606,1850915,,,['hypothetical protein'],-1
+1932,1850945,1851704,,,"['Transcriptional regulator, IclR family']",-1
+1933,1851857,1853030,,,['L-lysine dehydrogenase'],-1
+1934,1853126,1854662,,,['Aldehyde dehydrogenase B (EC 1.2.1.22)'],-1
+1935,1854683,1856351,,,['Thiamine pyrophosphate-requiring enzymes'],-1
+1936,1856347,1857529,,,"['L,L-diaminopimelate aminotransferase (EC 2.6.1.83), DapL2 type']",-1
+1937,1857720,1858113,,,[''],1
+1938,1858107,1858371,,,"['Phosphotransferase system, phosphocarrier protein HPr']",-1
+1939,1858673,1859621,,,['Sporulation transcription regulator WhiA'],-1
+1940,1859651,1860611,,,"['FIG002813: LPPG:FO 2-phospho-L-lactate transferase like, CofD-like']",-1
+1941,1860607,1861498,,,['RNase adapter protein RapZ'],-1
+1942,1861889,1862840,,,['Thioredoxin reductase (EC 1.8.1.9)'],-1
+1943,1862941,1863946,,,[''],-1
+1944,1864085,1864346,,,[''],1
+1945,1864357,1866010,,,['Aerobic glycerol-3-phosphate dehydrogenase (EC 1.1.5.3)'],-1
+1946,1866035,1867535,,,['Glycerol kinase (EC 2.7.1.30)'],-1
+1947,1868135,1868984,,,['Mobile element protein'],-1
+1948,1868986,1869271,,,['Mobile element protein'],-1
+1949,1869639,1870143,,,['Putative acetyltransferase YvoF'],-1
+1950,1870171,1870813,,,['Phosphoglycolate phosphatase (EC 3.1.3.18)'],-1
+1951,1870809,1871757,,,['Nucleoside binding-domain containing protein YvoD'],-1
+1952,1871791,1872715,,,['Prolipoprotein diacylglyceryl transferase'],-1
+1953,1872796,1873735,,,['HPr kinase/phosphorylase'],-1
+1954,1873798,1873918,,,[''],-1
+1955,1873919,1874756,,,['hypothetical protein'],1
+1956,1874817,1875174,,,['Uncharacterized membrane protein YvlD'],-1
+1957,1875202,1876276,,,[''],-1
+1958,1876410,1877046,,,[''],1
+1959,1877099,1877786,,,['N-acetylglucosaminyl-L-malate N-acetyl hydrolase'],-1
+1960,1877813,1878167,,,['Uncharacterized protein YojF'],-1
+1961,1878197,1881059,,,['Excinuclease ABC subunit A'],-1
+1962,1881065,1883045,,,['Excinuclease ABC subunit B'],-1
+1963,1883148,1883292,,,[''],-1
+1964,1883533,1885183,,,[''],-1
+1965,1886087,1886699,,,[''],-1
+1966,1887140,1888637,,,['Carboxyl-terminal protease (EC 3.4.21.102)'],-1
+1967,1888817,1890338,,,['hypothetical protein'],-1
+1968,1890419,1891313,,,"['Cell-division-associated, ABC-transporter-like signaling protein FtsX']",-1
+1969,1891302,1892001,,,"['Cell-division-associated, ABC-transporter-like signaling protein FtsE']",-1
+1970,1892619,1892955,,,[''],-1
+1971,1893009,1893993,,,['Peptide chain release factor 2 @ programmed frameshift-containing'],-1
+1972,1895281,1897792,,,['Protein translocase subunit SecA'],-1
+1973,1897991,1898201,,,[''],-1
+1974,1898687,1899272,,,['Ribosome hibernation promoting factor Hpf'],-1
+1975,1899425,1899617,,,[''],-1
+1976,1899616,1899979,,,[''],-1
+1977,1899971,1900370,,,['Flagellar biosynthesis protein FliS'],-1
+1978,1900391,1901900,,,['Flagellar cap protein FliD'],-1
+1979,1901912,1902281,,,['Flagellar protein FlaG'],-1
+1980,1902463,1903726,,,['Cytochrome P450 152A1 (EC 1.14.-.-)'],1
+1981,1903788,1904628,,,['Flagellin protein FlaA'],-1
+1982,1904711,1905569,,,['Flagellin protein FlaA'],-1
+1983,1905692,1905917,,,['Carbon storage regulator'],-1
+1984,1905918,1906359,,,['Flagellar assembly factor FliW'],-1
+1985,1906373,1906928,,,['Uncharacterized protein YviE clustered with flagellar hook-associated proteins'],-1
+1986,1906994,1907885,,,['Flagellar hook-associated protein FlgL'],-1
+1987,1907888,1909343,,,['Flagellar hook-associated protein FlgK'],-1
+1988,1909368,1909863,,,[''],-1
+1989,1909890,1910154,,,[''],-1
+1990,1910231,1910657,,,[''],-1
+1991,1910746,1911415,,,"['Competence protein F homolog, phosphoribosyltransferase domain; protein YhgH required for utilization of DNA as sole source of carbon and energy']",-1
+1992,1911415,1912807,,,"['ComF operon protein A, DNA transporter ATPase']",-1
+1993,1912912,1913758,,,['FIG005590: DegV family protein'],-1
+1994,1913862,1914102,,,['hypothetical protein'],1
+1995,1914254,1914926,,,"['Two-component transcriptional response regulator DegU, LuxR family']",-1
+1996,1915176,1916319,,,['Sensor protein DegS'],-1
+1997,1916753,1917398,,,['FIG000605: protein co-occurring with transport systems (COG1739)'],1
+1998,1917414,1918407,,,"['Cell envelope-associated transcriptional attenuator LytR-CpsA-Psr, subfamily F2']",1
+1999,1919005,1920451,,,['hypothetical protein'],1
+2000,1921256,1922774,,,['Cationic amino acid transporter'],-1
+2001,1923069,1923681,,,['hypothetical protein'],1
+2002,1923692,1924178,,,[''],-1
+2003,1924314,1925397,,,['UPF0118 membrane protein SAV1012'],1
+2004,1925803,1926835,,,[''],-1
+2005,1927160,1927655,,,['hypothetical protein'],-1
+2006,1928340,1929399,,,"['TRAP-type C4-dicarboxylate transport system, periplasmic component']",-1
+2007,1929416,1930697,,,"['TRAP-type C4-dicarboxylate transport system, large permease component']",-1
+2008,1930693,1931368,,,[''],-1
+2009,1931581,1932436,,,['Fumarylacetoacetate hydrolase family protein'],-1
+2010,1932453,1933350,,,['Auxin efflux carrier family protein'],-1
+2011,1933571,1934339,,,['Manganese-dependent protein-tyrosine phosphatase (EC 3.1.3.48)'],1
+2012,1934385,1935132,,,['Serine/threonine protein phosphatase (EC 3.1.3.16)'],1
+2013,1935157,1935694,,,['chromate transporter'],-1
+2014,1935698,1936262,,,['chromate transporter'],-1
+2015,1936320,1936815,,,[''],1
+2016,1937178,1937637,,,['Uncharacterized HTH-type transcriptional regulator YwrC'],1
+2017,1937691,1939305,,,['Gamma-glutamyltranspeptidase (EC 2.3.2.2) @ Glutathione hydrolase (EC 3.4.19.13)'],-1
+2018,1940252,1941038,,,['hypothetical protein'],-1
+2019,1941538,1941991,,,['Uncharacterized protein YdaT'],-1
+2020,1942067,1942268,,,[''],-1
+2021,1942282,1942708,,,[''],-1
+2022,1942697,1942910,,,"['Transcriptional regulator, Xre family']",-1
+2023,1943047,1944508,,,['Pantothenate:Na+ symporter (TC 2.A.21.1.1)'],-1
+2024,1944504,1944786,,,['FIG003021: Membrane protein'],-1
+2025,1944859,1944985,,,[''],1
+2026,1944986,1945718,,,['Glucosamine-6-phosphate deaminase (EC 3.5.99.6)'],-1
+2027,1945739,1946906,,,['N-acetylglucosamine-6-phosphate deacetylase (EC 3.5.1.25)'],-1
+2028,1947180,1948032,,,['hypothetical protein BH3604'],1
+2029,1948426,1949986,,,['Glycine betaine transporter OpuD'],-1
+2030,1950117,1950258,,,[''],1
+2031,1950285,1950480,,,[''],1
+2032,1950562,1951738,,,[''],-1
+2033,1951816,1952299,,,[''],-1
+2034,1952333,1953233,,,['Permease of the drug/metabolite transporter (DMT) superfamily'],-1
+2035,1953225,1954134,,,['Ribokinase (EC 2.7.1.15)'],-1
+2036,1954153,1955086,,,['Pyrimidine-specific ribonucleoside hydrolase RihB (EC 3.2.2.8)'],-1
+2037,1955255,1957325,,,['Catalase KatE-intracellular protease (EC 1.11.1.6)'],1
+2038,1957403,1957601,,,[''],1
+2039,1957692,1958868,,,['Mobile element protein'],1
+2040,1959092,1959278,,,[''],1
+2041,1959437,1960763,,,"['Predicted glycolate dehydrogenase, 2-subunit type (EC 1.1.99.14), iron-sulfur subunit GlcF']",-1
+2042,1960755,1962171,,,"['Predicted glycolate dehydrogenase, 2-subunit type (EC 1.1.99.14), iron-sulfur subunit GlcD']",-1
+2043,1962228,1963074,,,"['Sialic acid utilization regulator, RpiR family']",-1
+2044,1963096,1964077,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",-1
+2045,1964069,1965065,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",-1
+2046,1965066,1966269,,,['Anhydro-N-acetylmuramic acid kinase (EC 2.7.1.170)'],-1
+2047,1966292,1967123,,,"['Dipeptide ABC transporter, permease protein DppC (TC 3.A.1.5.2)']",-1
+2048,1967159,1968074,,,"['Dipeptide ABC transporter, permease protein DppB (TC 3.A.1.5.2)']",-1
+2049,1968229,1969828,,,"['ABC transporter, substrate-binding protein (cluster 5, nickel/peptides/opines)']",-1
+2050,1969841,1970912,,,['Beta-lactamase class C-like and penicillin binding proteins (PBPs) superfamily'],-1
+2051,1970918,1971833,,,['N-acetylmuramic acid 6-phosphate etherase (EC 4.2.1.126)'],-1
+2052,1972661,1973117,,,[''],-1
+2053,1973193,1974399,,,['Manganese transport protein MntH'],-1
+2054,1974522,1974750,,,[''],-1
+2055,1974925,1975216,,,[''],-1
+2056,1975228,1975837,,,['Pyrrolidone-carboxylate peptidase (EC 3.4.19.3)'],-1
+2057,1975923,1977036,,,['O-succinylbenzoate synthase (EC 4.2.1.113)'],1
+2058,1977374,1978163,,,['Pyrroline-5-carboxylate reductase (EC 1.5.1.2)'],-1
+2059,1978294,1979380,,,"['ABC transporter, ATP-binding protein (cluster 1, maltose/g3p/polyamine/iron); ABC transporter, ATP-binding protein (cluster 10, nitrate/sulfonate/bicarbonate)']",1
+2060,1979436,1980909,,,['diguanylate cyclase/phosphodiesterase (GGDEF & EAL domains) with PAS/PAC sensor(s)'],-1
+2061,1981958,1983854,,,['hypothetical protein'],-1
+2062,1983940,1984114,,,[''],1
+2063,1984115,1984598,,,[''],-1
+2064,1984590,1985112,,,[''],-1
+2065,1985326,1985881,,,[''],-1
+2066,1986257,1987616,,,['hypothetical protein'],1
+2067,1987859,1988801,,,['MBL-fold metallo-hydrolase superfamily'],-1
+2068,1988998,1989772,,,[''],1
+2069,1989878,1991726,,,['hypothetical protein'],-1
+2070,1991834,1992461,,,['hypothetical protein'],-1
+2071,1992533,1993478,,,['hypothetical protein'],-1
+2072,1993560,1993698,,,[''],-1
+2073,1993699,1994215,,,['Spermidine N1-acetyltransferase (EC 2.3.1.57)'],1
+2074,1994341,1994449,,,[''],-1
+2075,1994448,1994757,,,[''],-1
+2076,1994878,1995211,,,[''],-1
+2077,1995285,1995723,,,['Spore cortex-lytic enzyme CwlJ'],1
+2078,1995877,1996024,,,[''],1
+2079,1996662,1997331,,,[''],-1
+2080,1997321,1997687,,,['Holin-like protein CidA'],-1
+2081,1997733,1998522,,,['Fumarylacetoacetate hydrolase family protein'],-1
+2082,1998578,1999682,,,['D-amino acid dehydrogenase small subunit (EC 1.4.99.1)'],-1
+2083,1999678,2000731,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",-1
+2084,2000727,2001705,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",-1
+2085,2001720,2002626,,,"['ABC transporter, permease protein 2 (cluster 5, nickel/peptides/opines)']",-1
+2086,2002637,2003555,,,"['ABC transporter, permease protein 1 (cluster 5, nickel/peptides/opines)']",-1
+2087,2003764,2005336,,,"['ABC transporter, substrate-binding protein (cluster 5, nickel/peptides/opines)']",-1
+2088,2005585,2006938,,,['Acetylornithine deacetylase/Succinyl-diaminopimelate desuccinylase and related deacylases'],-1
+2089,2006930,2008028,,,['Opine oxidase subunit B'],-1
+2090,2008027,2008180,,,[''],-1
+2091,2008313,2009120,,,[''],-1
+2092,2009109,2009361,,,[''],-1
+2093,2009460,2010180,,,"['Predicted transcriptional regulator of N-Acetylglucosamine utilization, GntR family']",-1
+2094,2010380,2010500,,,[''],1
+2095,2010597,2010840,,,[''],1
+2096,2011082,2011889,,,['Enoyl-CoA hydratase (EC 4.2.1.17)'],-1
+2097,2011903,2012989,,,['Butyryl-CoA dehydrogenase (EC 1.3.99.2)'],-1
+2098,2012988,2014143,,,"['Acyl-CoA dehydrogenase, long-chain specific (EC 1.3.8.8)']",-1
+2099,2014126,2015107,,,"['putative oxidoreductase, nitronate monooxygenase family']",-1
+2100,2015119,2017237,,,"['Acetyl-CoA synthetase (ADP-forming) alpha and beta chains, putative']",-1
+2101,2017241,2017634,,,[''],-1
+2102,2017634,2018066,,,[''],-1
+2103,2018089,2018863,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",-1
+2104,2018876,2020025,,,['3-ketoacyl-CoA thiolase (EC 2.3.1.16) @ Acetyl-CoA acetyltransferase (EC 2.3.1.9)'],-1
+2105,2020039,2020810,,,['Enoyl-CoA hydratase (EC 4.2.1.17)'],-1
+2106,2020882,2021920,,,['Butyryl-CoA dehydrogenase (EC 1.3.99.2)'],-1
+2107,2021934,2023098,,,['Butyryl-CoA dehydrogenase (EC 1.3.99.2)'],-1
+2108,2023088,2024318,,,['4-hydroxybutyrate coenzyme A transferase'],-1
+2109,2024369,2025674,,,"['TRAP-type C4-dicarboxylate transport system, large permease component']",-1
+2110,2025688,2026189,,,[''],-1
+2111,2026241,2027324,,,[''],-1
+2112,2027462,2028218,,,"['Transcriptional regulator, IclR family']",-1
+2113,2028290,2029496,,,['hypothetical protein'],-1
+2114,2029622,2030762,,,['Glycerate kinase (EC 2.7.1.31)'],1
+2115,2030763,2031093,,,[''],-1
+2116,2031259,2031571,,,[''],-1
+2117,2031819,2032791,,,['Tricarboxylate transport protein TctC'],1
+2118,2032837,2033320,,,['hypothetical protein'],1
+2119,2033335,2034850,,,['Tripartite tricarboxylate transporter TctA family'],1
+2120,2034902,2035913,,,['Microsomal dipeptidase (EC 3.4.13.19)'],-1
+2121,2035968,2036211,,,[''],1
+2122,2036257,2037736,,,[''],-1
+2123,2037802,2038162,,,[''],-1
+2124,2038248,2040396,,,['ATP-dependent DNA helicase RecQ'],-1
+2125,2040546,2040822,,,[''],1
+2126,2040830,2041220,,,"['Death on curing protein, Doc toxin']",1
+2127,2041356,2043090,,,[''],-1
+2128,2043689,2044064,,,[''],1
+2129,2044047,2044428,,,[''],1
+2130,2044435,2045188,,,['hypothetical protein'],-1
+2131,2045317,2045821,,,[''],-1
+2132,2045980,2046697,,,['Uncharacterized protein conserved in bacteria'],-1
+2133,2047093,2048146,,,[''],-1
+2134,2048233,2048479,,,[''],-1
+2135,2048488,2049217,,,['Phosphate regulon transcriptional regulatory protein PhoB (SphR)'],-1
+2136,2049221,2049944,,,"['Sortase A, LPXTG specific']",-1
+2137,2049940,2050789,,,"['Sortase A, LPXTG specific']",-1
+2138,2051087,2052665,,,['hypothetical protein'],-1
+2139,2052680,2055671,,,['hypothetical protein'],-1
+2140,2056037,2056922,,,[''],-1
+2141,2057192,2057534,,,[''],1
+2142,2057530,2057890,,,['Mobile element protein'],1
+2143,2057929,2059495,,,['Mobile element protein'],1
+2144,2060148,2061798,,,"['ABC transporter, substrate-binding protein (cluster 5, nickel/peptides/opines)']",-1
+2145,2061966,2062989,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",-1
+2146,2062966,2063992,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",-1
+2147,2064010,2064934,,,"['Dipeptide ABC transporter, permease protein DppB (TC 3.A.1.5.2)']",-1
+2148,2064944,2065841,,,"['Dipeptide ABC transporter, permease protein DppC (TC 3.A.1.5.2)']",-1
+2149,2066127,2067279,,,['Cysteine desulfurase (EC 2.8.1.7)'],-1
+2150,2067321,2068014,,,['hypothetical protein'],1
+2151,2068025,2068502,,,[''],-1
+2152,2068614,2069754,,,[''],-1
+2153,2069777,2070947,,,"['Aminopeptidase YpdF (MP-, MA-, MS-, AP-, NP- specific)']",-1
+2154,2070950,2072231,,,"['N-succinyl-L,L-diaminopimelate desuccinylase (EC 3.5.1.18)']",-1
+2155,2072244,2073441,,,[''],-1
+2156,2073452,2074754,,,[''],-1
+2157,2075145,2076399,,,[''],-1
+2158,2076486,2077815,,,['Acetylornithine deacetylase/Succinyl-diaminopimelate desuccinylase and related deacylases'],-1
+2159,2077936,2078284,,,[''],-1
+2160,2078287,2079667,,,['Opine oxidase subunit A'],-1
+2161,2079691,2080873,,,['hypothetical protein'],-1
+2162,2080876,2081794,,,['Dihydrodipicolinate synthase family'],-1
+2163,2081814,2082354,,,"['Transcriptional regulator, MerR family']",-1
+2164,2082734,2083922,,,['Mobile element protein'],1
+2165,2084047,2084749,,,['hypothetical protein'],-1
+2166,2084745,2085870,,,['hypothetical protein'],-1
+2167,2085883,2087176,,,['DNA modification methylase'],-1
+2168,2087533,2087698,,,[''],1
+2169,2087791,2087986,,,[''],-1
+2170,2088001,2088430,,,[''],-1
+2171,2088785,2089292,,,[''],-1
+2172,2089284,2090370,,,[''],-1
+2173,2090448,2090748,,,['Mobile element protein'],-1
+2174,2091009,2091396,,,[''],-1
+2175,2091880,2092516,,,"['Transcriptional regulator, GntR family']",-1
+2176,2092615,2093116,,,['Mobile element protein'],-1
+2177,2093166,2093802,,,[''],-1
+2178,2093910,2094858,,,['Malate permease'],-1
+2179,2094867,2095686,,,['FIG003879: Predicted amidohydrolase'],-1
+2180,2095710,2096994,,,"['TRAP-type C4-dicarboxylate transport system, large permease component']",-1
+2181,2096990,2097500,,,[''],-1
+2182,2097503,2098526,,,[''],-1
+2183,2098538,2099213,,,['Demethylmenaquinone methyltransferase-like protein'],-1
+2184,2099378,2101085,,,['Phosphoglucomutase (EC 5.4.2.2)'],-1
+2185,2101161,2102328,,,['UDP-glucose 6-dehydrogenase (EC 1.1.1.22)'],-1
+2186,2102520,2103699,,,['hypothetical protein'],-1
+2187,2103790,2104915,,,['hypothetical protein'],-1
+2188,2104877,2106164,,,['hypothetical protein'],-1
+2189,2106258,2107386,,,[''],-1
+2190,2107522,2108689,,,"['Glycosyl transferase, family 2']",-1
+2191,2108734,2109382,,,[''],-1
+2192,2109408,2110023,,,['Lipid carrier : UDP-N-acetylgalactosaminyltransferase (EC 2.4.1.-)'],-1
+2193,2110025,2111135,,,['4-keto-6-deoxy-N-Acetyl-D-hexosaminyl-(Lipid carrier) aminotransferase'],-1
+2194,2111172,2112054,,,['UTP--glucose-1-phosphate uridylyltransferase (EC 2.7.7.9)'],-1
+2195,2112072,2113890,,,"['UDP-N-acetylglucosamine 4,6-dehydratase (EC 4.2.1.135)']",-1
+2196,2114212,2114944,,,['Tyrosine-protein kinase transmembrane modulator EpsC'],1
+2197,2114933,2115629,,,['Tyrosine-protein kinase EpsD (EC 2.7.10.2)'],1
+2198,2115682,2116447,,,['Manganese-dependent protein-tyrosine phosphatase (EC 3.1.3.48)'],1
+2199,2116512,2117685,,,['UDP-glucose 6-dehydrogenase (EC 1.1.1.22)'],-1
+2200,2117880,2119185,,,[''],-1
+2201,2119188,2120256,,,['Undecaprenyl-phosphate alpha-N-acetylglucosaminyl 1-phosphate transferase (EC 2.7.8.33)'],-1
+2202,2120421,2121441,,,"['Cell envelope-associated transcriptional attenuator LytR-CpsA-Psr, subfamily F2']",1
+2203,2121538,2122579,,,[''],-1
+2204,2122651,2124355,,,"['Transposase, IS4 family']",-1
+2205,2124528,2125842,,,['UDP-N-acetyl-D-glucosamine 6-dehydrogenase (EC 1.1.1.136)'],-1
+2206,2125973,2129702,,,['N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28)'],-1
+2207,2129926,2132695,,,['N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28)'],-1
+2208,2132977,2133673,,,['Aspartate racemase (EC 5.1.1.13)'],1
+2209,2133740,2134664,,,['D-alanine--D-alanine ligase (EC 6.3.2.4)'],-1
+2210,2134685,2135795,,,['UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alani ne ligase (EC 6.3.2.10)'],-1
+2211,2135817,2137383,,,['Cyanophycin synthetase (EC 6.-.-.-) / Acylphosphate phosphohydrolase (EC 3.6.1.7)'],-1
+2212,2137412,2138837,,,['Cyanophycin synthetase (EC 6.-.-.-) / Acylphosphate phosphohydrolase (EC 3.6.1.7)'],-1
+2213,2138856,2140494,,,['Cyanophycin synthetase (EC 6.-.-.-) / Acylphosphate phosphohydrolase (EC 3.6.1.7)'],-1
+2214,2140532,2142164,,,['Cyanophycin synthetase (EC 6.-.-.-) / Acylphosphate phosphohydrolase (EC 3.6.1.7)'],-1
+2215,2142188,2143577,,,[''],-1
+2216,2143557,2145711,,,['Glycosyltransferase'],-1
+2217,2145715,2147590,,,['Glycosyltransferase'],-1
+2218,2147634,2149173,,,['Teichoic acid export ATP-binding protein TagH (EC 3.6.3.40)'],-1
+2219,2149200,2149992,,,['Teichoic acid translocation permease protein TagG'],-1
+2220,2150023,2150818,,,['Putative N-acetylgalactosaminyl-diphosphoundecaprenol glucuronosyltransferase'],-1
+2221,2150826,2151960,,,['glycosyltransferase (biosynthesis of lipopolisaccharide O antigen)'],-1
+2222,2151975,2153082,,,"['Alpha-1,4-N-acetylgalactosamine transferase PglJ (EC 2.4.1.-)']",-1
+2223,2153232,2154102,,,['UTP--glucose-1-phosphate uridylyltransferase (EC 2.7.7.9)'],-1
+2224,2154126,2155068,,,"['Cell envelope-associated transcriptional attenuator LytR-CpsA-Psr, subfamily F2']",-1
+2225,2155308,2155449,,,[''],-1
+2226,2155587,2156784,,,['Metallo-beta-lactamase superfamily'],1
+2227,2156808,2157066,,,[''],1
+2228,2157131,2159123,,,['hypothetical protein'],-1
+2229,2159147,2159612,,,[''],-1
+2230,2159774,2160275,,,['hypothetical protein'],1
+2231,2160389,2160944,,,['hypothetical cytochrome oxidase associated membrane protein'],-1
+2232,2160946,2161570,,,"['Cytochrome oxidase biogenesis protein Sco1/SenC/PrrC, putative copper metallochaperone']",-1
+2233,2161788,2163462,,,['Cytochrome c oxidase (B(O/a)3-type) chain I (EC 1.9.3.1)'],-1
+2234,2163478,2163940,,,['Cytochrome c oxidase (B(O/a)3-type) chain II (EC 1.9.3.1)'],-1
+2235,2163958,2164120,,,[''],-1
+2236,2164279,2164534,,,['Phosphate transport system regulatory protein PhoU'],1
+2237,2164674,2164797,,,[''],1
+2238,2164949,2168039,,,"['RND efflux system, inner membrane transporter']",-1
+2239,2168102,2168993,,,['hypothetical protein'],-1
+2240,2169079,2169475,,,[''],1
+2241,2169455,2170289,,,['hypothetical protein'],-1
+2242,2170960,2171446,,,[''],-1
+2243,2171724,2172039,,,[''],-1
+2244,2172092,2172206,,,[''],-1
+2245,2172220,2172418,,,[''],1
+2246,2172455,2172890,,,"['3-hydroxyacyl-[acyl-carrier-protein] dehydratase, FabZ form (EC 4.2.1.59)']",-1
+2247,2172910,2173861,,,['hypothetical protein'],-1
+2248,2173891,2174722,,,['Flagellar basal-body rod protein FlgG'],-1
+2249,2174743,2175565,,,['Flagellar basal-body rod protein FlgF'],-1
+2250,2175598,2176600,,,['MreB-like protein (Mbl protein)'],-1
+2251,2176709,2176835,,,[''],1
+2252,2177100,2177271,,,[''],-1
+2253,2177465,2178488,,,[''],1
+2254,2178490,2180197,,,['Acyl-CoA dehydrogenase'],-1
+2255,2180221,2181745,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],-1
+2256,2181741,2182134,,,"['Transcriptional regulator, MerR family']",-1
+2257,2183067,2183334,,,['Stage III sporulation protein D'],-1
+2258,2183489,2183693,,,[''],1
+2259,2183710,2183941,,,['hypothetical protein'],-1
+2260,2184085,2184280,,,"['Transcriptional regulator, Xre family']",1
+2261,2184280,2184724,,,[''],1
+2262,2184765,2185350,,,['Stage II sporulation protein related to metaloproteases (SpoIIQ)'],-1
+2263,2185511,2186486,,,['Stage II sporulation protein D (SpoIID)'],-1
+2264,2186681,2187986,,,['UDP-N-acetylglucosamine 1-carboxyvinyltransferase (EC 2.5.1.7)'],-1
+2265,2188022,2188694,,,[''],-1
+2266,2188764,2188998,,,[''],-1
+2267,2189341,2189788,,,[''],1
+2268,2190001,2190445,,,['ATP synthase epsilon chain (EC 3.6.3.14)'],-1
+2269,2190478,2191879,,,['ATP synthase beta chain (EC 3.6.3.14)'],-1
+2270,2191948,2192809,,,['ATP synthase gamma chain (EC 3.6.3.14)'],-1
+2271,2192926,2194441,,,['ATP synthase alpha chain (EC 3.6.3.14)'],-1
+2272,2194458,2195004,,,['ATP synthase delta chain (EC 3.6.3.14)'],-1
+2273,2194996,2195518,,,['ATP synthase F0 sector subunit b (EC 3.6.3.14)'],-1
+2274,2195676,2195886,,,['ATP synthase F0 sector subunit c (EC 3.6.3.14)'],-1
+2275,2195933,2196662,,,['ATP synthase F0 sector subunit a (EC 3.6.3.14)'],-1
+2276,2196658,2197048,,,[''],-1
+2277,2197040,2197268,,,[''],-1
+2278,2197633,2197756,,,[''],-1
+2279,2197752,2198361,,,['Outer membrane component of TAM transport system'],-1
+2280,2198545,2200660,,,[''],-1
+2281,2200725,2201442,,,[''],-1
+2282,2201547,2202177,,,['Uracil phosphoribosyltransferase (EC 2.4.2.9)'],-1
+2283,2202383,2203316,,,['UDP-N-acetylenolpyruvoylglucosamine reductase (EC 1.3.1.98)'],-1
+2284,2203512,2203650,,,[''],1
+2285,2203964,2205212,,,['Serine hydroxymethyltransferase (EC 2.1.2.1)'],-1
+2286,2205258,2205807,,,['UPF0340 protein YwlG'],-1
+2287,2205941,2206451,,,['hypothetical protein'],1
+2288,2206489,2206930,,,['Ribose-5-phosphate isomerase B (EC 5.3.1.6)'],-1
+2289,2206951,2207386,,,['Low molecular weight protein tyrosine phosphatase (EC 3.1.3.48)'],-1
+2290,2207513,2208062,,,['Putative manganese efflux pump MntP'],-1
+2291,2208225,2208345,,,[''],1
+2292,2208434,2209457,,,['Threonylcarbamoyl-AMP synthase (EC 2.7.7.87) / SUA5 domain with internal deletion'],-1
+2293,2209516,2209948,,,['hypothetical protein'],-1
+2294,2210037,2210613,,,['Stage II sporulation protein required for processing of pro-sigma-E (SpoIIR)'],-1
+2295,2210742,2211303,,,['Ribosomal-protein-L7p-serine acetyltransferase'],1
+2296,2211417,2211615,,,['hypothetical protein'],-1
+2297,2211888,2212200,,,['Ribosomal-protein-L7p-serine acetyltransferase'],1
+2298,2212221,2212665,,,[''],1
+2299,2212627,2212741,,,"['Acetyltransferase, GNAT family']",1
+2300,2213011,2213170,,,[''],-1
+2301,2213487,2214951,,,['hypothetical protein'],1
+2302,2214943,2215672,,,['Mobile element protein'],1
+2303,2216300,2216558,,,[''],-1
+2304,2216720,2216930,,,[''],-1
+2305,2217008,2217212,,,[''],-1
+2306,2217337,2218249,,,"['Efflux ABC transporter, ATP-binding protein']",-1
+2307,2218251,2218950,,,['hypothetical protein'],-1
+2308,2218977,2219265,,,[''],-1
+2309,2219267,2219564,,,['hypothetical protein'],-1
+2310,2219728,2220565,,,['Peptide chain release factor N(5)-glutamine methyltransferase (EC 2.1.1.297)'],-1
+2311,2220586,2221657,,,['Peptide chain release factor 1'],-1
+2312,2221759,2222380,,,['Thymidine kinase (EC 2.7.1.21)'],-1
+2313,2222645,2223035,,,['hypothetical protein'],-1
+2314,2223088,2223334,,,"['LSU ribosomal protein L31p @ LSU ribosomal protein L31p, zinc-independent']",-1
+2315,2223465,2224740,,,['Transcription termination factor Rho'],-1
+2316,2224959,2225664,,,['hypothetical protein'],-1
+2317,2225666,2226536,,,['ABC transporter ATP-binding protein'],-1
+2318,2226525,2226909,,,"['Transcriptional regulator, GntR family']",-1
+2319,2227137,2227314,,,[''],1
+2320,2227307,2228345,,,[''],-1
+2321,2228753,2229725,,,"['Fructose-1,6-bisphosphatase, GlpX type (EC 3.1.3.11)']",-1
+2322,2229781,2231068,,,['UDP-N-acetylglucosamine 1-carboxyvinyltransferase (EC 2.5.1.7)'],-1
+2323,2231123,2231774,,,['Transaldolase (EC 2.2.1.2)'],-1
+2324,2232129,2232513,,,[''],-1
+2325,2232619,2234224,,,['CTP synthase (EC 6.3.4.2)'],-1
+2326,2234405,2234939,,,['DNA-directed RNA polymerase delta subunit (EC 2.7.7.6)'],-1
+2327,2235276,2236290,,,[''],1
+2328,2236513,2237065,,,['Guanylate kinase (EC 2.7.4.8)'],-1
+2329,2237168,2237360,,,[''],-1
+2330,2237444,2237594,,,[''],-1
+2331,2237752,2240983,,,['B12 binding domain / kinase domain / Methylmalonyl-CoA mutase (EC 5.4.99.2)'],-1
+2332,2241002,2241620,,,"['Transcriptional regulator, AcrR family']",-1
+2333,2241625,2242567,,,['putative periplasmic protein kinase ArgK and related GTPases of G3E family'],-1
+2334,2242661,2243801,,,"['Acyl-CoA dehydrogenase, short-chain specific (EC 1.3.8.1)']",-1
+2335,2244091,2245228,,,"['Acyl-CoA dehydrogenase, short-chain specific (EC 1.3.8.1)']",-1
+2336,2245276,2246128,,,['3-hydroxybutyryl-CoA dehydrogenase (EC 1.1.1.157)'],-1
+2337,2246160,2247345,,,['Acetyl-CoA acetyltransferase (EC 2.3.1.9)'],-1
+2338,2247613,2248276,,,[''],1
+2339,2248317,2250438,,,"['Uncharacterized bis 4Fe-4S ferredoxin, membrane protein FadF (repressed by FadR)']",-1
+2340,2250607,2250778,,,[''],1
+2341,2251419,2251638,,,[''],1
+2342,2251660,2252710,,,['Proline/sodium symporter PutP (TC 2.A.21.2.1) @ Propionate/sodium symporter'],1
+2343,2252703,2252898,,,[''],1
+2344,2252905,2253502,,,['hypothetical protein'],1
+2345,2253967,2255638,,,['Arginyl-tRNA synthetase (EC 6.1.1.19)'],-1
+2346,2255641,2256073,,,[''],-1
+2347,2256321,2258259,,,['Multimodular transpeptidase-transglycosylase (EC 2.4.1.129) (EC 3.4.-.-)'],1
+2348,2258523,2259054,,,['Uncharacterized protein YwhD'],-1
+2349,2259143,2259551,,,['hypothetical protein'],-1
+2350,2259897,2260266,,,['UPF0382 membrane protein YwdK'],-1
+2351,2260290,2260623,,,[''],-1
+2352,2260766,2262122,,,"['Sodium-dependent transporter, SNF family']",-1
+2353,2262319,2262484,,,[''],-1
+2354,2262735,2262909,,,[''],1
+2355,2263075,2264431,,,['Predicted arginine uptake transporter'],1
+2356,2264517,2265819,,,['hypothetical protein'],-1
+2357,2265927,2267166,,,"['Aminopeptidase S (Leu, Val, Phe, Tyr preference) (EC 3.4.11.24)']",-1
+2358,2267395,2268475,,,['ATPase'],-1
+2359,2268615,2269083,,,['Uncharacterized membrane protein YkoY'],-1
+2360,2269079,2269439,,,['Uncharacterized membrane protein YkoY'],-1
+2361,2269770,2270931,,,['hypothetical protein'],-1
+2362,2271202,2272477,,,"['TRAP-type C4-dicarboxylate transport system, large permease component']",-1
+2363,2272512,2273121,,,[''],-1
+2364,2274419,2276222,,,['Sodium/hydrogen exchanger family protein'],-1
+2365,2276343,2277915,,,['Ferredoxin-dependent glutamate synthase (EC 1.4.7.1)'],1
+2366,2278136,2278901,,,['hypothetical protein'],1
+2367,2278997,2279111,,,[''],-1
+2368,2279464,2279653,,,[''],-1
+2369,2280005,2280158,,,[''],1
+2370,2280287,2280818,,,[''],-1
+2371,2281072,2282545,,,['Histidine ammonia-lyase (EC 4.3.1.3)'],-1
+2372,2282679,2283129,,,['Hut operon positive regulatory protein'],-1
+2373,2283316,2283865,,,['Acyl-CoA hydrolase (EC 3.1.2.20)'],-1
+2374,2283927,2285547,,,['Betaine/carnitine/choline transporter (BCCT) family'],-1
+2375,2286121,2287741,,,['Betaine/carnitine/choline transporter (BCCT) family'],-1
+2376,2288248,2288731,,,[''],1
+2377,2289282,2290236,,,['L-threonine 3-dehydrogenase (EC 1.1.1.103)'],-1
+2378,2290269,2291463,,,['2-amino-3-ketobutyrate coenzyme A ligase (EC 2.3.1.29)'],-1
+2379,2291616,2292675,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",-1
+2380,2292646,2293678,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",-1
+2381,2293701,2294622,,,"['Dipeptide ABC transporter, permease protein DppB (TC 3.A.1.5.2)']",-1
+2382,2294643,2295543,,,"['Dipeptide ABC transporter, permease protein DppC (TC 3.A.1.5.2)']",-1
+2383,2295987,2297790,,,"['ABC transporter, substrate-binding protein (cluster 5, nickel/peptides/opines)']",1
+2384,2298141,2299125,,,[''],-1
+2385,2299390,2301220,,,['GTP-binding protein TypA/BipA'],-1
+2386,2301438,2301573,,,[''],1
+2387,2301622,2302069,,,[''],-1
+2388,2302089,2302377,,,[''],-1
+2389,2302502,2303402,,,['Uncharacterized inner membrane protein RarD'],1
+2390,2303568,2304765,,,['Methionine gamma-lyase (EC 4.4.1.11)'],1
+2391,2304795,2305071,,,[''],1
+2392,2305062,2305698,,,[''],-1
+2393,2305860,2307138,,,['Kynureninase (EC 3.7.1.3)'],1
+2394,2307169,2307796,,,"['Kynurenine formamidase, bacterial (EC 3.5.1.9)']",1
+2395,2307790,2308618,,,"['Tryptophan 2,3-dioxygenase (EC 1.13.11.11)']",-1
+2396,2308755,2309685,,,['Cysteine synthase (EC 2.5.1.47)'],1
+2397,2309852,2311106,,,['Uncharacterized MFS-type transporter YuxJ'],1
+2398,2311464,2312466,,,"['Phosphate ABC transporter, substrate-binding protein PstS (TC 3.A.1.7.1)']",1
+2399,2312576,2313533,,,"['Phosphate ABC transporter, permease protein PstC (TC 3.A.1.7.1)']",1
+2400,2313534,2314419,,,"['Phosphate ABC transporter, permease protein PstA (TC 3.A.1.7.1)']",1
+2401,2314434,2315265,,,"['Phosphate ABC transporter, ATP-binding protein PstB (TC 3.A.1.7.1)']",1
+2402,2315523,2316315,,,"['Novel pyridoxal kinase, thiD family (EC 2.7.1.35)']",1
+2403,2316425,2317043,,,['Spore coat protein F-like protein YhcQ'],1
+2404,2317161,2317443,,,[''],1
+2405,2317442,2317580,,,[''],1
+2406,2317599,2318739,,,['hypothetical protein'],-1
+2407,2318896,2320087,,,['Uncharacterized MFS-type transporter YttB'],1
+2408,2320144,2321599,,,"['UDP-N-acetylmuramoyl-dipeptide--2,6-diaminopimela te ligase (EC 6.3.2.13)']",-1
+2409,2321833,2322169,,,['Thioredoxin'],-1
+2410,2322243,2322540,,,[''],-1
+2411,2322618,2323056,,,['hypothetical protein'],-1
+2412,2323272,2324649,,,['diguanylate cyclase/phosphodiesterase (GGDEF & EAL domains) with PAS/PAC sensor(s)'],-1
+2413,2324826,2324976,,,[''],-1
+2414,2325218,2326055,,,['hypothetical protein'],1
+2415,2326184,2326667,,,['Thioesterase family protein'],-1
+2416,2326790,2326982,,,[''],-1
+2417,2327087,2328080,,,"['ABC transporter, substrate-binding protein (cluster 10, nitrate/sulfonate/bicarbonate)']",-1
+2418,2328097,2328856,,,"['ABC transporter, permease protein (cluster 10, nitrate/sulfonate/bicarbonate)']",-1
+2419,2328839,2329625,,,"['ABC transporter, ATP-binding protein (cluster 1, maltose/g3p/polyamine/iron); ABC transporter, ATP-binding protein (cluster 10, nitrate/sulfonate/bicarbonate)']",-1
+2420,2329832,2331086,,,['Sulfur transporter'],-1
+2421,2331693,2332656,,,['MBL-fold metallo-hydrolase superfamily'],-1
+2422,2332909,2333557,,,['Zinc resistance-associated protein'],1
+2423,2333604,2334309,,,['2-hydroxychromene-2-carboxylate isomerase/DsbA-like thioredoxin domain'],-1
+2424,2334593,2335340,,,['NAD synthetase (EC 6.3.1.5)'],1
+2425,2335358,2335925,,,['Uncharacterized isochorismatase family protein YaaI'],1
+2426,2336115,2337051,,,['ATPase component of general energizing module of ECF transporters'],1
+2427,2337040,2338294,,,['hypothetical protein'],1
+2428,2338523,2338886,,,['Uncharacterized protein YvdQ'],1
+2429,2338967,2339144,,,[''],-1
+2430,2339421,2339604,,,[''],1
+2431,2340460,2341546,,,['23S rRNA (adenine(2503)-C(2))-methyltransferase @ tRNA (adenine(37)-C(2))-methyltransferase (EC 2.1.1.192)'],-1
+2432,2341669,2342842,,,['Pheromone shutdown protein'],-1
+2433,2342956,2344234,,,['Glucose-6-phosphate isomerase (EC 5.3.1.9)'],-1
+2434,2344254,2345481,,,['hypothetical protein'],-1
+2435,2345518,2346703,,,['3-ketoacyl-CoA thiolase (EC 2.3.1.16) @ Acetyl-CoA acetyltransferase (EC 2.3.1.9)'],-1
+2436,2346816,2347179,,,[''],-1
+2437,2347231,2347345,,,[''],-1
+2438,2347608,2349108,,,['DEAD-box ATP-dependent RNA helicase DeaD (= CshA) (EC 3.6.4.13)'],1
+2439,2349228,2349780,,,['RNA polymerase ECF-type sigma factor'],1
+2440,2349769,2350699,,,[''],1
+2441,2350749,2350905,,,[''],-1
+2442,2350947,2352195,,,[''],-1
+2443,2352286,2353948,,,['Arginine utilization protein RocB'],-1
+2444,2354079,2354562,,,[''],1
+2445,2354930,2355218,,,[''],1
+2446,2355214,2356090,,,['Putative transposase InsK for insertion sequence element IS150'],1
+2447,2356341,2356569,,,[''],-1
+2448,2356605,2358099,,,['Tripartite tricarboxylate transporter TctA family'],-1
+2449,2358111,2358570,,,['Tricarboxylate transport protein TctB'],-1
+2450,2358680,2359742,,,['Tripartite tricarboxylate transporter TctC family'],-1
+2451,2359941,2360616,,,['Tricarboxylate transport transcriptional regulator TctD'],-1
+2452,2360617,2362216,,,['Tricarboxylate transport sensor protein TctE'],-1
+2453,2362327,2362558,,,[''],1
+2454,2362660,2364574,,,[''],1
+2455,2364651,2365929,,,"['TRAP-type C4-dicarboxylate transport system, large permease component']",-1
+2456,2365925,2366387,,,[''],-1
+2457,2366450,2367443,,,"['TRAP-type C4-dicarboxylate transport system, periplasmic component']",-1
+2458,2367613,2367958,,,['hypothetical protein'],-1
+2459,2367993,2368779,,,['Aliphatic amidase AmiE (EC 3.5.1.4)'],-1
+2460,2368785,2369469,,,['hypothetical protein'],-1
+2461,2369470,2370166,,,['hypothetical protein'],-1
+2462,2370976,2372092,,,['D-amino acid dehydrogenase (EC 1.4.99.6)'],-1
+2463,2372241,2372760,,,['hypothetical protein'],1
+2464,2373027,2373396,,,[''],-1
+2465,2373508,2375023,,,['acetyl-CoA hydrolase/transferase family protein'],-1
+2466,2375153,2375798,,,"['methyl-accepting/DNA response regulator, putative']",-1
+2467,2375862,2376858,,,['Putative membrane protein YeiH'],-1
+2468,2376984,2377872,,,"['Transcriptional regulator, LysR family']",1
+2469,2378282,2379518,,,['Hemolysins and related proteins containing CBS domains'],-1
+2470,2379776,2380529,,,"['Manganese ABC transporter, ATP-binding protein SitB']",1
+2471,2380528,2381380,,,"['Manganese ABC transporter, inner membrane permease protein SitD']",1
+2472,2381405,2382404,,,"['Manganese ABC transporter, periplasmic-binding protein SitA']",1
+2473,2382455,2382839,,,[''],1
+2474,2383305,2383770,,,[''],-1
+2475,2383855,2384344,,,[''],-1
+2476,2384515,2384896,,,[''],-1
+2477,2385093,2385912,,,['hypothetical protein'],1
+2478,2387197,2387476,,,[''],-1
+2479,2387635,2388655,,,['NADP-dependent oxidoreductase YfmJ'],-1
+2480,2388827,2390111,,,['4-hydroxybutyrate:acetyl-CoA CoA transferase (EC 2.3.1.-)'],-1
+2481,2390241,2390826,,,[''],-1
+2482,2390809,2391049,,,[''],-1
+2483,2391240,2391570,,,[''],-1
+2484,2391897,2392944,,,['Choloylglycine hydrolase (EC 3.5.1.24)'],1
+2485,2393563,2393833,,,[''],-1
+2486,2393941,2394439,,,[''],-1
+2487,2394577,2395015,,,[''],1
+2488,2395080,2396586,,,['Malate:quinone oxidoreductase (EC 1.1.5.4)'],-1
+2489,2396811,2397708,,,['3-hydroxybutyryl-CoA dehydrogenase (EC 1.1.1.157); 3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.35)'],-1
+2490,2397773,2399432,,,['Ubiquinone biosynthesis monooxygenase UbiB'],-1
+2491,2399488,2399791,,,[''],-1
+2492,2399927,2401124,,,"['Transcriptional regulator, GntR family domain / Aspartate aminotransferase (EC 2.6.1.1)']",-1
+2493,2402198,2403581,,,['Predicted arginine uptake transporter'],-1
+2494,2403764,2404904,,,"['Radical SAM heme biosynthesis protein AhbD, Fe-coproporphyrin III decarboxylase']",-1
+2495,2405596,2406487,,,['Fructose-bisphosphate aldolase class I (EC 4.1.2.13)'],1
+2496,2406545,2407694,,,['Proton/glutamate symporter @ Sodium/glutamate symporter'],-1
+2497,2407901,2408813,,,"['Glycine betaine ABC transport system, glycine betaine-binding protein OpuAC']",-1
+2498,2409417,2410056,,,['hypothetical protein'],-1
+2499,2410455,2411364,,,['N-acetylmannosamine kinase (EC 2.7.1.60)'],-1
+2500,2411395,2412673,,,"['TRAP-type C4-dicarboxylate transport system, large permease component']",-1
+2501,2412673,2413150,,,"['TRAP-type transport system, small permease component, predicted N-acetylneuraminate transporter']",-1
+2502,2413175,2414264,,,"['TRAP-type transport system, periplasmic component, predicted N-acetylneuraminate-binding protein']",-1
+2503,2414279,2414948,,,['N-acetylmannosamine-6-phosphate 2-epimerase (EC 5.1.3.9)'],-1
+2504,2414973,2415849,,,['N-acetylneuraminate lyase (EC 4.1.3.3)'],-1
+2505,2416079,2416922,,,"['Transcriptional regulator, RpiR family']",1
+2506,2417032,2417731,,,['hypothetical protein'],1
+2507,2417924,2418164,,,[''],1
+2508,2418217,2418694,,,['hypothetical protein'],1
+2509,2418888,2419803,,,['Permease of the drug/metabolite transporter (DMT) superfamily'],-1
+2510,2420004,2420262,,,[''],1
+2511,2420258,2420477,,,['Uncharacterized UPF0033 protein'],1
+2512,2420479,2421718,,,['Putative transmembrane protein'],1
+2513,2421741,2422032,,,['PaaD-like protein (DUF59) involved in Fe-S cluster assembly'],1
+2514,2422455,2423859,,,['hypothetical protein'],1
+2515,2424378,2425581,,,['Mobile element protein'],-1
+2516,2425878,2426226,,,[''],1
+2517,2426340,2426523,,,[''],1
+2518,2426779,2427775,,,['4-hydroxythreonine-4-phosphate dehydrogenase (EC 1.1.1.262)'],-1
+2519,2427767,2429069,,,['Candidate type III effector Hop protein'],-1
+2520,2429090,2430077,,,['2-keto-3-deoxygluconate permease (KDG permease)'],-1
+2521,2430294,2432013,,,['hypothetical protein'],-1
+2522,2432097,2432346,,,[''],-1
+2523,2432552,2433812,,,['Cytosine deaminase (EC 3.5.4.1)'],-1
+2524,2433815,2435069,,,['Cytosine permease'],-1
+2525,2435071,2435200,,,[''],-1
+2526,2435516,2435966,,,[''],-1
+2527,2436379,2436862,,,['Uncharacterized cytidine deaminase-like protein SCO7258'],-1
+2528,2437089,2437842,,,[''],1
+2529,2437869,2439051,,,['hypothetical protein'],1
+2530,2439134,2440469,,,['Predicted histidine uptake transporter'],-1
+2531,2440545,2441808,,,['Imidazolonepropionase (EC 3.5.2.7)'],-1
+2532,2441835,2443491,,,['Urocanate hydratase (EC 4.2.1.49)'],-1
+2533,2443527,2444472,,,['Formiminoglutamase (EC 3.5.3.8)'],-1
+2534,2444610,2445492,,,"['Transcriptional regulator, LysR family']",1
+2535,2445645,2446875,,,['Cytosine/purine/uracil/thiamine/allantoin permease family protein'],-1
+2536,2447001,2448129,,,['Mobile element protein'],-1
+2537,2448227,2448419,,,[''],-1
+2538,2448443,2449109,,,['isochorismatase hydrolase'],-1
+2539,2449307,2449478,,,[''],1
+2540,2449530,2450730,,,['Transposase'],1
+2541,2450939,2451053,,,[''],-1
+2542,2451203,2452325,,,['Mobile element protein'],-1
+2543,2452520,2452703,,,[''],1
+2544,2452746,2454291,,,['Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)'],-1
+2545,2454341,2455106,,,"['2,4-dienoyl-CoA reductase (EC 1.3.1.34)']",-1
+2546,2455197,2455644,,,[''],-1
+2547,2455820,2456864,,,"['Ribonucleotide reductase of class Ia (aerobic), beta subunit (EC 1.17.4.1)']",-1
+2548,2456844,2457279,,,['Flavodoxin'],-1
+2549,2457275,2459510,,,"['Ribonucleotide reductase of class Ia (aerobic), alpha subunit (EC 1.17.4.1)']",-1
+2550,2460357,2460987,,,['hypothetical protein'],1
+2551,2461086,2462073,,,['Peptidoglycan N-acetylglucosamine deacetylase (EC 3.5.1.-)'],-1
+2552,2462147,2462885,,,[''],-1
+2553,2462889,2464515,,,"['Ferric iron ABC transporter, permease protein']",-1
+2554,2464626,2465679,,,"['Ferric iron ABC transporter, iron-binding protein']",-1
+2555,2465777,2465933,,,[''],-1
+2556,2466007,2466286,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",1
+2557,2466330,2466690,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",1
+2558,2466995,2467445,,,[''],1
+2559,2467914,2468496,,,[''],1
+2560,2468583,2468937,,,['Small multidrug resistance protein BA0832'],1
+2561,2468938,2469253,,,['Small multidrug resistance protein BA0833'],1
+2562,2469326,2470256,,,"['Glycine betaine ABC transport system, substrate binding protein OpuAC']",-1
+2563,2470527,2470743,,,[''],1
+2564,2470813,2472064,,,['Uncharacterized MFS-type transporter YycB'],-1
+2565,2472066,2472756,,,"['Transcriptional regulator, GntR family']",-1
+2566,2472940,2473135,,,[''],-1
+2567,2473336,2473489,,,[''],1
+2568,2473925,2476184,,,['Excinuclease ABC subunit A paralog of unknown function'],-1
+2569,2476496,2477270,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",1
+2570,2477314,2478061,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",1
+2571,2478184,2478694,,,[''],1
+2572,2478712,2479090,,,['FIG01119870: hypothetical protein'],1
+2573,2479202,2480303,,,['Nitric oxide synthase oxygenase (EC 1.-.-.-)'],1
+2574,2480380,2480797,,,[''],-1
+2575,2481041,2481536,,,['conserved hypothetical protein'],1
+2576,2481946,2482231,,,[''],1
+2577,2482353,2482617,,,['hypothetical protein'],1
+2578,2482708,2483071,,,[''],1
+2579,2483153,2483321,,,[''],1
+2580,2483581,2484208,,,['Uncharacterized protein YheG'],-1
+2581,2484317,2484884,,,['FIG009707: Betaine operon transcriptional regulator'],-1
+2582,2485099,2485999,,,"['Glycine betaine ABC transport system, glycine betaine-binding protein OpuAC']",-1
+2583,2485998,2486157,,,[''],-1
+2584,2486425,2487898,,,['Betaine aldehyde dehydrogenase (EC 1.2.1.8)'],1
+2585,2488075,2489761,,,['Choline dehydrogenase (EC 1.1.99.1)'],1
+2586,2489892,2490531,,,"['Transcriptional regulator, GntR family']",-1
+2587,2490658,2491837,,,['CaiB/BaiF family protein'],1
+2588,2491853,2492717,,,['Citrate lyase beta chain (EC 4.1.3.6)'],1
+2589,2492728,2494036,,,['L-malate or citrate/H+ symporter CimH (TC 2.A.24.2.4)'],1
+2590,2494522,2495527,,,"['Hydroxymethylpyrimidine ABC transporter, substrate-binding component']",1
+2591,2495560,2495848,,,['FIG01108320: hypothetical protein'],1
+2592,2495844,2496612,,,"['Hydroxymethylpyrimidine ABC transporter, transmembrane component']",1
+2593,2496612,2497338,,,"['Hydroxymethylpyrimidine ABC transporter, ATPase component']",1
+2594,2497362,2497959,,,['Additional substrate-binding component of thiamin-regulated ECF transporter for HydroxyMethylPyrimidine'],1
+2595,2498366,2499116,,,['Methionine ABC transporter ATP-binding protein'],1
+2596,2499096,2499771,,,['Methionine ABC transporter permease protein'],1
+2597,2499788,2500610,,,['Methionine ABC transporter substrate-binding protein'],1
+2598,2501022,2501163,,,[''],1
+2599,2501245,2501599,,,['hypothetical protein'],-1
+2600,2501678,2502845,,,['Lactate 2-monooxygenase (EC 1.13.12.4)'],-1
+2601,2503128,2504142,,,[''],1
+2602,2504138,2504846,,,[''],1
+2603,2504829,2504949,,,[''],1
+2604,2505127,2505547,,,[''],1
+2605,2505945,2507820,,,['hypothetical protein'],-1
+2606,2507833,2508808,,,[''],-1
+2607,2508914,2509859,,,['ulcer associated adenine specific DNA methyltransferase'],-1
+2608,2509864,2510962,,,['Modification methylase'],-1
+2609,2511246,2512248,,,[''],1
+2610,2512407,2513157,,,[''],1
+2611,2513246,2513420,,,[''],1
+2612,2514044,2515331,,,['hypothetical protein'],-1
+2613,2515332,2516190,,,[''],-1
+2614,2516528,2518073,,,['ClpB protein'],-1
+2615,2518076,2519006,,,['hypothetical protein'],-1
+2616,2519536,2519944,,,"['Integrase, catalytic region']",1
+2617,2520064,2520385,,,['Mobile element protein'],1
+2618,2520600,2521329,,,[''],-1
+2619,2521630,2522110,,,['23S rRNA (pseudouridine(1915)-N(3))-methyltransferase (EC 2.1.1.177)'],-1
+2620,2522604,2523828,,,"['Serine protease, DegP/HtrA, do-like (EC 3.4.21.-)']",-1
+2621,2523814,2524639,,,"['Zn-dependent hydrolase YycJ/WalJ, required for cell wall metabolism and coordination of cell division with DNA replication']",-1
+2622,2524635,2525505,,,[''],-1
+2623,2525504,2526836,,,['hypothetical protein'],-1
+2624,2526832,2528677,,,['Two-component sensor kinase SA14-24'],-1
+2625,2528682,2529420,,,['Two-component response regulator SA14-24'],-1
+2626,2529791,2531369,,,['Membrane proteins related to metalloendopeptidases'],-1
+2627,2532117,2532510,,,[''],1
+2628,2532773,2534057,,,['Adenylosuccinate synthetase (EC 6.3.4.4)'],-1
+2629,2534382,2535075,,,['hypothetical protein'],-1
+2630,2535074,2535923,,,"['Efflux ABC transporter, ATP-binding protein']",-1
+2631,2536086,2537046,,,"['ABC transporter, ATP-binding protein']",-1
+2632,2537152,2538514,,,['Replicative DNA helicase (DnaB) (EC 3.6.4.12)'],-1
+2633,2538544,2538991,,,['LSU ribosomal protein L9p'],-1
+2634,2538987,2540961,,,['Cyclic-di-AMP phosphodiesterase GdpP'],-1
+2635,2541000,2541948,,,['FIG003573: hypothetical protein'],-1
+2636,2541970,2542126,,,[''],-1
+2637,2542354,2542582,,,"['SSU ribosomal protein S18p @ SSU ribosomal protein S18p, zinc-independent']",-1
+2638,2542597,2543080,,,['Single-stranded DNA-binding protein'],-1
+2639,2543092,2543383,,,['SSU ribosomal protein S6p'],-1
+2640,2543519,2544620,,,['GTP-binding and nucleic acid-binding protein YchF'],-1
+2641,2544819,2545017,,,['Uncharacterized protein CAC3725'],-1
+2642,2545116,2546142,,,['Uncharacterized protein YyaD'],-1
+2643,2546214,2546778,,,['Uncharacterized protein YyaC'],1
+2644,2546913,2547642,,,['Uncharacterized DUF554 membrane protein'],-1
+2645,2547776,2548619,,,['Chromosome (plasmid) partitioning protein ParB'],-1
+2646,2548599,2549373,,,['Chromosome (plasmid) partitioning protein ParA'],-1
+2647,2549565,2550429,,,['Chromosome (plasmid) partitioning protein ParB-2'],-1
+2648,2550644,2551361,,,['16S rRNA (guanine(527)-N(7))-methyltransferase (EC 2.1.1.170)'],-1
+2649,2551372,2553259,,,['tRNA-5-carboxymethylaminomethyl-2-thiouridine(34) synthesis protein MnmG'],-1
+2650,2553279,2554656,,,['tRNA-5-carboxymethylaminomethyl-2-thiouridine(34) synthesis protein MnmE'],-1
+2651,2554851,2555469,,,['RNA-binding protein Jag'],-1
+2652,2555465,2556239,,,"['Inner membrane protein translocase and chaperone YidC, short form OxaI-like']",-1
+2653,2556328,2556679,,,['Ribonuclease P protein component (EC 3.1.26.5)'],-1
+2654,2556794,2556929,,,['LSU ribosomal protein L34p'],-1
+2655,2557225,2557390,,,[''],-1
+2656,2558052,2559399,,,['Chromosomal replication initiator protein DnaA'],1
+2657,2559578,2560721,,,['DNA polymerase III beta subunit (EC 2.7.7.7)'],1
+2658,2560924,2561050,,,[''],1
+2659,2561153,2561378,,,['Uncharacterized S4 RNA-binding-domain protein YbcJ'],1
+2660,2561395,2562526,,,['DNA recombination and repair protein RecF'],1
+2661,2562558,2562840,,,[''],1
+2662,2562884,2564801,,,['DNA gyrase subunit B (EC 5.99.1.3)'],1
+2663,2564942,2567543,,,['DNA gyrase subunit A (EC 5.99.1.3)'],1
+2664,2567559,2568666,,,[''],1
+2665,2568867,2570199,,,['D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)'],1
+2666,2570504,2571794,,,['Seryl-tRNA synthetase (EC 6.1.1.11)'],1
+2667,2572175,2572544,,,[''],-1
+2668,2572946,2573069,,,[''],1
+2669,2573211,2573883,,,['Deoxyadenosine kinase (EC 2.7.1.76) @ Deoxycytidine kinase (EC 2.7.1.74)'],-1
+2670,2573879,2574524,,,['Deoxyguanosine kinase (EC 2.7.1.113)'],-1
+2671,2574704,2575310,,,[''],1
+2672,2575449,2576577,,,['MBL-fold metallo-hydrolase superfamily'],1
+2673,2576989,2577532,,,['Chromate reductase (EC 1.6.5.2)'],-1
+2674,2577635,2578652,,,"['Oligopeptide ABC transporter, ATP-binding protein OppF (TC 3.A.1.5.1)']",-1
+2675,2578656,2579589,,,['L-alanyl-gamma-D-glutamyl-L-diamino acid endopeptidase'],-1
+2676,2579590,2580694,,,['L-alanine-DL-glutamate epimerase (EC 5.1.1.n1)'],-1
+2677,2580698,2581643,,,['Muramoyltetrapeptide carboxypeptidase (EC 3.4.17.13)'],-1
+2678,2581721,2583404,,,"['Dipeptide ABC transporter, substrate-binding protein DppA (TC 3.A.1.5.2)']",-1
+2679,2583400,2584414,,,"['Oligopeptide ABC transporter, ATP-binding protein OppD (TC 3.A.1.5.1)']",-1
+2680,2584419,2585385,,,"['Dipeptide ABC transporter, permease protein DppC (TC 3.A.1.5.2)']",-1
+2681,2585387,2586320,,,"['Dipeptide ABC transporter, permease protein DppB (TC 3.A.1.5.2)']",-1
+2682,2586331,2587156,,,['D-aminopeptidase dipeptide-binding protein DppA (EC 3.4.11.-)'],-1
+2683,2587377,2589093,,,['Acetyl-CoA synthetase (EC 6.2.1.1)'],1
+2684,2589328,2590075,,,"['Oxidoreductase, short-chain dehydrogenase/reductase family']",-1
+2685,2590150,2590540,,,['hypothetical protein'],-1
+2686,2590792,2592079,,,['Xanthine permease'],1
+2687,2592164,2592686,,,['ThiJ/PfpI family protein YhbO'],1
+2688,2592768,2593533,,,[''],1
+2689,2593604,2594888,,,"['Spore cortex-lytic enzyme, N-acetylglucosaminidase SleL']",-1
+2690,2594995,2595466,,,['tRNA-specific adenosine-34 deaminase (EC 3.5.4.33)'],1
+2691,2595876,2596653,,,[''],1
+2692,2596860,2598558,,,['DNA polymerase III subunits gamma and tau (EC 2.7.7.7)'],1
+2693,2598570,2598888,,,['Nucleoid-associated protein YaaK'],1
+2694,2598900,2599497,,,['Recombination protein RecR'],1
+2695,2600055,2600256,,,[''],1
+2696,2600327,2600879,,,[''],-1
+2697,2601105,2601372,,,['Inhibitor of pro-sigmaK processing BofA'],1
+2698,2601458,2601638,,,[''],1
+2699,2601970,2603407,,,['Uncharacterized protein YaaO'],1
+2700,2603415,2604054,,,['Thymidylate kinase (EC 2.7.4.9)'],1
+2701,2604125,2604455,,,"['protein from nitrogen regulatory protein P-II (GLNB) family, ortholog YAAQ B. subtilis']",1
+2702,2604484,2604925,,,[''],1
+2703,2604952,2605942,,,['DNA polymerase III delta prime subunit (EC 2.7.7.7)'],1
+2704,2605949,2606780,,,['Stage 0 sporulation protein YaaT'],1
+2705,2606790,2607132,,,['DNA replication intiation control protein YabA'],1
+2706,2607479,2608271,,,['tRNA(1)(Val) (adenine(37)-N(6))-methyltransferase (EC 2.1.1.223)'],1
+2707,2608239,2609121,,,"[""16S rRNA (cytidine(1402)-2'-O)-methyltransferase (EC 2.1.1.198)""]",1
+2708,2609236,2609518,,,['Transition state regulatory protein AbrB'],-1
+2709,2609811,2611776,,,['Methionyl-tRNA synthetase (EC 6.1.1.10)'],1
+2710,2611806,2612574,,,['Uncharacterized metal-dependent hydrolase YcfH'],1
+2711,2612894,2614139,,,['Uncharacterized protein YabE'],1
+2712,2614563,2615145,,,['Ribonuclease M5 (EC 3.1.26.8)'],1
+2713,2615141,2616020,,,['SSU rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase (EC 2.1.1.182)'],1
+2714,2616079,2616967,,,['Sporulation-specific protease YabG'],1
+2715,2617138,2617393,,,['Veg protein'],1
+2716,2617609,2617786,,,['Small acid-soluble spore protein SspF'],1
+2717,2618015,2618867,,,['4-diphosphocytidyl-2-C-methyl-D-erythritol kinase (EC 2.7.1.148)'],1
+2718,2618962,2619775,,,['Pur operon repressor PurR'],1
+2719,2620148,2620436,,,['DNA-binding protein SpoVG'],1
+2720,2620590,2621961,,,['N-acetylglucosamine-1-phosphate uridyltransferase (EC 2.7.7.23) / Glucosamine-1-phosphate N-acetyltransferase (EC 2.3.1.157)'],1
+2721,2621979,2622933,,,['Ribose-phosphate pyrophosphokinase (EC 2.7.6.1)'],1
+2722,2623037,2623676,,,['LSU ribosomal protein L25p'],1
+2723,2623880,2624438,,,['Peptidyl-tRNA hydrolase (EC 3.1.1.29)'],1
+2724,2624523,2624751,,,[''],1
+2725,2624825,2628365,,,['Transcription-repair coupling factor'],1
+2726,2628473,2629007,,,"['Stage V sporulation protein T, AbrB family transcriptional regulator (SpoVT)']",1
+2727,2629123,2629333,,,[''],1
+2728,2629394,2630897,,,[''],1
+2729,2630902,2632366,,,['possible tetrapyrrole methyltransferase domain / Nucleoside triphosphate pyrophosphohydrolase MazG (EC 3.6.1.8)'],1
+2730,2632367,2632634,,,['Ribosome-associated heat shock protein implicated in the recycling of the 50S subunit (S4 paralog)'],1
+2731,2632692,2632995,,,['FIG007421: forespore shell protein'],1
+2732,2632991,2633558,,,[''],1
+2733,2633573,2633966,,,[''],1
+2734,2634037,2634418,,,"['RNA binding protein, contains ribosomal protein S1 domain']",1
+2735,2634974,2635601,,,[''],1
+2736,2635708,2638153,,,['Stage II sporulation serine phosphatase for sigma-F activation (SpoIIE)'],1
+2737,2638239,2638980,,,['Uncharacterized protein YabS'],1
+2738,2638942,2639911,,,['Probable serine/threonine-protein kinase yabT (EC 2.7.11.1)'],1
+2739,2639991,2641371,,,['tRNA(Ile)-lysidine synthetase (EC 6.3.4.19)'],1
+2740,2641400,2641937,,,['Hypoxanthine-guanine phosphoribosyltransferase (EC 2.4.2.8)'],1
+2741,2642100,2644164,,,"['Cell division-associated, ATP-dependent zinc metalloprotease FtsH']",1
+2742,2644355,2645129,,,"['Pantothenate kinase type III, CoaX-like (EC 2.7.1.33)']",1
+2743,2645135,2646008,,,['33 kDa chaperonin HslO'],1
+2744,2646049,2646886,,,['Dihydropteroate synthase (EC 2.5.1.15)'],1
+2745,2646878,2647253,,,['Dihydroneopterin aldolase (EC 4.1.2.25)'],1
+2746,2647242,2647737,,,['2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase (EC 2.7.6.3)'],1
+2747,2648070,2649564,,,['Lysyl-tRNA synthetase (class II) (EC 6.1.1.6)'],1
+2748,2649815,2650454,,,[''],1
+2749,2650585,2650714,,,[''],1
+2750,2661924,2662623,,,['Mg(2+)-transport-ATPase-associated protein MgtC'],1
+2751,2662810,2663287,,,['Transcriptional regulator CtsR'],1
+2752,2663289,2663829,,,['Protein-arginine kinase activator protein McsA'],1
+2753,2663828,2664899,,,['Protein-arginine kinase McsB (EC 2.7.14.1)'],1
+2754,2664917,2667377,,,"['ATP-dependent Clp protease, ATP-binding subunit ClpC']",1
+2755,2667487,2668858,,,['DNA repair protein RadA'],1
+2756,2669006,2670092,,,"['Membrane-associated protein containing RNA-binding TRAM domain and ribonuclease PIN-domain, YacL B.subtilis ortholog']",1
+2757,2670273,2670978,,,['2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase (EC 2.7.7.60)'],1
+2758,2670978,2671455,,,"['2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase (EC 4.6.1.12)']",1
+2759,2671488,2672964,,,['Glutamyl-tRNA synthetase (EC 6.1.1.17) @ Glutamyl-tRNA(Gln) synthetase (EC 6.1.1.24)'],1
+2760,2673379,2674042,,,['Serine acetyltransferase (EC 2.3.1.30)'],1
+2761,2674031,2675429,,,['Cysteinyl-tRNA synthetase (EC 6.1.1.16)'],1
+2762,2675433,2675826,,,['Mini-ribonuclease III'],1
+2763,2675827,2676568,,,"[""23S rRNA (guanosine(2251)-2'-O)-methyltransferase (EC 2.1.1.185)""]",1
+2764,2676571,2677081,,,"['Uncharacterized protein YacP, similar to C-terminal domain of ribosome protection-type Tc-resistance proteins']",1
+2765,2677166,2677817,,,['RNA polymerase sporulation specific sigma factor SigH'],1
+2766,2678062,2678230,,,['Preprotein translocase subunit SecE (TC 3.A.5.1.1)'],1
+2767,2678492,2679026,,,['Transcription antitermination protein NusG'],1
+2768,2679159,2679585,,,['LSU ribosomal protein L11p (L12e)'],1
+2769,2679746,2680442,,,['LSU ribosomal protein L1p (L10Ae)'],1
+2770,2680719,2681220,,,['LSU ribosomal protein L10p (P0)'],1
+2771,2681274,2681637,,,['LSU ribosomal protein L7p/L12p (P1/P2)'],1
+2772,2681763,2682369,,,['16S rRNA (guanine(1207)-N(2))-methyltransferase (EC 2.1.1.172)'],1
+2773,2682805,2686354,,,['DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)'],1
+2774,2686407,2690025,,,"[""DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)""]",1
+2775,2690136,2690388,,,['Firmicutes ribosomal L7Ae family protein'],1
+2776,2690488,2690902,,,['SSU ribosomal protein S12p (S23e)'],1
+2777,2690939,2691410,,,['SSU ribosomal protein S7p (S5e)'],1
+2778,2691460,2693539,,,['Translation elongation factor G'],1
+2779,2693663,2694854,,,['Translation elongation factor Tu'],1
+2780,2695592,2695901,,,['SSU ribosomal protein S10p (S20e)'],1
+2781,2695921,2696548,,,['LSU ribosomal protein L3p (L3e)'],1
+2782,2696576,2697200,,,['LSU ribosomal protein L4p (L1e)'],1
+2783,2697199,2697490,,,['LSU ribosomal protein L23p (L23Ae)'],1
+2784,2697523,2698357,,,['LSU ribosomal protein L2p (L8e)'],1
+2785,2698402,2698681,,,['SSU ribosomal protein S19p (S15e)'],1
+2786,2698700,2699045,,,['LSU ribosomal protein L22p (L17e)'],1
+2787,2699048,2699690,,,['SSU ribosomal protein S3p (S3e)'],1
+2788,2699708,2700143,,,['LSU ribosomal protein L16p (L10e)'],1
+2789,2700132,2700297,,,['LSU ribosomal protein L29p (L35e)'],1

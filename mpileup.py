@@ -148,7 +148,7 @@ def filter_vcf_qual(path_to_files, file_extension, qual=20):
         except Exception as e:
             print(e)
 
-def bcftools_mpileup_multi(path_to_files, file_extension, path_to_reference_file):
+def bcftools_mpileup_multi(path_to_files, file_extension, path_to_reference_file, depth):
     '''Runs bcftools mpileup on multiple bam files (all bam files present in a folder). Path to faidx indexed reference sequence file path_to_reference_file 
     needs to be included.'''
     for folder in os.listdir(path_to_files):
@@ -609,14 +609,23 @@ def main():
     #find_max_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out')
     #find_renamed_isec('/external_HDD4/linda/unc_mouse_trial/snp_pipeline','.vcf','isec_out','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/isec_intersections')
 
-    # move all files ending in fltq.vcf.gz to all_samples_merged
-    # find . -name "*.fltq.vcf.gz.csi" -exec mv {} /external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged \;
-    # find . -name "*Allobacillus*.fltq.vcf.gz.csi" -exec mv {} /external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Allobacillus_halotolerans \;
+    # Problem with Imtechella compressed vcf files - run again compression and indexing again
 
-    #bcftools_norm('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/NC_011993.1_Escherichia_coli_LF82','.fltq.vcf.gz','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
-    bcftools_merge_norms('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/NC_011993.1_Escherichia_coli_LF82','.norm.fltq.vcf.gz')
+    #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_15/Imtechella_halotolerans_length_3113269', '.fltqs.vcf')
+    #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_15/Imtechella_halotolerans_length_3113269', '.fltq.vcf.gz')
+
+    # move all files ending in fltq.vcf.gz to all_samples_merged
+
+    #find . -name "*Imtechella*.fltq.vcf.gz"  -exec mv {} /external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Imtechella_halotolerans \;
+    #find . -name "*Imtechella*.fltq.vcf.gz.csi" -exec mv {} /external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Imtechella_halotolerans \;
+
+    #bcftools_norm('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Imtechella_halotolerans','.fltq.vcf.gz','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta')
+    bcftools_merge_norms('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Imtechella_halotolerans','.norm.fltq.vcf.gz')
 
     #validate_num_sample_files('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/NC_017316.1_Enterococcus_faecalis_OG1RF','.vcf.gz','/external_HDD4/linda/unc_mouse_trial/genomes/dev/all_samples.txt')
+
+
+
 
 
     # pars = read_params(sys.argv)
@@ -631,7 +640,8 @@ def main():
     # Compress files with bgzip and then index before filtering can be applied
     #bcftools_compress_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf')
     #bcftools_index_vcf('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
-    #htsfile('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/', '.fltq.vcf.gz')
+
+    #htsfile('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/all_samples_merged/Imtechella_halotolerans', 'norm.fltq.vcf.gz')
 
     # Filter fltq.vcf.gz by species 
     #filter_bcf_by_species('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/mouse_1', '.fltq.vcf.gz')

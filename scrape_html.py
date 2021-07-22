@@ -2,7 +2,6 @@ import snptools as snp
 import re
 import pandas as pd
 from bs4 import BeautifulSoup
-
 import snptools as snp
 
 # path to Tom's breseq output
@@ -340,9 +339,10 @@ def append_data(path_to_dfs,file_extension):
 
 
 def main():
+    scrape_tennis('https://www.usopen.org/en_US/scores/extrastats/index.html?promo=subnav')
     #scrape_snpeff_html_to_txt('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/','.html','Imtechella','/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports')
     #scrape_snpeff_txt_to_csv('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','.txt')
-    append_data('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','csv')
+    #append_data('/external_HDD4/linda/unc_mouse_trial/snp_pipeline/html_reports','csv')
 
 
 if __name__ == '__main__':

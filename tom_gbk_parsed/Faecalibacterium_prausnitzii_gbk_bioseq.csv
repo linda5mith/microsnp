@@ -1,0 +1,40 @@
+,Start,End,Protein_ID,Gene,Product,Strand
+0,0,36069,['WP_011222012.1'],,['type II toxin-antitoxin system RelB/DinJ family antitoxin'],-1
+1,301,643,['WP_080628803.1'],,['replication protein'],-1
+2,2060,2861,['WP_011222015.1'],,['AAA family ATPase'],1
+3,2862,3213,['WP_011222016.1'],,['DUF5388 domain-containing protein'],1
+4,3815,4370,['WP_011222018.1'],,['recombinase family protein'],-1
+5,5712,6072,['WP_011222020.1'],,['winged helix-turn-helix transcriptional regulator'],1
+6,6058,6421,['WP_011222021.1'],['arsD'],['arsenite efflux transporter metallochaperone ArsD'],1
+7,6504,8235,['WP_011222022.1'],['arsA'],['arsenical pump-driving ATPase'],1
+8,8293,9589,['WP_011222023.1'],['arsB'],['arsenical efflux pump membrane protein ArsB'],1
+9,9605,9935,['WP_003678453.1'],,['hypothetical protein'],1
+10,9957,10257,['WP_003678452.1'],,['arsenic metallochaperone ArsD family protein'],1
+11,10280,11681,['WP_011222024.1'],,['FAD-dependent oxidoreductase'],1
+12,12030,12399,['WP_003678450.1'],,['winged helix-turn-helix transcriptional regulator'],1
+13,12400,13015,['WP_011222025.1'],,['CadD family cadmium resistance transporter'],1
+14,13099,14131,['WP_165442612.1'],,['IS30 family transposase'],-1
+15,14239,14404,['WP_158071088.1'],,['hypothetical protein'],-1
+16,14407,14623,['WP_011222028.1'],,['hypothetical protein'],-1
+17,14745,16881,['WP_011222029.1'],['topB'],['type IA DNA topoisomerase'],-1
+18,16887,17298,['WP_011222030.1'],,['hypothetical protein'],-1
+19,17312,18152,['WP_164920209.1'],,['conjugal transfer protein'],-1
+20,18175,18550,['WP_011222032.1'],,['hypothetical protein'],-1
+21,18564,20076,['WP_011222033.1'],,['type IV secretory system conjugative DNA transfer family protein'],-1
+22,20077,20548,['WP_011222034.1'],,['conjugal transfer protein'],-1
+23,20548,20917,['WP_011222035.1'],,['thioredoxin family protein'],-1
+24,20903,21521,['WP_011222036.1'],,['hypothetical protein'],-1
+25,21535,22690,['WP_011222037.1'],,['CHAP domain-containing protein'],-1
+26,22690,24109,['WP_011222038.1'],,['conjugal transfer protein'],-1
+27,24101,26120,['WP_011222039.1'],,['DUF87 domain-containing protein'],-1
+28,26131,26791,['WP_011222040.1'],,['conjugal transfer protein'],-1
+29,26759,27122,['WP_011222041.1'],,['conjugal transfer protein'],-1
+30,27142,27478,['WP_003590767.1'],,['CagC family type IV secretion system protein'],-1
+31,27479,28094,['WP_011222042.1'],,['hypothetical protein'],-1
+32,28132,28441,['WP_056980345.1'],,['hypothetical protein'],-1
+33,28523,30584,['WP_011222044.1'],,['MobA/MobL family protein'],-1
+34,30837,31065,['WP_164920210.1'],,['hypothetical protein'],1
+35,31087,31366,['WP_011222046.1'],,['hypothetical protein'],1
+36,31355,31670,['WP_011222047.1'],,['hypothetical protein'],-1
+37,31878,32466,['WP_011222048.1'],,['recombinase family protein'],-1
+38,32644,35638,['WP_011222049.1'],,['Tn3 family transposase'],1

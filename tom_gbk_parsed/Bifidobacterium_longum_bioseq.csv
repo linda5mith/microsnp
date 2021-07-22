@@ -1,0 +1,1934 @@
+,Start,End,Protein_ID,Gene,Product,Strand
+0,0,1503,['WP_007051767.1'],['dnaA'],['chromosomal replication initiator protein DnaA'],1
+1,2238,3363,['WP_007051765.1'],['dnaN'],['DNA polymerase III subunit beta'],1
+2,3390,4629,['WP_007054593.1'],,['DNA replication/repair protein RecF'],1
+3,4625,5096,['WP_007051763.1'],,['DUF721 domain-containing protein'],1
+4,5228,7367,['WP_173361534.1'],['gyrB'],['DNA topoisomerase (ATP-hydrolyzing) subunit B'],1
+5,7434,10086,['WP_007051761.1'],['gyrA'],['DNA gyrase subunit A'],1
+6,10155,10722,['WP_007051760.1'],,['DUF3566 domain-containing protein'],1
+7,11405,12119,['WP_007051759.1'],,['hypothetical protein'],1
+8,12115,13702,['WP_007054589.1'],,['pectinesterase'],1
+9,14099,15446,['WP_007051757.1'],['gdhA'],['NADP-specific glutamate dehydrogenase'],-1
+10,15764,16199,['WP_007051756.1'],,['Lrp/AsnC family transcriptional regulator'],-1
+11,16404,17739,['WP_007056527.1'],,['pyridoxal phosphate-dependent aminotransferase'],1
+12,18249,18585,['WP_007051753.1'],,['hypothetical protein'],1
+13,18598,19447,['WP_013582287.1'],,['hypothetical protein'],1
+14,20714,20972,,,['transposase'],-1
+15,21386,22397,['WP_114555269.1'],,['IS30 family transposase'],-1
+16,22517,23279,['WP_013582291.1'],['istB'],['IS21-like element helper ATPase IstB'],-1
+17,23275,24733,['WP_013582292.1'],['istA'],['IS21 family transposase'],-1
+18,24876,25107,,,['IS30 family transposase'],-1
+19,25216,26287,['WP_196768203.1'],,['AAA family ATPase'],-1
+20,26379,27186,['WP_007054570.1'],,['M48 family metallopeptidase'],1
+21,27282,27648,['WP_007051744.1'],,['hypothetical protein'],1
+22,27906,29220,['WP_013582295.1'],,['ATP-binding protein'],-1
+23,29454,29934,['WP_007051742.1'],,['DNA starvation/stationary phase protection protein'],-1
+24,30030,31374,['WP_013582296.1'],,['HlyC/CorC family transporter'],-1
+25,31633,32317,['WP_007056544.1'],,['carbonic anhydrase'],-1
+26,32522,33086,['WP_007056578.1'],['ahpC'],['peroxiredoxin'],1
+27,33254,35171,['WP_007056574.1'],,['FAD-dependent oxidoreductase'],1
+28,35287,36574,['WP_007051737.1'],,['OFA family MFS transporter'],-1
+29,37128,38127,['WP_013582297.1'],,['LacI family DNA-binding transcriptional regulator'],1
+30,38335,39991,['WP_007054562.1'],,['putative DNA binding domain-containing protein'],1
+31,40157,40388,,,['phosphoenolpyruvate carboxylase'],-1
+32,40482,41875,,,['hypothetical protein'],-1
+33,42312,42609,['WP_126623106.1'],,['hypothetical protein'],-1
+34,42724,43795,['WP_007054557.1'],,['hypothetical protein'],-1
+35,44302,44809,['WP_157821773.1'],,['hypothetical protein'],1
+36,45133,47530,['WP_008783074.1'],,['DUF1906 domain-containing protein'],1
+37,47629,47947,['WP_138267181.1'],,['hypothetical protein'],-1
+38,48294,49128,['WP_007051730.1'],,['hypothetical protein'],1
+39,49198,49834,['WP_007054553.1'],,['hypothetical protein'],-1
+40,49978,52732,['WP_013582301.1'],,['phosphoenolpyruvate carboxylase'],-1
+41,53017,54898,['WP_008783076.1'],,['threonine/serine exporter family protein'],1
+42,55130,56771,['WP_007054550.1'],,['sodium/proline symporter'],1
+43,57100,58087,['WP_007058012.1'],,['hypothetical protein'],-1
+44,58340,59960,['WP_013582302.1'],,['amidohydrolase family protein'],1
+45,60137,61229,['WP_003827911.1'],['trpS'],['tryptophan--tRNA ligase'],-1
+46,61362,61752,['WP_007054547.1'],,['DUF3073 domain-containing protein'],1
+47,61857,62277,['WP_007051722.1'],,['hypothetical protein'],-1
+48,62484,64932,['WP_007051721.1'],,['glycogen/starch/alpha-glucan phosphorylase'],1
+49,65145,65364,['WP_007054546.1'],,['hypothetical protein'],-1
+50,65459,66314,['WP_007058477.1'],,['rhomboid family intramembrane serine protease'],1
+51,66947,67424,['WP_007051717.1'],['crgA'],['cell division protein CrgA'],-1
+52,67507,68308,['WP_007051716.1'],,['DUF881 domain-containing protein'],1
+53,68304,69543,['WP_012472056.1'],,['class E sortase'],1
+54,69593,70238,['WP_007055904.1'],,['glutamine amidotransferase'],1
+55,70461,72534,['WP_032740561.1'],['pknB'],['Stk1 family PASTA domain-containing Ser/Thr kinase'],-1
+56,72530,73481,['WP_007051712.1'],,['serine/threonine protein kinase'],-1
+57,73477,74944,['WP_013582303.1'],,['serine hydrolase'],-1
+58,74940,76500,['WP_013582304.1'],,['FtsW/RodA/SpoVE family cell cycle protein'],-1
+59,76496,78191,['WP_007051709.1'],,['protein phosphatase 2C domain-containing protein'],-1
+60,78195,78726,['WP_007051708.1'],,['FHA domain-containing protein'],-1
+61,78755,79457,['WP_007051707.1'],,['DUF3662 domain-containing protein'],-1
+62,79641,82086,['WP_013582305.1'],,['prolyl oligopeptidase family serine peptidase'],-1
+63,82204,83296,['WP_011068564.1'],,['alpha/beta fold hydrolase'],1
+64,83438,84527,['WP_015713203.1'],,['VWA domain-containing protein'],1
+65,84526,85246,['WP_013582307.1'],,['hypothetical protein'],1
+66,85257,85443,['WP_173361535.1'],,['hypothetical protein'],-1
+67,85757,85952,['WP_012472055.1'],,['hypothetical protein'],-1
+68,86167,87022,['WP_013582308.1'],,['toxic anion resistance protein'],1
+69,87402,87906,['WP_007055906.1'],,['Hsp20/alpha crystallin family protein'],1
+70,88232,89189,['WP_007055929.1'],['yddG'],['aromatic amino acid DMT transporter YddG'],1
+71,89356,89590,['WP_007055928.1'],,['hypothetical protein'],-1
+72,90044,91427,['WP_032740565.1'],,['prolyl oligopeptidase family serine peptidase'],1
+73,91423,93997,['WP_013582310.1'],,['DUF2156 domain-containing protein'],1
+74,94533,95508,['WP_007055903.1'],['msrB'],['peptide-methionine (R)-S-oxide reductase MsrB'],1
+75,95504,95597,,,['flavin-nucleotide-binding protein'],1
+76,95795,99002,['WP_007055924.1'],,['DEAD/DEAH box helicase'],-1
+77,99074,99488,['WP_007055916.1'],,['(deoxy)nucleoside triphosphate pyrophosphohydrolase'],-1
+78,100550,100883,['WP_007051681.1'],,['putative heavy metal-binding protein'],1
+79,100964,101429,['WP_010081395.1'],,['GNAT family N-acetyltransferase'],1
+80,101509,102367,['WP_012472051.1'],,['hemolysin III family protein'],-1
+81,102470,102707,['WP_013582311.1'],,['hypothetical protein'],-1
+82,103613,104927,['WP_013582312.1'],['tgt'],['tRNA guanosine(34) transglycosylase Tgt'],-1
+83,105343,107380,['WP_032740570.1'],,['trypsin-like peptidase domain-containing protein'],1
+84,107791,109912,['WP_013582314.1'],,['heavy metal translocating P-type ATPase'],1
+85,110088,111138,['WP_007056828.1'],,['LacI family DNA-binding transcriptional regulator'],1
+86,111143,111404,['WP_007056852.1'],,['twin-arginine translocase TatA/TatE family subunit'],-1
+87,111405,112437,['WP_032740572.1'],['tatC'],['twin-arginine translocase subunit TatC'],-1
+88,112484,112775,['WP_013410461.1'],,['twin-arginine translocase TatA/TatE family subunit'],-1
+89,113454,115857,['WP_013410459.1'],,['glycoside hydrolase family 127 protein'],1
+90,115946,118427,['WP_013582316.1'],,['Ig-like domain-containing protein'],1
+91,118816,119617,['WP_013582317.1'],,['DUF4143 domain-containing protein'],-1
+92,119747,121199,['WP_015713215.1'],,['FAD-dependent oxidoreductase'],1
+93,121373,122312,['WP_007055925.1'],['htpX'],['zinc metalloprotease HtpX'],1
+94,122522,123590,['WP_013582319.1'],['fbaA'],['class II fructose-bisphosphate aldolase'],-1
+95,123805,125092,['WP_013582320.1'],,['adenylosuccinate synthase'],1
+96,125115,126699,['WP_007051667.1'],,['ClC family H(+)/Cl(-) exchange transporter'],1
+97,126885,127980,['WP_032685028.1'],,['CrcB family protein'],1
+98,127979,128375,['WP_007051665.1'],,['CrcB family protein'],1
+99,128649,129735,['WP_007051663.1'],,['LacI family DNA-binding transcriptional regulator'],1
+100,129943,131728,['WP_013582322.1'],,['KUP/HAK/KT family potassium transporter'],1
+101,132144,133692,['WP_010081386.1'],,['alpha-L-arabinofuranosidase'],1
+102,133863,134898,['WP_007051660.1'],,['LacI family DNA-binding transcriptional regulator'],1
+103,134983,135991,['WP_007051659.1'],,['hypothetical protein'],-1
+104,136028,137246,,,['IS3-like element ISBlo11 family transposase'],-1
+105,137246,137366,,,['IS256 family transposase'],-1
+106,137700,139227,['WP_013582324.1'],,['sucrose phosphorylase'],1
+107,139444,141082,['WP_013582325.1'],,['MFS transporter'],1
+108,141145,142189,['WP_013582326.1'],,['LacI family DNA-binding transcriptional regulator'],1
+109,142816,144184,['WP_013582327.1'],,['MHS family MFS transporter'],1
+110,144377,145430,['WP_012576581.1'],['ilvC'],['ketol-acid reductoisomerase'],1
+111,145858,146911,['WP_007051650.1'],['ilvC'],['ketol-acid reductoisomerase'],1
+112,147092,148907,['WP_013582328.1'],,['glycoside hydrolase family 13 protein'],-1
+113,149066,150101,['WP_013582329.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+114,150233,152471,['WP_013582330.1'],['malQ'],['4-alpha-glucanotransferase'],-1
+115,152731,153013,['WP_007055544.1'],,['hypothetical protein'],-1
+116,153057,153714,['WP_008783499.1'],,['hypothetical protein'],1
+117,153725,154736,['WP_007051644.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+118,155005,155722,['WP_007051643.1'],,['ABC transporter permease subunit'],1
+119,155833,158371,['WP_013582331.1'],,['glycoside hydrolase family 31 protein'],1
+120,158705,158984,['WP_007057599.1'],,['ATP-binding protein'],-1
+121,159352,161233,['WP_007051640.1'],['dnaK'],['molecular chaperone DnaK'],1
+122,161232,161889,['WP_007055523.1'],['grpE'],['nucleotide exchange factor GrpE'],1
+123,161980,163000,['WP_007051638.1'],,['DnaJ domain-containing protein'],1
+124,163014,163602,['WP_007054672.1'],,['helix-turn-helix transcriptional regulator'],1
+125,163874,165227,['WP_007054673.1'],,['purine/pyrimidine permease'],1
+126,165263,166385,['WP_007051635.1'],,['coenzyme F390 synthetase'],1
+127,166371,167871,['WP_007057589.1'],,['acyl-CoA reductase'],1
+128,167957,168728,['WP_007051633.1'],,['SDR family oxidoreductase'],1
+129,168840,169512,['WP_007051632.1'],,['HAD family hydrolase'],1
+130,169662,170388,['WP_007051631.1'],,['DedA family protein'],1
+131,170610,171561,['WP_007051630.1'],,['P-loop NTPase'],1
+132,171567,172635,['WP_007051629.1'],['tadA'],['Flp pilus assembly complex ATPase component TadA'],1
+133,172634,173291,['WP_007054679.1'],['tadB'],['Flp pilus assembly protein TadB'],1
+134,173287,173890,['WP_032740573.1'],['tadC'],['Flp pilus assembly protein TadC'],1
+135,174174,174462,['WP_007051627.1'],,['DUF4244 domain-containing protein'],1
+136,174467,174845,['WP_007051626.1'],,['pilus assembly protein'],1
+137,174894,175272,['WP_013410434.1'],,['flp pilus-assembly TadE/G-like family protein'],1
+138,175320,176451,['WP_007051624.1'],,['hypothetical protein'],1
+139,176648,177248,['WP_013582333.1'],,['TetR/AcrR family transcriptional regulator'],-1
+140,177442,180355,['WP_013582334.1'],,['DNA polymerase III subunit gamma and tau'],1
+141,180380,180983,['WP_007051621.1'],['recR'],['recombination protein RecR'],1
+142,180979,182113,['WP_007054686.1'],,['class C sortase'],-1
+143,182476,182773,['WP_162094056.1'],,['hypothetical protein'],1
+144,183000,184284,['WP_007054687.1'],,['ATP-binding protein'],1
+145,184644,185409,['WP_007051616.1'],,['aspartate kinase'],1
+146,185464,186031,['WP_007051615.1'],,['ACT domain-containing protein'],1
+147,186112,187207,['WP_007051614.1'],['asd'],['aspartate-semialdehyde dehydrogenase'],-1
+148,187374,187995,['WP_007051613.1'],,['hypothetical protein'],1
+149,188068,188239,['WP_007051612.1'],,['hypothetical protein'],1
+150,188329,189796,['WP_007055558.1'],,['metallophosphoesterase family protein'],1
+151,189916,190094,,,['transposase'],-1
+152,190287,192204,['WP_013582336.1'],['leuA'],['2-isopropylmalate synthase'],1
+153,192275,194459,['WP_007057597.1'],,['penicillin-binding protein'],-1
+154,195057,196209,['WP_007055559.1'],,['phosphatase PAP2 family protein'],1
+155,196332,199419,['WP_013582338.1'],['topA'],['type I DNA topoisomerase'],1
+156,199696,200317,['WP_007055528.1'],['tmk'],['dTMP kinase'],1
+157,200313,201465,['WP_007051603.1'],,"[""DNA polymerase III subunit delta'""]",1
+158,201583,202138,['WP_007057741.1'],,['YbhB/YbcL family Raf kinase inhibitor-like protein'],1
+159,202280,203882,['WP_007051601.1'],,['C69 family dipeptidase'],1
+160,204013,205531,['WP_007055561.1'],,['formate--tetrahydrofolate ligase'],1
+161,205834,206182,['WP_013582339.1'],,['hypothetical protein'],-1
+162,206383,206920,['WP_007051598.1'],,['GtrA family protein'],1
+163,206967,208413,['WP_007054697.1'],,['MFS transporter'],-1
+164,208674,209334,['WP_007051596.1'],,['histidine phosphatase family protein'],1
+165,209431,210385,['WP_007054699.1'],,['hypothetical protein'],1
+166,210463,211381,['WP_007055536.1'],,['D-hexose-6-phosphate mutarotase'],1
+167,211498,212680,['WP_013582340.1'],,['DUF805 domain-containing protein'],-1
+168,213237,214758,['WP_007051591.1'],,['glutamate--tRNA ligase'],1
+169,215687,216176,['WP_007051589.1'],,['hypothetical protein'],1
+170,216572,222473,['WP_013582342.1'],,['FIVAR domain-containing protein'],1
+171,222626,222767,['WP_007054707.1'],,['hypothetical protein'],-1
+172,223097,223613,['WP_032743275.1'],,['IS3 family transposase'],1
+173,223612,224467,,,['IS3 family transposase'],1
+174,224679,225618,['WP_032740577.1'],,['LysR family transcriptional regulator'],-1
+175,225811,226351,['WP_032740579.1'],,['flavodoxin'],1
+176,226647,226977,['WP_032682613.1'],,['helix-turn-helix transcriptional regulator'],-1
+177,227174,227816,['WP_007056316.1'],,['NAD(P)H-binding protein'],1
+178,228947,230741,['WP_007054709.1'],,['FTR1 family protein'],1
+179,230914,231598,['WP_007051584.1'],,['iron transporter'],1
+180,231747,233025,['WP_007054710.1'],,['DUF2318 domain-containing protein'],1
+181,233046,234351,['WP_007051582.1'],,['ABC transporter permease'],1
+182,234384,235608,['WP_013582348.1'],,['ABC transporter permease'],1
+183,235623,236421,['WP_007051580.1'],,['ABC transporter ATP-binding protein'],1
+184,236536,237100,['WP_007056748.1'],,['FMN-binding protein'],1
+185,237105,237705,['WP_007051578.1'],,['TetR/AcrR family transcriptional regulator'],-1
+186,237819,239982,['WP_007051577.1'],,['YhgE/Pip domain-containing protein'],-1
+187,239978,242609,['WP_007056315.1'],,['YhgE/Pip domain-containing protein'],-1
+188,242963,244250,['WP_007056309.1'],,['putative ABC transporter permease'],1
+189,244428,245883,['WP_007051573.1'],['gndA'],['NADP-dependent phosphogluconate dehydrogenase'],1
+190,246186,247029,['WP_007056307.1'],,['6-phosphogluconolactonase'],-1
+191,247255,248281,['WP_013582349.1'],,['glucose-6-phosphate dehydrogenase assembly protein OpcA'],-1
+192,248277,249816,['WP_007056756.1'],,['glucose-6-phosphate dehydrogenase'],-1
+193,250139,251774,['WP_007054723.1'],,['C69 family dipeptidase'],1
+194,251847,252882,['WP_007056302.1'],,['glycosyltransferase family 2 protein'],-1
+195,252905,253727,['WP_007054725.1'],,['TetR/AcrR family transcriptional regulator'],-1
+196,253834,255112,['WP_007056312.1'],['ftsY'],['signal recognition particle-docking protein FtsY'],1
+197,255479,256775,['WP_003828095.1'],,['ammonium transporter'],1
+198,256776,257115,['WP_007051565.1'],,['P-II family nitrogen regulator'],1
+199,257223,259050,['WP_007058100.1'],,['nucleotidyltransferase domain-containing protein'],1
+200,259083,260529,['WP_007051563.1'],,['MATE family efflux transporter'],-1
+201,260734,262264,['WP_007054729.1'],['dnaB'],['replicative DNA helicase'],1
+202,262263,263736,['WP_013410406.1'],,['Mur ligase family protein'],1
+203,263840,264593,['WP_013582350.1'],,['glutamine amidotransferase'],1
+204,264741,265029,['WP_007054731.1'],,['phasin family protein'],1
+205,265025,266846,['WP_007051558.1'],,['AarF/ABC1/UbiB kinase family protein'],1
+206,266860,267883,['WP_007054733.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+207,268368,269694,['WP_007051556.1'],,['sugar ABC transporter substrate-binding protein'],1
+208,269981,270908,['WP_007054735.1'],,['sugar ABC transporter permease'],1
+209,270928,271747,['WP_007051554.1'],,['carbohydrate ABC transporter permease'],1
+210,271749,273726,['WP_013582351.1'],['hypBA1'],['beta-L-arabinofuranosidase'],1
+211,274424,280256,['WP_013582352.1'],,['beta-L-arabinobiosidase'],1
+212,280360,284077,['WP_013582353.1'],,['family 43 glycosylhydrolase'],1
+213,284207,285041,['WP_013582354.1'],,['YggS family pyridoxal phosphate-dependent enzyme'],1
+214,285116,286130,['WP_007056506.1'],,['ribose-phosphate diphosphokinase'],-1
+215,286251,286734,['WP_007051547.1'],,['hypothetical protein'],-1
+216,286898,287189,['WP_003828111.1'],['rpsF'],['30S ribosomal protein S6'],1
+217,287245,287902,['WP_007057715.1'],,['single-stranded DNA-binding protein'],1
+218,287962,288211,['WP_007051545.1'],,['30S ribosomal protein S18'],1
+219,288230,288677,['WP_007051544.1'],['rplI'],['50S ribosomal protein L9'],1
+220,289063,289324,['WP_007051543.1'],,['HPr family phosphocarrier protein'],1
+221,289323,291003,['WP_007051542.1'],['ptsP'],['phosphoenolpyruvate--protein phosphotransferase'],1
+222,291236,291971,['WP_007051540.1'],,['aquaporin family protein'],1
+223,292054,294763,['WP_007051539.1'],,['HAD-IC family P-type ATPase'],-1
+224,294874,295156,['WP_007051538.1'],,['metal-sensitive transcriptional regulator'],1
+225,295198,296623,['WP_007054746.1'],['rmuC'],['DNA recombination protein RmuC'],1
+226,296619,297249,['WP_007051536.1'],,['orotate phosphoribosyltransferase'],1
+227,297342,298191,['WP_007051535.1'],,['RNA methyltransferase'],1
+228,298357,298657,['WP_011068473.1'],['gatC'],['Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatC'],1
+229,298660,300202,['WP_007054751.1'],['gatA'],['Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatA'],1
+230,300227,301727,['WP_007051530.1'],['gatB'],['Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatB'],1
+231,302022,303087,['WP_007051529.1'],,['GNAT family N-acetyltransferase'],1
+232,303097,303412,['WP_003828150.1'],,['DUF2469 domain-containing protein'],1
+233,303585,305439,['WP_007054753.1'],,['histidine-type phosphatase'],1
+234,305657,307271,['WP_007051527.1'],,['NAD(P)/FAD-dependent oxidoreductase'],1
+235,307476,309546,['WP_007056503.1'],['rho'],['transcription termination factor Rho'],1
+236,309853,310243,['WP_007051524.1'],,['chorismate mutase'],1
+237,310364,312449,['WP_013582355.1'],,['hypothetical protein'],1
+238,312674,315410,['WP_007054756.1'],['valS'],['valine--tRNA ligase'],-1
+239,315553,317080,['WP_007051521.1'],,['ABC transporter substrate-binding protein'],-1
+240,317141,317828,['WP_007051520.1'],['nth'],['endonuclease III'],-1
+241,317886,318669,['WP_007054758.1'],,['response regulator transcription factor'],-1
+242,318847,319552,['WP_013582356.1'],,['hypothetical protein'],-1
+243,319660,320245,['WP_007051517.1'],,['manganese efflux pump'],-1
+244,320478,320973,['WP_007054759.1'],,['inorganic diphosphatase'],-1
+245,321200,323441,['WP_007054760.1'],,"['alpha-1,4-glucan--maltose-1-phosphate maltosyltransferase']",-1
+246,323684,325676,['WP_013582357.1'],,['cell surface protein'],1
+247,325641,325923,['WP_013140164.1'],,['hypothetical protein'],-1
+248,326283,327318,['WP_007051484.1'],,['homoserine O-succinyltransferase'],1
+249,327779,328592,['WP_007051483.1'],['atpB'],['F0F1 ATP synthase subunit A'],1
+250,328695,328923,['WP_003831420.1'],['atpE'],['ATP synthase F0 subunit C'],1
+251,328979,329498,['WP_007051482.1'],,['F0F1 ATP synthase subunit B'],1
+252,329532,330369,['WP_007054765.1'],,['F0F1 ATP synthase subunit delta'],1
+253,330444,332076,['WP_007051480.1'],,['F0F1 ATP synthase subunit alpha'],1
+254,332079,333003,['WP_007051479.1'],,['F0F1 ATP synthase subunit gamma'],1
+255,333011,334484,['WP_007051478.1'],['atpD'],['F0F1 ATP synthase subunit beta'],1
+256,334483,334777,['WP_007054766.1'],,['F0F1 ATP synthase subunit epsilon'],1
+257,334864,335635,['WP_007051476.1'],['nucS'],['endonuclease NucS'],1
+258,335680,336670,['WP_007051475.1'],,['FKBP-type peptidyl-prolyl cis-trans isomerase'],-1
+259,336750,337830,['WP_007051474.1'],,['hypothetical protein'],1
+260,337829,338837,['WP_007057698.1'],,['hypothetical protein'],1
+261,339083,340058,['WP_032740584.1'],,['tetratricopeptide repeat protein'],1
+262,340140,340767,['WP_007054770.1'],,['CYTH domain-containing protein'],-1
+263,341315,341705,['WP_007054771.1'],,['Rid family detoxifying hydrolase'],1
+264,341887,342805,['WP_010081634.1'],,['1-acyl-sn-glycerol-3-phosphate acyltransferase'],1
+265,342898,343900,['WP_007051468.1'],,['NAD(P)-dependent glycerol-3-phosphate dehydrogenase'],1
+266,344086,345274,['WP_007055652.1'],,['D-alanine--D-alanine ligase'],1
+267,345526,346693,['WP_007051466.1'],,['ABC transporter substrate-binding protein'],1
+268,346704,347655,['WP_007055662.1'],,['ABC transporter permease subunit'],1
+269,347651,348506,['WP_007051464.1'],,['ABC transporter permease subunit'],1
+270,348510,349788,['WP_007054774.1'],,['ABC transporter ATP-binding protein'],1
+271,350091,351135,['WP_007051462.1'],,['CPBP family intramembrane metalloprotease'],1
+272,351173,351971,['WP_007051461.1'],,['mechanosensitive ion channel'],-1
+273,352051,353485,['WP_007051460.1'],,['aspartate ammonia-lyase'],-1
+274,353602,354334,['WP_007051459.1'],,['TetR/AcrR family transcriptional regulator'],-1
+275,354424,355831,['WP_007051458.1'],,['DUF2974 domain-containing protein'],-1
+276,356152,356704,['WP_007051457.1'],,['methylated-DNA--[protein]-cysteine S-methyltransferase'],-1
+277,357465,358362,['WP_007051456.1'],,['helix-turn-helix transcriptional regulator'],1
+278,359693,360710,['WP_007051454.1'],,['sugar kinase'],-1
+279,361127,361322,['WP_007051452.1'],,['50S ribosomal protein L28'],1
+280,361433,364265,['WP_007055660.1'],,['ATP-dependent DNA helicase RecG'],1
+281,364491,365103,['WP_013582362.1'],['rsmD'],['16S rRNA (guanine(966)-N(2))-methyltransferase RsmD'],1
+282,365126,365942,['WP_007054789.1'],['trmD'],['tRNA (guanosine(37)-N1)-methyltransferase TrmD'],-1
+283,366015,367662,['WP_013582363.1'],,['U32 family peptidase'],1
+284,367739,368720,['WP_013582364.1'],,['laccase domain-containing protein'],1
+285,368799,369675,['WP_007054792.1'],,['2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase'],1
+286,369684,370362,['WP_007051445.1'],,['pyroglutamyl-peptidase I'],1
+287,370509,372087,['WP_013582365.1'],,['cell division protein'],1
+288,372201,373545,['WP_007055726.1'],,['C1 family peptidase'],1
+289,373867,374956,['WP_171022676.1'],,['3-deoxy-7-phosphoheptulonate synthase'],1
+290,375276,376338,['WP_171845158.1'],,['3-deoxy-7-phosphoheptulonate synthase'],1
+291,376459,377173,['WP_013582367.1'],['mtnN'],"[""5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase""]",1
+292,377423,378755,['WP_007055698.1'],,['two-component sensor histidine kinase'],1
+293,378953,379658,['WP_007051437.1'],,['response regulator transcription factor'],1
+294,379907,381041,['WP_013582368.1'],['pstS'],['phosphate ABC transporter substrate-binding protein PstS'],1
+295,381251,382205,['WP_007055708.1'],['pstC'],['phosphate ABC transporter permease subunit PstC'],1
+296,382204,383203,['WP_008782854.1'],['pstA'],['phosphate ABC transporter permease PstA'],1
+297,383255,384035,['WP_013582369.1'],,['phosphate ABC transporter ATP-binding protein'],1
+298,384331,384910,['WP_007054801.1'],,['LemA family protein'],1
+299,384973,387232,['WP_013582370.1'],,['DUF2207 domain-containing protein'],1
+300,387297,388161,['WP_007051430.1'],,['aldo/keto reductase'],1
+301,388258,389311,['WP_013582371.1'],,['nucleoside hydrolase'],1
+302,389433,390057,['WP_007054805.1'],['rimM'],['ribosome maturation factor RimM'],-1
+303,390079,390313,['WP_007051427.1'],,['RNA-binding protein'],-1
+304,390333,390795,['WP_007054806.1'],['rpsP'],['30S ribosomal protein S16'],-1
+305,391027,392137,['WP_007054807.1'],,['endonuclease/exonuclease/phosphatase family protein'],-1
+306,392213,393866,['WP_022527326.1'],['ffh'],['signal recognition particle protein'],-1
+307,394170,395079,['WP_007055692.1'],,['cation transporter'],1
+308,395097,396747,['WP_007054809.1'],,['cysteine--tRNA ligase'],-1
+309,396965,397694,['WP_007054810.1'],,['type 1 glutamine amidotransferase'],1
+310,397741,400018,['WP_007054811.1'],,['ABC-F family ATP-binding cassette domain-containing protein'],1
+311,400070,400490,['WP_007051418.1'],,['type II toxin-antitoxin system VapC family toxin'],-1
+312,400499,400778,['WP_007054812.1'],,['Arc family DNA-binding protein'],-1
+313,400933,401488,['WP_007054813.1'],['ilvN'],['acetolactate synthase small subunit'],-1
+314,401504,403472,['WP_013582372.1'],,['acetolactate synthase large subunit'],-1
+315,403632,404361,['WP_007055729.1'],,['ribonuclease III'],-1
+316,404508,404703,['WP_007051413.1'],['rpmF'],['50S ribosomal protein L32'],-1
+317,404791,405421,['WP_007054816.1'],,['DUF177 domain-containing protein'],-1
+318,405509,406400,['WP_007057854.1'],,['cell division protein'],-1
+319,406407,406908,['WP_007051410.1'],['coaD'],['pantetheine-phosphate adenylyltransferase'],-1
+320,407181,407475,['WP_007055705.1'],,['DUF3039 domain-containing protein'],1
+321,407516,408527,['WP_010081165.1'],,['aldo/keto reductase'],-1
+322,408700,409129,['WP_007051407.1'],,['MerR family transcriptional regulator'],1
+323,409228,409855,['WP_013582373.1'],,['Pr6Pr family membrane protein'],-1
+324,410085,411408,['WP_007055715.1'],,['nicotinate phosphoribosyltransferase'],1
+325,411702,412467,['WP_007058292.1'],['rph'],['ribonuclease PH'],1
+326,412510,413269,['WP_007051401.1'],,['non-canonical purine NTP pyrophosphatase'],1
+327,413715,414984,['WP_007051400.1'],,['aminoacyltransferase'],1
+328,415057,416368,['WP_007051399.1'],,['aminoacyltransferase'],1
+329,416417,417698,['WP_013582374.1'],,['aminoacyltransferase'],1
+330,417780,418782,['WP_007054825.1'],,['hypothetical protein'],-1
+331,419502,421203,['WP_007057834.1'],['pgi'],['glucose-6-phosphate isomerase'],1
+332,421834,422200,['WP_007051394.1'],['rplS'],['50S ribosomal protein L19'],1
+333,422366,423224,['WP_007057862.1'],['lepB'],['signal peptidase I'],1
+334,423343,424183,['WP_007057855.1'],,['ribonuclease HII'],1
+335,424309,425425,['WP_007057860.1'],,['LacI family DNA-binding transcriptional regulator'],1
+336,425580,427227,['WP_013582375.1'],,['FGGY-family carbohydrate kinase'],1
+337,427311,428004,['WP_007051389.1'],,['L-ribulose-5-phosphate 4-epimerase'],1
+338,428235,429753,['WP_007051388.1'],['araA'],['L-arabinose isomerase'],1
+339,429936,430653,['WP_007057865.1'],,['gamma-glutamyl-gamma-aminobutyrate hydrolase family protein'],-1
+340,430926,432501,['WP_007054834.1'],,['hypothetical protein'],1
+341,432649,434017,['WP_007054835.1'],,['ABC transporter permease'],1
+342,434013,435237,['WP_007054836.1'],,['ABC transporter permease'],1
+343,435249,435885,['WP_007051383.1'],,['ABC transporter ATP-binding protein'],1
+344,436066,437890,['WP_013582376.1'],,['long-chain fatty acid--CoA ligase'],-1
+345,438046,438164,,,['MFS transporter'],1
+346,438398,442250,['WP_013582377.1'],,['ATP-binding cassette domain-containing protein'],1
+347,442302,444546,['WP_013582378.1'],,['sugar porter family MFS transporter'],-1
+348,444990,447150,['WP_013582379.1'],,['beta-galactosidase'],1
+349,447193,448249,['WP_013410360.1'],,['LacI family DNA-binding transcriptional regulator'],1
+350,448495,449767,['WP_008783747.1'],,['IS30-like element ISBlo4 family transposase'],1
+351,450010,451618,['WP_013582380.1'],,['MFS transporter'],1
+352,451974,452298,['WP_007054846.1'],,['glycosyl hydrolase 53 family protein'],1
+353,452978,453848,['WP_011068388.1'],,['aldo/keto reductase'],1
+354,453851,454595,['WP_013410358.1'],,['HNH endonuclease'],1
+355,454598,455969,['WP_013410357.1'],,['ATP-binding protein'],-1
+356,456258,457626,['WP_013582381.1'],,['Nramp family divalent metal transporter'],1
+357,457725,459315,['WP_013582382.1'],,['multidrug efflux MFS transporter'],-1
+358,459624,460896,['WP_008783747.1'],,['IS30-like element ISBlo4 family transposase'],1
+359,461083,462679,['WP_013582383.1'],,['sugar transferase'],1
+360,462766,464695,['WP_013582384.1'],,['DUF4012 domain-containing protein'],1
+361,464753,466232,['WP_013582385.1'],,['polysaccharide biosynthesis tyrosine autokinase'],1
+362,466236,467370,,,['glycosyltransferase family 4 protein'],1
+363,467441,468824,['WP_013582387.1'],,['glycosyltransferase'],1
+364,468876,469890,['WP_032740595.1'],,['capsular polysaccharide synthesis protein'],1
+365,469894,470905,['WP_074709860.1'],,['glycosyltransferase'],1
+366,470901,471999,['WP_013582389.1'],,['polysaccharide pyruvyl transferase family protein'],1
+367,472306,473278,['WP_197530259.1'],,['O-antigen ligase family protein'],1
+368,473261,474200,['WP_041473806.1'],,['glycosyltransferase family 2 protein'],1
+369,474212,475727,['WP_013582392.1'],,['hypothetical protein'],1
+370,475904,476912,['WP_013582393.1'],,['nitroreductase family protein'],1
+371,477038,478475,['WP_013582394.1'],,"['Coenzyme F420 hydrogenase/dehydrogenase, beta subunit C-terminal domain']",1
+372,478789,480007,['WP_013582395.1'],,['ATP-binding protein'],-1
+373,480079,480241,['WP_007051352.1'],,['hypothetical protein'],1
+374,480750,481185,['WP_013582397.1'],,['hypothetical protein'],-1
+375,481463,482024,['WP_013582398.1'],,['protein-tyrosine-phosphatase'],-1
+376,482205,482715,['WP_013582399.1'],,['hypothetical protein'],-1
+377,483036,483252,['WP_074709857.1'],,['helix-turn-helix transcriptional regulator'],-1
+378,483241,483667,['WP_032740603.1'],,['hypothetical protein'],-1
+379,483796,484792,['WP_013582402.1'],,['G5 domain-containing protein'],-1
+380,484861,485236,['WP_007051343.1'],['trxA'],['thioredoxin'],-1
+381,485491,486124,['WP_013582403.1'],,['NUDIX hydrolase family protein'],1
+382,486251,487109,['WP_007051340.1'],,['alpha/beta hydrolase'],1
+383,487118,488411,['WP_007057649.1'],['nudC'],['NAD(+) diphosphatase'],1
+384,488436,488850,['WP_007051338.1'],['gcvH'],['glycine cleavage system protein GcvH'],1
+385,488916,490248,['WP_007057650.1'],,['DUF2183 domain-containing protein'],1
+386,490308,492825,['WP_007051336.1'],,['S9 family peptidase'],1
+387,492889,493921,['WP_007051335.1'],,['3-isopropylmalate dehydrogenase'],1
+388,493978,495064,['WP_013582404.1'],,['lipoate--protein ligase family protein'],1
+389,495302,496022,['WP_007051333.1'],,['Crp/Fnr family transcriptional regulator'],1
+390,496125,498441,['WP_007051332.1'],,['penicillin-binding protein'],1
+391,498632,500006,['WP_007055215.1'],,['NADH:flavin oxidoreductase/NADH oxidase'],1
+392,500173,501325,['WP_007057648.1'],,['quinone-dependent dihydroorotate dehydrogenase'],-1
+393,501679,502495,['WP_023658105.1'],,['DeoR/GlpR transcriptional regulator'],1
+394,502487,503738,['WP_007053742.1'],['galT'],['galactose-1-phosphate uridylyltransferase'],1
+395,503754,505005,['WP_007057651.1'],['galK'],['galactokinase'],1
+396,505087,505360,['WP_007053740.1'],,['ACT domain-containing protein'],1
+397,505495,506860,['WP_007053739.1'],,['PFL family protein'],1
+398,507166,507829,['WP_007053738.1'],,"[""tRNA (cytidine(34)-2'-O)-methyltransferase""]",-1
+399,507849,508836,['WP_007053737.1'],,['A/G-specific adenine glycosylase'],1
+400,508900,509623,['WP_007057770.1'],,['hypothetical protein'],1
+401,509777,513341,['WP_013582405.1'],,['DNA-directed RNA polymerase subunit beta'],1
+402,513508,517546,['WP_013582406.1'],,"[""DNA-directed RNA polymerase subunit beta'""]",1
+403,517704,518337,['WP_007051318.1'],,['FHA domain-containing protein'],-1
+404,518352,518868,['WP_013582407.1'],,['hypothetical protein'],-1
+405,518894,519827,['WP_007056411.1'],,['serine/threonine-protein phosphatase'],-1
+406,519823,522337,['WP_013582408.1'],,['transglutaminase domain-containing protein'],-1
+407,522333,523557,['WP_007051314.1'],,['DUF58 domain-containing protein'],-1
+408,523581,524955,['WP_013582409.1'],,['MoxR family ATPase'],-1
+409,524965,530950,['WP_013582410.1'],,['tandem-95 repeat protein'],-1
+410,531116,532538,['WP_007057781.1'],,['serine/threonine protein kinase'],-1
+411,532669,536980,['WP_013582411.1'],,['PD-(D/E)XK nuclease family protein'],1
+412,536976,541008,['WP_013582412.1'],,['UvrD-helicase domain-containing protein'],1
+413,541219,542539,['WP_013140338.1'],,['MFS transporter'],1
+414,542874,543630,['WP_007051307.1'],,['4-hydroxy-tetrahydrodipicolinate reductase'],1
+415,543792,544698,['WP_012578306.1'],['dapA'],['4-hydroxy-tetrahydrodipicolinate synthase'],1
+416,544782,546633,['WP_007057778.1'],,['ribonuclease J'],1
+417,546674,549284,['WP_007053722.1'],['pepN'],['aminopeptidase N'],1
+418,549461,550367,['WP_013582413.1'],,['sulfite exporter TauE/SafE family protein'],1
+419,550565,550898,['WP_007051301.1'],,['hypothetical protein'],1
+420,550913,551153,['WP_007051300.1'],,['hypothetical protein'],1
+421,551346,552732,['WP_007051299.1'],,['phosphoglucosamine mutase'],1
+422,552756,553410,['WP_013582414.1'],,['peptide deformylase'],1
+423,553406,554888,['WP_013582415.1'],,['DNA polymerase III subunit epsilon'],1
+424,555270,556395,['WP_007051295.1'],['prfB'],['peptide chain release factor 2'],1
+425,556403,557537,['WP_013582416.1'],['ftsE'],['cell division ATP-binding protein FtsE'],1
+426,557547,558471,['WP_007057792.1'],,['permease-like cell division protein FtsX'],1
+427,558573,559932,['WP_013582417.1'],,['CHAP domain-containing protein'],1
+428,560054,560531,['WP_007051292.1'],['smpB'],['SsrA-binding protein SmpB'],1
+429,560693,561650,['WP_013582418.1'],,['ABC transporter substrate-binding protein'],1
+430,561860,562805,['WP_008783149.1'],,['ABC transporter substrate-binding protein'],1
+431,562935,563919,['WP_013582419.1'],,['amino acid ABC transporter permease'],1
+432,563997,564765,['WP_171023745.1'],,['ATP-binding cassette domain-containing protein'],1
+433,564972,566865,['WP_013582420.1'],['glmS'],['glutamine--fructose-6-phosphate transaminase (isomerizing)'],1
+434,566878,567643,['WP_013410317.1'],,['23S rRNA pseudouridylate synthase'],1
+435,567678,567912,['WP_173361538.1'],,['helix-turn-helix domain-containing protein'],-1
+436,567930,568917,['WP_013582422.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+437,569163,570090,['WP_007051281.1'],,['sugar ABC transporter permease'],1
+438,570148,571156,['WP_032738944.1'],,['ABC transporter permease subunit'],1
+439,571349,573425,['WP_013582423.1'],,['beta-galactosidase'],1
+440,573549,574563,['WP_013410313.1'],,['LacI family DNA-binding transcriptional regulator'],1
+441,574682,576383,['WP_013410312.1'],,['Intracellular exo-alpha-(1->5)-L-arabinofuranosidase'],-1
+442,576542,577895,['WP_013582425.1'],,['extracellular solute-binding protein'],1
+443,578226,579570,['WP_007053697.1'],,['sugar ABC transporter substrate-binding protein'],1
+444,579685,581107,['WP_032682473.1'],,['sugar ABC transporter substrate-binding protein'],1
+445,581166,581937,['WP_007051273.1'],,['type III pantothenate kinase'],-1
+446,582062,583682,['WP_007053695.1'],,['ABC transporter substrate-binding protein'],1
+447,583746,584724,['WP_008783137.1'],,['ABC transporter permease'],1
+448,584720,585623,['WP_007057803.1'],,['ABC transporter permease'],1
+449,585619,586411,['WP_013582427.1'],,['ABC transporter ATP-binding protein'],1
+450,586403,587189,['WP_008783136.1'],,['ABC transporter ATP-binding protein'],1
+451,587672,588740,['WP_013582428.1'],,['pyridoxal-phosphate dependent enzyme'],1
+452,588831,590016,['WP_007053689.1'],,['cystathionine gamma-synthase'],1
+453,590153,591878,['WP_013582429.1'],,"['L,D-transpeptidase']",-1
+454,592037,593993,['WP_032740612.1'],['recQ'],['DNA helicase RecQ'],1
+455,594105,594600,['WP_007051263.1'],,['S-ribosylhomocysteine lyase'],1
+456,594754,595297,['WP_007051262.1'],,['histone acetyltransferase'],1
+457,595554,596694,['WP_013582431.1'],,['DUF2961 domain-containing protein'],-1
+458,596801,598073,['WP_008783747.1'],,['IS30-like element ISBlo4 family transposase'],1
+459,598276,598441,,,['transposase'],-1
+460,598662,600123,['WP_007051261.1'],,['amino acid permease'],-1
+461,600311,601670,['WP_013582432.1'],['alr'],['alanine racemase'],1
+462,601862,603149,['WP_032740616.1'],,['deoxyguanosinetriphosphate triphosphohydrolase'],1
+463,603312,605421,['WP_032740618.1'],,['DNA primase'],1
+464,605612,606488,['WP_007053677.1'],['pdxS'],"[""pyridoxal 5'-phosphate synthase lyase subunit PdxS""]",1
+465,606573,607212,['WP_007056414.1'],['pdxT'],"[""pyridoxal 5'-phosphate synthase glutaminase subunit PdxT""]",1
+466,607269,608934,['WP_013582435.1'],,['aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme'],1
+467,609287,610220,['WP_013582436.1'],,['isoaspartyl peptidase/L-asparaginase'],1
+468,610768,611956,['WP_007053675.1'],,['anion transporter'],1
+469,611980,612241,['WP_007053674.1'],,['hypothetical protein'],-1
+470,612421,614620,['WP_016507576.1'],,['alpha-N-arabinofuranosidase'],-1
+471,614828,615698,['WP_013582438.1'],,['MurR/RpiR family transcriptional regulator'],1
+472,615784,616993,['WP_015713385.1'],,['Crp/Fnr family transcriptional regulator'],-1
+473,617394,618150,['WP_013582439.1'],,['ABC transporter ATP-binding protein'],1
+474,618146,619313,['WP_007051243.1'],,['hypothetical protein'],1
+475,619324,620884,['WP_013582440.1'],,['ABC transporter permease'],1
+476,620867,623057,['WP_013582441.1'],,['1-deoxy-D-xylulose-5-phosphate synthase'],-1
+477,623230,624223,['WP_013582442.1'],,['zinc-binding dehydrogenase'],1
+478,624324,624825,['WP_007057689.1'],['purE'],['5-(carboxyamino)imidazole ribonucleotide mutase'],1
+479,624808,625987,['WP_007051237.1'],['purK'],['5-(carboxyamino)imidazole ribonucleotide synthase'],1
+480,625995,626424,['WP_007051236.1'],,['transcriptional repressor'],1
+481,626458,626674,['WP_007053664.1'],,['hypothetical protein'],-1
+482,626935,627859,['WP_008783577.1'],,['metal ABC transporter solute-binding protein'],1
+483,628119,630219,['WP_013582443.1'],,['LTA synthase family protein'],1
+484,630311,631949,['WP_007051231.1'],,['aldehyde dehydrogenase family protein'],1
+485,632322,633591,['WP_007051230.1'],['purD'],['phosphoribosylamine--glycine ligase'],-1
+486,633617,634655,['WP_010081095.1'],,['phosphoribosylformylglycinamidine cyclo-ligase'],-1
+487,634774,636286,['WP_007051228.1'],,['amidophosphoribosyltransferase'],-1
+488,636689,637475,['WP_032740622.1'],,['amino acid ABC transporter ATP-binding protein'],-1
+489,637471,638359,['WP_007053659.1'],,['amino acid ABC transporter permease'],-1
+490,638468,639332,['WP_013582444.1'],,['amino acid ABC transporter substrate-binding protein'],-1
+491,639533,640004,['WP_007051224.1'],,['cupin domain-containing protein'],-1
+492,640073,641447,['WP_007051223.1'],,['amidohydrolase family protein'],-1
+493,641486,642989,['WP_008783579.1'],,['adenosylhomocysteinase'],-1
+494,643153,644743,['WP_007057658.1'],,['Y-family DNA polymerase'],1
+495,644739,644958,['WP_007051220.1'],,['hypothetical protein'],1
+496,644991,645969,['WP_007051219.1'],,['aldo/keto reductase family protein'],-1
+497,646076,647042,['WP_007051218.1'],,['LysR family transcriptional regulator'],-1
+498,647260,648775,['WP_013582445.1'],,['sodium:proton antiporter'],1
+499,648788,649448,['WP_007056333.1'],,['membrane protein'],-1
+500,649444,650815,['WP_007051212.1'],,['hypothetical protein'],-1
+501,650787,652086,['WP_007051211.1'],,['alpha/beta hydrolase'],-1
+502,652223,655958,['WP_013582446.1'],,['phosphoribosylformylglycinamidine synthase'],-1
+503,656020,656773,['WP_007051209.1'],,['phosphoribosylaminoimidazolesuccinocarboxamide synthase'],-1
+504,657165,658503,['WP_007053649.1'],['purT'],['formate-dependent phosphoribosylglycinamide formyltransferase'],-1
+505,658676,659837,['WP_007051205.1'],,['glycosyltransferase'],1
+506,659983,661009,['WP_007056348.1'],,['aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme'],-1
+507,661570,662632,['WP_007056371.1'],,['bile acid:sodium symporter family protein'],1
+508,663397,663769,['WP_003813881.1'],,['30S ribosomal protein S12'],1
+509,663774,664245,['WP_003828652.1'],['rpsG'],['30S ribosomal protein S7'],1
+510,664276,666400,['WP_003832662.1'],['fusA'],['elongation factor G'],1
+511,666572,667772,['WP_007051202.1'],['tuf'],['elongation factor Tu'],1
+512,667979,668711,['WP_007056866.1'],,['DUF4391 domain-containing protein'],1
+513,668847,669666,['WP_007053644.1'],,['LysR family transcriptional regulator'],1
+514,669835,670900,['WP_007051199.1'],,['putative sulfate exporter family transporter'],1
+515,670956,671436,['WP_013582447.1'],,['GtrA family protein'],-1
+516,671516,671882,['WP_007053642.1'],,['CrcB family protein'],-1
+517,671881,672418,['WP_007051196.1'],,['CrcB family protein'],-1
+518,672821,673865,['WP_007051194.1'],,['zinc-dependent alcohol dehydrogenase family protein'],1
+519,674235,674427,['WP_008782756.1'],,['hypothetical protein'],1
+520,674447,675827,['WP_007051192.1'],,['ATP-binding protein'],-1
+521,676090,676261,['WP_007051191.1'],,['hypothetical protein'],-1
+522,676284,676425,['WP_007056358.1'],,['hypothetical protein'],-1
+523,676650,677028,['WP_007056351.1'],,['helix-turn-helix transcriptional regulator'],1
+524,677024,679529,['WP_013582448.1'],,['ATP-binding cassette domain-containing protein'],1
+525,679586,680945,['WP_013582449.1'],,['MATE family efflux transporter'],1
+526,680961,681645,['WP_013582450.1'],,['DNA lyase'],1
+527,681818,682106,['WP_012471944.1'],,['hypothetical protein'],-1
+528,682133,682808,['WP_013582451.1'],,['sugar O-acetyltransferase'],1
+529,682817,683081,['WP_007051184.1'],,['nodulation protein L'],-1
+530,683245,684334,['WP_013582452.1'],,['AEC family transporter'],1
+531,684420,684942,['WP_010080811.1'],,['hypothetical protein'],1
+532,685405,686545,['WP_013582453.1'],,['site-specific integrase'],1
+533,686585,687691,,,['IS30 family transposase'],1
+534,687751,688621,['WP_013582455.1'],,['hypothetical protein'],1
+535,688721,689354,['WP_117754920.1'],,['restriction endonuclease subunit S'],1
+536,689531,689876,['WP_126623109.1'],,['hypothetical protein'],1
+537,689949,690819,['WP_013582459.1'],,['GIY-YIG nuclease family protein'],-1
+538,690904,691438,['WP_013582460.1'],,['hypothetical protein'],-1
+539,691576,691975,['WP_013582461.1'],,['hypothetical protein'],1
+540,692137,693244,['WP_013582462.1'],,['cell division protein FtsK'],1
+541,694421,694634,['WP_032740670.1'],,['excisionase family DNA-binding protein'],1
+542,694747,696184,['WP_013582464.1'],['glnA'],['type I glutamate--ammonia ligase'],-1
+543,696503,697286,['WP_007053625.1'],,['DUF4191 domain-containing protein'],-1
+544,697369,698860,['WP_007051179.1'],,['FAD-dependent oxidoreductase'],-1
+545,699008,699632,['WP_013582465.1'],,['DUF3043 domain-containing protein'],-1
+546,699723,701091,['WP_007053622.1'],,['dipeptidase'],1
+547,701390,701990,['WP_008782764.1'],,['ECF transporter S component'],1
+548,701989,703465,['WP_007053620.1'],,['ABC transporter ATP-binding protein'],1
+549,703461,704289,['WP_007056880.1'],,['energy-coupling factor transporter transmembrane protein EcfT'],1
+550,704485,705364,['WP_007053618.1'],,['RNA methyltransferase'],1
+551,705417,706485,['WP_007051172.1'],['pheS'],['phenylalanine--tRNA ligase subunit alpha'],1
+552,706492,709102,['WP_013411020.1'],,['phenylalanine--tRNA ligase subunit beta'],1
+553,709132,709819,['WP_007056863.1'],,['hypothetical protein'],1
+554,709917,711012,['WP_012471942.1'],,['N-acetyl-gamma-glutamyl-phosphate reductase'],1
+555,711008,712184,['WP_007053613.1'],['argJ'],['bifunctional glutamate N-acetyltransferase/amino-acid acetyltransferase ArgJ'],1
+556,712255,713212,['WP_011068277.1'],['argB'],['acetylglutamate kinase'],1
+557,713201,714497,['WP_013582466.1'],,['acetylornithine transaminase'],1
+558,714540,715506,['WP_013582467.1'],['argF'],['ornithine carbamoyltransferase'],1
+559,715502,716015,['WP_013582468.1'],['argR'],['arginine repressor'],1
+560,716097,717336,['WP_007053609.1'],,['argininosuccinate synthase'],1
+561,717555,717774,['WP_007056876.1'],,['type II toxin-antitoxin system YoeB family toxin'],-1
+562,717783,719256,['WP_007051162.1'],['argH'],['argininosuccinate lyase'],1
+563,719604,719799,['WP_007051161.1'],['thiS'],['sulfur carrier protein ThiS'],1
+564,719810,720680,['WP_003828815.1'],,['thiazole synthase'],1
+565,720756,721566,['WP_007056327.1'],['thiF'],['thiazole biosynthesis adenylyltransferase ThiF'],1
+566,721622,721979,['WP_007051158.1'],,['rhodanese-like domain-containing protein'],1
+567,722140,722674,['WP_007051157.1'],,['HD domain-containing protein'],1
+568,722670,723438,['WP_007051156.1'],,['putative ABC transporter permease'],1
+569,723563,724886,['WP_007051155.1'],,['tyrosine--tRNA ligase'],1
+570,724913,726701,['WP_011068271.1'],,['hypothetical protein'],1
+571,726709,727750,['WP_007053603.1'],,['HAD family hydrolase'],1
+572,727754,727901,['WP_007051152.1'],,['hypothetical protein'],1
+573,728006,728780,['WP_007051151.1'],,['TlyA family RNA methyltransferase'],1
+574,728761,729436,['WP_007053602.1'],,['hypothetical protein'],-1
+575,729575,730238,['WP_013582469.1'],,['TrkA family potassium uptake protein'],-1
+576,730288,731755,['WP_007051148.1'],,['potassium transporter Trk'],-1
+577,732001,733024,['WP_013582470.1'],,['NAD kinase'],1
+578,733023,734850,['WP_013582471.1'],['recN'],['DNA repair protein RecN'],1
+579,734879,735527,['WP_013582472.1'],,['HAD family phosphatase'],1
+580,735767,736142,['WP_007051144.1'],,['GntR family transcriptional regulator'],1
+581,736163,737084,['WP_013582473.1'],,['ABC transporter ATP-binding protein'],1
+582,737090,737804,['WP_032740687.1'],,['ABC-2 transporter permease'],1
+583,737806,738520,['WP_013582475.1'],,['ABC-2 transporter permease'],1
+584,738595,741382,['WP_013582476.1'],,"['calcium-translocating P-type ATPase, PMCA-type']",-1
+585,741901,743392,['WP_013582477.1'],,['threonine synthase'],-1
+586,743614,744316,['WP_007051137.1'],,['hypothetical protein'],1
+587,744437,745733,['WP_007051136.1'],,['glutamate-5-semialdehyde dehydrogenase'],1
+588,745729,746311,['WP_007053591.1'],,['hypothetical protein'],1
+589,746307,747093,['WP_007051134.1'],,['nicotinate-nucleotide adenylyltransferase'],1
+590,747190,748396,['WP_013582479.1'],,['glycoside hydrolase family 3 protein'],-1
+591,748568,751808,['WP_013582480.1'],,['UPF0182 family protein'],1
+592,751941,752475,['WP_007051131.1'],,['N-acetyltransferase'],1
+593,752634,753234,['WP_007051129.1'],,['aminoacyl-tRNA hydrolase'],1
+594,753223,756808,['WP_013582481.1'],['mfd'],['transcription-repair coupling factor'],1
+595,756956,757895,['WP_016507589.1'],,['aldo/keto reductase'],1
+596,758045,759344,['WP_007051126.1'],['eno'],['phosphopyruvate hydratase'],1
+597,759434,760046,['WP_013582483.1'],,['septum formation initiator family protein'],1
+598,760042,760609,['WP_007051124.1'],,['DUF501 domain-containing protein'],1
+599,760671,761673,['WP_007051123.1'],,['Ppx/GppA family phosphatase'],1
+600,762101,762671,['WP_007055112.1'],,['hypothetical protein'],1
+601,762817,764278,['WP_007055100.1'],,['L-serine ammonia-lyase'],1
+602,764419,764827,['WP_007051894.1'],,['FKBP-type peptidyl-prolyl cis-trans isomerase'],1
+603,764925,765405,['WP_007055115.1'],,['transcription elongation factor GreA'],1
+604,765459,766404,['WP_007053578.1'],,['hemolysin III family protein'],-1
+605,766529,767303,['WP_013582484.1'],,['zinc ribbon domain-containing protein'],1
+606,767465,768953,['WP_007051898.1'],,['PAS domain-containing sensor histidine kinase'],1
+607,769025,769304,['WP_003835265.1'],,['WhiB family transcriptional regulator'],-1
+608,769417,771244,['WP_007051899.1'],,['cell division protein FtsK'],-1
+609,771413,772319,['WP_007053575.1'],,['LCP family protein'],-1
+610,772341,772662,['WP_007055108.1'],,['hypothetical protein'],1
+611,773097,773397,['WP_007051901.1'],,['WhiB family transcriptional regulator'],1
+612,773440,776536,['WP_007053572.1'],,['membrane protein'],1
+613,776532,778074,['WP_007057368.1'],,['hypothetical protein'],1
+614,778176,778539,['WP_007053570.1'],,['metallopeptidase family protein'],-1
+615,778693,779500,['WP_013582486.1'],,['HAD-IIB family hydrolase'],1
+616,779509,780232,['WP_013582487.1'],,['ComF family protein'],1
+617,780147,780534,['WP_007058417.1'],,['S24 family peptidase'],-1
+618,780601,781675,['WP_007053568.1'],,['HAMP domain-containing histidine kinase'],-1
+619,781674,782397,['WP_007051909.1'],,['response regulator transcription factor'],-1
+620,782432,784685,['WP_008782797.1'],['glgB'],"['1,4-alpha-glucan branching protein GlgB']",-1
+621,784862,785456,['WP_007053566.1'],,['CarD family transcriptional regulator'],1
+622,785564,786089,['WP_032740688.1'],,"['2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase']",1
+623,786140,786974,['WP_007051913.1'],,['metal ABC transporter permease'],-1
+624,787040,787931,['WP_007053564.1'],,['ABC transporter ATP-binding protein'],-1
+625,788103,789300,['WP_013582489.1'],,['zinc ABC transporter substrate-binding protein'],-1
+626,789403,790279,['WP_007053562.1'],,['bifunctional methylenetetrahydrofolate dehydrogenase/methenyltetrahydrofolate cyclohydrolase'],1
+627,790398,791874,['WP_007051917.1'],['rpsA'],['30S ribosomal protein S1'],1
+628,792047,792665,['WP_007051918.1'],,['dephospho-CoA kinase'],1
+629,792676,794788,['WP_007051919.1'],['uvrB'],['excinuclease ABC subunit UvrB'],1
+630,794958,795945,['WP_007051920.1'],,['TerC family protein'],1
+631,796112,797555,['WP_007055467.1'],['pyk'],['pyruvate kinase'],1
+632,797702,798302,['WP_007051922.1'],,['NUDIX hydrolase'],-1
+633,798648,799434,['WP_013582490.1'],,['response regulator'],1
+634,799479,802347,['WP_032740691.1'],['polA'],['DNA polymerase I'],1
+635,802516,803437,['WP_013582492.1'],,['Nif3-like dinuclear metal center hexameric protein'],1
+636,803482,804157,['WP_012578040.1'],,['NUDIX hydrolase'],1
+637,804231,806352,['WP_007055470.1'],['glgX'],['glycogen debranching protein GlgX'],1
+638,806482,806569,,,['XRE family transcriptional regulator'],1
+639,807331,808504,['WP_013582493.1'],,['hypothetical protein'],1
+640,808686,810024,['WP_013582494.1'],['aroA'],['3-phosphoshikimate 1-carboxyvinyltransferase'],1
+641,810194,811424,['WP_011068227.1'],,['acetate kinase'],-1
+642,811558,813229,['WP_013582495.1'],['pta'],['phosphate acetyltransferase'],-1
+643,813888,814587,['WP_007057554.1'],,['histidine phosphatase family protein'],-1
+644,814738,815152,['WP_007053455.1'],['rsfS'],['ribosome silencing factor'],-1
+645,815155,816538,['WP_013582496.1'],['glmU'],['bifunctional UDP-N-acetylglucosamine diphosphorylase/glucosamine-1-phosphate N-acetyltransferase GlmU'],-1
+646,816819,817842,['WP_008782813.1'],,['ribose-phosphate diphosphokinase'],-1
+647,817927,819802,['WP_013582498.1'],,['acetyltransferase'],-1
+648,819977,821459,['WP_013582499.1'],,['DUF1846 domain-containing protein'],-1
+649,821705,822089,['WP_007053450.1'],,['DUF600 family protein'],-1
+650,822088,823366,['WP_013582500.1'],,['DNA/RNA non-specific endonuclease'],-1
+651,823366,824020,['WP_007052037.1'],,['hypothetical protein'],-1
+652,824170,824365,['WP_013582501.1'],,['hypothetical protein'],1
+653,824511,825495,['WP_007055468.1'],,['MFS transporter'],1
+654,825614,825809,['WP_007052039.1'],,['hypothetical protein'],-1
+655,825780,826802,,,['IS66 family transposase'],-1
+656,827343,827739,['WP_012471919.1'],,['arsenate reductase ArsC'],-1
+657,827731,828223,,,['hypothetical protein'],-1
+658,828608,830171,['WP_007057943.1'],['guaA'],['glutamine-hydrolyzing GMP synthase'],-1
+659,830616,833094,['WP_007052042.1'],,['phosphoketolase'],1
+660,833215,834037,['WP_007052043.1'],,['Cof-type HAD-IIB family hydrolase'],-1
+661,834238,835219,['WP_013582504.1'],,['ABC transporter substrate-binding protein'],1
+662,835352,836558,['WP_013582505.1'],,['methionine ABC transporter ATP-binding protein'],1
+663,836554,837241,['WP_007052047.1'],,['ABC transporter permease'],1
+664,837329,838481,['WP_007052048.1'],,['amidohydrolase'],1
+665,838829,840527,['WP_013582506.1'],,['NAD+ synthase'],1
+666,840579,840804,['WP_007055377.1'],,['hypothetical protein'],1
+667,841069,843445,['WP_013582507.1'],['pflB'],['formate C-acetyltransferase'],1
+668,843554,844436,['WP_007052052.1'],['pflA'],['pyruvate formate lyase-activating protein'],1
+669,844498,845137,['WP_007052053.1'],,['DUF3000 family protein'],1
+670,845133,846435,['WP_007052054.1'],,['HRDC domain-containing protein'],1
+671,846489,847869,['WP_007052055.1'],,['trigger factor'],1
+672,848052,849519,['WP_013582508.1'],,['chloride channel protein'],1
+673,849630,850011,['WP_007052057.1'],,['hypothetical protein'],1
+674,850116,850740,['WP_007052058.1'],,['ATP-dependent Clp protease proteolytic subunit'],1
+675,850745,851447,['WP_013582509.1'],,['ATP-dependent Clp protease proteolytic subunit'],1
+676,851568,852987,['WP_007052060.1'],['clpX'],['ATP-dependent Clp protease ATP-binding subunit ClpX'],1
+677,853467,854886,['WP_007052061.1'],,['Na+/H+ antiporter NhaA'],1
+678,855179,856121,['WP_013582510.1'],,['TIGR00730 family Rossman fold protein'],1
+679,856166,856832,['WP_007052063.1'],,['class I SAM-dependent methyltransferase'],-1
+680,856925,857891,['WP_007052064.1'],,['4Fe-4S dicluster domain-containing protein'],-1
+681,857986,859852,['WP_007053431.1'],,['FAD-binding protein'],-1
+682,859908,861609,['WP_007053430.1'],,['DNA-protecting protein DprA'],-1
+683,861605,863141,['WP_007052067.1'],,['YifB family Mg chelatase-like AAA ATPase'],-1
+684,863199,863703,['WP_007053429.1'],,['YraN family protein'],-1
+685,863939,864812,['WP_007053428.1'],,['pyridoxamine kinase'],-1
+686,865285,866602,['WP_074709735.1'],,['O-acetylhomoserine aminocarboxypropyltransferase/cysteine synthase'],1
+687,866950,867742,['WP_013582511.1'],,['ABC transporter ATP-binding protein'],1
+688,867783,870426,['WP_013582512.1'],,['FtsX-like permease family protein'],1
+689,870517,871264,['WP_013582513.1'],,['response regulator transcription factor'],-1
+690,871340,873950,['WP_013582514.1'],,['sensor histidine kinase'],-1
+691,874127,875471,['WP_013410963.1'],,['alpha/beta fold hydrolase'],1
+692,875545,876346,['WP_013582515.1'],['proC'],['pyrroline-5-carboxylate reductase'],1
+693,876363,877461,['WP_003836618.1'],['ychF'],['redox-regulated ATPase YchF'],1
+694,877708,878074,['WP_013582516.1'],,['YccF domain-containing protein'],-1
+695,878679,880731,['WP_013582517.1'],,['DHA2 family efflux MFS transporter permease subunit'],1
+696,881043,882534,['WP_013582518.1'],,['MFS transporter'],1
+697,882571,884272,['WP_013582519.1'],,['serine/threonine protein kinase'],-1
+698,884333,884774,['WP_013582520.1'],,['transcriptional regulator'],-1
+699,885207,886752,['WP_007055486.1'],,['hypothetical protein'],1
+700,886805,887042,['WP_007052094.1'],,['hypothetical protein'],1
+701,887125,888289,['WP_013582521.1'],,['SPFH domain-containing protein'],1
+702,888408,888963,['WP_007052097.1'],,['helix-turn-helix domain-containing protein'],-1
+703,889118,889700,['WP_013582522.1'],,['haloacid dehalogenase-like hydrolase'],1
+704,889750,890581,['WP_007053407.1'],,['histidine phosphatase family protein'],1
+705,890685,891975,['WP_007052100.1'],,['nitrate reductase'],1
+706,892335,894522,['WP_013582523.1'],,['DEAD/DEAH box helicase'],1
+707,894777,895305,['WP_161388932.1'],,['TetR family transcriptional regulator'],1
+708,895333,896599,['WP_007057983.1'],,['alpha-amylase family protein'],-1
+709,896873,899273,['WP_007055496.1'],,['carbon starvation protein A'],1
+710,899330,899528,['WP_007052106.1'],,['YbdD/YjiX family protein'],1
+711,899647,900700,['WP_007052107.1'],,['inorganic phosphate transporter'],1
+712,900717,901341,['WP_007052108.1'],,['DUF47 family protein'],1
+713,901524,902178,['WP_007052109.1'],,['response regulator transcription factor'],-1
+714,902177,903530,['WP_013582524.1'],,['two-component sensor histidine kinase'],-1
+715,903915,904899,['WP_007057287.1'],,['ABC transporter ATP-binding protein'],1
+716,904999,906238,['WP_007052113.1'],,['ABC transporter permease'],1
+717,906224,907637,['WP_007052114.1'],,['ABC transporter permease'],1
+718,907641,909120,['WP_013582525.1'],,['putative DNA binding domain-containing protein'],-1
+719,909371,909986,['WP_007052116.1'],,['isochorismatase family protein'],-1
+720,910144,910546,['WP_007052118.1'],,['VOC family protein'],1
+721,910634,911573,['WP_013582526.1'],,['cobalt transporter'],-1
+722,911860,912682,['WP_013410947.1'],,['alpha/beta hydrolase'],1
+723,912835,913096,['WP_008782983.1'],,['DUF2975 domain-containing protein'],1
+724,913102,913312,['WP_003829211.1'],,['helix-turn-helix transcriptional regulator'],1
+725,913441,914806,['WP_007052123.1'],,['purine permease'],-1
+726,914856,915438,['WP_007057285.1'],,['xanthine phosphoribosyltransferase'],-1
+727,915554,918257,['WP_013582527.1'],,['UvrD-helicase domain-containing protein'],1
+728,918401,918800,['WP_007052126.1'],,['DUF4418 family protein'],1
+729,918890,920108,['WP_007053390.1'],,['ABC transporter permease'],1
+730,920109,921078,['WP_007052129.1'],,['ABC transporter ATP-binding protein'],1
+731,921276,921903,['WP_007052130.1'],['rpsD'],['30S ribosomal protein S4'],1
+732,921993,923958,['WP_007053388.1'],,['acetyltransferase'],-1
+733,924137,924812,['WP_007055085.1'],,['histidine phosphatase family protein'],1
+734,925014,925413,['WP_007052133.1'],,['DUF948 domain-containing protein'],1
+735,925412,925649,['WP_007053386.1'],,['hypothetical protein'],1
+736,925776,928458,['WP_007053385.1'],['alaS'],['alanine--tRNA ligase'],1
+737,928454,928925,['WP_007052136.1'],['ruvX'],['Holliday junction resolvase RuvX'],1
+738,928935,930117,['WP_013582528.1'],['mltG'],['endolytic transglycosylase MltG'],1
+739,930284,930758,['WP_007053382.1'],,['prepilin peptidase'],-1
+740,930821,932009,['WP_007052139.1'],['aroC'],['chorismate synthase'],1
+741,932091,933714,['WP_007052140.1'],,['bifunctional shikimate kinase/3-dehydroquinate synthase'],1
+742,933877,934324,['WP_007052141.1'],['aroQ'],['type II 3-dehydroquinate dehydratase'],1
+743,934419,935976,['WP_013582529.1'],,['Sapep family Mn(2+)-dependent dipeptidase'],1
+744,936121,937783,['WP_007052143.1'],,['CTP synthase'],1
+745,938029,939625,['WP_013582530.1'],,"['L,D-transpeptidase family protein']",1
+746,939893,941348,['WP_180950779.1'],['sufB'],['Fe-S cluster assembly protein SufB'],1
+747,941353,942589,['WP_007052146.1'],['sufD'],['Fe-S cluster assembly protein SufD'],1
+748,942614,943394,['WP_007053376.1'],['sufC'],['Fe-S cluster assembly ATPase SufC'],1
+749,943532,944807,['WP_013582531.1'],,['cysteine desulfurase'],1
+750,944818,945373,['WP_007052149.1'],,['SUF system NifU family Fe-S cluster assembly protein'],1
+751,945379,945973,['WP_007052150.1'],,['metal-sulfur cluster assembly factor'],1
+752,946062,947307,['WP_007052151.1'],['glgC'],['glucose-1-phosphate adenylyltransferase'],-1
+753,947507,948386,['WP_007055088.1'],,['RNA methyltransferase'],-1
+754,948629,949427,['WP_007052153.1'],,['16S rRNA (uracil(1498)-N(3))-methyltransferase'],1
+755,949475,949814,['WP_007057286.1'],,['histidine triad nucleotide-binding protein'],1
+756,949832,951008,['WP_007052155.1'],,['PhoH family protein'],1
+757,950997,951546,['WP_007052156.1'],['ybeY'],['rRNA maturation RNase YbeY'],1
+758,951621,953055,['WP_013582532.1'],,['HlyC/CorC family transporter'],1
+759,953056,954121,['WP_007053368.1'],['era'],['GTPase Era'],1
+760,954173,956207,['WP_013582533.1'],,['long-chain fatty acid--CoA ligase'],-1
+761,956625,957789,['WP_007052160.1'],,['NAD(P) transhydrogenase subunit alpha'],1
+762,957804,958110,['WP_010080599.1'],,['NAD(P) transhydrogenase subunit alpha'],1
+763,958109,959534,['WP_007055089.1'],,['NAD(P)(+) transhydrogenase (Re/Si-specific) subunit beta'],1
+764,959669,960707,['WP_007053364.1'],,['alpha/beta hydrolase'],-1
+765,961135,961756,['WP_007052163.1'],,['50S ribosomal protein L25/general stress protein Ctc'],1
+766,961980,963108,['WP_011068176.1'],,['branched-chain amino acid aminotransferase'],1
+767,963301,964201,['WP_007053362.1'],,['nucleotide pyrophosphohydrolase'],1
+768,964448,965240,['WP_007053361.1'],,['trimeric intracellular cation channel family protein'],1
+769,965491,965752,['WP_007052167.1'],['rpsT'],['30S ribosomal protein S20'],-1
+770,965898,967779,['WP_007053360.1'],['lepA'],['translation elongation factor 4'],1
+771,967778,969188,['WP_008783712.1'],['hemW'],['radical SAM family heme chaperone HemW'],1
+772,969267,970368,['WP_011068174.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+773,970554,971685,['WP_081291469.1'],,['glycerate kinase'],1
+774,972062,973427,['WP_013582535.1'],,['MATE family efflux transporter'],-1
+775,974466,975420,['WP_007053354.1'],,['hypothetical protein'],-1
+776,976008,977055,['WP_013582536.1'],,['LacI family DNA-binding transcriptional regulator'],1
+777,977317,977506,['WP_007052178.1'],,['hypothetical protein'],1
+778,977562,977889,['WP_007052179.1'],,['hypothetical protein'],-1
+779,978346,979372,['WP_008783636.1'],,['dihydrodipicolinate reductase'],1
+780,979424,979715,,,['substrate-binding domain-containing protein'],-1
+781,980052,984624,['WP_013582537.1'],['gltB'],['glutamate synthase large subunit'],1
+782,984625,986161,['WP_013582538.1'],,['glutamate synthase subunit beta'],1
+783,986349,987990,['WP_007052185.1'],,['ABC transporter substrate-binding protein'],1
+784,988149,990045,['WP_013582539.1'],,['hypothetical protein'],1
+785,990152,990617,['WP_007053345.1'],,['membrane protein'],1
+786,990745,991996,['WP_007053344.1'],['glgA'],['glycogen synthase'],1
+787,992147,992996,['WP_007053343.1'],,['ATP-binding cassette domain-containing protein'],1
+788,993090,993936,['WP_013582540.1'],,['Cof-type HAD-IIB family hydrolase'],1
+789,994037,994280,['WP_050496081.1'],,['hypothetical protein'],1
+790,994319,994868,['WP_013582542.1'],,['peroxiredoxin'],1
+791,994955,995780,['WP_008783627.1'],,['hypothetical protein'],-1
+792,996087,996597,['WP_126623110.1'],,['hypothetical protein'],1
+793,997156,997294,,,['integrase'],1
+794,997423,998440,['WP_117754923.1'],,['IS3 family transposase'],1
+795,998526,999582,['WP_013582544.1'],,['tyrosine-type recombinase/integrase'],-1
+796,999578,1000544,['WP_013582545.1'],,['tyrosine-type recombinase/integrase'],-1
+797,1000540,1001743,['WP_007053137.1'],,['tyrosine-type recombinase/integrase'],-1
+798,1001901,1002198,,,['IS3 family transposase'],1
+799,1002941,1003166,['WP_074709755.1'],,['helix-turn-helix transcriptional regulator'],-1
+800,1003255,1004077,['WP_013582547.1'],,['ADP-ribosylglycohydrolase family protein'],1
+801,1004586,1006201,,,['hypothetical protein'],1
+802,1006215,1007154,['WP_013582550.1'],,['hypothetical protein'],1
+803,1007178,1008171,['WP_013582551.1'],,['hypothetical protein'],1
+804,1008222,1008917,,,['ImmA/IrrE family metallo-endopeptidase'],1
+805,1009225,1011001,['WP_013582553.1'],,['hypothetical protein'],-1
+806,1011476,1012424,['WP_013582554.1'],,['alcohol dehydrogenase catalytic domain-containing protein'],-1
+807,1012659,1013595,['WP_008783478.1'],,['alpha/beta hydrolase'],-1
+808,1013851,1014811,['WP_013582555.1'],,['aldo/keto reductase'],1
+809,1014851,1015490,['WP_016507611.1'],,['dienelactone hydrolase family protein'],-1
+810,1015566,1016637,['WP_007054214.1'],,['tRNA (adenine-N1)-methyltransferase'],1
+811,1016742,1017300,['WP_007052218.1'],,['histidine phosphatase family protein'],1
+812,1017410,1019714,['WP_007052219.1'],['metE'],['5-methyltetrahydropteroyltriglutamate-- homocysteine S-methyltransferase'],1
+813,1019772,1020627,['WP_013582557.1'],['metF'],['methylenetetrahydrofolate reductase [NAD(P)H]'],1
+814,1020760,1021714,['WP_007052221.1'],,['choloylglycine hydrolase'],1
+815,1021769,1025000,['WP_007052222.1'],,['bifunctional [glutamine synthetase] adenylyltransferase/[glutamine synthetase]-adenylyl-L-tyrosine phosphorylase'],1
+816,1025141,1026104,['WP_007054218.1'],['pyrB'],['aspartate carbamoyltransferase'],1
+817,1026103,1026523,['WP_007052224.1'],,['aspartate carbamoyltransferase regulatory subunit'],1
+818,1026519,1028016,['WP_007054219.1'],,['amidohydrolase family protein'],1
+819,1028033,1028987,['WP_007052226.1'],['pyrF'],"[""orotidine-5'-phosphate decarboxylase""]",1
+820,1029122,1029947,['WP_016507613.1'],,['dihydroorotate dehydrogenase electron transfer subunit'],1
+821,1029949,1030921,['WP_007052228.1'],,['dihydroorotate dehydrogenase'],1
+822,1030929,1031625,['WP_007052229.1'],['pyrE'],['orotate phosphoribosyltransferase'],1
+823,1031733,1031886,['WP_007054223.1'],,['hypothetical protein'],1
+824,1032100,1033222,['WP_007054224.1'],,['DUF2974 domain-containing protein'],1
+825,1033376,1034300,['WP_007052232.1'],,['LysR family transcriptional regulator'],-1
+826,1034401,1035031,['WP_007056272.1'],,['HAD family phosphatase'],-1
+827,1035132,1036896,['WP_007052234.1'],,['bifunctional ADP-dependent NAD(P)H-hydrate dehydratase/NAD(P)H-hydrate epimerase'],-1
+828,1036935,1038126,['WP_007052235.1'],,['pyridoxal phosphate-dependent aminotransferase'],-1
+829,1038497,1039187,['WP_011068129.1'],,['virulence RhuM family protein'],-1
+830,1039443,1040068,,,['thiamine biosynthesis protein ThiJ'],1
+831,1040041,1040422,['WP_197530260.1'],,['hypothetical protein'],-1
+832,1040490,1040791,,,['DUF1287 domain-containing protein'],1
+833,1040798,1041824,['WP_032740717.1'],,['hypothetical protein'],-1
+834,1042009,1042210,['WP_013582563.1'],,['hypothetical protein'],1
+835,1042282,1042711,['WP_013140715.1'],,['hypothetical protein'],1
+836,1042790,1043441,['WP_013582564.1'],['lepB'],['signal peptidase I'],1
+837,1043779,1044541,['WP_032738977.1'],,['hypothetical protein'],1
+838,1044434,1046009,['WP_013582565.1'],,['amino acid permease'],-1
+839,1046329,1046962,['WP_007054235.1'],,['MFS transporter'],-1
+840,1046993,1047149,['WP_007056283.1'],,['hypothetical protein'],-1
+841,1047156,1047378,['WP_007054237.1'],,['YidC/Oxa1 family membrane protein insertase'],1
+842,1047377,1048052,['WP_074709763.1'],,['YidC/Oxa1 family membrane protein insertase'],1
+843,1048153,1048774,['WP_016507616.1'],,['NUDIX hydrolase'],1
+844,1048802,1049126,['WP_074709766.1'],,['amidohydrolase'],1
+845,1049775,1050069,['WP_012471870.1'],,['hypothetical protein'],-1
+846,1050161,1050803,['WP_007054242.1'],,['hypothetical protein'],-1
+847,1051548,1051803,['WP_003829406.1'],,['hypothetical protein'],1
+848,1051965,1052772,['WP_011068121.1'],,['Abi family protein'],1
+849,1053176,1053506,['WP_003829403.1'],,['hypothetical protein'],1
+850,1053641,1054175,['WP_003829402.1'],,['GNAT family N-acetyltransferase'],1
+851,1054215,1054398,['WP_007054247.1'],,['DUF2316 family protein'],-1
+852,1054555,1055071,['WP_007057098.1'],,['GNAT family N-acetyltransferase'],-1
+853,1055249,1055708,['WP_007054250.1'],,['ASCH domain-containing protein'],1
+854,1055769,1056092,,,['type IV toxin-antitoxin system AbiEi family antitoxin domain-containing protein'],1
+855,1056156,1056372,['WP_050496085.1'],,['hypothetical protein'],1
+856,1057025,1058039,['WP_013582570.1'],,['VanZ family protein'],1
+857,1058061,1058610,['WP_165438855.1'],,['MFS transporter'],-1
+858,1059090,1060491,['WP_013582571.1'],,['amino acid permease'],-1
+859,1060614,1061469,['WP_013582572.1'],,['deoxyribonuclease IV'],1
+860,1061598,1062291,['WP_008783539.1'],,['SOS response-associated peptidase'],-1
+861,1062491,1064579,['WP_013582573.1'],,['bifunctional indole-3-glycerol phosphate synthase/tryptophan synthase subunit beta'],1
+862,1064602,1065472,['WP_013582574.1'],,['tryptophan synthase subunit alpha'],1
+863,1065584,1066532,['WP_007052284.1'],,['prolipoprotein diacylglyceryl transferase'],1
+864,1066607,1067276,['WP_007055745.1'],['rpe'],['ribulose-phosphate 3-epimerase'],1
+865,1067338,1067602,['WP_007054261.1'],,['phosphoribosyl-ATP diphosphatase'],1
+866,1067613,1068465,['WP_013582575.1'],,['ATP phosphoribosyltransferase'],1
+867,1068478,1069096,['WP_013582576.1'],,['CDP-alcohol phosphatidyltransferase family protein'],1
+868,1069085,1070063,['WP_007052289.1'],,['DUF881 domain-containing protein'],1
+869,1070062,1070395,['WP_007052290.1'],,['small basic family protein'],1
+870,1070410,1071232,['WP_013582577.1'],,['DUF881 domain-containing protein'],1
+871,1071238,1071682,['WP_013582578.1'],,['FHA domain-containing protein'],1
+872,1071782,1072415,['WP_013582579.1'],,['MerR family transcriptional regulator'],1
+873,1072546,1072951,['WP_013582580.1'],,['hypothetical protein'],1
+874,1073212,1074418,['WP_013582581.1'],,['tyrosine-type recombinase/integrase'],1
+875,1074493,1074841,['WP_013582582.1'],,['hypothetical protein'],-1
+876,1074904,1076098,['WP_074709840.1'],,['site-specific DNA-methyltransferase'],-1
+877,1076133,1076337,['WP_016507623.1'],,['hypothetical protein'],-1
+878,1076663,1077324,,,['hypothetical protein'],-1
+879,1077578,1077782,['WP_013582586.1'],,['hypothetical protein'],-1
+880,1077876,1078146,['WP_013582587.1'],,['hypothetical protein'],-1
+881,1078158,1078350,['WP_013582588.1'],,['hypothetical protein'],-1
+882,1078353,1078899,['WP_013582589.1'],,['hypothetical protein'],-1
+883,1079064,1079610,['WP_016507624.1'],,['hypothetical protein'],-1
+884,1079865,1080195,['WP_047379342.1'],,['hypothetical protein'],-1
+885,1080198,1080477,['WP_013582593.1'],,['hypothetical protein'],-1
+886,1080524,1081013,['WP_013582594.1'],,['hypothetical protein'],-1
+887,1081050,1082391,['WP_032740722.1'],,['HipA domain-containing protein'],-1
+888,1082390,1082693,['WP_013582596.1'],,['hypothetical protein'],-1
+889,1082854,1085653,['WP_013582597.1'],,['class I SAM-dependent DNA methyltransferase'],-1
+890,1085645,1086275,['WP_074709775.1'],,['DUF3841 domain-containing protein'],-1
+891,1086291,1086639,['WP_013582599.1'],,['hypothetical protein'],-1
+892,1086807,1087086,['WP_032740723.1'],,['DUF1778 domain-containing protein'],1
+893,1087076,1087574,['WP_032740724.1'],,['GNAT family N-acetyltransferase'],1
+894,1087570,1087990,['WP_013582602.1'],,['hypothetical protein'],-1
+895,1088265,1088817,['WP_013582603.1'],,['hypothetical protein'],-1
+896,1088809,1089991,['WP_013582604.1'],,['ATP-binding protein'],-1
+897,1090155,1091427,['WP_008783747.1'],,['IS30-like element ISBlo4 family transposase'],1
+898,1091570,1092023,,,['hypothetical protein'],-1
+899,1092022,1092190,['WP_155244052.1'],,['hypothetical protein'],-1
+900,1092173,1092491,['WP_126623111.1'],,['hypothetical protein'],-1
+901,1092487,1092799,['WP_116464338.1'],,['hypothetical protein'],-1
+902,1092843,1093470,['WP_032740727.1'],,['hypothetical protein'],-1
+903,1093469,1093721,['WP_013582609.1'],,['hypothetical protein'],-1
+904,1093722,1093899,['WP_013582610.1'],,['hypothetical protein'],-1
+905,1093885,1094056,['WP_013582611.1'],,['hypothetical protein'],-1
+906,1094052,1095324,['WP_013582612.1'],,['peptidoglycan bridge formation glycyltransferase FemA/FemB family protein'],-1
+907,1095444,1095687,['WP_013582613.1'],,['hypothetical protein'],-1
+908,1095683,1096238,['WP_032740730.1'],,['2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase'],-1
+909,1096243,1096474,['WP_013582615.1'],,['cell division protein DivIVA'],-1
+910,1096476,1097514,['WP_013582616.1'],,"[""2'-5' RNA ligase""]",-1
+911,1097652,1097874,['WP_013582617.1'],,['hypothetical protein'],-1
+912,1098490,1098802,['WP_126623112.1'],,['hypothetical protein'],-1
+913,1098880,1099240,['WP_117754941.1'],,['hypothetical protein'],-1
+914,1099264,1099675,,,['metallophosphoesterase'],-1
+915,1099743,1101177,['WP_013582621.1'],,['transposase'],-1
+916,1101287,1101611,,,['metallophosphoesterase'],-1
+917,1101607,1102204,['WP_032740767.1'],,['hypothetical protein'],-1
+918,1102209,1102434,['WP_013582624.1'],,['hypothetical protein'],-1
+919,1102476,1102983,['WP_013582625.1'],,['hypothetical protein'],-1
+920,1103529,1104594,['WP_032740736.1'],,['class E sortase'],-1
+921,1104590,1104932,['WP_013582628.1'],,['hypothetical protein'],-1
+922,1105230,1105785,['WP_032740738.1'],,['hypothetical protein'],-1
+923,1105771,1106197,['WP_013582630.1'],,['hypothetical protein'],-1
+924,1106208,1106475,['WP_013582631.1'],,['hypothetical protein'],-1
+925,1106493,1107270,['WP_013582632.1'],,['TPM domain-containing protein'],-1
+926,1107289,1107871,['WP_013582633.1'],,['LemA family protein'],-1
+927,1108206,1108473,,,['hypothetical protein'],-1
+928,1108469,1108736,['WP_013582635.1'],,['hypothetical protein'],-1
+929,1108739,1109270,['WP_013582636.1'],,['hypothetical protein'],-1
+930,1109284,1109485,['WP_007054993.1'],,['hypothetical protein'],1
+931,1109487,1110423,['WP_158305763.1'],,['TPM domain-containing protein'],-1
+932,1110419,1110923,['WP_016507639.1'],,['hypothetical protein'],-1
+933,1110916,1111159,['WP_013582639.1'],,['hypothetical protein'],-1
+934,1111148,1111469,['WP_016507640.1'],,['hypothetical protein'],-1
+935,1111468,1111762,['WP_013582640.1'],,['hypothetical protein'],-1
+936,1111874,1112069,,,['WhiB family transcriptional regulator'],-1
+937,1112079,1112311,,,['transposase'],-1
+938,1112424,1112931,['WP_013582642.1'],,['hypothetical protein'],-1
+939,1112933,1113272,['WP_013582643.1'],,['hypothetical protein'],-1
+940,1113390,1113567,['WP_016507642.1'],,['hypothetical protein'],-1
+941,1113563,1114172,['WP_013582644.1'],,['hypothetical protein'],-1
+942,1114177,1114546,['WP_013582645.1'],,['hypothetical protein'],-1
+943,1114601,1115288,['WP_032740741.1'],,['hypothetical protein'],-1
+944,1115307,1115745,['WP_117823616.1'],,['hypothetical protein'],-1
+945,1115808,1116282,['WP_013582648.1'],,['hypothetical protein'],1
+946,1116292,1116664,['WP_013582649.1'],,['hypothetical protein'],-1
+947,1116888,1117971,,,['transposase'],-1
+948,1118152,1118350,['WP_013582651.1'],,['hypothetical protein'],-1
+949,1118346,1118805,['WP_013582652.1'],,['hypothetical protein'],-1
+950,1118801,1118993,['WP_013582653.1'],,['hypothetical protein'],-1
+951,1119444,1119627,['WP_032740746.1'],,['hypothetical protein'],-1
+952,1119750,1119993,['WP_013582655.1'],['secG'],['preprotein translocase subunit SecG'],-1
+953,1119989,1120178,['WP_032740749.1'],,['hypothetical protein'],-1
+954,1120174,1120387,['WP_032740751.1'],['secE'],['preprotein translocase subunit SecE'],-1
+955,1124184,1125168,['WP_080557736.1'],,['HNH endonuclease'],-1
+956,1126121,1126886,['WP_012472066.1'],['istB'],['IS21-like element ISBlo1 family helper ATPase IstB'],-1
+957,1126903,1128406,['WP_013140934.1'],['istA'],['IS21 family transposase'],-1
+958,1130642,1133186,['WP_013582661.1'],,['bifunctional DNA primase/polymerase'],1
+959,1133182,1133866,['WP_013582662.1'],,['hypothetical protein'],1
+960,1134041,1135640,['WP_117754939.1'],,['prealbumin-like fold domain-containing protein'],1
+961,1135759,1140862,['WP_013582664.1'],,['InlB B-repeat-containing protein'],1
+962,1140897,1141827,['WP_117754940.1'],,['class C sortase'],1
+963,1141917,1144839,['WP_013582666.1'],,['secretion protein'],-1
+964,1145084,1148382,,,['cell division protein FtsK'],-1
+965,1148445,1149720,['WP_013582668.1'],,['hypothetical protein'],1
+966,1149815,1150109,['WP_013582669.1'],,['hypothetical protein'],-1
+967,1150154,1151861,['WP_032740789.1'],,['PD-(D/E)XK nuclease family protein'],-1
+968,1151963,1152281,['WP_032740791.1'],,['hypothetical protein'],-1
+969,1152280,1152850,['WP_013582671.1'],,['hypothetical protein'],-1
+970,1153201,1153993,['WP_013582672.1'],,['hypothetical protein'],1
+971,1153965,1154400,['WP_016507653.1'],,['hypothetical protein'],1
+972,1154396,1155302,['WP_032740803.1'],,['hypothetical protein'],-1
+973,1155395,1157765,['WP_013582674.1'],,['hypothetical protein'],1
+974,1157810,1158884,['WP_016507654.1'],,['DNA polymerase III subunit beta'],1
+975,1158967,1160269,['WP_013582676.1'],,['IS607 family element transposase accessory protein TnpB'],-1
+976,1160261,1160489,,,['IS607 family transposase'],-1
+977,1160514,1161162,['WP_013582678.1'],,['DUF2637 domain-containing protein'],-1
+978,1161182,1161458,['WP_013582679.1'],,['hypothetical protein'],-1
+979,1161533,1162829,['WP_013582680.1'],,['CHAP domain-containing protein'],1
+980,1162825,1163632,['WP_013582681.1'],,['hypothetical protein'],-1
+981,1163781,1165161,['WP_050579983.1'],,['hypothetical protein'],1
+982,1165176,1165437,['WP_012577586.1'],,['hypothetical protein'],1
+983,1165433,1169582,['WP_013582684.1'],,['hypothetical protein'],-1
+984,1169613,1170825,['WP_126623113.1'],,['hypothetical protein'],-1
+985,1170907,1171975,,,['AAA family ATPase'],-1
+986,1172059,1172821,['WP_013582291.1'],['istB'],['IS21-like element helper ATPase IstB'],-1
+987,1172817,1174275,['WP_013582292.1'],['istA'],['IS21 family transposase'],-1
+988,1174414,1174714,,,['AAA family ATPase'],-1
+989,1175760,1175985,['WP_126623114.1'],,['type II toxin-antitoxin system HicB family antitoxin'],1
+990,1176046,1176349,['WP_080557737.1'],,['restriction endonuclease subunit S'],-1
+991,1176345,1176870,['WP_032740806.1'],,['restriction endonuclease subunit S'],-1
+992,1176856,1178659,['WP_013582690.1'],,['N-6 DNA methylase'],-1
+993,1178658,1178889,['WP_013582691.1'],,['hypothetical protein'],-1
+994,1179066,1179624,['WP_013582692.1'],,['DNA polymerase III'],1
+995,1179608,1179908,['WP_013582693.1'],,['hypothetical protein'],1
+996,1179904,1180294,['WP_013582694.1'],,['hypothetical protein'],1
+997,1180308,1180992,['WP_050496087.1'],,['hypothetical protein'],1
+998,1181228,1181369,['WP_013582696.1'],,['hypothetical protein'],1
+999,1181463,1182456,['WP_013582697.1'],,['hypothetical protein'],-1
+1000,1182575,1183577,['WP_013582698.1'],,['hypothetical protein'],-1
+1001,1183823,1186775,['WP_013582699.1'],,['VPLPA-CTERM sorting domain-containing protein'],-1
+1002,1187572,1187914,,,['hypothetical protein'],-1
+1003,1187912,1188608,['WP_013582701.1'],,['hypothetical protein'],1
+1004,1188923,1189967,,,['DNA methyltransferase'],-1
+1005,1190708,1192238,['WP_013582705.1'],,['DNA cytosine methyltransferase'],-1
+1006,1192337,1192769,['WP_016507666.1'],,['hypothetical protein'],-1
+1007,1192916,1193996,['WP_117754937.1'],,['hypothetical protein'],1
+1008,1193971,1194493,['WP_013582708.1'],,['hypothetical protein'],-1
+1009,1194548,1195775,['WP_013582709.1'],,['site-specific DNA-methyltransferase'],-1
+1010,1196219,1196771,['WP_032743305.1'],,['helix-turn-helix transcriptional regulator'],1
+1011,1196820,1197273,['WP_032740811.1'],,['hypothetical protein'],-1
+1012,1197307,1197982,['WP_013582713.1'],,['DUF2815 family protein'],-1
+1013,1198069,1198453,['WP_013582714.1'],,['hypothetical protein'],-1
+1014,1198449,1199079,,,['HNH endonuclease'],-1
+1015,1199207,1199297,,,['HNH endonuclease'],-1
+1016,1199293,1200055,['WP_013582717.1'],,['hypothetical protein'],-1
+1017,1200051,1203009,['WP_013582718.1'],,['hypothetical protein'],-1
+1018,1203028,1203424,['WP_013582719.1'],,['hypothetical protein'],-1
+1019,1203428,1203791,['WP_013582720.1'],,['hypothetical protein'],-1
+1020,1203847,1204837,['WP_013582721.1'],,['hypothetical protein'],1
+1021,1204977,1205595,['WP_013582722.1'],,['CHAP domain-containing protein'],1
+1022,1205635,1206280,['WP_032740823.1'],,['C40 family peptidase'],1
+1023,1206601,1206799,['WP_013582725.1'],,['hypothetical protein'],-1
+1024,1206819,1207668,['WP_032740824.1'],,['hypothetical protein'],-1
+1025,1207686,1208616,['WP_013582727.1'],,['HNH endonuclease'],-1
+1026,1208618,1208915,['WP_013582728.1'],,['hypothetical protein'],-1
+1027,1209172,1209643,['WP_013582729.1'],,['hypothetical protein'],1
+1028,1209681,1210320,['WP_013582730.1'],,['hypothetical protein'],1
+1029,1210335,1210599,['WP_013582731.1'],,['hypothetical protein'],1
+1030,1210705,1211479,['WP_016507673.1'],,['N-formylglutamate amidohydrolase'],1
+1031,1211487,1211817,['WP_013582733.1'],,['hypothetical protein'],1
+1032,1211964,1212771,['WP_117754938.1'],,['hypothetical protein'],1
+1033,1213103,1213769,['WP_013582735.1'],,['hypothetical protein'],1
+1034,1213836,1214799,['WP_013582736.1'],,['hypothetical protein'],-1
+1035,1215029,1216136,['WP_013582737.1'],,['DUF262 domain-containing protein'],-1
+1036,1216132,1217344,['WP_013582738.1'],,['adenine-specific methyltransferase EcoRI family protein'],-1
+1037,1217522,1217990,['WP_016507676.1'],,['hypothetical protein'],-1
+1038,1218190,1219513,['WP_013582740.1'],,['hypothetical protein'],1
+1039,1219561,1220098,['WP_013582741.1'],,['hypothetical protein'],1
+1040,1220094,1220919,['WP_013582742.1'],,['Fic family protein'],1
+1041,1220986,1222408,['WP_013582743.1'],,['hypothetical protein'],1
+1042,1222619,1223423,,,['hypothetical protein'],1
+1043,1226017,1227052,['WP_013582745.1'],,['hypothetical protein'],-1
+1044,1227035,1228295,['WP_016507680.1'],,['DEAD/DEAH box helicase family protein'],-1
+1045,1228291,1229074,['WP_013582747.1'],,['nucleotidyltransferase domain-containing protein'],-1
+1046,1229070,1229391,['WP_013582748.1'],,['hypothetical protein'],-1
+1047,1230925,1231690,['WP_012472066.1'],['istB'],['IS21-like element ISBlo1 family helper ATPase IstB'],-1
+1048,1231707,1233210,['WP_013140934.1'],['istA'],['IS21 family transposase'],-1
+1049,1233402,1234161,,,['hypothetical protein'],1
+1050,1234980,1235250,['WP_050496089.1'],,['hypothetical protein'],1
+1051,1235269,1235728,['WP_012577532.1'],,['hypothetical protein'],1
+1052,1235863,1236154,['WP_016507683.1'],,['VRR-NUC domain-containing protein'],-1
+1053,1236141,1236561,['WP_013582753.1'],,['hypothetical protein'],-1
+1054,1236656,1239068,['WP_013582754.1'],,['hypothetical protein'],1
+1055,1239516,1239798,['WP_032740835.1'],,['hypothetical protein'],-1
+1056,1239834,1240821,['WP_016507685.1'],,['hypothetical protein'],-1
+1057,1240898,1241969,['WP_013582757.1'],,['hypothetical protein'],1
+1058,1242108,1242525,['WP_126623120.1'],,['hypothetical protein'],1
+1059,1243168,1243519,['WP_032740846.1'],,['hypothetical protein'],1
+1060,1243508,1244903,['WP_032740836.1'],,['DEAD/DEAH box helicase family protein'],-1
+1061,1244976,1245225,['WP_013582761.1'],,['hypothetical protein'],1
+1062,1245327,1245522,['WP_013582762.1'],,['helix-turn-helix domain-containing protein'],1
+1063,1245671,1245926,['WP_007052874.1'],,['hypothetical protein'],-1
+1064,1245949,1246669,['WP_007052873.1'],,['HAD family hydrolase'],-1
+1065,1246800,1247148,['WP_007052872.1'],,['RNA polymerase-binding protein RbpA'],-1
+1066,1247263,1249855,['WP_007057119.1'],,['DEAD/DEAH box helicase'],-1
+1067,1249867,1250185,['WP_007052870.1'],,['hypothetical protein'],-1
+1068,1250195,1252109,['WP_007052869.1'],,['WYL domain-containing protein'],-1
+1069,1252248,1253778,['WP_007057075.1'],,['UTP--glucose-1-phosphate uridylyltransferase'],-1
+1070,1254132,1256262,['WP_007055764.1'],['der'],['bifunctional cytidylate kinase/GTPase Der'],-1
+1071,1256258,1257029,['WP_007052866.1'],,['rRNA pseudouridine synthase'],-1
+1072,1257224,1258193,['WP_007055750.1'],,['aquaporin'],1
+1073,1258091,1258394,['WP_008783527.1'],,['hypothetical protein'],-1
+1074,1258539,1260177,['WP_032740837.1'],['purH'],['bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase'],-1
+1075,1260124,1261504,['WP_016507687.1'],,['hypothetical protein'],-1
+1076,1261523,1262435,['WP_007052862.1'],['sucD'],['succinate--CoA ligase subunit alpha'],-1
+1077,1262434,1263637,['WP_007052861.1'],['sucC'],['ADP-forming succinate--CoA ligase subunit beta'],-1
+1078,1263733,1264315,['WP_007052860.1'],,['adenine phosphoribosyltransferase'],-1
+1079,1264378,1264798,['WP_010080657.1'],,['preprotein translocase subunit YajC'],-1
+1080,1264880,1265945,['WP_007057107.1'],['ruvB'],['Holliday junction branch migration DNA helicase RuvB'],-1
+1081,1265944,1266571,['WP_007057108.1'],['ruvA'],['Holliday junction branch migration protein RuvA'],-1
+1082,1266628,1267213,['WP_007055752.1'],['ruvC'],['crossover junction endodeoxyribonuclease RuvC'],-1
+1083,1267218,1267974,['WP_007052855.1'],,['YebC/PmpR family DNA-binding transcriptional regulator'],-1
+1084,1268112,1268697,['WP_007052854.1'],,['HIT domain-containing protein'],-1
+1085,1268749,1270783,['WP_013582765.1'],,['threonine--tRNA ligase'],-1
+1086,1271602,1272436,['WP_007058657.1'],,['PAC2 family protein'],1
+1087,1272650,1273535,['WP_007055147.1'],['uppP'],['undecaprenyl-diphosphatase UppP'],-1
+1088,1273679,1274471,['WP_007055152.1'],,['fructosamine kinase family protein'],1
+1089,1274517,1275663,['WP_007058814.1'],['dnaJ'],['molecular chaperone DnaJ'],-1
+1090,1275718,1276837,['WP_007052793.1'],['hrcA'],['heat-inducible transcriptional repressor HrcA'],-1
+1091,1277211,1279320,['WP_013140777.1'],,['transketolase'],1
+1092,1279492,1280596,['WP_013582766.1'],['tal'],['transaldolase'],1
+1093,1280725,1282063,['WP_013582767.1'],['brnQ'],['branched-chain amino acid transport system II carrier protein'],1
+1094,1282234,1283344,['WP_007054290.1'],,['hypothetical protein'],1
+1095,1283472,1285029,['WP_007054291.1'],,['aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme'],-1
+1096,1285139,1285991,['WP_007054292.1'],,['HAD family hydrolase'],-1
+1097,1285987,1286938,['WP_007056108.1'],,['L-lactate dehydrogenase'],-1
+1098,1287039,1287288,['WP_003829342.1'],['secG'],['preprotein translocase subunit SecG'],-1
+1099,1287351,1288155,['WP_013582768.1'],,['triose-phosphate isomerase'],-1
+1100,1288210,1289416,['WP_007056049.1'],,['phosphoglycerate kinase'],-1
+1101,1289584,1290535,['WP_007052782.1'],['whiA'],['DNA-binding protein WhiA'],-1
+1102,1290733,1291720,['WP_013582769.1'],['rapZ'],['RNase adapter RapZ'],-1
+1103,1291719,1292691,['WP_007056051.1'],,['shikimate 5-dehydrogenase'],-1
+1104,1292799,1295166,['WP_013582770.1'],['uvrC'],['excinuclease ABC subunit UvrC'],-1
+1105,1295315,1298351,['WP_013582771.1'],['uvrA'],['excinuclease ABC subunit UvrA'],-1
+1106,1298615,1299038,['WP_007056099.1'],,['hypothetical protein'],-1
+1107,1299348,1300533,['WP_013582772.1'],,['hypothetical protein'],-1
+1108,1300606,1304155,['WP_013582773.1'],,['hypothetical protein'],-1
+1109,1304151,1304826,['WP_008783544.1'],,['DUF4194 domain-containing protein'],-1
+1110,1304822,1306454,['WP_013410832.1'],,['DUF3375 domain-containing protein'],-1
+1111,1306655,1307303,['WP_007052771.1'],,['MptD family putative ECF transporter S component'],1
+1112,1307302,1308004,['WP_007054304.1'],,['energy-coupling factor transporter transmembrane protein EcfT'],1
+1113,1308003,1309617,['WP_013582774.1'],,['energy-coupling factor ABC transporter ATP-binding protein'],1
+1114,1309613,1310285,['WP_007054306.1'],,['hypothetical protein'],1
+1115,1310337,1310706,['WP_007052767.1'],,['metallopeptidase family protein'],-1
+1116,1310776,1311484,['WP_007052766.1'],,['SDR family NAD(P)-dependent oxidoreductase'],-1
+1117,1311527,1313129,['WP_007052765.1'],,['ABC-F family ATP-binding cassette domain-containing protein'],-1
+1118,1313224,1313380,['WP_007056704.1'],,['hypothetical protein'],1
+1119,1313444,1315001,['WP_007052763.1'],['trpE'],['anthranilate synthase component I'],-1
+1120,1315081,1315477,['WP_007052762.1'],['hisI'],['phosphoribosyl-AMP cyclohydrolase'],-1
+1121,1315610,1316381,['WP_013582775.1'],['hisF'],['imidazole glycerol phosphate synthase subunit HisF'],-1
+1122,1316555,1317104,['WP_007052759.1'],,['type 1 glutamine amidotransferase'],1
+1123,1317104,1318274,['WP_013582776.1'],['rlmN'],['23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN'],-1
+1124,1318484,1319471,['WP_007052757.1'],,['phosphatidate cytidylyltransferase'],-1
+1125,1319493,1320045,['WP_007052756.1'],['frr'],['ribosome recycling factor'],-1
+1126,1320121,1320862,['WP_007052755.1'],,['UMP kinase'],-1
+1127,1321035,1321887,['WP_007052754.1'],,['elongation factor Ts'],-1
+1128,1321965,1322811,['WP_007056702.1'],['rpsB'],['30S ribosomal protein S2'],-1
+1129,1323165,1323654,['WP_007052751.1'],['def'],['peptide deformylase'],-1
+1130,1323660,1325757,['WP_016507695.1'],,['long-chain fatty acid--CoA ligase'],-1
+1131,1325847,1326339,['WP_012577406.1'],,['hypothetical protein'],-1
+1132,1326500,1327625,['WP_007052748.1'],,['GuaB3 family IMP dehydrogenase-related protein'],-1
+1133,1327752,1328973,['WP_008783318.1'],,['NADP-dependent isocitrate dehydrogenase'],1
+1134,1329221,1330853,['WP_013582778.1'],,['substrate-binding domain-containing protein'],1
+1135,1330930,1331620,['WP_007054320.1'],,['M23 family metallopeptidase'],-1
+1136,1332626,1333670,['WP_007054363.1'],['tsaD'],['tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit TsaD'],-1
+1137,1333666,1334221,['WP_008783284.1'],['rimI'],['ribosomal protein S18-alanine N-acetyltransferase'],-1
+1138,1334237,1335119,['WP_007054365.1'],['tsaB'],['tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex dimerization subunit type 1 TsaB'],-1
+1139,1335180,1335747,['WP_007052688.1'],['tsaE'],['tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex ATPase subunit type 1 TsaE'],-1
+1140,1335767,1336739,['WP_007057620.1'],['holA'],['DNA polymerase III subunit delta'],-1
+1141,1336805,1338152,['WP_013582779.1'],,['amidohydrolase family protein'],-1
+1142,1338291,1340046,['WP_016507697.1'],,['ComEC/Rec2 family competence protein'],-1
+1143,1340042,1340540,['WP_007054369.1'],,['helix-hairpin-helix domain-containing protein'],-1
+1144,1340981,1343945,['WP_010080746.1'],,['leucine--tRNA ligase'],-1
+1145,1343987,1344833,['WP_010080747.1'],,['glutamate ABC transporter substrate-binding protein'],-1
+1146,1344928,1345879,['WP_007054371.1'],,['magnesium transporter CorA family protein'],-1
+1147,1345993,1346839,['WP_007052680.1'],,['histidine phosphatase family protein'],-1
+1148,1346907,1348203,['WP_013582782.1'],,['DNA methyltransferase'],1
+1149,1348230,1348635,['WP_007052678.1'],,"[""pyridoxamine 5'-phosphate oxidase family protein""]",-1
+1150,1348913,1349849,['WP_007052677.1'],,['DMT family transporter'],1
+1151,1349902,1350013,,,['nitroreductase'],1
+1152,1350232,1351201,['WP_007052675.1'],,['hypothetical protein'],1
+1153,1351273,1351813,['WP_032735440.1'],,['peptidylprolyl isomerase'],1
+1154,1351909,1352425,['WP_032740853.1'],,['IS3 family transposase'],1
+1155,1352424,1352997,,,['IS3 family transposase'],1
+1156,1353130,1354333,['WP_007053137.1'],,['tyrosine-type recombinase/integrase'],1
+1157,1354329,1355295,['WP_013582545.1'],,['tyrosine-type recombinase/integrase'],1
+1158,1355291,1356347,['WP_013582544.1'],,['tyrosine-type recombinase/integrase'],1
+1159,1356461,1356752,,,['IS3 family transposase'],1
+1160,1356869,1359194,['WP_032740928.1'],,"[""bifunctional (p)ppGpp synthetase/guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase""]",-1
+1161,1359327,1359804,['WP_007055963.1'],['dut'],['dUTP diphosphatase'],-1
+1162,1359803,1360097,['WP_007052669.1'],,['DUF4193 domain-containing protein'],-1
+1163,1360255,1361347,['WP_007056777.1'],,['DUF3071 domain-containing protein'],1
+1164,1361356,1362625,['WP_007054496.1'],,['alkaline phosphatase family protein'],-1
+1165,1362875,1365605,['WP_007052666.1'],,['DNA topoisomerase IV subunit A'],1
+1166,1365749,1366538,['WP_013582787.1'],,['response regulator transcription factor'],1
+1167,1366548,1371282,['WP_013582788.1'],,['DEAD/DEAH box helicase'],-1
+1168,1371297,1372290,['WP_013582789.1'],,['ribokinase'],-1
+1169,1372333,1373560,['WP_013582790.1'],,['MFS transporter'],-1
+1170,1373726,1376003,['WP_013582791.1'],,['type IIA DNA topoisomerase subunit B'],-1
+1171,1376060,1377485,['WP_007055162.1'],,['RNA polymerase sigma factor'],-1
+1172,1377687,1378350,['WP_007055157.1'],,['DUF4192 family protein'],-1
+1173,1378554,1379637,['WP_007055156.1'],,['polyprenyl synthetase family protein'],1
+1174,1379780,1382054,['WP_032740855.1'],,['serine/threonine-protein kinase'],1
+1175,1382105,1382810,['WP_007058769.1'],,['1-acyl-sn-glycerol-3-phosphate acyltransferase'],-1
+1176,1382870,1383566,['WP_013582793.1'],,['hypothetical protein'],1
+1177,1383719,1383908,['WP_007054484.1'],,['hypothetical protein'],-1
+1178,1383954,1385001,['WP_013582794.1'],['trpD'],['anthranilate phosphoribosyltransferase'],-1
+1179,1385728,1385944,['WP_007055155.1'],,['transposase'],1
+1180,1386254,1389149,['WP_007055154.1'],['secA'],['preprotein translocase subunit SecA'],-1
+1181,1389310,1389973,['WP_007054480.1'],['raiA'],['ribosome-associated translation inhibitor RaiA'],-1
+1182,1390849,1391443,['WP_032736307.1'],,['RecX family transcriptional regulator'],-1
+1183,1391445,1392639,['WP_007052644.1'],['recA'],['recombinase RecA'],-1
+1184,1392939,1393173,['WP_007052642.1'],,['DUF3046 domain-containing protein'],-1
+1185,1393284,1393800,['WP_007052641.1'],,['helix-turn-helix transcriptional regulator'],-1
+1186,1393859,1394393,['WP_007054477.1'],,['CinA family protein'],-1
+1187,1394404,1395040,['WP_007052639.1'],['pgsA'],['CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase'],-1
+1188,1395216,1398126,['WP_013582797.1'],,['DNA translocase FtsK'],-1
+1189,1398337,1399087,['WP_013582798.1'],,['Fic family protein'],1
+1190,1399120,1400107,['WP_007052636.1'],['miaA'],['tRNA (adenosine(37)-N6)-dimethylallyltransferase MiaA'],-1
+1191,1400117,1401572,['WP_032743317.1'],['miaB'],['tRNA (N6-isopentenyl adenosine(37)-C2)-methylthiotransferase MiaB'],-1
+1192,1401703,1402444,['WP_007056209.1'],,['GTP pyrophosphokinase family protein'],1
+1193,1402476,1403493,['WP_007052632.1'],,['DMT family transporter'],-1
+1194,1403632,1404532,['WP_007052631.1'],,['Bax inhibitor-1 family protein'],-1
+1195,1404712,1405573,['WP_013582800.1'],,['DUF5067 domain-containing protein'],-1
+1196,1405908,1407141,['WP_007056207.1'],,['sensor histidine kinase'],1
+1197,1407175,1407901,['WP_007056206.1'],,['response regulator transcription factor'],1
+1198,1407940,1408582,['WP_007052627.1'],,['GNAT family N-acetyltransferase'],1
+1199,1408671,1410777,['WP_013582801.1'],,['DUF262 domain-containing protein'],1
+1200,1410826,1411318,['WP_007052625.1'],,['type II toxin-antitoxin system VapC family toxin'],-1
+1201,1411314,1411707,['WP_013410773.1'],,['type II toxin-antitoxin system RelB/DinJ family antitoxin'],-1
+1202,1411851,1414551,['WP_013582802.1'],['acnA'],['aconitate hydratase AcnA'],-1
+1203,1414668,1417257,['WP_013582803.1'],,['cation-translocating P-type ATPase'],-1
+1204,1417347,1418043,['WP_007055252.1'],,['hypothetical protein'],-1
+1205,1418054,1419323,['WP_007055251.1'],,['class I SAM-dependent RNA methyltransferase'],-1
+1206,1419312,1420071,['WP_008783114.1'],,['DUF3159 domain-containing protein'],-1
+1207,1420086,1420941,['WP_011068026.1'],,['DUF3710 domain-containing protein'],-1
+1208,1421008,1421869,['WP_007058594.1'],,['exodeoxyribonuclease III'],-1
+1209,1421973,1423983,['WP_013582805.1'],,['ABC transporter ATP-binding protein'],-1
+1210,1424005,1425010,['WP_003832139.1'],,['ABC transporter permease'],-1
+1211,1425028,1425955,,,['ABC transporter permease'],-1
+1212,1426255,1427896,['WP_007054457.1'],,['ABC transporter substrate-binding protein'],-1
+1213,1428147,1429221,['WP_013582807.1'],,['tyrosine recombinase XerC'],-1
+1214,1429255,1429513,['WP_007052610.1'],,['hypothetical protein'],-1
+1215,1429724,1430828,['WP_080557738.1'],,['prephenate dehydrogenase/arogenate dehydrogenase family protein'],-1
+1216,1430785,1431763,['WP_008783121.1'],,['chorismate mutase'],-1
+1217,1431842,1432289,['WP_007052607.1'],,['alcohol dehydrogenase'],-1
+1218,1432388,1434320,['WP_007052606.1'],['typA'],['translational GTPase TypA'],-1
+1219,1434634,1435984,['WP_007052605.1'],,['MFS transporter'],-1
+1220,1436015,1437263,['WP_007054451.1'],,['cysteine desulfurase'],-1
+1221,1437265,1438159,['WP_007052603.1'],,['carboxylating nicotinate-nucleotide diphosphorylase'],-1
+1222,1438162,1439794,['WP_007054450.1'],['nadB'],['L-aspartate oxidase'],-1
+1223,1439885,1441166,['WP_007052601.1'],['nadA'],['quinolinate synthase NadA'],-1
+1224,1441225,1442053,['WP_013582809.1'],,['NUDIX hydrolase'],-1
+1225,1442184,1442901,['WP_007055260.1'],['scpB'],['SMC-Scp complex subunit ScpB'],-1
+1226,1442913,1443828,['WP_007052598.1'],,['segregation/condensation protein A'],-1
+1227,1443846,1444686,['WP_007052597.1'],,['ParA family protein'],-1
+1228,1444947,1447794,['WP_013582810.1'],,['ABC transporter ATP-binding protein/permease'],-1
+1229,1447921,1448848,['WP_032743318.1'],['xerD'],['site-specific tyrosine recombinase XerD'],-1
+1230,1448917,1449301,['WP_007052594.1'],['rplT'],['50S ribosomal protein L20'],-1
+1231,1449353,1449548,['WP_007052593.1'],['rpmI'],['50S ribosomal protein L35'],-1
+1232,1449528,1450251,['WP_032682519.1'],,['translation initiation factor IF-3'],-1
+1233,1450535,1451540,['WP_007054442.1'],,['fused MFS/spermidine synthase'],-1
+1234,1451454,1451670,['WP_162094057.1'],,['hypothetical protein'],-1
+1235,1451771,1452497,['WP_007054441.1'],,['thiamine diphosphokinase'],1
+1236,1452737,1453796,['WP_007052589.1'],['gap'],['type I glyceraldehyde-3-phosphate dehydrogenase'],1
+1237,1453889,1454399,['WP_007054439.1'],['ybaK'],['Cys-tRNA(Pro) deacylase'],1
+1238,1454438,1455497,['WP_074710142.1'],,['4-hydroxy-3-methylbut-2-enyl diphosphate reductase'],-1
+1239,1455721,1456678,['WP_007054437.1'],,['aldose 1-epimerase family protein'],1
+1240,1456802,1457747,['WP_007057264.1'],,['aldose 1-epimerase family protein'],1
+1241,1458012,1458333,['WP_007055264.1'],,['hypothetical protein'],-1
+1242,1458332,1459085,['WP_007057260.1'],,['sigma-70 family RNA polymerase sigma factor'],-1
+1243,1459259,1460813,['WP_013582813.1'],,"['UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2, 6-diaminopimelate ligase']",1
+1244,1460934,1461930,['WP_013410747.1'],,['GNAT family N-acetyltransferase'],1
+1245,1462048,1465726,['WP_013582814.1'],['smc'],['chromosome segregation protein SMC'],-1
+1246,1465786,1467391,['WP_007052575.1'],,['bifunctional folylpolyglutamate synthase/dihydrofolate synthase'],-1
+1247,1468645,1469497,['WP_007057256.1'],,['hypothetical protein'],1
+1248,1469800,1471396,['WP_013582815.1'],,['aminopeptidase P family protein'],1
+1249,1471444,1471966,['WP_007057255.1'],,['NUDIX domain-containing protein'],1
+1250,1472015,1473725,['WP_007052568.1'],,['ABC transporter ATP-binding protein'],-1
+1251,1473728,1474898,['WP_007052567.1'],,['ABC transporter permease'],-1
+1252,1474899,1475991,['WP_007052566.1'],,['ABC transporter permease'],-1
+1253,1476158,1477793,['WP_007057390.1'],,['peptide ABC transporter substrate-binding protein'],-1
+1254,1478072,1479356,['WP_007057958.1'],,['N-acetylglucosamine-6-phosphate deacetylase'],-1
+1255,1479411,1480224,['WP_007052563.1'],['nagB'],['glucosamine-6-phosphate deaminase'],-1
+1256,1480561,1481686,['WP_007052562.1'],,['ROK family transcriptional regulator'],1
+1257,1481825,1482740,['WP_023658453.1'],,['ROK family protein'],-1
+1258,1482966,1484181,['WP_126623116.1'],,['ROK family transcriptional regulator'],1
+1259,1484253,1485150,['WP_013582817.1'],,['carbohydrate kinase'],1
+1260,1485224,1485614,['WP_013582818.1'],,['VOC family protein'],1
+1261,1485719,1486964,['WP_013582819.1'],,['MFS transporter'],1
+1262,1487060,1487549,['WP_013582820.1'],,['D-tyrosyl-tRNA(Tyr) deacylase'],-1
+1263,1487638,1488325,['WP_007052555.1'],,['VWA domain-containing protein'],-1
+1264,1488468,1489572,['WP_007056379.1'],,['macro domain-containing protein'],-1
+1265,1490312,1491242,['WP_013582822.1'],,['FtsQ-type POTRA domain-containing protein'],-1
+1266,1491376,1492915,['WP_013582823.1'],['murC'],['UDP-N-acetylmuramate--L-alanine ligase'],-1
+1267,1493015,1494197,['WP_007052550.1'],,['UDP-N-acetylglucosamine--N-acetylmuramyl- (pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase'],-1
+1268,1494212,1495430,['WP_007054401.1'],['ftsW'],['putative lipid II flippase FtsW'],-1
+1269,1495416,1496862,['WP_007054400.1'],['murD'],['UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase'],-1
+1270,1496916,1498023,['WP_007052547.1'],,['phospho-N-acetylmuramoyl-pentapeptide- transferase'],-1
+1271,1498067,1499519,['WP_007054398.1'],,['UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D- alanine ligase'],-1
+1272,1499567,1500440,['WP_007054397.1'],,['hypothetical protein'],-1
+1273,1500466,1502269,['WP_013582825.1'],,['penicillin-binding protein 2'],-1
+1274,1502265,1502715,['WP_007052543.1'],,['hypothetical protein'],-1
+1275,1502721,1503801,['WP_007052542.1'],['rsmH'],['16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH'],-1
+1276,1503800,1504322,['WP_007052541.1'],['mraZ'],['division/cell wall cluster transcriptional repressor MraZ'],-1
+1277,1504654,1506934,['WP_007052539.1'],,['AAA family ATPase'],1
+1278,1506944,1508144,['WP_007054393.1'],['serA'],['phosphoglycerate dehydrogenase'],1
+1279,1508278,1508755,['WP_007052537.1'],['nrdR'],['transcriptional repressor NrdR'],-1
+1280,1508771,1509008,['WP_032740860.1'],,['LysM peptidoglycan-binding domain-containing protein'],-1
+1281,1509087,1509849,['WP_013582291.1'],['istB'],['IS21-like element helper ATPase IstB'],-1
+1282,1509845,1511303,['WP_013582292.1'],['istA'],['IS21 family transposase'],-1
+1283,1511722,1512448,['WP_007052535.1'],['lexA'],['transcriptional repressor LexA'],1
+1284,1512613,1513552,['WP_007052534.1'],,['cation transporter'],1
+1285,1513693,1514656,['WP_007052533.1'],,['L-lactate dehydrogenase'],-1
+1286,1514836,1516342,['WP_007056520.1'],['hflX'],['GTPase HflX'],-1
+1287,1516500,1517157,['WP_007054390.1'],,['methyltransferase'],1
+1288,1517146,1521283,['WP_007058451.1'],['hrpA'],['ATP-dependent RNA helicase HrpA'],1
+1289,1521279,1522251,['WP_013582827.1'],,['hypothetical protein'],1
+1290,1522297,1522768,['WP_007054387.1'],,['MFS transporter'],-1
+1291,1523003,1524341,['WP_007052524.1'],['glnA'],['type I glutamate--ammonia ligase'],-1
+1292,1524489,1525923,['WP_007052523.1'],,['DUF2252 domain-containing protein'],1
+1293,1526026,1526752,['WP_007054385.1'],['priA'],['bifunctional 1-(5-phosphoribosyl)-5-((5- phosphoribosylamino)methylideneamino)imidazole-4- carboxamide isomerase/phosphoribosylanthranilate isomerase PriA'],-1
+1294,1526821,1527469,['WP_013582828.1'],['hisH'],['imidazole glycerol phosphate synthase subunit HisH'],-1
+1295,1527503,1528298,['WP_013582829.1'],,['hypothetical protein'],-1
+1296,1528297,1528897,['WP_007052519.1'],['hisB'],['imidazoleglycerol-phosphate dehydratase HisB'],-1
+1297,1528982,1530143,['WP_007052518.1'],,['histidinol-phosphate transaminase'],-1
+1298,1530139,1531537,['WP_013582830.1'],['hisD'],['histidinol dehydrogenase'],-1
+1299,1531638,1531932,['WP_013582831.1'],,['acylphosphatase'],-1
+1300,1531944,1533420,['WP_173361539.1'],,['gluconate kinase'],-1
+1301,1533529,1534357,['WP_007052514.1'],,['aldo/keto reductase'],1
+1302,1540474,1540975,['WP_007053332.1'],,['GNAT family N-acetyltransferase'],-1
+1303,1541071,1542949,['WP_007053331.1'],,['oleate hydratase'],-1
+1304,1543154,1543565,['WP_007053330.1'],,['DUF4186 domain-containing protein'],-1
+1305,1543677,1547235,['WP_013582833.1'],['dnaE'],['DNA polymerase III subunit alpha'],-1
+1306,1547649,1547763,,,['transposase family protein'],1
+1307,1547793,1548042,['WP_175282300.1'],,['transposase'],1
+1308,1548072,1548507,['WP_007057562.1'],,['hypothetical protein'],1
+1309,1548511,1549822,['WP_013582834.1'],,['DUF262 domain-containing protein'],1
+1310,1549818,1551762,['WP_013582835.1'],,['DUF262 domain-containing protein'],1
+1311,1552558,1553857,['WP_007057560.1'],,['hypothetical protein'],-1
+1312,1553898,1554327,['WP_007054079.1'],,['hypothetical protein'],-1
+1313,1554471,1558587,['WP_012577189.1'],,['UvrD-helicase domain-containing protein'],-1
+1314,1558580,1561877,['WP_013582836.1'],,['exodeoxyribonuclease V subunit gamma'],-1
+1315,1562014,1564651,['WP_012577187.1'],,['PHP domain-containing protein'],-1
+1316,1564734,1565781,['WP_007057559.1'],,['WYL domain-containing protein'],1
+1317,1565808,1566609,['WP_007055431.1'],,['YihY/virulence factor BrkB family protein'],-1
+1318,1566879,1567359,['WP_007053326.1'],,['ATP-binding protein'],-1
+1319,1567668,1568631,['WP_007054072.1'],,['RluA family pseudouridine synthase'],-1
+1320,1568630,1569179,['WP_007053323.1'],['lspA'],['signal peptidase II'],-1
+1321,1569200,1570580,['WP_007055428.1'],,['DivIVA domain-containing protein'],-1
+1322,1570719,1571022,['WP_007054068.1'],,['YggT family protein'],-1
+1323,1571143,1571623,['WP_007053320.1'],,['cell division protein SepF'],-1
+1324,1571635,1572847,['WP_007053319.1'],['ftsZ'],['cell division protein FtsZ'],-1
+1325,1572958,1574203,['WP_007053318.1'],['dusB'],['tRNA dihydrouridine synthase DusB'],-1
+1326,1574347,1575820,['WP_007053317.1'],,['glycine--tRNA ligase'],-1
+1327,1576255,1577200,['WP_007053316.1'],,['hydroxyethylthiazole kinase'],1
+1328,1577282,1580036,['WP_011067965.1'],['thiC'],['phosphomethylpyrimidine synthase ThiC'],1
+1329,1580072,1580339,['WP_007054063.1'],,['hypothetical protein'],-1
+1330,1580542,1581352,['WP_007055440.1'],['thiD'],['bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase'],1
+1331,1581402,1581780,['WP_007053312.1'],,['thiamine-binding protein'],1
+1332,1582285,1583665,['WP_007058690.1'],,['MFS transporter'],1
+1333,1583748,1583949,['WP_007054060.1'],,['hypothetical protein'],-1
+1334,1584293,1584704,['WP_007053306.1'],,['hypothetical protein'],1
+1335,1584725,1586159,['WP_007054058.1'],,['serpin family protein'],1
+1336,1586202,1587243,['WP_007054057.1'],,['LacI family DNA-binding transcriptional regulator'],1
+1337,1587456,1588794,['WP_007058711.1'],,['MFS transporter'],1
+1338,1588804,1590361,['WP_013582837.1'],,['glycoside hydrolase family 32 protein'],1
+1339,1590555,1591338,['WP_007056912.1'],,['ABC transporter permease'],1
+1340,1591597,1592668,['WP_007053300.1'],,['ABC transporter substrate-binding protein'],1
+1341,1592791,1594009,['WP_013582838.1'],,['nucleoside hydrolase'],1
+1342,1594165,1594954,['WP_007055433.1'],,['isoprenyl transferase'],-1
+1343,1594956,1595676,['WP_007054051.1'],['recO'],['DNA repair protein RecO'],-1
+1344,1595725,1597504,['WP_013582839.1'],,['alpha/beta hydrolase'],-1
+1345,1597558,1598782,['WP_007054049.1'],['ispG'],['flavodoxin-dependent (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase'],-1
+1346,1598778,1599969,['WP_007053294.1'],,['1-deoxy-D-xylulose-5-phosphate reductoisomerase'],-1
+1347,1599965,1601669,['WP_013582840.1'],,['DivIVA domain-containing protein'],-1
+1348,1602137,1602563,['WP_012577161.1'],,['DUF3052 domain-containing protein'],-1
+1349,1602669,1603551,['WP_007056931.1'],,['Lon protease'],-1
+1350,1603771,1605517,['WP_007055437.1'],,['zinc-dependent metalloprotease'],1
+1351,1605589,1607164,['WP_008782659.1'],,['ATP-dependent helicase'],-1
+1352,1607309,1608965,['WP_013410460.1'],,['phosphotransferase'],1
+1353,1609113,1609338,['WP_007054042.1'],,['DUF3107 domain-containing protein'],1
+1354,1609398,1610292,['WP_013582841.1'],,['PHP domain-containing protein'],-1
+1355,1610429,1611167,['WP_007054040.1'],,['vitamin K epoxide reductase family protein'],1
+1356,1611172,1612066,['WP_007054039.1'],['dapF'],['diaminopimelate epimerase'],-1
+1357,1612173,1612968,['WP_007053283.1'],,['glutamate racemase'],1
+1358,1613096,1613942,['WP_008782662.1'],,['patatin family protein'],1
+1359,1614008,1614908,['WP_007053281.1'],,['SPFH domain-containing protein'],-1
+1360,1615067,1615337,['WP_013582842.1'],,['PLP-dependent transferase'],-1
+1361,1615400,1615724,['WP_007054036.1'],,['NIL domain-containing protein'],-1
+1362,1615815,1616001,['WP_007054035.1'],,['hypothetical protein'],-1
+1363,1616011,1616333,,,['Rrf2 family transcriptional regulator'],1
+1364,1616443,1616695,['WP_007054033.1'],,['mycoredoxin'],-1
+1365,1616944,1618177,['WP_013582844.1'],,['PLP-dependent transferase'],-1
+1366,1618412,1619315,['WP_007054029.1'],,['cysteine ABC transporter substrate-binding protein'],-1
+1367,1619380,1620172,['WP_007054028.1'],,['amino acid ABC transporter ATP-binding protein'],-1
+1368,1620164,1620839,['WP_007053272.1'],,['amino acid ABC transporter permease'],-1
+1369,1620825,1621485,['WP_007058318.1'],,['amino acid ABC transporter permease'],-1
+1370,1621713,1622364,['WP_007053270.1'],,['dienelactone hydrolase family protein'],1
+1371,1622372,1624628,['WP_013582845.1'],,['TetM/TetW/TetO/TetS family tetracycline resistance ribosomal protection protein'],-1
+1372,1624774,1625482,['WP_007054025.1'],,"[""3'-5' exonuclease""]",1
+1373,1625483,1626074,['WP_007053267.1'],['gmk'],['guanylate kinase'],-1
+1374,1626253,1627174,['WP_007053266.1'],['pyrF'],"[""orotidine-5'-phosphate decarboxylase""]",-1
+1375,1627173,1630557,['WP_007056955.1'],['carB'],['carbamoyl-phosphate synthase large subunit'],-1
+1376,1630558,1631782,['WP_007053264.1'],['carA'],['glutamine-hydrolyzing carbamoyl-phosphate synthase small subunit'],-1
+1377,1631972,1632545,['WP_007053263.1'],['nusB'],['transcription antitermination factor NusB'],-1
+1378,1632599,1633166,['WP_007056944.1'],['efp'],['elongation factor P'],-1
+1379,1633291,1634059,['WP_007054022.1'],,['ATP-binding cassette domain-containing protein'],1
+1380,1634055,1634856,['WP_007054021.1'],['fetB'],['iron export ABC transporter permease subunit FetB'],1
+1381,1634932,1635640,['WP_032740866.1'],,"['L,D-transpeptidase']",-1
+1382,1635698,1636145,['WP_007056919.1'],,['hypothetical protein'],-1
+1383,1636478,1637255,['WP_007054018.1'],,['methyltransferase domain-containing protein'],-1
+1384,1637306,1637636,['WP_007053254.1'],,['DUF4432 family protein'],-1
+1385,1637853,1637946,['WP_012471763.1'],,['hypothetical protein'],-1
+1386,1637975,1638950,['WP_013582847.1'],,['3-hydroxyacyl-CoA dehydrogenase family protein'],-1
+1387,1639164,1640991,['WP_013582848.1'],,['alpha-xylosidase'],-1
+1388,1641102,1641402,['WP_007055628.1'],,['extracellular solute-binding protein'],-1
+1389,1641563,1643699,['WP_007055634.1'],,['family 20 glycosylhydrolase'],-1
+1390,1643809,1644625,['WP_007053248.1'],,['carbohydrate ABC transporter permease'],-1
+1391,1644762,1644975,['WP_032738004.1'],,['transcriptional regulator'],1
+1392,1645242,1646073,['WP_007054011.1'],,['hypothetical protein'],1
+1393,1646346,1647462,['WP_007054010.1'],,['Mrp/NBP35 family ATP-binding protein'],-1
+1394,1647637,1650400,['WP_007058309.1'],['ligA'],['NAD-dependent DNA ligase LigA'],-1
+1395,1650464,1654088,['WP_013582850.1'],,['tetratricopeptide repeat protein'],-1
+1396,1654185,1656447,['WP_013410302.1'],,['hypothetical protein'],1
+1397,1656567,1656960,['WP_013410299.1'],,['hypothetical protein'],1
+1398,1657016,1657802,['WP_013582851.1'],,['energy-coupling factor ABC transporter ATP-binding protein'],-1
+1399,1657849,1659115,['WP_007054004.1'],,['pyridoxal phosphate-dependent aminotransferase'],-1
+1400,1659385,1660153,['WP_007053237.1'],,['ROK family protein'],-1
+1401,1660398,1661184,['WP_007053236.1'],,['nitroreductase'],1
+1402,1661225,1662248,['WP_007053235.1'],,['glycosyltransferase family 2 protein'],-1
+1403,1662490,1663144,['WP_007053234.1'],,['ECF transporter S component'],1
+1404,1663274,1665707,['WP_007054001.1'],,['ATP-binding cassette domain-containing protein'],1
+1405,1665778,1666084,['WP_007053232.1'],,['YhbY family RNA-binding protein'],1
+1406,1666182,1666548,['WP_007053231.1'],,['phage holin family protein'],-1
+1407,1666597,1667275,['WP_008782692.1'],,['TM2 domain-containing protein'],1
+1408,1667700,1668120,['WP_013582852.1'],,['hypothetical protein'],1
+1409,1668244,1669231,['WP_013582853.1'],,['D-2-hydroxyacid dehydrogenase'],-1
+1410,1669529,1670987,['WP_007053226.1'],,['MFS transporter'],1
+1411,1671212,1672235,['WP_007053225.1'],,['sugar ABC transporter permease'],-1
+1412,1672231,1673302,['WP_007053224.1'],,['ABC transporter permease'],-1
+1413,1673303,1674845,['WP_007053223.1'],,['sugar ABC transporter ATP-binding protein'],-1
+1414,1674985,1675969,['WP_007055612.1'],,['ABC transporter substrate-binding protein'],-1
+1415,1676284,1678015,['WP_032735545.1'],,['hypothetical protein'],-1
+1416,1678011,1679709,['WP_007053220.1'],,['sensor histidine kinase'],-1
+1417,1679705,1680428,['WP_007053219.1'],,['response regulator transcription factor'],-1
+1418,1680485,1681865,['WP_007053218.1'],,['replication-associated recombination protein A'],-1
+1419,1681947,1684515,['WP_013582854.1'],,['DEAD/DEAH box helicase'],-1
+1420,1684648,1685722,['WP_007055606.1'],,['polyphosphate kinase'],-1
+1421,1685787,1686030,['WP_007058714.1'],,['hypothetical protein'],-1
+1422,1686034,1686904,['WP_080557739.1'],,['zinc-ribbon domain-containing protein'],-1
+1423,1686930,1690866,['WP_013582856.1'],,"[""5'-nucleotidase C-terminal domain-containing protein""]",-1
+1424,1691018,1692539,['WP_013141102.1'],,['phosphatase PAP2 family protein'],-1
+1425,1692636,1693737,['WP_007055633.1'],,['amino acid ABC transporter permease'],-1
+1426,1693742,1694420,['WP_007055631.1'],,['ABC transporter permease subunit'],-1
+1427,1694419,1695259,['WP_012471745.1'],,['glutamate ABC transporter substrate-binding protein'],-1
+1428,1695290,1696061,['WP_032735606.1'],,['amino acid ABC transporter ATP-binding protein'],-1
+1429,1696687,1697640,,,['DUF559 domain-containing protein'],1
+1430,1698097,1699897,['WP_007053205.1'],['aspS'],['aspartate--tRNA ligase'],-1
+1431,1699932,1701333,['WP_032682683.1'],,['histidine--tRNA ligase'],-1
+1432,1701432,1702893,['WP_007058697.1'],,['DUF349 domain-containing protein'],1
+1433,1703103,1704897,['WP_032740870.1'],,"[""bifunctional metallophosphatase/5'-nucleotidase""]",-1
+1434,1705068,1705827,['WP_013582859.1'],,['creatininase'],-1
+1435,1705912,1707289,['WP_007055613.1'],,['MFS transporter'],-1
+1436,1707478,1708981,['WP_007053976.1'],,['PucR family transcriptional regulator'],-1
+1437,1709123,1710443,['WP_007053197.1'],,['amidohydrolase family protein'],1
+1438,1710622,1713232,['WP_007053196.1'],,['ATP-dependent Clp protease ATP-binding subunit'],-1
+1439,1713381,1714347,['WP_007053195.1'],,['universal stress protein'],1
+1440,1714458,1715646,['WP_007058563.1'],,['DUF3027 domain-containing protein'],-1
+1441,1715654,1716044,['WP_007053193.1'],,['cold-shock protein'],-1
+1442,1716113,1718105,['WP_007055645.1'],,['HAMP domain-containing histidine kinase'],-1
+1443,1718135,1718867,['WP_007053191.1'],,['response regulator transcription factor'],-1
+1444,1718859,1719525,['WP_007055616.1'],,['TPM domain-containing protein'],-1
+1445,1719740,1720031,['WP_007053189.1'],,['WXG100 family type VII secretion target'],1
+1446,1720127,1721753,['WP_007053188.1'],['groL'],['chaperonin GroEL'],-1
+1447,1721990,1722230,['WP_007053186.1'],,['cold-shock protein'],-1
+1448,1722459,1723143,['WP_007055622.1'],,['LytR C-terminal domain-containing protein'],-1
+1449,1723258,1723948,['WP_007053184.1'],,['uracil-DNA glycosylase'],1
+1450,1723987,1725067,['WP_007053183.1'],,['MoxR family ATPase'],1
+1451,1725063,1726014,['WP_007053182.1'],,['DUF58 domain-containing protein'],1
+1452,1726010,1726565,['WP_021975282.1'],,['hypothetical protein'],1
+1453,1726561,1727620,['WP_007053180.1'],,['VWA domain-containing protein'],1
+1454,1727616,1728648,['WP_013582861.1'],,['VWA domain-containing protein'],1
+1455,1728617,1729247,['WP_173361536.1'],,['cell surface protein'],1
+1456,1729516,1729837,['WP_007058571.1'],,['hypothetical protein'],1
+1457,1729833,1731438,['WP_008782718.1'],,['alpha/beta fold hydrolase'],1
+1458,1731704,1732070,['WP_007053174.1'],,['hypothetical protein'],1
+1459,1732205,1732847,['WP_007053173.1'],,['ECF transporter S component'],-1
+1460,1732979,1734416,['WP_007053172.1'],['purB'],['adenylosuccinate lyase'],1
+1461,1734538,1737100,['WP_013582862.1'],,['flippase-like domain-containing protein'],1
+1462,1737245,1737527,['WP_007053170.1'],,['HU family DNA-binding protein'],1
+1463,1737642,1739103,['WP_013582863.1'],['pafA'],['Pup--protein ligase'],-1
+1464,1739102,1739306,['WP_007057184.1'],,['ubiquitin-like protein Pup'],-1
+1465,1739404,1740301,['WP_010080939.1'],,['inositol monophosphatase family protein'],-1
+1466,1740312,1741980,['WP_013582865.1'],,['proteasome accessory factor PafA2'],-1
+1467,1742001,1743566,,['arc'],['proteasome ATPase'],-1
+1468,1743626,1744325,['WP_013582868.1'],,['DedA family protein'],-1
+1469,1744375,1745098,['WP_007057164.1'],['serB'],['phosphoserine phosphatase SerB'],1
+1470,1745137,1747450,['WP_032740876.1'],,"[""primosomal protein N'""]",1
+1471,1747508,1748213,['WP_007055594.1'],,['HAD family phosphatase'],1
+1472,1748236,1749223,['WP_013582870.1'],,['methionyl-tRNA formyltransferase'],1
+1473,1749313,1751176,['WP_023658517.1'],['ilvD'],['dihydroxy-acid dehydratase'],-1
+1474,1751377,1751662,['WP_007053158.1'],,['DNA-directed RNA polymerase subunit omega'],1
+1475,1751939,1753160,['WP_013582871.1'],,['methionine adenosyltransferase'],1
+1476,1754345,1755305,['WP_003830245.1'],,['tyrosine-type recombinase/integrase'],1
+1477,1755301,1756399,['WP_074709571.1'],,['restriction endonuclease subunit S'],1
+1478,1756361,1756865,['WP_033501742.1'],,['restriction endonuclease subunit S'],-1
+1479,1756854,1758363,['WP_013582873.1'],,['SAM-dependent DNA methyltransferase'],-1
+1480,1758388,1761508,['WP_013582874.1'],,['type I restriction endonuclease subunit R'],-1
+1481,1761821,1765133,['WP_013582875.1'],['ileS'],['mupirocin-resistant isoleucine--tRNA ligase'],-1
+1482,1765726,1766938,['WP_013410712.1'],,['aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme'],1
+1483,1767048,1768488,['WP_032740944.1'],,['MFS transporter'],-1
+1484,1768882,1772074,['WP_013582877.1'],,['DUF4981 domain-containing protein'],1
+1485,1772133,1773144,['WP_013582878.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+1486,1773306,1773558,['WP_013141153.1'],,['hypothetical protein'],-1
+1487,1773673,1774642,['WP_013582879.1'],,['ribokinase'],-1
+1488,1774866,1776297,['WP_013582880.1'],['dcuC'],['C4-dicarboxylate transporter DcuC'],-1
+1489,1776398,1777319,['WP_003830214.1'],['rihC'],['ribonucleoside hydrolase RihC'],-1
+1490,1777383,1777845,['WP_007052499.1'],,['GNAT family N-acetyltransferase'],-1
+1491,1778032,1779058,['WP_013582881.1'],,['substrate-binding domain-containing protein'],-1
+1492,1779237,1781253,['WP_013582882.1'],,['ABC transporter ATP-binding protein'],-1
+1493,1781249,1783208,['WP_013582883.1'],,['ABC transporter ATP-binding protein'],-1
+1494,1783204,1783738,['WP_003830203.1'],,['MarR family transcriptional regulator'],-1
+1495,1783948,1785472,['WP_013582884.1'],,['glycoside hydrolase family 3 C-terminal domain-containing protein'],-1
+1496,1786138,1787344,['WP_032740878.1'],,['cellulase family glycosylhydrolase'],-1
+1497,1787354,1787756,['WP_007052491.1'],,['HI0074 family nucleotidyltransferase substrate-binding subunit'],-1
+1498,1787742,1788030,['WP_007052490.1'],,['nucleotidyltransferase domain-containing protein'],-1
+1499,1788477,1790838,['WP_013582886.1'],,['glycoside hydrolase family 3 C-terminal domain-containing protein'],-1
+1500,1790869,1791190,['WP_013410699.1'],,['hypothetical protein'],-1
+1501,1791315,1792593,['WP_013410698.1'],,['gamma-glutamylcysteine synthetase'],-1
+1502,1793158,1797958,['WP_013582888.1'],,['right-handed parallel beta-helix repeat-containing protein'],1
+1503,1797961,1798804,['WP_013582889.1'],,['hypothetical protein'],1
+1504,1798966,1804105,['WP_013582890.1'],,['2-hydroxyacyl-CoA dehydratase'],-1
+1505,1804332,1805061,['WP_007052483.1'],['nrdG'],['anaerobic ribonucleoside-triphosphate reductase activating protein'],-1
+1506,1805208,1807617,['WP_007052482.1'],['nrdD'],['anaerobic ribonucleoside-triphosphate reductase'],-1
+1507,1807915,1808065,['WP_162094058.1'],,['hypothetical protein'],-1
+1508,1808096,1809455,['WP_021975100.1'],,['exodeoxyribonuclease VII large subunit'],1
+1509,1809504,1809807,['WP_007052480.1'],,['exodeoxyribonuclease VII small subunit'],1
+1510,1809930,1810455,['WP_013582891.1'],,['NAD(P)H-dependent oxidoreductase'],1
+1511,1810590,1812447,['WP_032740880.1'],,['long-chain fatty acid--CoA ligase'],-1
+1512,1812575,1813082,['WP_013582893.1'],['mscL'],['large conductance mechanosensitive channel protein MscL'],-1
+1513,1813249,1813678,['WP_007052476.1'],,['nucleoside 2-deoxyribosyltransferase'],-1
+1514,1813799,1814018,['WP_013582894.1'],,['hypothetical protein'],-1
+1515,1814502,1815615,['WP_007052473.1'],,['endonuclease/exonuclease/phosphatase family protein'],1
+1516,1815630,1816599,['WP_007052472.1'],,['Ppx/GppA family phosphatase'],-1
+1517,1816776,1818000,['WP_008783085.1'],,['aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme'],-1
+1518,1818093,1819149,['WP_013582895.1'],,['Gfo/Idh/MocA family oxidoreductase'],1
+1519,1819179,1819635,['WP_007055942.1'],,['very short patch repair endonuclease'],-1
+1520,1819768,1820296,['WP_007053897.1'],,['GNAT family N-acetyltransferase'],1
+1521,1820268,1820757,['WP_007052466.1'],,['hypothetical protein'],-1
+1522,1820944,1825129,['WP_007058870.1'],,['SNF2 helicase associated domain-containing protein'],-1
+1523,1825206,1826292,['WP_007052464.1'],,['WYL domain-containing transcriptional regulator'],1
+1524,1826525,1827545,['WP_013582896.1'],['dapD'],"['2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase']",1
+1525,1827758,1829051,['WP_007053894.1'],,['citrate synthase'],-1
+1526,1829324,1830107,['WP_007052460.1'],['map'],['type I methionyl aminopeptidase'],-1
+1527,1830296,1831277,['WP_013582897.1'],,['DUF308 domain-containing protein'],-1
+1528,1831453,1833628,['WP_013582898.1'],,['peptidase M13'],1
+1529,1833710,1834454,['WP_011068810.1'],,['single-stranded DNA-binding protein'],-1
+1530,1834729,1836544,['WP_007055676.1'],,['proline--tRNA ligase'],-1
+1531,1836935,1837292,['WP_007052454.1'],,['hypothetical protein'],1
+1532,1837316,1838489,['WP_007052453.1'],['amrS'],['AmmeMemoRadiSam system radical SAM enzyme'],-1
+1533,1838475,1840266,['WP_013582900.1'],['amrB'],['AmmeMemoRadiSam system protein B'],-1
+1534,1840315,1841734,['WP_007053887.1'],,['AAA family ATPase'],-1
+1535,1841782,1842433,['WP_013582901.1'],['orn'],['oligoribonuclease'],-1
+1536,1842600,1844154,['WP_007052449.1'],['guaB'],['IMP dehydrogenase'],-1
+1537,1844206,1845490,['WP_007052448.1'],,['undecaprenyl/decaprenyl-phosphate alpha-N-acetylglucosaminyl 1-phosphate transferase'],-1
+1538,1845486,1846161,['WP_007053883.1'],,['threonylcarbamoyl-AMP synthase'],-1
+1539,1846335,1847013,['WP_007052445.1'],,['sugar O-acetyltransferase'],1
+1540,1847144,1847849,['WP_007052444.1'],,['ABC transporter ATP-binding protein'],-1
+1541,1847848,1848709,['WP_007052443.1'],,['ABC transporter ATP-binding protein'],-1
+1542,1848705,1849794,['WP_007053882.1'],,['branched-chain amino acid ABC transporter permease'],-1
+1543,1849798,1850725,['WP_007052441.1'],,['branched-chain amino acid ABC transporter permease'],-1
+1544,1850966,1852154,['WP_007055677.1'],,['ABC transporter substrate-binding protein'],-1
+1545,1852426,1853311,['WP_007056794.1'],['prmC'],['peptide chain release factor N(5)-glutamine methyltransferase'],-1
+1546,1853397,1854486,['WP_007052437.1'],['prfA'],['peptide chain release factor 1'],-1
+1547,1854639,1854852,['WP_003830110.1'],['rpmE'],['50S ribosomal protein L31'],-1
+1548,1855180,1856410,['WP_007052436.1'],,['ROK family transcriptional regulator'],-1
+1549,1856629,1858150,['WP_007052435.1'],,['hypothetical protein'],1
+1550,1858344,1858701,['WP_007056791.1'],,['hypothetical protein'],1
+1551,1858758,1859103,['WP_007056793.1'],,['hypothetical protein'],1
+1552,1859374,1859599,,,['hypothetical protein'],-1
+1553,1859637,1860915,['WP_013582902.1'],,['IS256-like element ISBlo8 family transposase'],-1
+1554,1861180,1862530,['WP_007055684.1'],['xylA'],['xylose isomerase'],-1
+1555,1862826,1863060,['WP_007052419.1'],,['MFS transporter'],1
+1556,1863079,1863397,['WP_007053872.1'],,['permease'],1
+1557,1863406,1864207,['WP_007052417.1'],,['hypothetical protein'],-1
+1558,1865132,1865552,['WP_007056959.1'],,['peptide deformylase'],-1
+1559,1865559,1866411,['WP_013582903.1'],,['aldo/keto reductase'],-1
+1560,1866483,1867278,['WP_013141230.1'],,['MFS transporter'],-1
+1561,1867278,1867785,['WP_007052411.1'],,['winged helix-turn-helix transcriptional regulator'],-1
+1562,1867988,1868243,['WP_007053867.1'],,['hypothetical protein'],-1
+1563,1868348,1869521,['WP_013582904.1'],,['ABC transporter permease'],-1
+1564,1869520,1871074,['WP_007053866.1'],,['sugar ABC transporter ATP-binding protein'],-1
+1565,1871174,1872332,['WP_007052407.1'],,['sugar-binding protein'],-1
+1566,1872585,1873755,['WP_007052406.1'],,['ROK family transcriptional regulator'],1
+1567,1873792,1874659,['WP_012472194.1'],,['sugar ABC transporter ATP-binding protein'],1
+1568,1874683,1875634,['WP_007052404.1'],,['ROK family glucokinase'],-1
+1569,1876467,1878147,['WP_007053864.1'],['ettA'],['energy-dependent translational throttle protein EttA'],1
+1570,1878458,1879358,['WP_007052384.1'],,['thioesterase family protein'],1
+1571,1879370,1879898,['WP_007052383.1'],,['DUF3180 domain-containing protein'],-1
+1572,1880073,1881486,['WP_013582905.1'],['folK'],['2-amino-4-hydroxy-6- hydroxymethyldihydropteridine diphosphokinase'],-1
+1573,1881596,1882472,['WP_007053863.1'],['folP'],['dihydropteroate synthase'],-1
+1574,1882559,1883159,['WP_007053862.1'],['folE'],['GTP cyclohydrolase I FolE'],-1
+1575,1883253,1885344,['WP_013582906.1'],['ftsH'],['ATP-dependent zinc metalloprotease FtsH'],-1
+1576,1885340,1885904,['WP_007055325.1'],['hpt'],['hypoxanthine phosphoribosyltransferase'],-1
+1577,1885890,1887057,['WP_013582907.1'],['tilS'],['tRNA lysidine(34) synthetase TilS'],-1
+1578,1887147,1888638,['WP_013582908.1'],['dacB'],['D-alanyl-D-alanine carboxypeptidase/D-alanyl-D-alanine-endopeptidase'],-1
+1579,1888660,1890334,['WP_013582909.1'],,['hypothetical protein'],-1
+1580,1890330,1891242,['WP_013582910.1'],,['ABC transporter ATP-binding protein'],-1
+1581,1891380,1892604,['WP_007053855.1'],,['glycosyltransferase family 2 protein'],-1
+1582,1892603,1894118,['WP_007052370.1'],,['AI-2E family transporter'],-1
+1583,1894193,1895120,['WP_007057751.1'],,['glycosyltransferase family 2 protein'],1
+1584,1895342,1896494,['WP_007052368.1'],['fucO'],['lactaldehyde reductase'],-1
+1585,1896933,1898238,['WP_007055349.1'],,['class I SAM-dependent methyltransferase'],1
+1586,1898346,1899555,['WP_013410660.1'],,['MFS transporter'],1
+1587,1900066,1901080,['WP_013582911.1'],['galE'],['UDP-glucose 4-epimerase GalE'],-1
+1588,1901363,1902269,['WP_016507735.1'],['trmB'],['tRNA (guanosine(46)-N7)-methyltransferase TrmB'],1
+1589,1902681,1903509,['WP_007055343.1'],,['AzlC family ABC transporter permease'],1
+1590,1903505,1903838,['WP_007052362.1'],,['AzlD domain-containing protein'],1
+1591,1904016,1904535,['WP_007052361.1'],,['low molecular weight phosphotyrosine protein phosphatase'],-1
+1592,1904658,1905321,['WP_007052360.1'],,['dihydrofolate reductase'],-1
+1593,1905430,1906231,['WP_007052359.1'],,['thymidylate synthase'],-1
+1594,1906430,1906844,['WP_007052358.1'],,['OsmC family protein'],1
+1595,1906902,1907940,['WP_007052357.1'],,['universal stress protein'],-1
+1596,1908107,1908860,['WP_007053845.1'],,['C40 family peptidase'],-1
+1597,1909005,1909752,['WP_007052354.1'],,['C40 family peptidase'],-1
+1598,1909964,1910921,['WP_007052353.1'],,['CHAP domain-containing protein'],-1
+1599,1911314,1912457,['WP_007052351.1'],,['phosphoserine transaminase'],1
+1600,1912586,1912841,['WP_007052350.1'],,['DUF2530 domain-containing protein'],1
+1601,1912965,1914159,['WP_007055303.1'],,['ATP-binding protein'],-1
+1602,1914349,1915024,['WP_007053841.1'],['phoU'],['phosphate signaling complex protein PhoU'],1
+1603,1915382,1916123,['WP_007052347.1'],,['phosphoglyceromutase'],-1
+1604,1916182,1917148,['WP_007056736.1'],['menA'],"['1,4-dihydroxy-2-naphthoate octaprenyltransferase']",-1
+1605,1917209,1918892,['WP_007053839.1'],['lysS'],['lysine--tRNA ligase'],-1
+1606,1919392,1920569,,,['MFS transporter'],1
+1607,1920655,1923019,['WP_013582915.1'],,['DUF4037 domain-containing protein'],1
+1608,1923094,1923727,['WP_007053837.1'],,['DUF4125 family protein'],1
+1609,1923876,1925478,['WP_007053836.1'],,['alpha/beta hydrolase'],-1
+1610,1925581,1926289,['WP_013582916.1'],,['hypothetical protein'],-1
+1611,1926318,1928040,['WP_156628927.1'],,['PspC domain-containing protein'],-1
+1612,1928153,1929437,['WP_007052338.1'],,['ATP-binding protein'],1
+1613,1929433,1930129,['WP_007055360.1'],,['response regulator transcription factor'],1
+1614,1930176,1931199,['WP_007052336.1'],['galE'],['UDP-glucose 4-epimerase GalE'],-1
+1615,1931268,1932816,['WP_007052335.1'],,['UDP-glucose--hexose-1-phosphate uridylyltransferase'],-1
+1616,1932862,1933942,['WP_013582917.1'],['nahK'],['N-acetylhexosamine 1-kinase'],-1
+1617,1933969,1936225,['WP_007056738.1'],['gnpA'],"['1,3-beta-galactosyl-N-acetylhexosamine phosphorylase']",-1
+1618,1936682,1937642,['WP_007053829.1'],,['carbohydrate ABC transporter permease'],-1
+1619,1937638,1938610,['WP_007053828.1'],,['sugar ABC transporter permease'],-1
+1620,1938802,1940119,['WP_007055350.1'],,['extracellular solute-binding protein'],-1
+1621,1940473,1940629,['WP_007056725.1'],,['hypothetical protein'],-1
+1622,1941123,1942410,['WP_007052327.1'],['serS'],['serine--tRNA ligase'],-1
+1623,1942643,1943825,['WP_007053825.1'],,['NAD(+)/NADH kinase'],1
+1624,1943829,1944669,['WP_008782955.1'],,['PRD domain-containing protein'],-1
+1625,1944686,1947098,['WP_013582918.1'],,['PTS glucose transporter subunit IIA'],-1
+1626,1947584,1949138,['WP_016507738.1'],,['sugar porter family MFS transporter'],1
+1627,1949225,1950902,['WP_007052321.1'],,"['phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)']",1
+1628,1951520,1952792,['WP_008783747.1'],,['IS30-like element ISBlo4 family transposase'],1
+1629,1953016,1954114,['WP_013582920.1'],,['hypothetical protein'],-1
+1630,1954344,1954767,['WP_007052318.1'],,['Rrf2 family transcriptional regulator'],1
+1631,1954900,1956517,['WP_007055323.1'],,['FAD-dependent oxidoreductase'],1
+1632,1956675,1956828,['WP_007056739.1'],,['hypothetical protein'],-1
+1633,1957149,1958076,['WP_161388827.1'],,['ribonuclease HI'],1
+1634,1958206,1958905,['WP_007052314.1'],['rpiA'],['ribose-5-phosphate isomerase RpiA'],1
+1635,1959057,1959147,['WP_004268639.1'],,['AURKAIP1/COX24 domain-containing protein'],-1
+1636,1959338,1959971,['WP_007052313.1'],,['hypothetical protein'],-1
+1637,1960098,1961637,['WP_007055359.1'],['radA'],['DNA repair protein RadA'],1
+1638,1961651,1962776,['WP_007055364.1'],,['FAD synthase'],-1
+1639,1962873,1964037,['WP_007055328.1'],,['tRNA pseudouridine(55) synthase TruB'],-1
+1640,1964038,1964512,['WP_007052308.1'],['rbfA'],['30S ribosome-binding factor RbfA'],-1
+1641,1964662,1967590,['WP_007055370.1'],['infB'],['translation initiation factor IF-2'],-1
+1642,1967859,1968927,['WP_007053813.1'],['nusA'],['transcription termination/antitermination protein NusA'],-1
+1643,1969134,1969863,['WP_013582922.1'],,['hypothetical protein'],1
+1644,1969903,1970947,['WP_013582923.1'],,['LacI family DNA-binding transcriptional regulator'],-1
+1645,1971479,1973048,['WP_008783615.1'],,['alpha-N-arabinofuranosidase'],-1
+1646,1973857,1974658,['WP_007055304.1'],,['transglutaminase family protein'],-1
+1647,1974864,1977045,['WP_013582924.1'],,['circularly permuted type 2 ATP-grasp protein'],-1
+1648,1977012,1977324,['WP_016507739.1'],,['hypothetical protein'],1
+1649,1977320,1978232,['WP_013582925.1'],['truA'],['tRNA pseudouridine(38-40) synthase TruA'],1
+1650,1978313,1978856,['WP_007053049.1'],['rplQ'],['50S ribosomal protein L17'],-1
+1651,1978955,1979951,['WP_007053048.1'],,['DNA-directed RNA polymerase subunit alpha'],-1
+1652,1980031,1980430,['WP_003829907.1'],['rpsK'],['30S ribosomal protein S11'],-1
+1653,1980517,1980895,['WP_007053047.1'],['rpsM'],['30S ribosomal protein S13'],-1
+1654,1981043,1981157,['WP_003808136.1'],['rpmJ'],['50S ribosomal protein L36'],-1
+1655,1981180,1981399,['WP_003808114.1'],['infA'],['translation initiation factor IF-1'],-1
+1656,1981575,1982136,['WP_013582926.1'],,['adenylate kinase'],-1
+1657,1982305,1983643,['WP_008783621.1'],['secY'],['preprotein translocase subunit SecY'],-1
+1658,1983915,1984368,['WP_008783622.1'],['rplO'],['50S ribosomal protein L15'],-1
+1659,1984370,1984556,['WP_007053043.1'],['rpmD'],['50S ribosomal protein L30'],-1
+1660,1984561,1985293,['WP_007053804.1'],['rpsE'],['30S ribosomal protein S5'],-1
+1661,1985289,1985661,['WP_007053041.1'],['rplR'],['50S ribosomal protein L18'],-1
+1662,1985662,1986202,['WP_007053040.1'],['rplF'],['50S ribosomal protein L6'],-1
+1663,1986219,1986618,['WP_003829896.1'],['rpsH'],['30S ribosomal protein S8'],-1
+1664,1986707,1986893,['WP_003814530.1'],,['type Z 30S ribosomal protein S14'],-1
+1665,1986894,1987467,['WP_007053039.1'],['rplE'],['50S ribosomal protein L5'],-1
+1666,1987463,1987799,['WP_007053803.1'],['rplX'],['50S ribosomal protein L24'],-1
+1667,1987800,1988169,['WP_003829893.1'],['rplN'],['50S ribosomal protein L14'],-1
+1668,1988263,1988524,['WP_007055338.1'],['rpsQ'],['30S ribosomal protein S17'],-1
+1669,1988526,1988778,['WP_003829891.1'],['rpmC'],['50S ribosomal protein L29'],-1
+1670,1988777,1989197,['WP_007053037.1'],['rplP'],['50S ribosomal protein L16'],-1
+1671,1989203,1990007,['WP_007053036.1'],['rpsC'],['30S ribosomal protein S3'],-1
+1672,1990009,1990369,['WP_007053035.1'],['rplV'],['50S ribosomal protein L22'],-1
+1673,1990385,1990664,['WP_003814508.1'],['rpsS'],['30S ribosomal protein S19'],-1
+1674,1990679,1991510,['WP_007053034.1'],['rplB'],['50S ribosomal protein L2'],-1
+1675,1991546,1991843,['WP_007053033.1'],['rplW'],['50S ribosomal protein L23'],-1
+1676,1991848,1992505,['WP_007053032.1'],['rplD'],['50S ribosomal protein L4'],-1
+1677,1992511,1993153,['WP_007053031.1'],['rplC'],['50S ribosomal protein L3'],-1
+1678,1993169,1993478,['WP_003827292.1'],['rpsJ'],['30S ribosomal protein S10'],-1
+1679,1993710,1994742,['WP_013582927.1'],,['YwiC-like family protein'],1
+1680,1995074,1997804,['WP_007055358.1'],['adhE'],['bifunctional acetaldehyde-CoA/alcohol dehydrogenase'],-1
+1681,1998318,1999512,['WP_011068741.1'],,['ROK family transcriptional regulator'],1
+1682,1999508,2002049,['WP_007057274.1'],['glgX'],['glycogen debranching protein GlgX'],1
+1683,2002139,2002631,['WP_003829868.1'],['rpsI'],['30S ribosomal protein S9'],-1
+1684,2002653,2003103,['WP_007053026.1'],['rplM'],['50S ribosomal protein L13'],-1
+1685,2003500,2005666,['WP_013582928.1'],['malQ'],['4-alpha-glucanotransferase'],-1
+1686,2005833,2006577,['WP_007053797.1'],,['AbrB family transcriptional regulator'],-1
+1687,2006584,2007226,['WP_007053023.1'],,['YigZ family protein'],-1
+1688,2007287,2008304,['WP_007053022.1'],,['D-2-hydroxyacid dehydrogenase family protein'],-1
+1689,2008377,2009721,['WP_013582929.1'],,['CapA family protein'],-1
+1690,2010253,2011201,['WP_007053020.1'],,['EamA family transporter'],-1
+1691,2011429,2012704,['WP_007053794.1'],['dinB'],['DNA polymerase IV'],1
+1692,2012730,2013966,['WP_007053017.1'],['dapC'],['succinyldiaminopimelate transaminase'],-1
+1693,2014080,2014401,['WP_007053016.1'],,['ferredoxin family protein'],-1
+1694,2014461,2015988,['WP_007053015.1'],,['amino acid permease'],-1
+1695,2016139,2017363,['WP_007053014.1'],,['UDP-N-acetylmuramate dehydrogenase'],-1
+1696,2017636,2017804,['WP_007053013.1'],['rpmG'],['50S ribosomal protein L33'],-1
+1697,2018406,2018799,['WP_010081544.1'],,['PLP-dependent transferase'],1
+1698,2018808,2018958,['WP_012472145.1'],,['PLP-dependent transferase'],1
+1699,2019630,2019924,['WP_007053011.1'],['groES'],['co-chaperone GroES'],-1
+1700,2020096,2021521,['WP_011068733.1'],,['hypothetical protein'],-1
+1701,2021601,2022267,['WP_007053783.1'],,['GNAT family N-acetyltransferase'],-1
+1702,2022332,2023073,['WP_012472143.1'],,['5-formyltetrahydrofolate cyclo-ligase'],1
+1703,2023236,2023422,['WP_007053007.1'],,['FmdB family transcriptional regulator'],1
+1704,2023659,2024229,['WP_007057269.1'],,['flagella basal body P-ring formation protein FlgA'],1
+1705,2024323,2024524,['WP_007053005.1'],,['hypothetical protein'],-1
+1706,2024526,2028150,['WP_007055240.1'],,['helicase'],-1
+1707,2028158,2029652,['WP_007053003.1'],,['FHA domain-containing protein'],-1
+1708,2029903,2030284,['WP_007053002.1'],['rplL'],['50S ribosomal protein L7/L12'],-1
+1709,2030392,2030914,['WP_007053001.1'],['rplJ'],['50S ribosomal protein L10'],-1
+1710,2031182,2032013,['WP_007053000.1'],,['hypothetical protein'],-1
+1711,2032268,2033663,['WP_007052999.1'],,['NCS2 family permease'],1
+1712,2034088,2036830,['WP_007052998.1'],,['polyribonucleotide nucleotidyltransferase'],-1
+1713,2037105,2037375,['WP_007052997.1'],['rpsO'],['30S ribosomal protein S15'],-1
+1714,2037543,2038227,['WP_007055227.1'],,['hypothetical protein'],-1
+1715,2038752,2041554,['WP_013582930.1'],,['family 43 glycosylhydrolase'],-1
+1716,2041851,2044404,['WP_013582931.1'],,['family 43 glycosylhydrolase'],-1
+1717,2045022,2046129,['WP_013582932.1'],,['IS30 family transposase'],1
+1718,2046212,2047280,['WP_013582933.1'],,['ATP-binding cassette domain-containing protein'],-1
+1719,2047229,2047865,,,['IS30 family transposase'],1
+1720,2047945,2048632,['WP_007053774.1'],,['hypothetical protein'],-1
+1721,2048765,2048939,['WP_007055458.1'],,['hypothetical protein'],-1
+1722,2048932,2049450,,,['hypothetical protein'],-1
+1723,2049905,2051150,['WP_013582935.1'],,['LPXTG cell wall anchor domain-containing protein'],-1
+1724,2051346,2053731,['WP_011068724.1'],,['VWA domain-containing protein'],-1
+1725,2054502,2056554,['WP_013582936.1'],,['alpha-amylase family protein'],-1
+1726,2056666,2057215,['WP_007052986.1'],,"[""4'-phosphopantetheinyl transferase superfamily protein""]",-1
+1727,2057528,2058182,['WP_013582937.1'],,['LacI family DNA-binding transcriptional regulator'],1
+1728,2058442,2067961,['WP_013582938.1'],,['type I polyketide synthase'],-1
+1729,2067999,2069622,['WP_007052982.1'],,['acyl-CoA carboxylase subunit beta'],-1
+1730,2069614,2071579,['WP_007053766.1'],,['ATP-grasp domain-containing protein'],-1
+1731,2072091,2072691,['WP_007052980.1'],,['biotin transporter BioY'],1
+1732,2072722,2073628,['WP_013582939.1'],,['biotin--[acetyl-CoA-carboxylase] ligase'],-1
+1733,2073860,2075885,['WP_013582940.1'],,['hypothetical protein'],1
+1734,2075890,2076751,['WP_007053763.1'],,['helix-turn-helix domain-containing protein'],1
+1735,2076857,2077610,['WP_013582941.1'],,['IclR family transcriptional regulator'],-1
+1736,2077653,2078487,['WP_013582942.1'],,['helix-turn-helix domain-containing protein'],-1
+1737,2084647,2085340,['WP_003829786.1'],['rplA'],['50S ribosomal protein L1'],-1
+1738,2085355,2085787,['WP_007053055.1'],['rplK'],['50S ribosomal protein L11'],-1
+1739,2086049,2086943,['WP_007055071.1'],['nusG'],['transcription termination/antitermination factor NusG'],-1
+1740,2086972,2087200,['WP_007053057.1'],['secE'],['preprotein translocase subunit SecE'],-1
+1741,2087443,2088649,['WP_007055070.1'],,['pyridoxal phosphate-dependent aminotransferase'],-1
+1742,2088739,2089873,['WP_007055074.1'],,['glutamate 5-kinase'],-1
+1743,2089873,2091565,['WP_007053060.1'],['obgE'],['GTPase ObgE'],-1
+1744,2091633,2091882,['WP_007053061.1'],['rpmA'],['50S ribosomal protein L27'],-1
+1745,2091904,2092213,['WP_007053062.1'],['rplU'],['50S ribosomal protein L21'],-1
+1746,2092364,2095433,['WP_013582944.1'],,['Rne/Rng family ribonuclease'],-1
+1747,2095745,2096951,['WP_007053064.1'],,['succinyl-diaminopimelate desuccinylase'],-1
+1748,2097057,2098002,['WP_007053065.1'],,['AEC family transporter'],1
+1749,2098177,2099626,['WP_013582945.1'],,['hypothetical protein'],-1
+1750,2099622,2100717,['WP_007058795.1'],,['ABC transporter ATP-binding protein'],-1
+1751,2100891,2102340,['WP_013582946.1'],,['Maf family protein'],-1
+1752,2102476,2103589,['WP_007058798.1'],,['homoserine kinase'],-1
+1753,2103683,2105000,['WP_007056289.1'],,['homoserine dehydrogenase'],-1
+1754,2105160,2106753,['WP_032740895.1'],,['diaminopimelate decarboxylase'],-1
+1755,2106755,2108618,['WP_013582948.1'],,['arginine--tRNA ligase'],-1
+1756,2108831,2109497,['WP_012472126.1'],,['TetR/AcrR family transcriptional regulator'],1
+1757,2109493,2110771,['WP_015512063.1'],,['MFS transporter'],1
+1758,2110857,2111790,['WP_007053078.1'],,['LysR family transcriptional regulator'],1
+1759,2111883,2113137,['WP_007056294.1'],,['aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme'],1
+1760,2113185,2114511,['WP_013582949.1'],['murA'],['UDP-N-acetylglucosamine 1-carboxyvinyltransferase'],-1
+1761,2114760,2116107,['WP_007053081.1'],,['FAD-dependent oxidoreductase'],1
+1762,2116316,2117432,['WP_013582950.1'],,['diguanylate cyclase'],-1
+1763,2117914,2118607,['WP_007053083.1'],['leuD'],['3-isopropylmalate dehydratase small subunit'],-1
+1764,2118689,2120093,['WP_013582951.1'],['leuC'],['3-isopropylmalate dehydratase large subunit'],-1
+1765,2120386,2121187,['WP_010081262.1'],,['IclR family transcriptional regulator'],1
+1766,2121353,2122649,['WP_013582952.1'],,['metallophosphoesterase family protein'],-1
+1767,2123123,2125361,['WP_011068706.1'],,['RNA degradosome polyphosphate kinase'],1
+1768,2125518,2126718,['WP_016507753.1'],,['NUDIX hydrolase'],1
+1769,2126707,2127529,['WP_013582954.1'],,['hypothetical protein'],1
+1770,2127787,2129098,['WP_013582955.1'],,['ATP-binding protein'],-1
+1771,2129401,2130043,['WP_007053093.1'],['upp'],['uracil phosphoribosyltransferase'],1
+1772,2130090,2130570,['WP_007053094.1'],['rlmH'],['23S rRNA (pseudouridine(1915)-N(3))-methyltransferase RlmH'],1
+1773,2130765,2131875,['WP_007054177.1'],,['hypothetical protein'],-1
+1774,2131900,2133010,['WP_007056156.1'],,['glutamyl-Q tRNA(Asp) synthetase'],-1
+1775,2133156,2135826,['WP_007057489.1'],['clpB'],['ATP-dependent chaperone ClpB'],-1
+1776,2136044,2137598,['WP_007053099.1'],['hutH'],['histidine ammonia-lyase'],-1
+1777,2137843,2138719,['WP_013582956.1'],,['IclR family transcriptional regulator'],1
+1778,2138715,2138892,['WP_007053102.1'],,['hypothetical protein'],1
+1779,2138949,2139771,['WP_013582957.1'],,['fumarylacetoacetate hydrolase family protein'],-1
+1780,2139873,2141082,['WP_013582958.1'],,['DUF4854 domain-containing protein'],-1
+1781,2141349,2142894,['WP_007057474.1'],,['putative DNA binding domain-containing protein'],-1
+1782,2143126,2144338,['WP_013582959.1'],['glf'],['UDP-galactopyranose mutase'],-1
+1783,2144604,2145636,['WP_013582960.1'],,['glycosyltransferase'],1
+1784,2145888,2146952,,,['acyltransferase'],1
+1785,2146904,2148491,['WP_013582962.1'],,['hypothetical protein'],-1
+1786,2148587,2149583,['WP_013582963.1'],,['glycosyltransferase family 2 protein'],-1
+1787,2149575,2150679,['WP_081347137.1'],,['glycosyltransferase family 4 protein'],-1
+1788,2150822,2151764,['WP_080557743.1'],,['glycosyltransferase family 2 protein'],-1
+1789,2151911,2152739,['WP_013582966.1'],,['ABC transporter permease'],1
+1790,2152738,2154013,['WP_013582967.1'],,['ABC transporter ATP-binding protein'],1
+1791,2154012,2154933,['WP_013582968.1'],,['LicD family protein'],1
+1792,2155010,2155751,['WP_080557744.1'],,['pentapeptide repeat-containing protein'],1
+1793,2155847,2156117,['WP_126623118.1'],,['hypothetical protein'],1
+1794,2156882,2157374,['WP_126623121.1'],,['integrase core domain-containing protein'],-1
+1795,2157503,2158961,['WP_013582292.1'],['istA'],['IS21 family transposase'],1
+1796,2158957,2159719,['WP_013582291.1'],['istB'],['IS21-like element helper ATPase IstB'],1
+1797,2159690,2160167,['WP_080557745.1'],,['IS3 family transposase'],-1
+1798,2160544,2161020,,,['IS30 family transposase'],1
+1799,2161131,2162028,,['rfbA'],['glucose-1-phosphate thymidylyltransferase RfbA'],-1
+1800,2162184,2163639,['WP_013582973.1'],,"['bifunctional dTDP-4-dehydrorhamnose 3,5-epimerase family protein/NAD(P)-dependent oxidoreductase']",-1
+1801,2163646,2164510,['WP_126623119.1'],,['hypothetical protein'],-1
+1802,2164580,2165603,['WP_013582975.1'],['rfbB'],"['dTDP-glucose 4,6-dehydratase']",-1
+1803,2165724,2166536,,,['IS30 family transposase'],1
+1804,2166569,2168966,['WP_013582977.1'],,['glycoside hydrolase'],-1
+1805,2169184,2170903,['WP_032740906.1'],,['putative DNA binding domain-containing protein'],-1
+1806,2171303,2172299,['WP_049135711.1'],,['glycosyltransferase family 2 protein'],1
+1807,2172430,2173207,['WP_074709944.1'],,['glycosyltransferase'],1
+1808,2173337,2173745,['WP_032743344.1'],,['hypothetical protein'],1
+1809,2174160,2175336,['WP_016507759.1'],,['acyltransferase'],-1
+1810,2175335,2177441,['WP_013582983.1'],,['DUF4012 domain-containing protein'],-1
+1811,2177932,2179339,['WP_013582984.1'],,['ABC transporter permease'],1
+1812,2179335,2180457,['WP_013582985.1'],,['ATP-binding cassette domain-containing protein'],1
+1813,2180580,2181285,['WP_007052900.1'],,['HD domain-containing protein'],1
+1814,2181359,2182220,['WP_007058535.1'],,['class II glutamine amidotransferase'],-1
+1815,2182313,2184827,['WP_032740907.1'],,['KUP/HAK/KT family potassium transporter'],-1
+1816,2184969,2185929,['WP_007055571.1'],,['TatD family hydrolase'],-1
+1817,2186208,2187279,['WP_013582987.1'],,['Fic family protein'],1
+1818,2187304,2189113,['WP_007052919.1'],,['ABC transporter ATP-binding protein'],-1
+1819,2189123,2191034,['WP_013582988.1'],,['ABC transporter ATP-binding protein'],-1
+1820,2191785,2193150,['WP_013582990.1'],,['glycoside hydrolase family 27 protein'],-1
+1821,2193568,2194726,['WP_007054120.1'],,['LacI family DNA-binding transcriptional regulator'],1
+1822,2194897,2195863,['WP_050496022.1'],,['helix-turn-helix transcriptional regulator'],-1
+1823,2195890,2198119,['WP_013582992.1'],,['glycoside hydrolase family 127 protein'],-1
+1824,2198343,2199870,['WP_007055046.1'],,['aminopeptidase'],1
+1825,2200047,2201124,['WP_013582993.1'],,['hypothetical protein'],1
+1826,2202161,2204027,['WP_032737588.1'],,['methionine--tRNA ligase'],-1
+1827,2204343,2204991,['WP_007052934.1'],,['hypothetical protein'],1
+1828,2205131,2205359,['WP_007054111.1'],,['hypothetical protein'],1
+1829,2205385,2206396,['WP_008783206.1'],['rsmI'],"[""16S rRNA (cytidine(1402)-2'-O)-methyltransferase""]",-1
+1830,2206852,2206963,['WP_108912149.1'],,['hypothetical protein'],-1
+1831,2206975,2208394,['WP_050496093.1'],,['MFS transporter'],-1
+1832,2208475,2209522,['WP_032740908.1'],,['FAD:protein FMN transferase'],1
+1833,2209673,2211503,['WP_007055050.1'],,['ABC transporter ATP-binding protein'],-1
+1834,2211716,2213588,['WP_013582997.1'],,['ABC transporter ATP-binding protein'],-1
+1835,2213774,2214296,['WP_016507763.1'],,['MarR family transcriptional regulator'],-1
+1836,2214657,2215251,['WP_013582999.1'],,['DNA damage-inducible protein'],1
+1837,2215706,2219543,['WP_013583000.1'],,['bacterial Ig-like domain-containing protein'],-1
+1838,2219754,2224296,['WP_013583001.1'],,['bacterial Ig-like domain-containing protein'],-1
+1839,2224599,2226096,['WP_007052945.1'],,['putative DNA binding domain-containing protein'],-1
+1840,2226435,2227959,['WP_013583003.1'],,['amino acid permease'],-1
+1841,2228146,2231830,['WP_032740909.1'],,['FtsX-like permease family protein'],-1
+1842,2231918,2232620,['WP_013583005.1'],,['ABC transporter ATP-binding protein'],-1
+1843,2232763,2233333,['WP_007057465.1'],,['TetR/AcrR family transcriptional regulator'],1
+1844,2233555,2235037,['WP_007057459.1'],,['amino acid permease'],1
+1845,2235159,2241114,['WP_013583006.1'],,['glycoside hydrolase family 127 protein'],-1
+1846,2241701,2242805,['WP_007057436.1'],,['DNA helicase'],1
+1847,2242909,2247904,['WP_013583007.1'],,['family 43 glycosylhydrolase'],-1
+1848,2248030,2254033,['WP_013583008.1'],,['Ig-like domain-containing protein'],-1
+1849,2254921,2258662,['WP_013583009.1'],,['family 43 glycosylhydrolase'],-1
+1850,2258905,2262199,['WP_013583010.1'],,['Ig-like domain-containing protein'],-1
+1851,2262545,2265743,['WP_013583011.1'],,['Ig-like domain-containing protein'],-1
+1852,2266080,2266686,['WP_013583012.1'],,['YesL family protein'],-1
+1853,2266891,2267734,['WP_007056981.1'],,['carbohydrate ABC transporter permease'],-1
+1854,2267733,2268588,['WP_007052964.1'],,['sugar ABC transporter permease'],-1
+1855,2268970,2269987,['WP_007054086.1'],,['LacI family DNA-binding transcriptional regulator'],1
+1856,2270241,2271588,['WP_013583013.1'],,['ABC transporter substrate-binding protein'],-1
+1857,2271974,2272688,['WP_013583014.1'],,['histidine phosphatase family protein'],-1
+1858,2272779,2273157,['WP_013583015.1'],,['DUF4235 domain-containing protein'],1
+1859,2273339,2274107,['WP_007052970.1'],,['nitroreductase family protein'],1
+1860,2274399,2277138,['WP_074709969.1'],,['YhgE/Pip domain-containing protein'],1
+1861,2277134,2279474,['WP_007052973.1'],,['YhgE/Pip domain-containing protein'],1
+1862,2279589,2279841,['WP_007052974.1'],,['hypothetical protein'],-1
+1863,2279958,2280297,,,['IS30 family transposase'],-1
+1864,2280479,2281982,['WP_013140934.1'],['istA'],['IS21 family transposase'],1
+1865,2281999,2282764,['WP_012472066.1'],['istB'],['IS21-like element ISBlo1 family helper ATPase IstB'],1
+1866,2282876,2283827,,,['IS30-like element ISBlo4 family transposase'],-1
+1867,2296250,2297006,['WP_007051834.1'],,['NAD-dependent protein deacetylase'],1
+1868,2297151,2298417,['WP_007051833.1'],,['threonine ammonia-lyase'],-1
+1869,2298664,2300485,['WP_013583018.1'],,['alpha-glucosidase'],-1
+1870,2300608,2302471,['WP_007054605.1'],,['alpha-galactosidase'],-1
+1871,2302502,2304173,['WP_007057512.1'],,['glycoside hydrolase family 13 protein'],-1
+1872,2304273,2305098,['WP_007054607.1'],,['carbohydrate ABC transporter permease'],-1
+1873,2305100,2306012,['WP_007057508.1'],,['sugar ABC transporter permease'],-1
+1874,2306144,2307470,['WP_007054609.1'],,['extracellular solute-binding protein'],-1
+1875,2307716,2308835,['WP_007054610.1'],,['DUF2961 domain-containing protein'],-1
+1876,2308896,2310225,['WP_007054611.1'],,['extracellular solute-binding protein'],-1
+1877,2310432,2311461,['WP_013583019.1'],,['LacI family DNA-binding transcriptional regulator'],1
+1878,2311578,2312598,['WP_012472085.1'],,['LacI family DNA-binding transcriptional regulator'],1
+1879,2312656,2313523,['WP_007051830.1'],,['carbohydrate ABC transporter permease'],-1
+1880,2313541,2314471,['WP_007051829.1'],,['sugar ABC transporter permease'],-1
+1881,2314492,2315782,['WP_007051828.1'],,['extracellular solute-binding protein'],-1
+1882,2315955,2317164,['WP_032740912.1'],,['ROK family transcriptional regulator'],1
+1883,2317328,2319635,['WP_013583021.1'],,['alpha-galactosidase'],-1
+1884,2319754,2320204,['WP_007056534.1'],,['nucleoside deaminase'],-1
+1885,2320329,2322402,['WP_013583022.1'],,['sodium:proton antiporter'],1
+1886,2322445,2323270,['WP_016507544.1'],,['sulfite exporter TauE/SafE family protein'],-1
+1887,2323359,2324118,['WP_007056568.1'],,['phospholipase/carboxylesterase'],-1
+1888,2324236,2325097,['WP_011068622.1'],,['hypothetical protein'],-1
+1889,2325453,2326035,['WP_007051821.1'],,['dCTP deaminase'],1
+1890,2326097,2327819,['WP_013583024.1'],,['FIVAR domain-containing protein'],1
+1891,2328035,2331023,['WP_013583025.1'],,['cation-translocating P-type ATPase'],-1
+1892,2331205,2332039,['WP_013583026.1'],,['alpha/beta hydrolase'],-1
+1893,2332114,2333413,['WP_007051817.1'],,['MFS transporter'],-1
+1894,2333500,2334493,['WP_007051816.1'],['rlmB'],"[""23S rRNA (guanosine(2251)-2'-O)-methyltransferase RlmB""]",1
+1895,2334599,2336012,['WP_032740914.1'],,['DUF4032 domain-containing protein'],-1
+1896,2336133,2336349,['WP_071474701.1'],,['hypothetical protein'],-1
+1897,2336369,2337161,['WP_032740916.1'],,['hypothetical protein'],-1
+1898,2337144,2338128,['WP_032740918.1'],,['class C sortase'],-1
+1899,2338208,2339798,['WP_013583031.1'],,['SpaH/EbpB family LPXTG-anchored major pilin'],-1
+1900,2339862,2347572,['WP_013583032.1'],,['LPXTG cell wall anchor domain-containing protein'],-1
+1901,2348352,2349480,['WP_007054633.1'],['ugpC'],['sn-glycerol-3-phosphate ABC transporter ATP-binding protein UgpC'],-1
+1902,2349838,2351014,['WP_013583033.1'],,['glycosyltransferase family 2 protein'],-1
+1903,2351077,2352070,['WP_013583034.1'],['nrdF'],['class 1b ribonucleoside-diphosphate reductase subunit beta'],-1
+1904,2352380,2354576,['WP_013583035.1'],['nrdE'],['class 1b ribonucleoside-diphosphate reductase subunit alpha'],-1
+1905,2354691,2355150,['WP_008783041.1'],['nrdI'],['class Ib ribonucleoside-diphosphate reductase assembly flavoprotein NrdI'],-1
+1906,2355146,2355413,['WP_007051803.1'],,['glutaredoxin family protein'],-1
+1907,2356000,2356651,['WP_032740920.1'],,['helix-turn-helix transcriptional regulator'],-1
+1908,2356631,2357315,['WP_013583037.1'],,['DUF3990 domain-containing protein'],-1
+1909,2357509,2358277,['WP_007054642.1'],,['ion transporter'],1
+1910,2358321,2358471,['WP_007056563.1'],,['hypothetical protein'],-1
+1911,2358469,2359576,['WP_007056552.1'],,['ATP-binding protein'],1
+1912,2359713,2360094,['WP_074709985.1'],,['glycosyl hydrolase family 3'],-1
+1913,2360509,2362729,['WP_008783044.1'],,['serine/threonine protein kinase'],1
+1914,2362906,2363884,['WP_013583038.1'],,['DSBA oxidoreductase'],1
+1915,2364403,2365900,['WP_013583039.1'],,['G5 domain-containing protein'],1
+1916,2365932,2366856,['WP_013583040.1'],['rsmA'],['16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))- dimethyltransferase RsmA'],1
+1917,2366852,2367803,['WP_007051793.1'],,['4-diphosphocytidyl-2C-methyl-D-erythritol kinase'],1
+1918,2367849,2368479,['WP_007051792.1'],,['LytR C-terminal domain-containing protein'],1
+1919,2368563,2369979,['WP_007051791.1'],,['CCA tRNA nucleotidyltransferase'],-1
+1920,2370065,2371358,['WP_013583041.1'],,['NUDIX hydrolase'],1
+1921,2371429,2373625,['WP_173361541.1'],,['hypothetical protein'],1
+1922,2373621,2375349,['WP_013583043.1'],,['murein biosynthesis integral membrane protein MurJ'],1
+1923,2375431,2377495,['WP_013583044.1'],,['hypothetical protein'],1
+1924,2377614,2378634,['WP_007051786.1'],,['thioredoxin-disulfide reductase'],1
+1925,2378940,2380302,['WP_013583045.1'],,['ParB/RepB/Spo0J family partition protein'],-1
+1926,2380301,2381273,['WP_007051774.1'],,['ParA family protein'],-1
+1927,2381523,2382189,['WP_007056575.1'],['rsmG'],['16S rRNA (guanine(527)-N(7))-methyltransferase RsmG'],-1
+1928,2382340,2382874,['WP_007051772.1'],,['KH domain-containing protein'],-1
+1929,2382997,2384005,['WP_007051771.1'],['yidC'],['membrane protein insertase YidC'],-1
+1930,2384001,2384319,['WP_007051770.1'],['yidD'],['membrane protein insertion efficiency factor YidD'],-1
+1931,2384315,2384675,['WP_007051769.1'],['rnpA'],['ribonuclease P protein component'],-1
+1932,2384707,2384842,['WP_007051768.1'],['rpmH'],['50S ribosomal protein L34'],-1
