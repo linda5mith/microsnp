@@ -28,7 +28,7 @@ def parse_args():
     # Parent parser for functions that demand path_to_files, file_extension, path_to_ref, path_to_output be defined
     parent_parser = argparse.ArgumentParser(add_help=False)
     parent_parser.add_argument("path_to_files", type=str, help='Path to files')
-    parent_parser.add_argument("file_extension", metavar='file_ext', type=str, help='File extension e.g. \'.bam\' \'.sorted.bam\'')
+    parent_parser.add_argument("file_extension", metavar='file_ext', type=str, help='File extension e.g. \'.bam\' \'.sorted.bam\' \'.vcf\' \'fltq.vcf.gz\'')
 
     mpileup_parser = argparse.ArgumentParser(add_help=False)
     mpileup_parser.add_argument("path_to_ref", metavar='path_to_ref', type=str, help='Path to indexed reference fasta file.')
@@ -56,6 +56,10 @@ def parse_args():
     htsfile_parser = subparser.add_parser('htsfile',parents=[parent_parser],help='Output compression status all files in path_to_files with specified file_extension')
     htsfile_parser.required = True
     htsfile_parser.set_defaults(func=htsfile)
+
+    filterpass =  subparser.add_parser('filter_pass',parents=[parent_parser],help='Filters variants from vcf which passed filter to create a new file.')
+    filterpass.required = True
+    filterpass.set_defaults(func=filter_pass)
 
     args = parser.parse_args()
     #print(args) 
@@ -92,12 +96,27 @@ def mpileup_multi(args): #ath_to_files, file_extension, path_to_reference_file, 
         dir_path=snp.get_file_dir(f)
         folders.append(dir_path)
     folder_paths=set(folders)
+    #print(len(folder_paths))
     for folder in folder_paths:
         dirname=snp.get_file_basename(folder)
         try:
-            #command=f'bcftools mpileup -Ou --max-depth 8000 --min-MQ 30 --min-BQ 30 -f {args.path_to_ref}  {f} | bcftools call --ploidy 1 -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{subject_clean}_{sample_id_clean}.flt.vcf'
-            command=f'bcftools mpileup -Ou --max-depth 8000 --min-MQ 30 --min-BQ 30 -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 -mv -Ou |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
-            print('Executing:',command+'\n')
+            #command=f'bcftools mpileup -Ou --max-depth 8000 --min-MQ 30 --min-BQ 30 -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 -mv -Ou |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
+            command=f'bcftools mpileup -Ou --max-depth 8000 --redo-BAQ --min-MQ 30 --min-BQ 30 --per-sample-mF\
+            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,INFO/AD,INFO/ADF,INFO/ADR\
+            -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 --multiallelic-caller --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
+            print(command+'\n')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+
+def filter_pass(path_to_files, file_extension):
+    '''Filters only variants that have passed the applied filter'''
+    files = snp.os_walk(path_to_files, file_extension)
+    for f in files:
+        basename=snp.get_output_name(f)
+        command = f'bcftools view -f PASS {f} > {basename}.fltq.vcf'
+        try:
+            print(command)
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
@@ -139,6 +158,7 @@ def htsfile(path_to_files, file_extension):
             print('\n')
         except Exception as e:
             print(e)
+
 
 
 
