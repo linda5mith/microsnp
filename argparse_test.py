@@ -8,6 +8,7 @@ import pandas as pd
 import argparse
 import textwrap
 import time
+from collections import defaultdict
 
 # python argparse_test.py /external_HDD4/linda/unc_mouse_trial/argparse_test .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
 
@@ -19,7 +20,7 @@ def action(args):
 def parse_args():
     # Top-level parser
     parser = argparse.ArgumentParser(description='Variant calling program for microbial metagenomics.\n\
-        To understand parameters for individual functions e.g. mpileup_single run\n: python argparse_test.py mpileup_single -h')
+        Python wrapper around bcftools functions for ease of handling multiple samples and species. To understand parameters for individual functions e.g. mpileup_single run\n: python argparse_test.py mpileup_single -h')
     if len(sys.argv)==1:
         parser.print_help(sys.stderr)
         sys.exit(1)
@@ -30,12 +31,15 @@ def parse_args():
     parent_parser.add_argument("path_to_files", type=str, help='Path to files')
     parent_parser.add_argument("file_extension", metavar='file_ext', type=str, help='File extension e.g. \'.bam\' \'.sorted.bam\' \'.vcf\' \'fltq.vcf.gz\'')
 
+    output_parser = argparse.ArgumentParser(add_help=False)
+    output_parser.add_argument("--path_to_output", metavar='out_dir', type=str, help='Path to direct output to.')
+
     mpileup_parser = argparse.ArgumentParser(add_help=False)
     mpileup_parser.add_argument("path_to_ref", metavar='path_to_ref', type=str, help='Path to indexed reference fasta file.')
-    mpileup_parser.add_argument("--path_to_output", metavar='out_dir', type=str, help='Path to output mpileups.')
+    #mpileup_parser.add_argument("--path_to_output", metavar='out_dir', type=str, help='Path to output mpileups.')
 
     # Create the parser for the mpileup_single command
-    bcftools_single = subparser.add_parser('mpileup_single',parents=[parent_parser,mpileup_parser], help='Run an mpileup on a single sample vs. a reference genome.',
+    bcftools_single = subparser.add_parser('mpileup_single',parents=[parent_parser,mpileup_parser,output_parser], help='Run an mpileup on a single sample vs. a reference genome.',
     description='Example: python argparse.py mpileup_single /external_HDD4/linda/unc_mouse_trial/bam_files .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/reference.fasta /external_HDD4/linda/unc_mouse_trial/mpileups')
     bcftools_single.set_defaults(func=mpileup_single)
 
@@ -44,6 +48,7 @@ def parse_args():
     description='Example: python argparse.py mpileup_multi /external_HDD4/linda/unc_mouse_trial/bam_files .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/reference.fasta /external_HDD4/linda/unc_mouse_trial/mpileups')
     bcftools_multi.set_defaults(func=mpileup_multi)
 
+    # Need to add description variable with example of usage
     bcftools_compress = subparser.add_parser('compress_vcf',help='Compresses all vcf files in path ending in file_extension to BGZF-compressed variant calling data.')
     bcftools_compress.add_argument("path_to_files", type=str, help='Path to files')
     bcftools_compress.add_argument("file_extension",metavar='file_ext', type=str, help='File extension e.g. .vcf')
@@ -53,13 +58,25 @@ def parse_args():
     bcftools_index.required = True
     bcftools_index.set_defaults(func=index_vcf)
 
-    htsfile_parser = subparser.add_parser('htsfile',parents=[parent_parser],help='Output compression status all files in path_to_files with specified file_extension')
+    htsfile_parser = subparser.add_parser('htsfile',parents=[parent_parser],help='Output compression status for all files in path_to_files with specified file_extension')
     htsfile_parser.required = True
     htsfile_parser.set_defaults(func=htsfile)
 
     filterpass =  subparser.add_parser('filter_pass',parents=[parent_parser],help='Filters variants from vcf which passed filter to create a new file.')
     filterpass.required = True
     filterpass.set_defaults(func=filter_pass)
+
+    filterspecies = subparser.add_parser('filter_species',parents=[parent_parser],help='Finds all unique species/chromosomes from #CHROM column in a vcf file and outputs the filtered variants to a new vcf file with the naming convention <species>.fltq.vcf')
+    filterspecies.required = True
+    filterspecies.set_defaults(func=filter_species)
+
+    bcftoolsnorm = subparser.add_parser('bcftools_norm',parents=[parent_parser,mpileup_parser],help='Normalise (split multi-allelic calls + left-align indels) each VCF and set a unique identifier for ID field')
+    bcftoolsnorm.required = True
+    bcftoolsnorm.set_defaults(func=bcftools_norm)
+
+    bcftoolsmergennorms = subparser.add_parser('bcftools_merge_norms',parents=[parent_parser,output_parser],help='Merges all normalised species files in path_to_files to create normalized, merged vcf for all subjects and samples.')
+    bcftoolsmergennorms.required = True
+    bcftoolsmergennorms.set_defaults(func=bcftools_merge_norms)
 
     args = parser.parse_args()
     #print(args) 
@@ -109,21 +126,22 @@ def mpileup_multi(args): #ath_to_files, file_extension, path_to_reference_file, 
         except Exception as e:
             print(e)
 
-def filter_pass(path_to_files, file_extension):
+def filter_pass(args):
     '''Filters only variants that have passed the applied filter'''
-    files = snp.os_walk(path_to_files, file_extension)
+    files = snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
         basename=snp.get_output_name(f)
-        command = f'bcftools view -f PASS {f} > {basename}.fltq.vcf'
+        out_dir=snp.get_file_dir(f)
+        command = f'bcftools view -Oz -f PASS {f} > {out_dir}/{basename}.fltq.vcf.gz'
         try:
             print(command)
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
 
-def compress_vcf(path_to_files, file_extension):
+def compress_vcf(args):
     '''Compresses all vcf files in path ending in file_extension to BGZF-compressed variant calling data.'''
-    files = snp.os_walk(path_to_files, file_extension)
+    files = snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
         basename=snp.get_output_name(f)
         outdir=snp.get_file_dir(f)
@@ -136,20 +154,20 @@ def compress_vcf(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
-def index_vcf(path_to_files, file_extension):
+def index_vcf(args):
     '''Indexes all files with specified file_extension in path.'''
-    files = snp.os_walk(path_to_files, file_extension)
+    files = snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
         command=f'bcftools index {f}'
         try:
-            print('Executing:',command)
+            print(command)
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
 
-def htsfile(path_to_files, file_extension):
+def htsfile(args):
     '''Output compression status all files in path_to_files with specified file_extension.'''
-    files = snp.os_walk(path_to_files, file_extension)
+    files = snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
         command=f'htsfile {f}'
         try:
@@ -159,9 +177,92 @@ def htsfile(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
+def filter_species(args):
+    '''Finds all unique species/chromosomes from #CHROM column in a bcf/vcf file and outputs the filtered variants to a new bcf file
+    with the naming convention <species>.fltq.bcf'''
+    files = snp.os_walk(args.path_to_files, args.file_extension)
+    for f in files:
+    # Extract all unique chromosomes/species from bcf file
+        command=f'bcftools view {f} |  grep -v "#" | cut -f 1 | uniq | sort'
+        unique_chrom=snp.save_process_output(command)
+        for chrom in unique_chrom:
+            species=chrom.split('_')
+            species_prefix = '_'.join([species[0],species[1],species[2]]) 
+            outfile = snp.get_output_name(f)
+            out_file_name = f'{outfile}_{species_prefix}.fltqs.vcf.gz'
+            out_dir = snp.get_file_dir(f)
+            full_outfile_path=os.path.join(out_dir,out_file_name)
+            filter_command=f'bcftools view -Oz {f} --regions {chrom} -o {full_outfile_path}'
+            print(filter_command)
+            print('\n')
+            subprocess.call([filter_command],shell=True)
+
+def bcftools_norm(args):
+    '''Normalise (split multi-allelic calls + left-align indels) each VCF and set a unique identifier for ID field'''
+    files = snp.os_walk(args.path_to_files,args.file_extension)
+    #print(files)
+    for f in files:
+        file_base = snp.get_output_name(f)
+        out_file = f'{file_base}.norm.fltqs.vcf.gz'
+        #print(out_file)
+        file_dir = snp.get_file_dir(f)
+        out_file_path = os.path.join(file_dir,out_file)
+        try:
+            command = f'bcftools norm -m-any --check-ref w -f {args.path_to_ref} {f} | bcftools annotate -x ID --set-id +\'%CHROM\_%POS\_%REF\_%FIRST_ALT\' -Oz > {out_file_path}'
+            print(f'{command}')
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+        try:
+            command2 = f'tabix -p vcf {out_file_path}'
+            print(f'{command2}\n')
+            subprocess.call([command2],shell=True)
+        except Exception as e:
+            print(e)
+
+def bcftools_merge_norms(args):
+    '''Merges all normalised files in path for a particular subject.'''
+    files = snp.os_walk(args.path_to_files, args.file_extension)
+    #print(files)
+    # Find all file names with particular species and group them
+    groups = defaultdict(list)
+    for f in files:  
+        basename = snp.get_output_name(f)
+        out_dir = snp.get_file_dir(f)
+        try:
+            filename_list = basename.split('_')
+            species_ID = '_'.join([filename_list[2],filename_list[3],filename_list[4]])
+            groups[species_ID].append(f)
+        except Exception as e:
+            print(e)
+            species_ID = '_'.join([filename_list[2],filename_list[3]])
+            groups[species_ID].append(f)
+        print('\n')
+        keys=groups.keys()
+        print(keys)
+        for k in keys:
+            if args.path_to_output != '':
+                try:
+                    command=f'bcftools merge {out_dir}/*{k}.norm.fltqs.vcf.gz -Oz > {args.path_to_output}/{basename}.merged.norm.fltqs.vcf.gz'
+                    print(command)
+                    subprocess.call([command],shell=True)
+                except Exception as e:
+                    command=f'bcftools merge {out_dir}/*{k}*.norm.fltqs.vcf.gz -Oz {args.path_to_output}/{basename}.merged.norm.fltqs.vcf.gz'
+                    print(command)
+                    subprocess.call([command],shell=True)
+            else:
+                try:
+                    command=f'bcftools merge {out_dir}/*{k}.norm.fltqs.vcf.gz -Oz > {out_dir}/{basename}.merged.norm.fltqs.vcf.gz'
+                    print(command)
+                    subprocess.call([command],shell=True)
+                except Exception as e:
+                    command=f'bcftools merge {out_dir}/*{k}*.norm.fltqs.vcf.gz -Oz {out_dir}/{basename}.merged.norm.fltqs.vcf.gz'
+                    print(command)
+                    subprocess.call([command],shell=True)
 
 
-
+       
+  
 def main():
     parse_args()
 

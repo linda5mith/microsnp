@@ -192,7 +192,7 @@ def filter_bcf_by_species(path_to_files, file_extension):
             filter_command=f'bcftools view {f} --regions {chrom} > {full_outfile_path}'
             print(filter_command)
             print('\n')
-            subprocess.call([filter_command],shell=True)
+            #subprocess.call([filter_command],shell=True)
 
 def get_number_of_variants(path_to_files, file_extension, path_to_output_file=os.getcwd()):
     '''Counts the number of variants for each chromosome in all bcf files or files with specified file_extension
