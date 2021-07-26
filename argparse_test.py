@@ -10,12 +10,6 @@ import textwrap
 import time
 from collections import defaultdict
 
-# python argparse_test.py /external_HDD4/linda/unc_mouse_trial/argparse_test .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/Combined.fasta
-
-def action(args):
-    print(args.path_to_files)
-    print(args.file_extension)
-    print(args.path_to_reference_file)
 
 def parse_args():
     # Top-level parser
@@ -221,48 +215,40 @@ def bcftools_norm(args):
             print(e)
 
 def bcftools_merge_norms(args):
-    '''Merges all normalised files in path for a particular subject.'''
+    '''Merges all normalised files in path for a particular species.'''
     files = snp.os_walk(args.path_to_files, args.file_extension)
-    #print(files)
-    # Find all file names with particular species and group them
+    # Find all file names by species and group them
     groups = defaultdict(list)
+    species=[]
     for f in files:  
         basename = snp.get_output_name(f)
         out_dir = snp.get_file_dir(f)
         try:
             filename_list = basename.split('_')
+            #print(filename_list)
             species_ID = '_'.join([filename_list[2],filename_list[3],filename_list[4]])
-            groups[species_ID].append(f)
+            species.append(species_ID)
         except Exception as e:
             print(e)
+        finally:
             species_ID = '_'.join([filename_list[2],filename_list[3]])
-            groups[species_ID].append(f)
-        print('\n')
-        keys=groups.keys()
-        print(keys)
-        for k in keys:
-            if args.path_to_output != '':
-                try:
-                    command=f'bcftools merge {out_dir}/*{k}.norm.fltqs.vcf.gz -Oz > {args.path_to_output}/{basename}.merged.norm.fltqs.vcf.gz'
-                    print(command)
-                    subprocess.call([command],shell=True)
-                except Exception as e:
-                    command=f'bcftools merge {out_dir}/*{k}*.norm.fltqs.vcf.gz -Oz {args.path_to_output}/{basename}.merged.norm.fltqs.vcf.gz'
-                    print(command)
-                    subprocess.call([command],shell=True)
-            else:
-                try:
-                    command=f'bcftools merge {out_dir}/*{k}.norm.fltqs.vcf.gz -Oz > {out_dir}/{basename}.merged.norm.fltqs.vcf.gz'
-                    print(command)
-                    subprocess.call([command],shell=True)
-                except Exception as e:
-                    command=f'bcftools merge {out_dir}/*{k}*.norm.fltqs.vcf.gz -Oz {out_dir}/{basename}.merged.norm.fltqs.vcf.gz'
-                    print(command)
-                    subprocess.call([command],shell=True)
-
-
+            #print(species_ID)
+            species.append(species_ID)
+    unique_species=set(species)
+    print(unique_species)
+    if args.path_to_output:
+        for s in unique_species:
+            try:
+                command=f'bcftools merge {args.path_to_output}/*{s}.norm.fltqs.vcf.gz -Oz > {args.path_to_output}/{s}.merged.norm.fltqs.vcf.gz'
+                print(command+'\n')
+                subprocess.call([command],shell=True)
+            except Exception as e:
+                print(e)
+                command=f'bcftools merge {args.path_to_output}/*{s}*.norm.fltqs.vcf.gz -Oz {args.path_to_output}/{s}.merged.norm.fltqs.vcf.gz'
+                print(command+'\n')
+                subprocess.call([command],shell=True)
+                
        
-  
 def main():
     parse_args()
 
