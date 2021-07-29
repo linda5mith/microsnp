@@ -11,6 +11,14 @@ import pandas as pd
 # /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/Bifidobacterium_longum.gbk
 # /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/I.Halo.gbk
 
+# Phage variants
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EC_phage_A4.gb     
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EC_phage_W115.gb
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EC_phage_A51.2.gb  
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EF_phage_A2.gb
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EC_phage_I29.gb    
+# /external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EF_phage_Sw5.gb
+
 # Initialise empty lists to hold gbk data
 start=[]
 stop=[]
@@ -22,7 +30,7 @@ strand=[]
 # Create empty dataframe
 df=pd.DataFrame({'Start':start,'End':stop,'Protein_ID':protein_id,'Gene':gene,'Product':product,'Strand':strand})
 
-gb_file=open('/external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/I.Halo.gbk','r')
+gb_file=open('/external_HDD4/Tom/S.A.3_MouseTrial/Structural_Variants/EF_phage_Sw5.gb','r')
 
 for index, record in enumerate(SeqIO.parse(gb_file, "genbank")):
     print(f'Parsing {record.id}')
@@ -54,4 +62,4 @@ df['Product']=product
 df['Strand']=strand
 
 print(df)
-df.to_csv('tom_gbk_parsed/I.Halo_bioseq.csv')
+df.to_csv('tom_gbk_parsed/EF_phage_Sw5_bioseq.csv')

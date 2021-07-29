@@ -89,7 +89,7 @@ def mpileup_single(args):
         sample_id=snp.get_file_basename(f)
         sample_id_clean=sample_id.split('_')[0]
         command=f'bcftools mpileup -Ou --max-depth 8000 --redo-BAQ --min-MQ 30 --min-BQ 30 --per-sample-mF \
-            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,INFO/AD,INFO/ADF,INFO/ADR \
+            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,FORMAT/GQ,INFO/AD,INFO/ADF,INFO/ADR \
             -f {args.path_to_ref} {f} | bcftools call --ploidy 1 --multiallelic-caller --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{subject_clean}_{sample_id_clean}.flt.vcf'
         print(command)
         try:
@@ -111,9 +111,8 @@ def mpileup_multi(args): #ath_to_files, file_extension, path_to_reference_file, 
     for folder in folder_paths:
         dirname=snp.get_file_basename(folder)
         try:
-            #command=f'bcftools mpileup -Ou --max-depth 8000 --min-MQ 30 --min-BQ 30 -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 -mv -Ou |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
             command=f'bcftools mpileup -Ou --max-depth 8000 --redo-BAQ --min-MQ 30 --min-BQ 30 --per-sample-mF\
-            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,INFO/AD,INFO/ADF,INFO/ADR\
+            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,FORMAT/GQ,INFO/AD,INFO/ADF,INFO/ADR\
             -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 --multiallelic-caller --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
             print(command+'\n')
             subprocess.call([command],shell=True)
@@ -180,6 +179,7 @@ def filter_species(args):
         command=f'bcftools view {f} |  grep -v "#" | cut -f 1 | uniq | sort'
         unique_chrom=snp.save_process_output(command)
         for chrom in unique_chrom:
+            #print(chrom)
             species=chrom.split('_')
             species_prefix = '_'.join([species[0],species[1],species[2]]) 
             outfile = snp.get_output_name(f)
@@ -187,9 +187,11 @@ def filter_species(args):
             out_dir = snp.get_file_dir(f)
             full_outfile_path=os.path.join(out_dir,out_file_name)
             filter_command=f'bcftools view -Oz {f} --regions {chrom} -o {full_outfile_path}'
-            print(filter_command)
-            print('\n')
-            subprocess.call([filter_command],shell=True)
+            try:    
+                print(f'{filter_command}\n')
+                subprocess.call([filter_command],shell=True)
+            except Exception as e:
+                print(e)
 
 def bcftools_norm(args):
     '''Normalise (split multi-allelic calls + left-align indels) each VCF and set a unique identifier for ID field'''

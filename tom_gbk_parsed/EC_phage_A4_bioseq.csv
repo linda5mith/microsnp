@@ -1,0 +1,592 @@
+,Start,End,Protein_ID,Gene,Product,Strand
+0,580,742,,,['hypothetical protein'],-1
+1,759,1629,,,['baseplate hub subunit'],-1
+2,1706,2195,,,['hypothetical protein'],1
+3,2302,4474,,,['structural protein'],1
+4,4489,6217,,,['portal protein'],1
+5,6287,6518,,,['hypothetical protein'],1
+6,6622,7465,,,['structural protein'],1
+7,7495,8116,,,['capsid maturation protease'],1
+8,8184,9303,,,['scaffolding protein'],1
+9,9395,10571,,,['major capsid protein'],1
+10,10700,11807,,,['hypothetical protein'],1
+11,11831,12182,,,['hypothetical protein'],1
+12,12212,12521,,,['T5orf172 domain-containing protein'],1
+13,12561,14172,,,['putative tail fiber protein'],1
+14,14175,14631,,,['tail assembly chaperone'],1
+15,14831,15329,,,['putative tail fiber chaperone'],1
+16,15431,15734,,,['hypothetical protein'],1
+17,15819,18825,,,['DNA polymerase'],1
+18,18835,18991,,,['hypothetical protein'],1
+19,18983,19295,,,['hypothetical protein'],1
+20,19388,20120,,,['hypothetical protein'],1
+21,20179,20386,,,['Zinc ribbon domain containing protein'],1
+22,20387,20687,,,['co-chaperone GroES'],1
+23,20679,21405,,,['structural protein'],1
+24,21449,22142,,,['structural protein'],-1
+25,22157,22757,,,['structural protein'],-1
+26,22986,23973,,,"[""RNase H-like 5'-3' exonuclease""]",1
+27,23974,24460,,,['hypothetical protein'],1
+28,24498,25197,,,['large terminase subunit'],1
+29,25472,26810,,,['large terminase subunit'],1
+30,26842,28144,,,['structural protein'],1
+31,28320,29385,,,['ssDNA binding protein'],1
+32,29458,30577,,,['RecA'],1
+33,30576,31038,,,['UvsY'],1
+34,31087,31906,,,['putative DNA polymerase III epsilon subunit'],1
+35,31920,33405,,,['helicase'],1
+36,33459,33885,,,['hypothetical protein'],1
+37,33894,34392,,,['hypothetical protein'],1
+38,34396,35239,,,['hypothetical protein'],1
+39,35222,35930,,,['hypothetical protein'],1
+40,35926,36256,,,['structural protein'],1
+41,36233,36872,,,['hypothetical protein'],1
+42,36858,37212,,,['hypothetical protein'],-1
+43,37269,38247,,,['structural protein'],1
+44,38300,39350,,,['putative DNA primase'],1
+45,39368,40895,,,['helicase'],1
+46,40898,41171,,,['structural protein'],1
+47,41172,41331,,,['hypothetical protein'],1
+48,41327,41720,,,['structural protein'],1
+49,41773,42730,,,['structural protein'],1
+50,42729,42948,,,['structural protein'],1
+51,42944,43634,,,['hypothetical protein'],1
+52,43667,44297,,,['structural protein'],1
+53,44307,44640,,,['structural protein'],1
+54,44688,45408,,,['exonuclease'],1
+55,45394,45955,,,['hypothetical protein'],1
+56,45983,46565,,,['structural protein'],1
+57,46644,48963,,,['Ribonucleoside-diphosphate reductase large subunit'],1
+58,49008,50133,,,['Ribonucleotide reductase small subunit'],1
+59,50184,50358,,,['hypothetical protein'],1
+60,50419,50653,,,['hypothetical protein'],1
+61,50667,51060,,,['structural protein'],1
+62,51059,51794,,,['nucleotide pyrophosphohydrolase'],1
+63,51830,52061,,,['structural protein'],-1
+64,52074,52491,,,['structural protein'],-1
+65,52506,53169,,,['structural protein'],-1
+66,53317,53689,,,['hypothetical protein'],1
+67,53676,54204,,,['dihydrofolate reductase'],1
+68,54200,54623,,,['RNase H'],1
+69,54619,55966,,,['helicase'],1
+70,56010,56577,,,['structural protein'],1
+71,56601,56796,,,['hypothetical protein'],1
+72,56869,57373,,,['translation initiation factor IF3'],1
+73,57387,57933,,,['protease adapter protein'],1
+74,57997,58225,,,['KTSC domain protein'],1
+75,58217,58553,,,['structural protein'],1
+76,58542,60114,,,['structural protein'],1
+77,60117,60321,,,['hypothetical protein'],1
+78,60310,61165,,,['structural protein'],1
+79,61174,61561,,,['DUF3307 domain-containing protein'],1
+80,61661,63626,,,['topoisomerase II large subunit'],1
+81,63674,65087,,,['topoisomerase II medium subunit'],1
+82,65168,67556,,,['structural protein'],1
+83,67837,68356,,,['DNA polymerase III alpha subunit '],1
+84,68415,68778,,,['hypothetical protein'],1
+85,68783,69107,,,['co-chaperone GroES'],1
+86,69161,69431,,,['hypothetical protein'],1
+87,69450,70404,,,['sliding clamp loader subunit'],1
+88,70403,71024,,,['HAD-like domain protein'],1
+89,71107,71683,,,['structural protein'],1
+90,71682,72363,,,['structural protein'],1
+91,72374,73178,,,['hypothetical protein'],1
+92,73272,74391,,,['hypothetical protein'],1
+93,74477,75605,,,['TelA-like protein'],1
+94,75673,76372,,,"[""3'-5' exoribonuclease""]",1
+95,76382,77480,,,['hypothetical protein'],1
+96,77476,78031,,,['structural protein'],1
+97,78080,78662,,,['hypothetical protein'],1
+98,78648,79179,,,['hypothetical protein'],1
+99,79180,79534,,,['hypothetical protein'],1
+100,79533,80028,,,['hypothetical protein'],1
+101,80020,80296,,,['hypothetical protein'],1
+102,80297,80570,,,['hypothetical protein'],1
+103,80550,80781,,,['hypothetical protein'],1
+104,80783,80960,,,['hypothetical protein'],1
+105,80946,81369,,,['hypothetical protein'],1
+106,81365,81701,,,['hypothetical protein'],1
+107,81697,81892,,,['hypothetical protein'],1
+108,81894,82326,,,['hypothetical protein'],1
+109,82403,82955,,,['hypothetical protein'],1
+110,83103,83499,,,['hypothetical protein'],1
+111,83516,83951,,,['hypothetical protein'],1
+112,83940,84366,,,['hypothetical protein'],1
+113,84352,84763,,,['peptidyl-tRNA hydrolase'],1
+114,84756,85137,,,['hypothetical protein'],1
+115,85133,85574,,,['hypothetical protein'],1
+116,85570,85993,,,['hypothetical protein'],1
+117,85997,86258,,,['hypothetical protein'],1
+118,86298,86586,,,['hypothetical protein'],1
+119,86872,88771,,,['DNA-cytosine-methyltransferase'],1
+120,88786,89284,,,['hypothetical protein'],1
+121,89331,89808,,,['hypothetical protein'],1
+122,89794,90175,,,['hypothetical protein'],1
+123,90171,90615,,,['hypothetical protein'],1
+124,90617,90761,,,['hypothetical protein'],1
+125,90773,90944,,,['hypothetical protein'],1
+126,91007,91574,,,['hypothetical protein'],1
+127,91573,91828,,,['hypothetical protein'],1
+128,91817,92612,,,['hypothetical protein'],1
+129,92608,92872,,,['hypothetical protein'],1
+130,92882,93158,,,['hypothetical protein'],1
+131,93150,93447,,,['hypothetical protein'],1
+132,93566,93776,,,['hypothetical protein'],1
+133,93841,94381,,,['hypothetical protein'],1
+134,94380,94677,,,['hypothetical protein'],1
+135,94679,94823,,,['hypothetical protein'],1
+136,94872,95265,,,['hypothetical protein'],1
+137,95315,95885,,,['hypothetical protein'],1
+138,95886,96363,,,['hypothetical protein'],1
+139,96401,96752,,,['DUF1353 domain-containing protein '],1
+140,96804,97020,,,['hypothetical protein'],1
+141,97021,97207,,,['hypothetical protein'],1
+142,97203,97386,,,['hypothetical protein'],1
+143,97431,97935,,,['hypothetical protein'],1
+144,97931,98108,,,['hypothetical protein'],1
+145,98442,98607,,,['hypothetical protein'],1
+146,98603,98768,,,['hypothetical protein'],1
+147,98837,99191,,,['hypothetical protein'],1
+148,99331,99715,,,['hypothetical protein'],1
+149,100219,100477,,,['hypothetical protein'],1
+150,100485,100701,,,['hypothetical protein'],1
+151,101049,101163,,,['hypothetical protein'],1
+152,101330,101768,,,['hypothetical protein'],1
+153,101760,102132,,,['hypothetical protein'],1
+154,102145,102337,,,['hypothetical protein'],1
+155,102336,102615,,,['hypothetical protein'],1
+156,102944,103340,,,['hypothetical protein'],1
+157,103336,103810,,,['hypothetical protein'],1
+158,103806,104226,,,['hypothetical protein'],1
+159,104207,104675,,,['hypothetical protein'],1
+160,104778,105225,,,['hypothetical protein'],1
+161,105224,105689,,,['hypothetical protein'],1
+162,105681,106110,,,['hypothetical protein'],1
+163,106113,106437,,,['hypothetical protein'],1
+164,106417,106621,,,['hypothetical protein'],1
+165,106622,106964,,,['hypothetical protein'],1
+166,106974,107817,,,['hypothetical protein'],1
+167,107851,109009,,,['structural protein'],-1
+168,109130,109715,,,['hypothetical protein'],1
+169,109711,109951,,,['hypothetical protein'],1
+170,109953,110277,,,['hypothetical protein'],1
+171,110273,110738,,,['hypothetical protein'],1
+172,110802,111261,,,['hypothetical protein'],1
+173,111257,111701,,,['hypothetical protein'],1
+174,111700,112126,,,['hypothetical protein'],1
+175,112180,112432,,,['hypothetical protein'],1
+176,112505,112781,,,['hypothetical protein'],1
+177,112777,113245,,,['hypothetical protein'],1
+178,113210,113642,,,['hypothetical protein'],1
+179,113643,114141,,,['hypothetical protein'],1
+180,114162,115125,,,['sigma-70 family RNA polymerase sigma factor '],1
+181,115776,115986,,,['hypothetical protein'],1
+182,115982,116177,,,['hypothetical protein'],1
+183,116207,116471,,,['hypothetical protein'],1
+184,116485,116653,,,['hypothetical protein'],1
+185,116741,116942,,,['hypothetical protein'],1
+186,117110,117389,,,['sigma-70 family RNA polymerase sigma factor '],1
+187,117507,117816,,,['hypothetical protein'],1
+188,117815,118061,,,['hypothetical protein'],1
+189,118063,118432,,,['hypothetical protein'],1
+190,118428,118704,,,['hypothetical protein'],1
+191,118703,118913,,,['hypothetical protein'],1
+192,118914,119061,,,['hypothetical protein'],1
+193,119070,119271,,,['hypothetical protein'],1
+194,119270,119777,,,['hypothetical protein'],1
+195,119773,119998,,,['hypothetical protein'],1
+196,119994,120207,,,['hypothetical protein'],1
+197,120271,120937,,,['hypothetical protein'],1
+198,120936,121179,,,['hypothetical protein'],1
+199,121211,121472,,,['C4-type zinc finger domain-containing protein'],1
+200,121492,121825,,,['hypothetical protein'],1
+201,121916,122282,,,['hypothetical protein'],1
+202,122296,122671,,,['hypothetical protein'],1
+203,122667,123021,,,['hypothetical protein'],1
+204,123070,123196,,,['hypothetical protein'],1
+205,123200,123392,,,['hypothetical protein'],1
+206,123447,123888,,,['hypothetical protein'],1
+207,123880,124237,,,['hypothetical protein'],1
+208,124237,124501,,,['hypothetical protein'],1
+209,124522,124747,,,['hypothetical protein'],1
+210,124792,125371,,,['hypothetical protein'],1
+211,125382,125814,,,['hypothetical protein'],1
+212,125813,126038,,,['hypothetical protein'],1
+213,126128,127667,,,['hypothetical protein'],1
+214,127737,128013,,,['hypothetical protein'],1
+215,128026,128287,,,['hypothetical protein'],1
+216,128339,128618,,,['hypothetical protein'],1
+217,128703,129255,,,['hypothetical protein'],1
+218,129266,129443,,,['hypothetical protein'],1
+219,129482,129734,,,['hypothetical protein'],1
+220,129743,130115,,,['hypothetical protein'],1
+221,130203,130641,,,['endonuclease V'],1
+222,130637,130865,,,['hypothetical protein'],1
+223,130930,131170,,,['hypothetical protein'],1
+224,131159,132857,,,['hypothetical protein'],1
+225,132924,133695,,,['hypothetical protein'],1
+226,133695,133914,,,['endonuclease V'],1
+227,133924,134257,,,['hypothetical protein'],1
+228,134256,134610,,,['hypothetical protein'],1
+229,134609,134945,,,['hypothetical protein'],1
+230,134946,135267,,,['hypothetical protein'],1
+231,135266,135650,,,['hypothetical protein'],1
+232,135652,136006,,,['hypothetical protein'],1
+233,136005,136389,,,['hypothetical protein'],1
+234,136388,136940,,,['hypothetical protein'],1
+235,136970,138977,,,['hypothetical protein'],-1
+236,138963,139908,,,['hypothetical protein'],-1
+237,140127,141480,,,['putative DNA condensation protein'],-1
+238,141555,142731,,,['putative DNA condensation protein'],-1
+239,142802,143993,,,['putative DNA condensation protein'],-1
+240,144064,145234,,,['putative DNA condensation protein'],-1
+241,145304,146414,,,['putative DNA condensation protein'],-1
+242,146487,147630,,,['putative DNA condensation protein'],-1
+243,147702,148845,,,['putative DNA condensation protein'],-1
+244,148857,149754,,,['kelch-like protein'],-1
+245,149856,150084,,,['hypothetical protein'],1
+246,150080,150281,,,['hypothetical protein'],1
+247,150282,150492,,,['hypothetical protein'],1
+248,150687,150897,,,['hypothetical protein'],1
+249,150896,151082,,,['hypothetical protein'],1
+250,151090,151270,,,['hypothetical protein'],1
+251,151278,151458,,,['hypothetical protein'],1
+252,151468,151648,,,['hypothetical protein'],1
+253,151667,152339,,,['hypothetical protein'],1
+254,152515,152704,,,['hypothetical protein'],1
+255,152713,152914,,,['hypothetical protein'],1
+256,152922,153105,,,['hypothetical protein'],1
+257,153106,153307,,,['hypothetical protein'],1
+258,153299,153488,,,['hypothetical protein'],1
+259,153489,153675,,,['hypothetical protein'],1
+260,153692,153893,,,['hypothetical protein'],1
+261,155891,156254,,,['Phage protein'],1
+262,156348,156582,,,['hypothetical protein'],1
+263,156668,156908,,,['hypothetical protein'],1
+264,156990,157254,,,['hypothetical protein'],1
+265,157343,157574,,,['hypothetical protein'],1
+266,157734,157851,,,['hypothetical protein'],1
+267,158002,158614,,,['hypothetical protein'],1
+268,158674,158986,,,['hypothetical protein'],1
+269,159003,159207,,,['hypothetical protein'],1
+270,159265,159517,,,['hypothetical protein'],1
+271,159760,159997,,,['Phage protein'],1
+272,160082,160382,,,['hypothetical protein'],1
+273,160403,160634,,,['hypothetical protein'],1
+274,160867,161350,,,['hypothetical protein'],1
+275,161625,161778,,,['hypothetical protein'],1
+276,161848,162076,,,['hypothetical protein'],1
+277,162162,162306,,,['hypothetical protein'],1
+278,162387,162600,,,['hypothetical protein'],1
+279,162691,163036,,,['hypothetical protein'],1
+280,163116,163386,,,['hypothetical protein'],1
+281,163437,163608,,,['hypothetical protein'],1
+282,163651,163819,,,['hypothetical protein'],1
+283,163891,164038,,,['hypothetical protein'],1
+284,164123,164366,,,['hypothetical protein'],1
+285,164417,164600,,,['hypothetical protein'],1
+286,164686,164824,,,['hypothetical protein'],1
+287,164943,165126,,,['hypothetical protein'],1
+288,165226,165568,,,['hypothetical protein'],1
+289,165670,165883,,,['hypothetical protein'],1
+290,165974,166154,,,['Phage protein'],1
+291,166253,166397,,,['hypothetical protein'],1
+292,166594,166783,,,['hypothetical protein'],1
+293,166839,167082,,,['hypothetical protein'],1
+294,167260,167434,,,['hypothetical protein'],1
+295,167430,167580,,,['hypothetical protein'],1
+296,167904,168180,,,['hypothetical protein'],1
+297,168267,168450,,,['hypothetical protein'],1
+298,168538,168862,,,['hypothetical protein'],1
+299,168957,169353,,,['hypothetical protein'],1
+300,169415,169670,,,['hypothetical protein'],1
+301,169724,169943,,,['hypothetical protein'],1
+302,170008,170236,,,['hypothetical protein'],1
+303,170305,170890,,,['hypothetical protein'],1
+304,171080,171335,,,['hypothetical protein'],1
+305,171421,171829,,,['hypothetical protein'],1
+306,171918,172191,,,['hypothetical protein'],1
+307,172187,172379,,,['Phage protein'],1
+308,172465,172729,,,['hypothetical protein'],1
+309,172796,173021,,,['hypothetical protein'],1
+310,173097,173355,,,['hypothetical protein'],1
+311,173445,173646,,,['hypothetical protein'],1
+312,173891,174224,,,['hypothetical protein'],1
+313,174280,174715,,,['hypothetical protein'],1
+314,174783,174993,,,['hypothetical protein'],1
+315,175233,176052,,,['hypothetical protein'],1
+316,176118,176316,,,['hypothetical protein'],1
+317,176312,176513,,,['hypothetical protein'],1
+318,176509,176719,,,['hypothetical protein'],1
+319,176715,176928,,,['hypothetical protein'],1
+320,176924,177149,,,['hypothetical protein'],1
+321,177148,177400,,,['hypothetical protein'],1
+322,177619,177835,,,['hypothetical protein'],1
+323,177831,178050,,,['hypothetical protein'],1
+324,178040,178265,,,['hypothetical protein'],1
+325,178255,178519,,,['hypothetical protein'],1
+326,178515,178752,,,['hypothetical protein'],1
+327,178742,178997,,,['hypothetical protein'],1
+328,179194,179425,,,['hypothetical protein'],1
+329,179402,179618,,,['hypothetical protein'],1
+330,179614,179857,,,['hypothetical protein'],1
+331,180053,180269,,,['hypothetical protein'],1
+332,180265,180487,,,['hypothetical protein'],1
+333,180489,180831,,,['hypothetical protein'],1
+334,180843,181074,,,['hypothetical protein'],1
+335,181113,181359,,,['hypothetical protein'],1
+336,181355,181685,,,['hypothetical protein'],1
+337,181692,182028,,,['hypothetical protein'],1
+338,182422,182824,,,['hypothetical protein'],1
+339,182823,183009,,,['hypothetical protein'],1
+340,183020,183371,,,['hypothetical protein'],1
+341,183377,183893,,,['hypothetical protein'],1
+342,183882,184191,,,['hypothetical protein'],1
+343,184509,185007,,,['hypothetical protein'],1
+344,185087,185612,,,['hypothetical protein'],1
+345,185608,186133,,,['hypothetical protein'],1
+346,186125,186764,,,['hypothetical protein'],1
+347,186816,187353,,,['DNA ligase (EC 6.5.1.2)'],1
+348,187352,187919,,,['hypothetical protein'],1
+349,188133,188490,,,['hypothetical protein'],1
+350,188501,188846,,,['hypothetical protein'],1
+351,188845,189172,,,['hypothetical protein'],1
+352,189171,189342,,,['hypothetical protein'],1
+353,189343,189826,,,['hypothetical protein'],1
+354,189827,190298,,,['hypothetical protein'],1
+355,190294,190738,,,['hypothetical protein'],1
+356,190737,191193,,,['hypothetical protein'],1
+357,191198,191645,,,['hypothetical protein'],1
+358,191717,192251,,,['hypothetical protein'],1
+359,192247,192475,,,['hypothetical protein'],1
+360,192465,192672,,,['hypothetical protein'],1
+361,192655,192892,,,['hypothetical protein'],1
+362,192881,193430,,,['hypothetical protein'],1
+363,193398,193977,,,['hypothetical protein'],1
+364,193973,194342,,,['hypothetical protein'],1
+365,194341,194680,,,['hypothetical protein'],1
+366,194682,195219,,,['hypothetical protein'],1
+367,195275,195773,,,['hypothetical protein'],1
+368,195772,196276,,,['hypothetical protein'],1
+369,196259,196598,,,['hypothetical protein'],1
+370,196597,197029,,,['hypothetical protein'],1
+371,197028,197499,,,['hypothetical protein'],1
+372,197495,197966,,,['hypothetical protein'],1
+373,197975,198482,,,['hypothetical protein'],1
+374,198456,199071,,,['hypothetical protein'],1
+375,199075,199708,,,['hypothetical protein'],1
+376,199704,200256,,,['hypothetical protein'],1
+377,200338,200887,,,['hypothetical protein'],1
+378,200883,202296,,,['methyl-accepting chemotaxis protein'],1
+379,202369,202924,,,['hypothetical protein'],1
+380,202907,203480,,,['hypothetical protein'],1
+381,203457,204036,,,['hypothetical protein'],1
+382,204032,204593,,,['hypothetical protein'],1
+383,204586,205072,,,['hypothetical protein'],1
+384,205064,205523,,,['hypothetical protein'],1
+385,205509,206001,,,['hypothetical protein'],1
+386,206002,206605,,,['hypothetical protein'],1
+387,206607,207147,,,['hypothetical protein'],1
+388,207139,207757,,,['hypothetical protein'],1
+389,207753,208353,,,['hypothetical protein'],1
+390,208355,208769,,,['hypothetical protein'],1
+391,208768,209293,,,['hypothetical protein'],1
+392,209707,210166,,,['hypothetical protein'],1
+393,210149,210650,,,['hypothetical protein'],1
+394,210690,211164,,,['hypothetical protein'],1
+395,211166,211304,,,['hypothetical protein'],1
+396,211321,211699,,,['putative HNH endonuclease'],1
+397,211695,211968,,,['hypothetical protein'],1
+398,211964,212804,,,['hypothetical protein'],1
+399,212824,213127,,,['hypothetical protein'],1
+400,213193,213580,,,['hypothetical protein'],1
+401,213634,213943,,,['putative HNH endonuclease'],1
+402,213996,214836,,,['hypothetical protein'],1
+403,215530,216073,,,['hypothetical protein'],1
+404,216087,216702,,,['hypothetical protein'],1
+405,216718,217240,,,['DNA N-6-adenine-methyltransferase'],1
+406,217236,217776,,,['putative cytitidyltransferase'],1
+407,217772,218066,,,['hypothetical protein'],1
+408,218058,218349,,,['hypothetical protein'],1
+409,218329,218947,,,['hypothetical protein'],1
+410,218992,219265,,,['hypothetical protein'],1
+411,219264,219531,,,['hypothetical protein'],1
+412,219520,219796,,,['hypothetical protein'],1
+413,219792,220056,,,['hypothetical protein'],1
+414,220055,220340,,,['hypothetical protein'],1
+415,220332,220533,,,['hypothetical protein'],1
+416,220525,220789,,,['hypothetical protein'],1
+417,220785,221076,,,['hypothetical protein'],1
+418,221072,221255,,,['hypothetical protein'],1
+419,221235,221520,,,['hypothetical protein'],1
+420,221578,222307,,,['hypothetical protein'],1
+421,222315,222594,,,['hypothetical protein'],1
+422,222637,222937,,,['hypothetical protein'],1
+423,222933,223512,,,['hypothetical protein'],1
+424,223508,224198,,,['hypothetical protein'],1
+425,224199,224463,,,['hypothetical protein'],1
+426,224459,225605,,,['RNA ligase'],1
+427,225634,225889,,,['hypothetical protein'],1
+428,225898,226135,,,['hypothetical protein'],1
+429,226112,226367,,,['hypothetical protein'],1
+430,226366,226678,,,['hypothetical protein'],1
+431,226678,227611,,,"[""3'-phosphatase, 5'-polynucleotide kinase""]",1
+432,227663,227924,,,['hypothetical protein'],1
+433,227926,228193,,,['hypothetical protein'],1
+434,228179,228479,,,['hypothetical protein'],1
+435,228475,228757,,,['hypothetical protein'],1
+436,228996,229326,,,['hypothetical protein'],1
+437,229297,229621,,,['hypothetical protein'],1
+438,229617,229935,,,['hypothetical protein'],1
+439,229931,230234,,,['hypothetical protein'],1
+440,230230,230530,,,['hypothetical protein'],1
+441,230526,231132,,,['hypothetical protein'],1
+442,231131,231476,,,['hypothetical protein'],1
+443,231476,231719,,,['hypothetical protein'],1
+444,231729,231954,,,['hypothetical protein'],1
+445,231950,232694,,,['putative serine/threonine protein phosphatase '],1
+446,232699,232978,,,['hypothetical protein'],1
+447,232987,233215,,,['putative molecular chaperone DnaJ'],1
+448,233211,233625,,,['hypothetical protein'],1
+449,233624,234821,,,['hypothetical protein'],1
+450,234830,236249,,,['DNA ligase'],1
+451,236268,237060,,,['metallophosphoesterase'],1
+452,237069,237465,,,['hypothetical protein'],1
+453,237464,237848,,,['hypothetical protein'],1
+454,237908,238604,,,['TP-dependent Clp protease'],1
+455,238667,238961,,,['hypothetical protein'],1
+456,238965,239412,,,['hypothetical protein'],1
+457,239460,239814,,,['hypothetical protein'],1
+458,239813,240323,,,['hypothetical protein'],1
+459,240324,240846,,,['hypothetical protein'],1
+460,240802,241282,,,['CMP/dCMP deaminase'],1
+461,241278,241539,,,['hypothetical protein'],1
+462,241566,241941,,,['putative structural protein'],-1
+463,241998,244167,,,['hypothetical protein'],-1
+464,244270,244402,,,['hypothetical protein'],-1
+465,244576,244774,,,['putative structural protein'],-1
+466,244972,245578,,,['ClpP/crotonase-like domain protein'],1
+467,245705,245969,,,['hypothetical protein'],1
+468,245980,246583,,,['protease'],1
+469,246643,246856,,,['hypothetical protein'],1
+470,246852,247605,,,['Sir2-like protein'],1
+471,247601,248150,,,['hypothetical protein'],1
+472,248161,248494,,,['hypothetical protein'],1
+473,248490,248790,,,['hypothetical protein'],1
+474,248854,250294,,,['PhoH-like protein'],1
+475,250362,250551,,,['hypothetical protein'],1
+476,250695,251442,,,['hypothetical protein'],1
+477,251505,252063,,,['hypothetical protein'],1
+478,252090,252420,,,['hypothetical protein'],1
+479,252419,253070,,,['hypothetical protein'],1
+480,253088,253274,,,['hypothetical protein'],1
+481,253277,253511,,,['hypothetical protein'],1
+482,253533,253893,,,['hypothetical protein'],1
+483,253903,254707,,,['hypothetical protein'],1
+484,254751,255369,,,['hypothetical protein'],1
+485,255365,255734,,,['dCMP deaminase'],1
+486,255730,255952,,,['hypothetical protein'],1
+487,255954,256365,,,['hypothetical protein'],1
+488,256354,256540,,,['Phage protein'],1
+489,256773,258579,,,['anaerobic ribonucleoside-triphosphate reductase'],1
+490,258588,258951,,,['Pyruvate formate-lyase (EC 2.3.1.54)'],1
+491,258950,259283,,,['DUF4326 domain-containing protein'],1
+492,259254,259734,,,['anaerobic NTP reductase'],1
+493,259720,259879,,,['hypothetical protein'],1
+494,259956,262641,,,['hypothetical protein'],1
+495,262651,263242,,,['hypothetical protein'],1
+496,263252,265994,,,['hypothetical protein'],1
+497,266062,266623,,,['hypothetical protein'],1
+498,266632,267133,,,['hypothetical protein'],1
+499,267132,267636,,,['hypothetical protein'],1
+500,267639,268041,,,['hypothetical protein'],1
+501,268037,269279,,,['putative nucleotidyltransferase'],1
+502,269363,269993,,,['putative tail fiber'],1
+503,269994,272778,,,['phage tail protein I'],1
+504,272853,273279,,,['hypothetical protein'],1
+505,273324,273699,,,['hypothetical protein'],1
+506,273695,274010,,,['hypothetical protein'],1
+507,274011,274623,,,['HNH endonuclease'],1
+508,274676,275033,,,['hypothetical protein'],1
+509,275032,275431,,,['hypothetical protein'],1
+510,275754,275904,,,['hypothetical protein'],-1
+511,276151,276568,,,['hypothetical protein'],1
+512,276600,277041,,,['structural protein'],1
+513,277101,277455,,,['hypothetical protein'],1
+514,277504,277828,,,['hypothetical protein'],1
+515,277824,278394,,,['hypothetical protein'],1
+516,278409,278691,,,['hypothetical protein'],1
+517,278698,279196,,,['hypothetical protein'],1
+518,279185,279521,,,['hypothetical protein'],1
+519,279513,279684,,,['hypothetical protein'],1
+520,279698,280283,,,['thymidine kinase'],1
+521,280275,280509,,,['hypothetical protein'],1
+522,280555,281017,,,['hypothetical protein'],1
+523,281013,281400,,,['hypothetical protein'],1
+524,281449,281584,,,['hypothetical protein'],1
+525,281587,281791,,,['hypothetical protein'],1
+526,281798,282209,,,['hypothetical protein'],1
+527,282456,283383,,,['lysozyme'],1
+528,283397,283730,,,['putative sigma 54'],1
+529,283781,284195,,,['hypothetical protein'],1
+530,284230,284416,,,['hypothetical protein'],1
+531,284412,284823,,,['hypothetical protein'],1
+532,284809,285232,,,['hypothetical protein'],1
+533,285243,285366,,,['hypothetical protein'],1
+534,285375,286443,,,['hypothetical protein'],1
+535,286439,287552,,,"[""multifunctional tRNA nucleotidyl transferase/2'3'-cyclic phosphodiesterase/2'nucleotidase/phosphatase""]",1
+536,287659,288055,,,['nudix hydrolase'],1
+537,288059,288308,,,['hypothetical protein'],1
+538,288307,288547,,,['glutaredoxin'],1
+539,288597,288840,,,['hypothetical protein'],1
+540,288894,289371,,,['macro domain-containing protein'],1
+541,289390,289699,,,['hypothetical protein'],1
+542,289711,290089,,,['hypothetical protein'],1
+543,290352,291144,,,['tail protein'],1
+544,291161,291452,,,['hypothetical protein'],1
+545,291454,292081,,,['putative deoxynucleoside monophosphate kinase'],1
+546,292175,294839,,,['tail sheath monomer'],1
+547,294917,295088,,,['hypothetical protein'],1
+548,295234,295918,,,['structural protein'],1
+549,296005,296782,,,['structural protein'],1
+550,296792,297887,,,['structural protein'],1
+551,297886,298342,,,['head completion protein'],1
+552,298345,298906,,,['hypothetical protein'],1
+553,298934,299465,,,['structural protein'],1
+554,299468,300020,,,['structural protein'],1
+555,300032,301505,,,['structural protein'],1
+556,301524,302469,,,['structural protein'],1
+557,302470,302872,,,['structural protein'],1
+558,302874,303219,,,['hypothetical protein'],1
+559,303571,304897,,,['ATPase'],1
+560,304971,306375,,,['VWA domain-containing protein'],1
+561,306482,306725,,,['hypothetical protein'],1
+562,306724,307381,,,['hypothetical protein'],1
+563,307373,307679,,,['hypothetical protein'],1
+564,307665,308256,,,['hypothetical protein'],1
+565,308259,309189,,,['thymidylate synthase'],1
+566,309219,311193,,,['structural protein'],-1
+567,311274,312063,,,['structural protein'],-1
+568,312134,317672,,,['long tail fiber proximal subunit'],-1
+569,317786,318689,,,['structural protein'],-1
+570,318706,320878,,,['colanic acid-degrading protein'],-1
+571,320891,322019,,,['structural protein'],-1
+572,322128,322626,,,['structural protein'],1
+573,322635,323244,,,['structural protein'],1
+574,323254,324352,,,['structural protein'],1
+575,324384,324849,,,['NUDIX domain protein'],-1
+576,324858,326202,,,['tail sheath stabilizer and completion protein'],-1
+577,326198,327695,,,['structural protein'],-1
+578,327803,330089,,,['ClpA-like protein '],1
+579,330123,340101,,,['structural protein'],-1
+580,340182,343647,,,['baseplate wedge'],-1
+581,343746,344142,,,['GPW/gp25 family protein'],-1
+582,344155,344644,,,['putative baseplate hub subunit and tail lysozyme'],-1
+583,344678,347342,,,['putative virion protein and lysozyme murein'],-1
+584,347341,349492,,,['structural protein'],-1
+585,349503,349818,,,['hypothetical protein'],-1
+586,349817,350549,,,['structural protein'],-1
+587,350673,351513,,,['sigma factor for late transcription'],1
+588,351499,352531,,,['phosphoesterase'],1
+589,352540,354688,,,['putative endonuclease subunit '],1
+590,354708,355200,,,['DNA endonuclease VII'],-1

@@ -1,0 +1,216 @@
+,Start,End,Protein_ID,Gene,Product,Strand
+0,0,1983,,,['Phage rIIA lysis inhibitor'],-1
+1,1979,2480,,,['cell wall hydrolase'],-1
+2,2529,2910,,,['hypothetical protein'],-1
+3,2919,4104,,,['ATPase'],-1
+4,4417,4798,,,['hypothetical protein'],-1
+5,4800,5058,,,['hypothetical protein'],-1
+6,5057,5414,,,['hypothetical protein'],-1
+7,5427,5700,,,['hypothetical protein'],-1
+8,5702,6602,,,['hypothetical protein'],-1
+9,6681,7722,,,['anti-sigma factor'],1
+10,7755,9216,,,['VWA-like domain containing protein'],1
+11,9231,9495,,,['hypothetical protein'],1
+12,9494,9758,,,['hypothetical protein'],1
+13,9757,10021,,,['hypothetical protein'],1
+14,10022,10256,,,['hypothetical protein'],1
+15,10271,10721,,,['hypothetical protein'],1
+16,10717,10963,,,['hypothetical protein'],1
+17,10965,11532,,,['hypothetical protein'],1
+18,11589,11865,,,['hypothetical protein'],1
+19,11867,12332,,,['hypothetical protein'],1
+20,12338,12509,,,['hypothetical protein'],1
+21,12539,12920,,,['hypothetical protein'],1
+22,13089,13419,,,['hypothetical protein'],1
+23,13420,13639,,,['hypothetical protein'],1
+24,13708,13909,,,['hypothetical protein'],1
+25,13956,19584,,,['Ig-like domain protein'],-1
+26,19634,21380,,,['tail fiber protein'],-1
+27,21389,21656,,,['hypothetical protein'],-1
+28,21667,22711,,,['putative tail fiber protein'],-1
+29,22800,23115,,,['putative tail fiber protein'],-1
+30,23126,23711,,,['tail fiber assembly protein'],-1
+31,23725,24766,,,['putative tail fiber protein'],-1
+32,24778,26851,,,['hypothetical protein'],-1
+33,26850,27537,,,['hypothetical protein'],-1
+34,27548,29039,,,['hypothetical protein'],-1
+35,29144,32744,,,['putative tail protein'],-1
+36,32743,33169,,,['hypothetical protein'],-1
+37,33168,33720,,,['hypothetical protein'],-1
+38,33721,34312,,,['hypothetical protein'],-1
+39,34411,36043,,,['putative tail protein'],-1
+40,36047,38273,,,['putative tail protein'],-1
+41,38308,40906,,,['hypothetical protein'],-1
+42,40907,41576,,,['putative tail protein'],-1
+43,41585,42302,,,['putative tail protein'],-1
+44,42314,42992,,,['putative tail protein'],-1
+45,42991,43996,,,['hypothetical protein'],-1
+46,43995,44376,,,['hypothetical protein'],-1
+47,44388,45273,,,['hypothetical protein'],-1
+48,45378,47715,,,['tape measure protein'],-1
+49,47769,48018,,,['hypothetical protein'],-1
+50,48029,48503,,,['hypothetical protein'],-1
+51,48665,49139,,,['structural protein'],-1
+52,49149,50526,,,['putative tail shealth protein'],-1
+53,50598,51150,,,['putative structural protein'],-1
+54,51149,51575,,,['hypothetical protein'],-1
+55,51584,52049,,,['hypothetical protein'],-1
+56,52102,52723,,,['hypothetical protein'],-1
+57,52782,53628,,,['Protein inh'],-1
+58,53709,54717,,,['major capsid protein'],-1
+59,54768,55155,,,['head stabilization/decoration protein'],-1
+60,55175,56153,,,['hypothetical protein'],-1
+61,56152,56572,,,['hypothetical protein'],-1
+62,56639,58196,,,['hypothetical protein'],-1
+63,58296,59844,,,['terminase large subunit'],-1
+64,59843,60131,,,['O-spanin'],-1
+65,60127,60526,,,['I-spanin'],-1
+66,60631,60901,,,['hypothetical protein'],-1
+67,61856,62195,,,['hypothetical protein'],-1
+68,62444,62543,,,['hypothetical protein'],-1
+69,62539,62782,,,['hypothetical protein'],-1
+70,62858,63047,,,['hypothetical protein'],-1
+71,63057,63636,,,['hypothetical protein'],-1
+72,64296,64647,,,['putative transcriptional regulator '],-1
+73,64694,65249,,,['phosphoesterase'],-1
+74,65256,65664,,,['AAA family ATPase'],-1
+75,65785,66700,,,['RNA ligase'],1
+76,66696,67047,,,['hypothetical protein'],1
+77,67055,67817,,,['NAD-dependent protein deacetylase of SIR2 family'],1
+78,67830,68544,,,['hypothetical protein'],1
+79,68607,68916,,,['hypothetical protein'],1
+80,68902,69172,,,['hypothetical protein'],1
+81,69171,70455,,,['DNA ligase'],1
+82,70579,71050,,,['phage lysozyme'],1
+83,71113,71320,,,['hypothetical membrane protein'],1
+84,71329,71794,,,['putative HNH endonuclease'],1
+85,71786,72077,,,['transposase-like protein'],1
+86,72136,72445,,,['hypothetical protein'],1
+87,72437,73577,,,['hypothetical protein'],1
+88,73576,73909,,,['hypothetical protein'],1
+89,73905,74535,,,['RNaseH'],1
+90,75030,75252,,,['hypothetical protein'],1
+91,75264,76248,,,['putative DNA polymerase/exonuclease'],1
+92,76294,77113,,,['putative DNA N6-adenine methyltransferase'],1
+93,77075,77534,,,['hypothetical protein'],1
+94,77561,77753,,,['hypothetical protein'],1
+95,77752,78367,,,['JK_59P'],1
+96,78360,78954,,,['hypothetical protein'],1
+97,78955,79156,,,['hypothetical protein'],1
+98,79155,80139,,,['thymidylate synthase'],1
+99,80237,80699,,,['hypothetical protein'],1
+100,80709,80940,,,['hypothetical protein'],1
+101,80936,83252,,,['ribonucleoside-diphosphate reductase large subunit'],1
+102,83290,84379,,,['ribonucleotide reductase small subunit'],1
+103,84382,84661,,,['glutaredoxin'],1
+104,84657,86796,,,['anaerobic ribonucleoside-triphosphate reductase'],1
+105,86911,87844,,,"['phage T5, ORF172 domain containing protein']",1
+106,87896,88013,,,['hypothetical protein'],1
+107,88164,88401,,,['putative minor capsid protein'],1
+108,88397,88871,,,"['ribonucleotide reductase of class III (anaerobic), activating protein']",1
+109,88933,89047,,,['hypothetical protein'],1
+110,89043,89394,,,['hypothetical protein'],1
+111,89432,90221,,,['putative phosphate starvation-inducible protein'],1
+112,90325,90637,,,['hypothetical protein'],1
+113,90697,91744,,,['putative ATP-dependent Clp protease proteolytic subunit'],1
+114,91795,92329,,,['putative DNA N6-adenine methyltransferase'],1
+115,92325,92610,,,['hypothetical protein'],1
+116,92646,92886,,,['hypothetical protein'],1
+117,92882,93281,,,['hypothetical protein'],1
+118,93318,93552,,,['hypothetical protein'],1
+119,93557,94082,,,['hypothetical protein'],1
+120,94112,94340,,,['hypothetical membrane protein'],1
+121,94323,94476,,,['hypothetical protein'],1
+122,94559,94745,,,['hypothetical protein'],1
+123,94747,95212,,,['HNH homing endonuclease'],1
+124,95274,95622,,,['hypothetical membrane protein'],1
+125,95618,95906,,,['hypothetical protein'],1
+126,95902,96097,,,['hypothetical protein'],1
+127,96115,96301,,,['hypothetical protein'],1
+128,96396,96693,,,['hypothetical protein'],1
+129,96695,96977,,,['hypothetical protein'],1
+130,96976,97201,,,['hypothetical protein'],1
+131,97190,97445,,,['hypothetical protein'],1
+132,97484,97856,,,['hypothetical protein'],1
+133,97873,98164,,,['hypothetical protein'],1
+134,98248,98569,,,['sigma 54 modulation factor '],1
+135,98578,98680,,,['hypothetical membrane protein'],1
+136,98706,98976,,,['hypothetical protein'],1
+137,99067,99331,,,['hypothetical protein'],1
+138,99335,99668,,,['hypothetical protein'],1
+139,99667,100063,,,['hypothetical protein'],1
+140,100142,100400,,,['hypothetical protein'],1
+141,100400,100751,,,['hypothetical protein'],1
+142,100750,101080,,,['hypothetical protein'],1
+143,101079,101367,,,['hypothetical protein'],1
+144,101456,101720,,,['hypothetical membrane protein'],1
+145,101875,102127,,,['hypothetical protein'],1
+146,102155,102461,,,['hypothetical protein'],1
+147,102516,102849,,,['hypothetical protein'],1
+148,102857,103157,,,['hypothetical protein'],1
+149,103316,103730,,,['hypothetical protein'],1
+150,103851,104067,,,['hypothetical protein'],1
+151,105253,105526,,,['hypothetical membrane protein'],-1
+152,106543,106963,,,['hypothetical protein'],-1
+153,107109,107373,,,['hypothetical protein'],-1
+154,107434,107707,,,['hypothetical protein'],-1
+155,107928,108240,,,['hypothetical protein'],-1
+156,108236,108428,,,['hypothetical protein'],-1
+157,108577,108862,,,['hypothetical protein'],-1
+158,108953,109169,,,['hypothetical protein'],-1
+159,109179,109284,,,['hypothetical membrane protein'],-1
+160,109361,109586,,,['hypothetical protein'],-1
+161,109641,109821,,,['hypothetical protein'],-1
+162,109895,110129,,,['hypothetical protein'],-1
+163,110185,110470,,,['hypothetical protein'],-1
+164,110672,111023,,,['hypothetical protein'],-1
+165,111040,111340,,,['hypothetical protein'],-1
+166,111608,111761,,,['hypothetical protein'],-1
+167,111776,111896,,,['hypothetical membrane protein'],-1
+168,111892,112138,,,['hypothetical protein'],-1
+169,112115,112487,,,['hypothetical membrane protein'],-1
+170,112551,112932,,,['hypothetical protein'],-1
+171,113021,113645,,,['hypothetical protein'],-1
+172,113719,113980,,,['hypothetical protein'],-1
+173,114220,114418,,,"['phage T7, gp1.1 domain protein']",-1
+174,114407,114761,,,['hypothetical protein'],-1
+175,114836,115082,,,['hypothetical protein'],-1
+176,115171,115513,,,['hypothetical protein'],-1
+177,115592,115712,,,['hypothetical membrane protein'],-1
+178,115793,116198,,,['hypothetical protein'],-1
+179,116286,116685,,,['hypothetical protein'],-1
+180,116749,117007,,,['hypothetical protein'],-1
+181,117215,117338,,,['hypothetical protein'],-1
+182,117885,118032,,,['hypothetical protein'],1
+183,118099,118432,,,['hypothetical membrane protein'],-1
+184,118428,118626,,,['hypothetical protein'],-1
+185,118618,118864,,,['hypothetical protein'],-1
+186,118884,119217,,,['hypothetical protein'],-1
+187,119227,119419,,,['hypothetical protein'],-1
+188,119482,119677,,,['hypothetical protein'],-1
+189,119703,119874,,,['hypothetical protein'],-1
+190,119928,120387,,,['marco domain protein'],-1
+191,120376,120802,,,['hypothetical protein'],-1
+192,120870,121068,,,['hypothetical protein'],-1
+193,121164,121581,,,['hypothetical protein'],-1
+194,121643,122870,,,['hypothetical protein'],-1
+195,122869,123235,,,['hypothetical protein'],-1
+196,123318,123564,,,['hypothetical protein'],-1
+197,123581,123884,,,['hypothetical protein'],-1
+198,123873,124263,,,['hypothetical protein'],-1
+199,124262,124568,,,['hypothetical protein'],-1
+200,124598,124853,,,['hypothetical protein'],-1
+201,124929,125301,,,['hypothetical protein'],-1
+202,125311,125506,,,['hypothetical protein'],-1
+203,125502,125730,,,['hypothetical protein'],-1
+204,125726,126011,,,['hypothetical protein'],-1
+205,126060,128838,,,['DNA polymerase'],-1
+206,128896,130975,,,['DNA helicase'],-1
+207,130964,131729,,,['DNA primase/helicase'],-1
+208,131780,132263,,,['hypothetical protein'],-1
+209,132275,132671,,,['hypothetical protein'],-1
+210,132670,132976,,,['hypothetical protein'],-1
+211,132989,134315,,,['putative adenine methyltransferase'],-1
+212,134376,134718,,,['hypothetical protein'],-1
+213,134714,136085,,,['putative helicase'],-1
+214,136084,137290,,,['rIIB protector'],-1

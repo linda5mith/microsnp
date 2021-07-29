@@ -1,0 +1,269 @@
+,Start,End,Protein_ID,Gene,Product,Strand
+0,0,2109,,,['rIIA protein'],-1
+1,2123,2381,,,['hypothetical protein'],-1
+2,2392,2587,,,['hypothetical protein'],-1
+3,2579,2774,,,['hypothetical protein'],-1
+4,2840,3176,,,['hypothetical protein'],-1
+5,3198,3762,,,['HNH endonuclease'],-1
+6,3763,5587,,,['topoisomerase II large subunit'],-1
+7,5686,5860,,,['zinc ribbon domain-containing protein '],-1
+8,5861,6530,,,['DexA exonuclease A'],-1
+9,6531,6774,,,['hypothetical protein'],-1
+10,6775,6943,,,['hypothetical protein'],-1
+11,6953,8345,,,['DNA helicase'],-1
+12,8344,8659,,,['hypothetical protein'],-1
+13,8658,9414,,,['putative anti-sigma factor Srd'],-1
+14,9475,9979,,,['ModB ADP-ribosylase'],-1
+15,10048,10567,,,['gp56 dCTPase'],-1
+16,10581,11610,,,['gp61 DNA primase subunit'],-1
+17,11619,11823,,,['hypothetical protein'],-1
+18,11819,11978,,,['hypothetical membrane protein'],-1
+19,11970,12147,,,['major capsid protein'],-1
+20,12143,12521,,,['hypothetical protein'],-1
+21,12551,13187,,,['hypothetical protein'],-1
+22,13237,14650,,,['DNA primase-helicase subunit'],-1
+23,14646,14964,,,['head vertex assembly chaperone'],-1
+24,15019,16090,,,['UvsX'],-1
+25,16101,16326,,,['hypothetical protein'],-1
+26,16351,19030,,,['DNA polymerase'],-1
+27,19112,19475,,,['RegA'],-1
+28,19476,20055,,,['gp62 clamp loader subunit DNA polymerase accessory protein'],-1
+29,20054,21029,,,['gp44 clamp-loader subunit '],-1
+30,21094,21781,,,['gp45 sliding clamp DNA polymerase accessory protein'],-1
+31,21811,22189,,,['hypothetical protein'],-1
+32,22193,22571,,,['RpbA'],-1
+33,22601,22745,,,['hypothetical protein'],-1
+34,22818,24501,,,['recombination endonuclease subunit'],-1
+35,24481,24745,,,['hypothetical protein'],-1
+36,24741,25314,,,['hypothetical protein'],-1
+37,25288,25606,,,['hypothetical protein'],-1
+38,25602,25854,,,['hypothetical protein'],-1
+39,25908,26934,,,['recombination endonuclease subunit'],-1
+40,27024,27312,,,['hypothetical protein'],-1
+41,27313,27547,,,['hypothetical protein'],-1
+42,27530,28064,,,['sigma factor for T4 late transcription'],-1
+43,28104,29574,,,['putative helicase'],-1
+44,29573,29861,,,['hypothetical protein'],-1
+45,29882,30041,,,['hypothetical membrane protein'],-1
+46,30030,30300,,,['glutaredoxin'],-1
+47,30296,30773,,,['hypothetical protein'],-1
+48,30774,31599,,,['hypothetical protein'],-1
+49,31611,32076,,,['hypothetical protein'],-1
+50,32087,32609,,,['hypothetical protein'],-1
+51,32619,33123,,,"['ribonucleoside-triphosphate reductase activating, anaerobc']",-1
+52,33112,33265,,,['hypothetical protein'],-1
+53,33340,33868,,,['hypothetical protein'],-1
+54,33885,34428,,,['hypothetical protein'],-1
+55,34528,36391,,,"['ribonucleoside-triphosphate reductase, anaerobic']",-1
+56,36435,36930,,,['hypothetical protein'],-1
+57,36984,38163,,,['hypothetical protein'],-1
+58,38219,38786,,,['hypothetical protein'],-1
+59,38800,39073,,,['hypothetical protein'],-1
+60,39136,39610,,,['recombination endonuclease VII'],-1
+61,39634,39916,,,['glutaredoxin'],-1
+62,39924,40737,,,['adenine-specific DNA methyltransferase'],-1
+63,40736,41168,,,['hypothetical protein'],-1
+64,41178,41472,,,['hypothetical protein'],-1
+65,41464,41686,,,['hypothetical protein'],-1
+66,41678,41972,,,['hypothetical protein'],-1
+67,41986,42331,,,['hypothetical protein'],-1
+68,42364,42673,,,['hypothetical membrane protein'],-1
+69,42683,42962,,,['hypothetical protein'],-1
+70,43082,43292,,,['hypothetical protein'],-1
+71,43311,43650,,,['hypothetical protein'],-1
+72,43649,43910,,,['hypothetical protein'],-1
+73,43928,44126,,,['hypothetical protein'],-1
+74,44115,44370,,,['hypothetical protein'],-1
+75,44366,44801,,,['hypothetical protein'],-1
+76,44811,45009,,,['hypothetical protein'],-1
+77,45019,45310,,,['hypothetical protein'],-1
+78,45411,46197,,,['phage tail fiber adhesin Gp38'],-1
+79,46251,46473,,,['hypothetical protein'],-1
+80,46561,46846,,,['hypothetical protein'],-1
+81,46842,47193,,,['hypothetical protein'],-1
+82,47189,47528,,,['hypothetical protein'],-1
+83,47517,47727,,,['hypothetical protein'],-1
+84,48055,48454,,,['hypothetical protein'],-1
+85,48440,48743,,,['rI lysis inhibition regulator'],-1
+86,48811,49408,,,['thymidine kinase'],-1
+87,49407,49701,,,['hypothetical membrane protein'],-1
+88,49693,49912,,,['hypothetical protein'],-1
+89,49908,50103,,,['hypothetical protein'],-1
+90,50092,50548,,,['macro domain protein'],-1
+91,50563,50923,,,['valyl-tRNA synthetase modifier '],-1
+92,50930,51521,,,['lytic transglycosylase domain-containing protein'],-1
+93,51606,52029,,,['RegB site-specific RNA endonuclease'],-1
+94,52030,52369,,,['hypothetical protein'],-1
+95,52429,52675,,,['hypothetical protein'],-1
+96,52671,52866,,,['hypothetical protein'],-1
+97,52887,53586,,,['NrdC.11'],-1
+98,53672,54089,,,['autonomous glycyl radical cofactor'],-1
+99,54099,54225,,,['hypothetical protein'],-1
+100,54224,54710,,,['hypothetical protein'],-1
+101,54772,55162,,,['D-alanyl-D-alanine carboxypeptidase'],-1
+102,55190,55382,,,['hypothetical membrane protein'],-1
+103,55383,55599,,,['hypothetical membrane protein'],-1
+104,55601,55781,,,['hypothetical membrane protein'],-1
+105,56027,56186,,,['hypothetical membrane protein'],-1
+106,56459,56780,,,['hypothetical protein'],-1
+107,56801,56999,,,['hypothetical membrane protein'],-1
+108,56998,57145,,,['hypothetical membrane protein'],-1
+109,57196,57379,,,['hypothetical membrane protein'],-1
+110,57387,57714,,,['large polyvalent protein associated domain 25 protein'],-1
+111,57793,57982,,,['hypothetical protein'],-1
+112,58004,58199,,,['hypothetical protein'],-1
+113,58208,58436,,,['hypothetical protein'],-1
+114,58502,58688,,,['hypothetical protein'],-1
+115,58964,59183,,,['hypothetical membrane protein'],-1
+116,59179,59362,,,['hypothetical membrane protein'],-1
+117,59358,59583,,,['hypothetical membrane protein'],-1
+118,59873,60077,,,['Dmd discriminator of mRNA degradation '],-1
+119,60086,60245,,,['hypothetical membrane protein'],-1
+120,60311,60686,,,['hypothetical protein'],-1
+121,60795,61260,,,"['T4-like hypothetical protein, T4 GC1584']",-1
+122,61262,61523,,,['tail fiber assembly protein'],-1
+123,61555,62212,,,['dNMP kinase'],-1
+124,62227,62818,,,['gp3 tail completion and sheath stabilizer protein'],-1
+125,63007,63262,,,['hypothetical protein'],1
+126,63292,64114,,,['gp2 DNA end protector protein'],-1
+127,64125,64599,,,['gp4 head completion protein'],-1
+128,64654,65209,,,['gp53 baseplate wedge subunit'],1
+129,65220,67020,,,['baseplate hub subunit and tail lysozyme'],1
+130,67028,67595,,,['hypothetical protein (ACLAME 782)'],1
+131,67661,68402,,,['HNH homing endonuclease'],1
+132,68401,68695,,,['putative baseplate hub needle'],1
+133,68691,70596,,,['gp6 baseplate wedge subunit'],1
+134,70592,73679,,,['gp7 baseplate wedge initiator '],1
+135,73671,74667,,,['baseplate structural protein gp9'],1
+136,74776,75034,,,['hypothetical protein'],1
+137,75021,75354,,,['hypothetical protein'],1
+138,75353,76193,,,['putative methyltransferase'],1
+139,76268,77123,,,['gp9 base plate wedge component'],1
+140,77119,78922,,,['baseplate wedge protein gp10'],1
+141,78923,79568,,,['gp11 baseplate wedge subunit and tail pin'],1
+142,79579,80980,,,['short tail fiber'],1
+143,80979,82749,,,['fibritin neck whiskers'],1
+144,82795,83728,,,['neck protein'],1
+145,83764,84505,,,['neck protein'],1
+146,84531,85365,,,['tail sheath stabilizer and completion protein'],1
+147,85378,85876,,,['terminase small subunit'],1
+148,85872,87696,,,['terminase DNA packaging enzyme large subunit'],1
+149,87730,89731,,,['tail sheath monomer'],1
+150,89804,90299,,,['tail tube protein'],1
+151,90357,91923,,,['portal protein Gp20'],1
+152,91923,92151,,,['gp67 putative prohead core protein'],1
+153,92163,92571,,,['gp68 prohead core protein'],1
+154,92582,93278,,,['prohead core protein protease'],1
+155,93309,94104,,,['gp22 prohead core scaffold protein'],1
+156,94163,95750,,,['major capsid protein'],1
+157,96081,96255,,,['hypothetical protein'],1
+158,96251,96404,,,['hypothetical protein'],1
+159,96488,97730,,,['gp24 head vertex protein'],1
+160,97730,98318,,,['hypothetical protein (ACLAME 1238)'],-1
+161,98731,99169,,,['hypothetical protein'],-1
+162,99215,99491,,,"['phage T4, Gp24.3 protein']",-1
+163,99490,99688,,,['hypothetical membrane protein'],-1
+164,99888,101103,,,['Hoc head outer capsid protein '],-1
+165,101368,102094,,,['inhibitor of prohead protease '],-1
+166,102164,103667,,,['UvsW'],1
+167,103710,103947,,,['UvsW'],1
+168,104010,104187,,,['UvsY.2 '],-1
+169,104208,104616,,,['UvsY'],-1
+170,104663,105050,,,['gp25 base plate wedge subunit'],-1
+171,105058,105688,,,['baseplate hub subunit'],-1
+172,105758,106529,,,['gp51 baseplate hub assembly catalyst'],1
+173,106506,107616,,,['gp27 baseplate hub subunit'],1
+174,107615,108134,,,['gp28 baseplate hub distal subunit '],1
+175,108130,109864,,,"['baseplate hub subunit, tail length determinator']",1
+176,109863,110922,,,['gp48 baseplate tail tube cap'],1
+177,110921,111854,,,['baseplate tail tube initiator '],1
+178,111885,112371,,,['hypothetical lipoprotein'],-1
+179,112367,113192,,,['ADP-ribosyltransferase'],-1
+180,113270,115322,,,['ADP-ribosyltransferase'],-1
+181,115389,115602,,,['hypothetical protein'],-1
+182,115673,115853,,,['hypothetical protein'],-1
+183,115922,116441,,,['DUF262 domain protein'],-1
+184,116442,116772,,,['hypothetical protein'],-1
+185,116771,117443,,,['hypothetical protein'],-1
+186,117484,117730,,,['hypothetical protein'],-1
+187,117726,117978,,,['hypothetical protein'],-1
+188,118061,118229,,,['hypothetical protein'],-1
+189,118305,118587,,,['hypothetical protein'],-1
+190,118660,118930,,,['hypothetical protein'],-1
+191,119050,119305,,,['hypothetical protein'],-1
+192,119558,119867,,,['hypothetical protein'],-1
+193,119917,120205,,,['hypothetical protein'],-1
+194,120286,120565,,,['hypothetical protein'],-1
+195,120569,120941,,,['hypothetical protein'],-1
+196,121069,121333,,,['hypothetical protein'],-1
+197,121313,121592,,,['hypothetical protein'],-1
+198,121604,121784,,,['hypothetical protein'],-1
+199,121848,122016,,,['hypothetical protein'],-1
+200,122084,122378,,,['hypothetical protein'],-1
+201,122394,122586,,,['hypothetical protein'],-1
+202,122643,122946,,,['hypothetical protein'],-1
+203,122963,123143,,,['hypothetical protein'],-1
+204,123214,123526,,,['hypothetical protein'],-1
+205,123612,124089,,,['HNH endonuclease'],-1
+206,124081,125578,,,['DNA ligase'],-1
+207,125564,126044,,,"['Phage T4, Y12G protein']",-1
+208,126033,126198,,,['hypothetical protein'],-1
+209,126279,126603,,,['head assembly cochaperone with GroEL'],-1
+210,126644,126959,,,['WYL domain containing protein'],-1
+211,126951,127458,,,['dCMP deaminase'],-1
+212,127479,127683,,,['hypothetical protein'],-1
+213,127682,128561,,,['putative polynucleotide kinase'],-1
+214,128560,129013,,,['hypothetical membrane protein'],-1
+215,129009,129333,,,['hypothetical membrane protein'],-1
+216,129377,130496,,,['putative RNA ligase'],-1
+217,130482,130944,,,['endonuclease II'],-1
+218,130994,131393,,,['hypothetical protein'],-1
+219,131463,131613,,,['hypothetical protein'],-1
+220,131680,131899,,,['hypothetical protein'],-1
+221,131967,132186,,,['hypothetical protein'],-1
+222,132286,132763,,,"[""3'-phosphatase""]",-1
+223,132759,133920,,,['aerobic NDP reductase small subunit'],-1
+224,133935,134103,,,['hypothetical protein'],-1
+225,134102,134276,,,['hypothetical protein'],-1
+226,134275,134443,,,['hypothetical protein'],-1
+227,134511,136755,,,['aerobic NDP reductase large subunit'],-1
+228,136823,138044,,,['thymidylate synthase'],-1
+229,138378,138948,,,['dihydrofolate reductase '],-1
+230,138963,139293,,,['hypothetical protein'],-1
+231,139340,140357,,,['hypothetical protein (ACLAME 937)'],-1
+232,140477,141446,,,['single strand-binding protein'],-1
+233,141506,142187,,,['DNA helicase loader'],-1
+234,142196,142451,,,['late promoter transcription accessory protein'],-1
+235,142443,142719,,,['putative double-stranded DNA binding protein'],-1
+236,142723,143323,,,['hypothetical protein'],-1
+237,143333,144281,,,['ribonuclease H'],-1
+238,144283,144469,,,['hypothetical protein'],-1
+239,144543,148284,,,['large tail fiber proximal subunit'],1
+240,148317,149457,,,['hinge long tail fiber protein proximal connector'],1
+241,149658,151149,,,['gp36 hinge connector of long tail fiber distal connector'],1
+242,151219,154135,,,['large distal tail fiber subunit'],1
+243,154177,154417,,,['hypothetical protein'],1
+244,154450,155107,,,['holin'],1
+245,155143,155392,,,['hypothetical protein'],-1
+246,155388,155712,,,['hypothetical protein'],-1
+247,155698,155824,,,['hypothetical protein'],-1
+248,155826,156159,,,['hypothetical protein'],-1
+249,156171,156504,,,['hypothetical protein'],-1
+250,156512,156881,,,['hypothetical protein'],-1
+251,156891,157083,,,['hypothetical protein'],-1
+252,157106,157400,,,['hypothetical protein'],-1
+253,157411,158170,,,['hypothetical protein'],-1
+254,158239,158395,,,['hypothetical protein'],-1
+255,158465,158678,,,['hypothetical protein'],-1
+256,158744,158987,,,['hypothetical protein'],-1
+257,159027,159252,,,['hypothetical membrane protein'],-1
+258,159248,159419,,,['hypothetical protein'],-1
+259,159423,159696,,,['hypothetical protein'],-1
+260,159806,160202,,,['hypothetical protein'],-1
+261,160194,160398,,,['hypothetical protein'],-1
+262,160400,161747,,,['putative DNA topoisomerase 4 subunit A'],-1
+263,161754,162117,,,['hypothetical membrane protein'],-1
+264,162119,162413,,,['hypothetical protein'],-1
+265,162458,162785,,,['hypothetical protein'],-1
+266,162799,163792,,,['rIIB protein'],-1
+267,163854,163986,,,['DNA binding HTH domain protein'],-1
