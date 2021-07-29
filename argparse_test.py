@@ -38,7 +38,7 @@ def parse_args():
     bcftools_single.set_defaults(func=mpileup_single)
 
     # Create the parser for the mpileup_multi command
-    bcftools_multi = subparser.add_parser('mpileup_multi',parents=[parent_parser,mpileup_parser], help='run an mpileup on multiple samples vs. a reference genome.',
+    bcftools_multi = subparser.add_parser('mpileup_multi',parents=[parent_parser,mpileup_parser,output_parser], help='run an mpileup on multiple samples vs. a reference genome.',
     description='Example: python argparse.py mpileup_multi /external_HDD4/linda/unc_mouse_trial/bam_files .sorted.bam /external_HDD4/linda/unc_mouse_trial/snp_pipeline/reference.fasta /external_HDD4/linda/unc_mouse_trial/mpileups')
     bcftools_multi.set_defaults(func=mpileup_multi)
 
@@ -89,15 +89,15 @@ def mpileup_single(args):
         sample_id=snp.get_file_basename(f)
         sample_id_clean=sample_id.split('_')[0]
         command=f'bcftools mpileup -Ou --max-depth 8000 --redo-BAQ --min-MQ 30 --min-BQ 30 --per-sample-mF \
-            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,FORMAT/GQ,INFO/AD,INFO/ADF,INFO/ADR \
-            -f {args.path_to_ref} {f} | bcftools call --ploidy 1 --multiallelic-caller --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{subject_clean}_{sample_id_clean}.flt.vcf'
+            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,INFO/AD,INFO/ADF,INFO/ADR \
+            -f {args.path_to_ref} {f} | bcftools call --ploidy 1 --multiallelic-caller --format-fields GQ,GP --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{subject_clean}_{sample_id_clean}.flt.vcf'
         print(command)
         try:
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
 
-def mpileup_multi(args): #ath_to_files, file_extension, path_to_reference_file, depth
+def mpileup_multi(args): #path_to_files, file_extension, path_to_reference_file
     '''Runs bcftools mpileup on multiple bam files (all bam files present in a folder). Path to faidx indexed reference sequence file path_to_reference_file 
     needs to be included.'''
     files = snp.os_walk(args.path_to_files, args.file_extension)
@@ -112,8 +112,8 @@ def mpileup_multi(args): #ath_to_files, file_extension, path_to_reference_file, 
         dirname=snp.get_file_basename(folder)
         try:
             command=f'bcftools mpileup -Ou --max-depth 8000 --redo-BAQ --min-MQ 30 --min-BQ 30 --per-sample-mF\
-            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,FORMAT/GQ,INFO/AD,INFO/ADF,INFO/ADR\
-            -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 --multiallelic-caller --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
+            --annotate FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,INFO/AD,INFO/ADF,INFO/ADR\
+            -f {args.path_to_ref} {folder}/*{args.file_extension} | bcftools call --ploidy 1 --multiallelic-caller --format-fields GQ,GP --variants-only -Ou -mv |  bcftools filter -s LowQual -e \'%QUAL<20\'  > {args.path_to_output}/{dirname}.flt.vcf'
             print(command+'\n')
             subprocess.call([command],shell=True)
         except Exception as e:
