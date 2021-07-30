@@ -26,7 +26,7 @@ def parse_args():
     parent_parser.add_argument("file_extension", metavar='file_ext', type=str, help='File extension e.g. \'.bam\' \'.sorted.bam\' \'.vcf\' \'fltq.vcf.gz\'')
 
     output_parser = argparse.ArgumentParser(add_help=False)
-    output_parser.add_argument("--path_to_output", metavar='out_dir', type=str, help='Path to direct output to.')
+    output_parser.add_argument("path_to_output", metavar='out_dir', type=str, help='Path to direct output to.')
 
     mpileup_parser = argparse.ArgumentParser(add_help=False)
     mpileup_parser.add_argument("path_to_ref", metavar='path_to_ref', type=str, help='Path to indexed reference fasta file.')
@@ -231,7 +231,7 @@ def bcftools_merge_norms(args):
             species_ID = '_'.join([filename_list[2],filename_list[3],filename_list[4]])
             species.append(species_ID)
         except Exception as e:
-            print(e)
+            pass
         finally:
             species_ID = '_'.join([filename_list[2],filename_list[3]])
             #print(species_ID)
@@ -250,7 +250,6 @@ def bcftools_merge_norms(args):
                 print(command+'\n')
                 subprocess.call([command],shell=True)
                 
-       
 def main():
     parse_args()
 
