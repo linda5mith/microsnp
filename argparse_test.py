@@ -60,6 +60,10 @@ def parse_args():
     filterpass.required = True
     filterpass.set_defaults(func=filter_pass)
 
+    filterdpgq =  subparser.add_parser('filter_dp_gq',parents=[parent_parser],help='Filters variants that have DP > 10 and GQ > 15.')
+    filterdpgq.required = True
+    filterdpgq.set_defaults(func=filter_dp_gq)
+
     filterspecies = subparser.add_parser('filter_species',parents=[parent_parser],help='Finds all unique species/chromosomes from #CHROM column in a vcf file and outputs the filtered variants to a new vcf file with the naming convention <species>.fltq.vcf')
     filterspecies.required = True
     filterspecies.set_defaults(func=filter_species)
@@ -128,6 +132,19 @@ def filter_pass(args):
         command = f'bcftools view -Oz -f PASS {f} > {out_dir}/{basename}.fltq.vcf.gz'
         try:
             print(command)
+            subprocess.call([command],shell=True)
+        except Exception as e:
+            print(e)
+
+def filter_dp_gq(args):
+    '''Filters variants that have DP > 10 and GQ > 15'''
+    files = snp.os_walk(args.path_to_files, args.file_extension)
+    for f in files:
+        basename=snp.get_output_name(f)
+        out_dir=snp.get_file_dir(f)
+        command = f'bcftools view -Oz -i  \'MIN(FMT/DP)>10 & MIN(FMT/GQ)>15\' {f} > {out_dir}/{basename}.merged.norm.fltdpgq.vcf.gz'
+        try:
+            print('Executing:',command)
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
