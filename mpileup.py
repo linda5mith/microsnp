@@ -15,6 +15,7 @@ import argparse
 import textwrap
 import glob
 import shutil
+from collections import defaultdict
 
 
 def read_params(args):
@@ -241,19 +242,33 @@ def get_allele_freq(path_to_files, file_extension):
         except Exception as e:
             print(e)
 
-def get_depth(path_to_files, file_extension):
+def get_depth(args):
     ''''Calculates the mean depth of coverage per individual.'''
     #vcftools --gzvcf $SUBSET_VCF --depth --out $OUT
-    files=snp.os_walk(path_to_files, file_extension)
+    files=snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
         output_file_name=snp.get_output_name(f)
         path_to_output_file=snp.get_file_dir(f)
-        command=f'vcftools --gzvcf {f} --depth --out {path_to_output_file}/{output_file_name}_depth_indiv'
+        command=f'vcftools --gzvcf {f} --depth --out {path_to_output_file}/{output_file_name}_depth_profile'
         try:
             print('Executing:',command,'\n')
             subprocess.call([command],shell=True)
         except Exception as e:
             print(e)
+
+def get_avg_depth(args):
+    ''''Calculates the average depth of coverage for all samples in vcftools idepth summary.'''
+    files=snp.os_walk(args.path_to_files, args.file_extension)
+    d = defaultdict(list)
+    for f in files:
+        output_file_name=snp.get_output_name(f)
+        path_to_output_file=snp.get_file_dir(f)
+        command = 'awk \'{ total += $3 } END { print total/NR }\'' + ' ' +f
+        avg_depth=snp.save_process_output(command)
+        d[output_file_name].append(avg_depth)
+    print(d)
+    df = pd.DataFrame.from_dict(d)
+    print(df.T)
 
 def get_site_mean_depth(path_to_files, file_extension):
     '''Estimates the mean depth of coverage for each site.'''

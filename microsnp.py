@@ -1,4 +1,5 @@
 import snptools as snp
+import mpileup as mp
 import sys
 import os
 import re
@@ -86,8 +87,15 @@ def parse_args():
     bcftoolsmergennorms.required = True
     bcftoolsmergennorms.set_defaults(func=bcftools_merge_norms)
 
+    vcftoolsdepth = subparser.add_parser('get_depth',parents=[parent_parser],help='Output vcftools depth report of file.')
+    vcftoolsdepth.required = True
+    vcftoolsdepth.set_defaults(func=mp.get_depth)
+
+    avgdepth = subparser.add_parser('get_avg_depth',parents=[parent_parser],help='Get average depth for all samples from vcftools idepth summary file.')
+    avgdepth.required = True
+    avgdepth.set_defaults(func=mp.get_avg_depth)
+
     args = parser.parse_args()
-    #print(args) 
     return args.func(args)
 
 def mpileup_single(args):
@@ -165,7 +173,7 @@ def filter_dp(args):
     for f in files:
         basename=snp.get_output_name(f)
         out_dir=snp.get_file_dir(f)
-        command = f'bcftools view -i  \'MIN(FORMAT/DP)>{args.DP}\' {f}' #>-Oz {out_dir}/{basename}.merged.norm.fltdp.vcf.gz'
+        command = f'bcftools view -Oz -i  \'MIN(FORMAT/DP)>{args.DP}\' {f} > {out_dir}/{basename}.merged.norm.fltdp.vcf.gz'
         try:
             print('Executing:',command)
             subprocess.call([command],shell=True)
@@ -294,7 +302,5 @@ def main():
     parse_args()
 
 if __name__ == '__main__':
-    #t0 = time.time()
     main()
-    #sys.stderr.write('Elapsed time to run SNP_tools: {} s\n'.format( (time.time()-t0) ) )
 
