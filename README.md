@@ -2,7 +2,7 @@
 
 To install and run microsnp:
 
-<addr>git clone https://github.com/linda5mith/microsnp/<addr>
+```git clone https://github.com/linda5mith/microsnp/```
   
 
   
