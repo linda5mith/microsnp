@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="example-pkg-linda5mith",
-    version="0.0.1",
+    version="1.0.0",
     author="Linda Smith",
     author_email="linda.smith@ucc.ie",
     description="A package for finding SNPs in microbial genomic data.",
@@ -21,7 +21,12 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(where="src",exclude='data'),
+    entry_points={
+        'console_scripts': [
+            'microsnp = microsnp.microsnp:main',
+        ]
+    },
     python_requires=">=3.6",
 )
 
