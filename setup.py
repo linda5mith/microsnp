@@ -21,7 +21,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src",exclude='data'),
+    packages=setuptools.find_packages(exclude='data'),
     entry_points={
         'console_scripts': [
             'microsnp = microsnp.microsnp:main',
