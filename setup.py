@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-linda5mith",
+    name="microsnp",
     version="1.0.0",
     author="Linda Smith",
     author_email="linda.smith@ucc.ie",
@@ -20,7 +20,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
     packages=setuptools.find_packages(exclude='data'),
     entry_points={
         'console_scripts': [
