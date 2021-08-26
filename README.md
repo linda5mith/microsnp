@@ -2,7 +2,7 @@
 
 To install and run microsnp:
 
-```$ git clone https://github.com/linda5mith/microsnp/ .```
+```$ git clone https://github.com/linda5mith/microsnp.git .```
 
 ```$ pip install .```
 
