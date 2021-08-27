@@ -4,7 +4,7 @@ __version__ = '1.0.0'
 __date__ = '10 June 2021'
 
 
-import snptools as snp
+import microsnp.snptools as snp
 import sys
 import os
 import re

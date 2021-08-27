@@ -1,5 +1,5 @@
-import snptools as snp
-import mpileup as mp
+import microsnp.snptools as snp
+import microsnp.mpileup as mp
 import sys
 import os
 import re
@@ -15,7 +15,7 @@ from collections import defaultdict
 def parse_args():
     # Top-level parser
     parser = argparse.ArgumentParser(description='Variant calling program for microbial metagenomics.\n\
-        Python wrapper around bcftools functions for ease of handling multiple samples and species. To understand parameters for individual functions e.g. mpileup_single run\n: python microsnp.py mpileup_single -h')
+        Python wrapper around bcftools functions for ease of handling multiple samples and species. To understand parameters for individual functions e.g. mpileup_single run\n: microsnp mpileup_single -h')
     if len(sys.argv)==1:
         parser.print_help(sys.stderr)
         sys.exit(1)
