@@ -121,6 +121,8 @@ Will create a new vcf file for each species found in individual subject vcfs e.g
 pip version needs to be pip3. Check if pip3 is installed:
 ```which pip3```
 
+If pip3 is installed edit your ~/.bashrc file with the following:
+
 ```nano ~/.bashrc```
 
 ```alias pip=pip3```
