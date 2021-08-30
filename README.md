@@ -18,10 +18,10 @@ To view prompt for an individual function:
 
 ## SNP Pipeline
 
-MicroSNP aims to automate SNP finding for all species present in a metagenomic data set. 
+MicroSNP aims to automate the finding of SNPs for every species present in a metagenomic data set. 
 
 The objective of this program is to find SNPs present for all species in a .bam file where a .bam file represents a subject’s metagenomic snapshot at a specific time point. 
-It is a python wrapper around the command-line bcftools functions. Bcftools 1.7+ required. 
+It is a python wrapper around the command-line bcftools functions. Bcftools 1.7+ is required. 
 
 It was originally written to leverage a complex experimental design consisting of over 80 samples for 15 subjects. Each subject had a number of .bam files which represented the different timepoints the samples were collected. 
 
@@ -30,7 +30,7 @@ The core of the program is to find files with a specified file_extension and the
 
 ### Requirements
 * Bcftools 1.7+
-* reference.fasta - file containing reference genomes of all the species you are finding SNPs for.  
+* reference.fasta - file containing reference genomes of all the known species you wish to find SNPs for.  
 
 ### 1. Run mpileup
 
@@ -83,7 +83,7 @@ bcftools mpileup parameters are hard-coded and optimized for microbial data. If 
 ### 3. Check compression status (optional) 
 
 Check to make sure each file is properly compressed e.g. is a bg-zipped file
-```microsnp index_vcf /path/to/snp_project/mpileups .vcf.gz```
+```microsnp htsfile /path/to/snp_project/mpileups .vcf.gz```
 
 ### 4. Index vcfs
 
