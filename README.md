@@ -12,7 +12,7 @@ To view all program options:
 
 ```$ microsnp -h```
 
-To view prompt for an individual function:
+To view prompts for an individual function:
 
 ```$ microsnp mpileup_multi -h```
 
