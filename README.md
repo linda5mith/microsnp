@@ -18,7 +18,7 @@ To view prompt for an individual function:
 
 ## SNP Pipeline
 
-MicroSNP aims to automate the finding of SNPs for every species present in a metagenomic data set. 
+MicroSNP aims to automate the finding of SNPs and other variants for every species present in a metagenomic data set. 
 
 The objective of this program is to find SNPs present for all species in a .bam file where a .bam file represents a subject’s metagenomic snapshot at a specific time point. 
 It is a python wrapper around the command-line bcftools functions. Bcftools 1.7+ is required. 
@@ -111,6 +111,7 @@ Will create a new vcf file for each species found in individual subject vcfs e.g
 
 ```microsnp bcftools_merge_norms /path/to/snp_project/mpileups/ .norm.fltqs.vcf.qz```
 
+This generates a vcf file which contains all the SNPs or variants for a given species across all your samples. This can be imported into VcfR for further analysis.
 
 ## Troubleshooting installation
 
