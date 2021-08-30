@@ -8,12 +8,119 @@ To install and run microsnp:
 
 ```$ pip install .```
 
-  
+To view all program options:
+
+```$ microsnp -h```
+
+To view prompt for an individual function:
+
+```$ microsnp mpileup_multi -h```
+
+## SNP Pipeline
+
+MicroSNP aims to automate SNP finding for all species present in a metagenomic data set. 
+
+The objective of this program is to find SNPs present for all species in a .bam file where a .bam file represents a subject’s metagenomic snapshot at a specific time point. 
+It is a python wrapper around the command-line bcftools functions. Bcftools 1.7+ required. 
+
+It was originally written to leverage a complex experimental design consisting of over 80 samples for 15 subjects. Each subject had a number of .bam files which represented the different timepoints the samples were collected. 
+
+When doing SNP calling or even working with .bam (samtools alignment files) there is a different file extension that is added/appended after every step in the pipeline. 
+The core of the program is to find files with a specified file_extension and then perform a function on them. 
+
+### Requirements
+* Bcftools 1.7+
+* reference.fasta - file containing reference genomes of all the species you are finding SNPs for.  
+
+### 1. Run mpileup
+
+The first step is to run a mpileup of all the samples for a particular subject to create a read coverage summary vcf. 
+
+```microsnp mpileup_multi <path_to_files> <file_extension> <path_to_reference> --<path_to_output>```
+
+```microsnp mpileup_multi /path/to/snp_project/ .bam /path/to/reference.fasta /path/to/snp_project/mpileups```
+
+For the mpileup_multi function to work the files need to be in the following directory structure:
+
+```
+subject_1
+      |------- subject1_T1.sorted.bam
+               subject1_T2.sorted.bam
+               subject1_T3.sorted.bam
+
+subject_2
+     |---------subject2_T1.sorted.bam
+               subject2_T2.sorted.bam
+               ......
+```
+If you don’t have multiple samples for the same subject you can use:
+```microsnp mpileup_single <path_to_file> <file_extension> <path_to_reference> --<path_to_output>``` 
+
+Specifying an output path --path_to_output is optional.
+
+bcftools mpileup parameters are hard-coded and optimized for microbial data. If you have a memory limitation change --max-depth paramater. 
+
+### 2. Filter sequences 
+
+<ins>Filter sequences that passed filter defined in mpileup</ins>
+
+```microsnp filter_qual <path_to_files> <file_extension>```
+
+```microsnp filter_qual /path/to/snp_project/mpileups .flt.vcf```
+
+<ins>Filter by DP (FORMAT field)</ins>
+
+```microsnp filter_dp -h```
+```microsnp filter_dp <path_to_files> <file_extension> <DP> <expr>```
+
+```microsnp filter_dp /path/to/snp_project/mpileups/ .fltq.vcf 10 MIN```
+
+<ins>Filter by DP & GQ (FORMAT field)</ins>
+
+```microsnp filter_dp_gq <path_to_files> <file_extension> <DP> <expr> <GQ>```
+```microsnp filter_dp_gq /path/to/snp_project/mpileups/ .fltq.vcf 10 AVG 50```
+
+### 3. Check compression status (optional) 
+
+Check to make sure each file is properly compressed e.g. is a bg-zipped file
+```microsnp index_vcf /path/to/snp_project/mpileups .vcf.gz```
+
+### 4. Index vcfs
+
+```microsnp index_vcf /path/to/snp_project/mpileups .vcf.gz```
+
+### 5. Filter individual species from vcf subject files
+
+```microsnp filter_species /path/to/snp_project/mpileups .vcf.gz```
+
+Will create a new vcf file for each species found in individual subject vcfs e.g.
+
+* allobacillus_halotolerans_subject1.fltqs.vcf.gz
+* escherichia_coli_subject1.fltqs.vcf.gz
+
+### 6. Index newly created species files
+
+```microsnp index_vcf /path/to/snp_project/mpileups/ fltqs.vcf.qz```
+
+### 7. Normalize species files for merging
+
+```microsnp bcftools_norm /path/to/snp_project/mpileups/ fltqs.vcf.qz path/to/reference.fasta```
+
+### 8. Merge species files
+
+```microsnp bcftools_merge_norms /path/to/snp_project/mpileups/ .norm.fltqs.vcf.qz```
 
 
+## Troubleshooting installation
 
-This is a simple example package. You can use
-[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+```pip install .```
+```error: error in 'egg_base' option: 'src' does not exist or is not a directory```
+
+pip version needs to be pip3. Check if pip3 is installed:
+```which pip3```
+
+```nano ~/.bashrc
+alias pip=pip3```
+
 
 
