@@ -52,6 +52,7 @@ subject_2
                ......
 ```
 If you don’t have multiple samples for the same subject you can use:
+
 ```microsnp mpileup_single <path_to_file> <file_extension> <path_to_reference> --<path_to_output>``` 
 
 Specifying an output path --path_to_output is optional.
@@ -69,6 +70,7 @@ bcftools mpileup parameters are hard-coded and optimized for microbial data. If 
 <ins>Filter by DP (FORMAT field)</ins>
 
 ```microsnp filter_dp -h```
+
 ```microsnp filter_dp <path_to_files> <file_extension> <DP> <expr>```
 
 ```microsnp filter_dp /path/to/snp_project/mpileups/ .fltq.vcf 10 MIN```
@@ -76,6 +78,7 @@ bcftools mpileup parameters are hard-coded and optimized for microbial data. If 
 <ins>Filter by DP & GQ (FORMAT field)</ins>
 
 ```microsnp filter_dp_gq <path_to_files> <file_extension> <DP> <expr> <GQ>```
+
 ```microsnp filter_dp_gq /path/to/snp_project/mpileups/ .fltq.vcf 10 AVG 50```
 
 ### 3. Check compression status (optional) 
@@ -112,12 +115,14 @@ Will create a new vcf file for each species found in individual subject vcfs e.g
 ## Troubleshooting installation
 
 ```pip install .```
+
 ```error: error in 'egg_base' option: 'src' does not exist or is not a directory```
 
 pip version needs to be pip3. Check if pip3 is installed:
 ```which pip3```
 
 ```nano ~/.bashrc```
+
 ```alias pip=pip3```
 
 
