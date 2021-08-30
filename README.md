@@ -23,8 +23,6 @@ MicroSNP aims to automate the finding of SNPs for every species present in a met
 The objective of this program is to find SNPs present for all species in a .bam file where a .bam file represents a subject’s metagenomic snapshot at a specific time point. 
 It is a python wrapper around the command-line bcftools functions. Bcftools 1.7+ is required. 
 
-It was originally written to leverage a complex experimental design consisting of over 80 samples for 15 subjects. Each subject had a number of .bam files which represented the different timepoints the samples were collected. 
-
 When doing SNP calling or even working with .bam (samtools alignment files) there is a different file extension that is added/appended after every step in the pipeline. 
 The core of the program is to find files with a specified file_extension and then perform a function on them. 
 
