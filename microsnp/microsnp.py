@@ -64,9 +64,9 @@ def parse_args():
     htsfile_parser.required = True
     htsfile_parser.set_defaults(func=htsfile)
 
-    filterpass =  subparser.add_parser('filter_pass',parents=[parent_parser],description='Filters variants from vcf which passed filter to create a new file.')
+    filterpass =  subparser.add_parser('filter_qual',parents=[parent_parser],description='Filters variants from vcf which passed filter to create a new file.')
     filterpass.required = True
-    filterpass.set_defaults(func=filter_pass)
+    filterpass.set_defaults(func=filter_qual)
 
     filterdpgq =  subparser.add_parser('filter_dp_gq',parents=[parent_parser,dp_parser,gq_parser],description='Filters variants that have DP > min_dp and GQ > min_gq.')
     filterdpgq.required = True
@@ -143,7 +143,7 @@ def mpileup_multi(args): #path_to_files, file_extension, path_to_reference_file
         except Exception as e:
             print(e)
 
-def filter_pass(args):
+def filter_qual(args):
     '''Filters only variants that have passed the applied filter'''
     files = snp.os_walk(args.path_to_files, args.file_extension)
     for f in files:
@@ -235,9 +235,11 @@ def filter_species(args):
         command=f'bcftools view {f} |  grep -v "#" | cut -f 1 | uniq | sort'
         unique_chrom=snp.save_process_output(command)
         for chrom in unique_chrom:
-            #print(chrom)
-            species=chrom.split('_')
-            species_prefix = '_'.join([species[0],species[1],species[2]]) 
+            try:
+                species=chrom.split('_')
+                species_prefix = '_'.join([species[0],species[1],species[2]])
+            except:
+                species_prefix = species
             outfile = snp.get_output_name(f)
             out_file_name = f'{outfile}_{species_prefix}.fltqs.vcf.gz'
             out_dir = snp.get_file_dir(f)
